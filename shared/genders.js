@@ -50,6 +50,9 @@
   "default": "M",
   "images": {
    "F": "loki-female.webp"
+  },
+  "names": {
+   "F": "Lady Loki"
   }
  },
  "luna-snow": {

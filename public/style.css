@@ -977,3 +977,14 @@ button.primary:hover { background: #ffe15c; }
 .about-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 6px 0 10px; }
 .about-table th { text-align: left; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: .04em; color: #ffd21f; border-bottom: 1px solid #ffd21f55; padding: 6px 8px; }
 .about-table td { padding: 7px 8px; border-bottom: 1px solid #ffffff14; vertical-align: top; }
+
+/* Herodex: click the official art to see it large */
+.art-zoom { cursor: zoom-in; display: inline-block; border-radius: 10px; transition: transform .12s, box-shadow .12s; }
+.art-zoom:hover { transform: scale(1.04); box-shadow: 0 0 0 2px #ffd21f88; }
+.sz-art { height: min(78vh, 720px); max-width: 44vw; display: flex; align-items: center; justify-content: center; }
+.sz-row figure:only-child .sz-art { max-width: 90vw; }
+.sz-art img { max-height: 100%; max-width: 100%; object-fit: contain; filter: drop-shadow(0 10px 24px #000a); }
+@media (max-width: 700px) { .sz-art { height: 60vh; max-width: 90vw; } }
+/* Battler Card avatar: official art fills the circle, cropped to the head and shoulders */
+.tc-avatar .sprite.lg { width: 84px; height: 84px; }
+.tc-avatar .sprite:not(.drawn) img, .avatar-grid .av .sprite:not(.drawn) img { object-fit: cover; object-position: 50% 6%; filter: none; }

@@ -641,18 +641,21 @@
       const t = byUrl.get(src.url) || { form, url: src.url, back: spriteSrc(form, true, g), gs: [] }; t.gs.push(g); byUrl.set(src.url, t);
     }
     const tiles = [...byUrl.values()].map(t => {
-      const sym = genders.length > 1 && t.gs.length < genders.length ? ' ' + t.gs.map(gsym).join('') : '';
-      const nm = t.form === f && f.id === 'cloak-and-dagger' ? 'Dagger' : t.form.name;
-      const cap = esc(nm) + sym;
-      return `<figure class="bs-tile${t.form === f ? '' : ' fs'}" data-zoom="${esc(t.url)}" data-zoom-back="${esc(t.back.url)}" data-zoom-flip="${t.back.flip ? 1 : 0}" data-zoom-cap="${cap}" title="Click to view larger"><div class="bs-stage"><i></i><img src="${t.url}" alt="${esc(t.form.name)}" loading="lazy"></div><figcaption>${cap}${t.form === f ? '' : ' <span class="fs-star">★</span>'}</figcaption></figure>`;
+      const alt = t.gs.length === 1 && (GENDER.info(t.form.id).names || {})[t.gs[0]];   // e.g. Lady Loki
+      const split = !alt && !GENDER.info(t.form.id).names && genders.length > 1 && t.gs.length < genders.length;
+      const nm = alt || (t.form === f && f.id === 'cloak-and-dagger' ? 'Dagger' : t.form.name);
+      const cap = esc(nm) + (split ? ' ' + t.gs.map(gsym).join('') : '');
+      const plainCap = nm + (split ? ' ' + t.gs.map(g => GENDER.SYMBOL[g] || '').join('') : '');
+      return `<figure class="bs-tile${t.form === f ? '' : ' fs'}" data-zoom="${esc(t.url)}" data-zoom-back="${esc(t.back.url)}" data-zoom-flip="${t.back.flip ? 1 : 0}" data-zoom-cap="${esc(plainCap)}" title="Click to view larger"><div class="bs-stage"><i></i><img src="${t.url}" alt="${esc(t.form.name)}" loading="lazy"></div><figcaption>${cap}${t.form === f ? '' : ' <span class="fs-star">★</span>'}</figcaption></figure>`;
     });
     if (!tiles.length) return `<h2 style="margin-top:14px">Battle sprites</h2><div class="muted small">No battle sprites yet; battles use the official art.</div>`;
     return `<h2 style="margin-top:14px">Battle sprites</h2><div class="bs-grid">${tiles.join('')}</div>${missing.length ? `<div class="muted small" style="margin-top:4px">Official art in battle for: ${missing.join(', ')}</div>` : ''}`;
   }
   function showFighter(f) {
     const sig = Object.fromEntries(f.signature.map(s => [s.move, s.smash]));
-    modal(`<div class="row" style="margin-bottom:10px">${badge(f, 'lg')}<div class="grow"><div style="font-size:22px;font-weight:800">${esc(f.name)}</div><div>${f.types.map(typeChip).join(' ')} <span class="muted">· ${esc(f.series)}</span></div></div><button id="fx">Close</button></div>
-      <div class="small" style="margin:-4px 0 8px"><b>Gender:</b> ${esc(GENDER.label(f.id))}${(GENDER.info(f.id).images) ? ` · alternate sprite: ${Object.entries(GENDER.info(f.id).images).map(([g]) => `${sprite(f, 'sm', false, g)}`).join('')}` : ''}</div>
+    const arts = officialArts(f);
+    modal(`<div class="row" style="margin-bottom:10px">${arts.length ? `<span class="art-zoom" data-art="0" title="Click to view the art larger">${badge(f, 'lg')}</span>` : badge(f, 'lg')}<div class="grow"><div style="font-size:22px;font-weight:800">${esc(f.name)}</div><div>${f.types.map(typeChip).join(' ')} <span class="muted">· ${esc(f.series)}</span></div></div><button id="fx">Close</button></div>
+      <div class="small" style="margin:-4px 0 8px"><b>Gender:</b> ${esc(GENDER.label(f.id))}${(GENDER.info(f.id).images) ? ` · alternate art: ${Object.entries(GENDER.info(f.id).images).map(([g], i) => `<span class="art-zoom" data-art="${i + 1}" title="${esc((GENDER.info(f.id).names || {})[g] || 'Alternate art')}: click to view larger">${sprite(f, 'sm', false, g)}</span>`).join('')}` : ''}</div>
       <h2>Abilities</h2>${f.abilities.map(a => `<div><b>${esc(a.name)}</b> — <span class="muted">${esc(a.desc)}</span></div>`).join('')}
       <div><b>${esc(f.hidden.name)}</b> <span class="pill">Hidden</span> — <span class="muted">${esc(f.hidden.desc)}</span></div>
       ${Object.values(S.dex.finalSmashes || {}).filter(x => x.bases.includes(f.id)).map(x => `<div class="fs-box"><div class="row">${sprite(S.byId[x.id], 'lg')}<div class="grow"><div style="font-weight:800;font-size:17px">Ultimate Form: ${esc(x.name)}</div><div>${x.types.map(typeChip).join(' ')} <span class="muted">· hold <b>${esc(x.stone)}</b> · BST ${Object.values(x.stats).reduce((a, c) => a + c, 0)}</span></div><div class="small"><b>${esc(x.ability.name)}</b> — <span class="muted">${esc(x.ability.desc)}</span></div></div></div>
@@ -664,11 +667,31 @@
       <div class="move-table"><table><tr><th>Move</th><th>Type</th><th>Cat</th><th>Pow</th><th>Acc</th></tr>${f.learnset.map(n => { const mv = S.dex.moves[n]; return `<tr><td>${esc(n)}${n in sig ? ` <span class="sig">★ ${esc(sig[n])}</span>` : ''}</td><td>${typeChip(mv.type)}</td><td><span class="cat">${mv.cat}</span></td><td>${mv.power || '—'}</td><td>${mv.acc === true ? '—' : mv.acc}</td></tr>`; }).join('')}</table></div>`);
     $('#fx').onclick = closeModal;
     $$('[data-zoom]').forEach(el => el.onclick = () => zoomSprite(el.dataset));
+    $$('[data-art]').forEach(el => el.onclick = () => zoomArt(arts, +el.dataset.art));
   }
   // Herodex: a battle sprite shown large (front and back) over the page; click or Esc closes it
+  // official art of a hero: the default plus any alternate-gender art (Lady Loki)
+  function officialArts(f) {
+    if (!f.image) return [];
+    const g = GENDER.info(f.id);
+    return [{ url: '/images/' + f.image, cap: f.name }, ...Object.entries(g.images || {}).map(([sex, img]) => ({ url: '/images/' + img, cap: (g.names || {})[sex] || `${f.name} ${GENDER.SYMBOL[sex] || ''}` }))];
+  }
+  function zoomArt(arts, first) {
+    const order = [arts[first], ...arts.filter((_, i) => i !== first)].filter(Boolean);
+    openZoom(order[0].cap + (order.length > 1 ? ' · ' + order.slice(1).map(a => a.cap).join(' · ') : ''),
+      order.map(a => `<figure><div class="sz-art"><img src="${esc(a.url)}" alt="${esc(a.cap)}"></div>${order.length > 1 ? `<figcaption>${esc(a.cap)}</figcaption>` : ''}</figure>`).join(''));
+  }
+  function openZoom(title, body) {
+    const box = document.createElement('div'); box.className = 'sprite-zoom';
+    box.innerHTML = `<div class="sz-inner"><div class="sz-title">${esc(title)}</div><div class="sz-row">${body}</div><div class="muted small">Click anywhere to close</div></div>`;
+    const close = () => { box.remove(); document.removeEventListener('keydown', esc_, true); };
+    const esc_ = e => { if (e.key === 'Escape') { e.stopPropagation(); close(); } };
+    box.onclick = close; document.addEventListener('keydown', esc_, true);
+    document.body.appendChild(box);
+  }
   function zoomSprite(d) {
     const box = document.createElement('div'); box.className = 'sprite-zoom';
-    box.innerHTML = `<div class="sz-inner"><div class="sz-title">${d.zoomCap}</div><div class="sz-row">
+    box.innerHTML = `<div class="sz-inner"><div class="sz-title">${esc(d.zoomCap)}</div><div class="sz-row">
       <figure><div class="sz-stage"><img src="${d.zoom}" alt=""></div><figcaption>Front</figcaption></figure>
       <figure><div class="sz-stage"><img src="${d.zoomBack}" alt=""${d.zoomFlip === '1' ? ' style="transform:scaleX(-1)"' : ''}></div><figcaption>Back</figcaption></figure>
       </div><div class="muted small">Click anywhere to close</div></div>`;
