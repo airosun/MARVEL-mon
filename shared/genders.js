@@ -45,7 +45,9 @@
   "type": "M"
  },
  "loki": {
-  "type": "M"
+  "type": "X",
+  "male": 50,
+  "default": "M"
  },
  "luna-snow": {
   "type": "F"
