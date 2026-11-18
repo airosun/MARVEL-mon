@@ -14,11 +14,11 @@
  "captain-america": {
   "type": "M"
  },
- "cloak": {
-  "type": "M"
+ "cloak-and-dagger": {
+  "type": "B"
  },
- "dagger": {
-  "type": "F"
+ "dagger-form": {
+  "type": "B"
  },
  "doctor-strange": {
   "type": "M"

@@ -156,9 +156,9 @@
   ]
  },
  {
-  "id": "cloak",
+  "id": "cloak-and-dagger",
   "num": 5,
-  "name": "Cloak",
+  "name": "Cloak & Dagger",
   "role": "Strategist",
   "types": [
    "Dark"
@@ -167,14 +167,14 @@
   "baseStats": {
    "hp": 80,
    "atk": 70,
-   "def": 75,
-   "spa": 105,
-   "spd": 105,
-   "spe": 90
+   "def": 95,
+   "spa": 95,
+   "spd": 115,
+   "spe": 70
   },
   "abilities": {
-   "0": "Darkforce Hunger",
-   "H": "Eternal Bond"
+   "0": "Eternal Bond",
+   "H": "Light and Darkforce"
   },
   "moves": [
    "Dark Pulse",
@@ -190,36 +190,11 @@
    "Parting Shot",
    "Hex",
    "Sucker Punch",
-   "Obstruct"
-  ]
- },
- {
-  "id": "dagger",
-  "num": 6,
-  "name": "Dagger",
-  "role": "Strategist",
-  "types": [
-   "Fairy"
-  ],
-  "inGameHP": 275,
-  "baseStats": {
-   "hp": 80,
-   "atk": 55,
-   "def": 70,
-   "spa": 110,
-   "spd": 115,
-   "spe": 95
-  },
-  "abilities": {
-   "0": "Purifying Light",
-   "H": "Eternal Bond"
-  },
-  "moves": [
+   "Obstruct",
    "Dazzling Gleam",
    "Life Dew",
    "Heal Pulse",
    "Lunar Dance",
-   "Ally Switch",
    "Purify",
    "Flash",
    "Draining Kiss",
@@ -232,8 +207,62 @@
   ]
  },
  {
+  "id": "cloak-and-dagger-dagger-form",
+  "num": "5b",
+  "name": "Cloak & Dagger (Dagger form)",
+  "role": "Strategist",
+  "types": [
+   "Fairy"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 80,
+   "atk": 55,
+   "def": 65,
+   "spa": 120,
+   "spd": 95,
+   "spe": 110
+  },
+  "abilities": {
+   "0": "Eternal Bond",
+   "H": "Light and Darkforce"
+  },
+  "moves": [
+   "Dark Pulse",
+   "Night Daze",
+   "Phantom Force",
+   "Ally Switch",
+   "Mean Look",
+   "Shadow Ball",
+   "Snarl",
+   "Foul Play",
+   "Taunt",
+   "Nasty Plot",
+   "Parting Shot",
+   "Hex",
+   "Sucker Punch",
+   "Obstruct",
+   "Dazzling Gleam",
+   "Life Dew",
+   "Heal Pulse",
+   "Lunar Dance",
+   "Purify",
+   "Flash",
+   "Draining Kiss",
+   "Moonblast",
+   "Wish",
+   "Psychic",
+   "Calm Mind",
+   "Light Screen",
+   "Misty Terrain"
+  ],
+  "baseSpecies": "Cloak & Dagger",
+  "battleOnly": true,
+  "forme": "Dagger"
+ },
+ {
   "id": "doctor-strange",
-  "num": 7,
+  "num": 6,
   "name": "Doctor Strange",
   "role": "Vanguard",
   "types": [
@@ -272,7 +301,7 @@
  },
  {
   "id": "groot",
-  "num": 8,
+  "num": 7,
   "name": "Groot",
   "role": "Vanguard",
   "types": [
@@ -311,7 +340,7 @@
  },
  {
   "id": "hawkeye",
-  "num": 9,
+  "num": 8,
   "name": "Hawkeye",
   "role": "Duelist",
   "types": [
@@ -350,7 +379,7 @@
  },
  {
   "id": "hela",
-  "num": 10,
+  "num": 9,
   "name": "Hela",
   "role": "Duelist",
   "types": [
@@ -389,7 +418,7 @@
  },
  {
   "id": "hulk",
-  "num": 11,
+  "num": 10,
   "name": "Hulk",
   "role": "Vanguard",
   "types": [
@@ -431,7 +460,7 @@
  },
  {
   "id": "iron-fist",
-  "num": 12,
+  "num": 11,
   "name": "Iron Fist",
   "role": "Duelist",
   "types": [
@@ -470,7 +499,7 @@
  },
  {
   "id": "iron-man",
-  "num": 13,
+  "num": 12,
   "name": "Iron Man",
   "role": "Duelist",
   "types": [
@@ -509,7 +538,7 @@
  },
  {
   "id": "jeff-the-land-shark",
-  "num": 14,
+  "num": 13,
   "name": "Jeff the Land Shark",
   "role": "Strategist",
   "types": [
@@ -548,7 +577,7 @@
  },
  {
   "id": "loki",
-  "num": 15,
+  "num": 14,
   "name": "Loki",
   "role": "Strategist",
   "types": [
@@ -587,7 +616,7 @@
  },
  {
   "id": "luna-snow",
-  "num": 16,
+  "num": 15,
   "name": "Luna Snow",
   "role": "Strategist",
   "types": [
@@ -626,7 +655,7 @@
  },
  {
   "id": "magik",
-  "num": 17,
+  "num": 16,
   "name": "Magik",
   "role": "Duelist",
   "types": [
@@ -665,7 +694,7 @@
  },
  {
   "id": "magneto",
-  "num": 18,
+  "num": 17,
   "name": "Magneto",
   "role": "Vanguard",
   "types": [
@@ -703,7 +732,7 @@
  },
  {
   "id": "mantis",
-  "num": 19,
+  "num": 18,
   "name": "Mantis",
   "role": "Strategist",
   "types": [
@@ -742,7 +771,7 @@
  },
  {
   "id": "moon-knight",
-  "num": 20,
+  "num": 19,
   "name": "Moon Knight",
   "role": "Duelist",
   "types": [
@@ -781,7 +810,7 @@
  },
  {
   "id": "namor",
-  "num": 21,
+  "num": 20,
   "name": "Namor",
   "role": "Duelist",
   "types": [
@@ -820,7 +849,7 @@
  },
  {
   "id": "peni-parker",
-  "num": 22,
+  "num": 21,
   "name": "Peni Parker",
   "role": "Vanguard",
   "types": [
@@ -859,7 +888,7 @@
  },
  {
   "id": "psylocke",
-  "num": 23,
+  "num": 22,
   "name": "Psylocke",
   "role": "Duelist",
   "types": [
@@ -898,7 +927,7 @@
  },
  {
   "id": "the-punisher",
-  "num": 24,
+  "num": 23,
   "name": "The Punisher",
   "role": "Duelist",
   "types": [
@@ -937,7 +966,7 @@
  },
  {
   "id": "rocket-raccoon",
-  "num": 25,
+  "num": 24,
   "name": "Rocket Raccoon",
   "role": "Strategist",
   "types": [
@@ -976,7 +1005,7 @@
  },
  {
   "id": "scarlet-witch",
-  "num": 26,
+  "num": 25,
   "name": "Scarlet Witch",
   "role": "Duelist",
   "types": [
@@ -1015,7 +1044,7 @@
  },
  {
   "id": "spider-man",
-  "num": 27,
+  "num": 26,
   "name": "Spider-Man",
   "role": "Duelist",
   "types": [
@@ -1054,7 +1083,7 @@
  },
  {
   "id": "squirrel-girl",
-  "num": 28,
+  "num": 27,
   "name": "Squirrel Girl",
   "role": "Duelist",
   "types": [
@@ -1093,7 +1122,7 @@
  },
  {
   "id": "star-lord",
-  "num": 29,
+  "num": 28,
   "name": "Star-Lord",
   "role": "Duelist",
   "types": [
@@ -1132,7 +1161,7 @@
  },
  {
   "id": "storm",
-  "num": 30,
+  "num": 29,
   "name": "Storm",
   "role": "Duelist",
   "types": [
@@ -1171,7 +1200,7 @@
  },
  {
   "id": "thor",
-  "num": 31,
+  "num": 30,
   "name": "Thor",
   "role": "Vanguard",
   "types": [
@@ -1210,7 +1239,7 @@
  },
  {
   "id": "venom",
-  "num": 32,
+  "num": 31,
   "name": "Venom",
   "role": "Vanguard",
   "types": [
@@ -1249,7 +1278,7 @@
  },
  {
   "id": "winter-soldier",
-  "num": 33,
+  "num": 32,
   "name": "Winter Soldier",
   "role": "Duelist",
   "types": [
@@ -1288,7 +1317,7 @@
  },
  {
   "id": "wolverine",
-  "num": 34,
+  "num": 33,
   "name": "Wolverine",
   "role": "Duelist",
   "types": [
@@ -1327,7 +1356,7 @@
  },
  {
   "id": "mister-fantastic",
-  "num": 35,
+  "num": 34,
   "name": "Mister Fantastic",
   "role": "Duelist",
   "types": [
@@ -1365,7 +1394,7 @@
  },
  {
   "id": "invisible-woman",
-  "num": 36,
+  "num": 35,
   "name": "Invisible Woman",
   "role": "Strategist",
   "types": [
@@ -1403,7 +1432,7 @@
  },
  {
   "id": "human-torch",
-  "num": 37,
+  "num": 36,
   "name": "Human Torch",
   "role": "Duelist",
   "types": [
@@ -1442,7 +1471,7 @@
  },
  {
   "id": "the-thing",
-  "num": 38,
+  "num": 37,
   "name": "The Thing",
   "role": "Vanguard",
   "types": [
@@ -1481,7 +1510,7 @@
  },
  {
   "id": "emma-frost",
-  "num": 39,
+  "num": 38,
   "name": "Emma Frost",
   "role": "Vanguard",
   "types": [
@@ -1520,7 +1549,7 @@
  },
  {
   "id": "ultron",
-  "num": 40,
+  "num": 39,
   "name": "Ultron",
   "role": "Strategist",
   "types": [
@@ -1559,7 +1588,7 @@
  },
  {
   "id": "phoenix",
-  "num": 41,
+  "num": 40,
   "name": "Phoenix",
   "role": "Duelist",
   "types": [
@@ -1598,7 +1627,7 @@
  },
  {
   "id": "blade",
-  "num": 42,
+  "num": 41,
   "name": "Blade",
   "role": "Duelist",
   "types": [
@@ -1637,7 +1666,7 @@
  },
  {
   "id": "angela",
-  "num": 43,
+  "num": 42,
   "name": "Angela",
   "role": "Vanguard",
   "types": [
@@ -1676,7 +1705,7 @@
  },
  {
   "id": "daredevil",
-  "num": 44,
+  "num": 43,
   "name": "Daredevil",
   "role": "Duelist",
   "types": [
@@ -1715,7 +1744,7 @@
  },
  {
   "id": "gambit",
-  "num": 45,
+  "num": 44,
   "name": "Gambit",
   "role": "Strategist",
   "types": [
@@ -1754,7 +1783,7 @@
  },
  {
   "id": "rogue",
-  "num": 46,
+  "num": 45,
   "name": "Rogue",
   "role": "Vanguard",
   "types": [
@@ -1792,7 +1821,7 @@
  },
  {
   "id": "deadpool",
-  "num": 47,
+  "num": 46,
   "name": "Deadpool",
   "role": "Multi-Role",
   "types": [
@@ -1831,7 +1860,7 @@
  },
  {
   "id": "elsa-bloodstone",
-  "num": 48,
+  "num": 47,
   "name": "Elsa Bloodstone",
   "role": "Duelist",
   "types": [
@@ -1870,7 +1899,7 @@
  },
  {
   "id": "white-fox",
-  "num": 49,
+  "num": 48,
   "name": "White Fox",
   "role": "Strategist",
   "types": [
@@ -1909,7 +1938,7 @@
  },
  {
   "id": "black-cat",
-  "num": 50,
+  "num": 49,
   "name": "Black Cat",
   "role": "Duelist",
   "types": [
@@ -1948,7 +1977,7 @@
  },
  {
   "id": "devil-dinosaur",
-  "num": 51,
+  "num": 50,
   "name": "Devil Dinosaur",
   "role": "Vanguard",
   "types": [
@@ -1987,7 +2016,7 @@
  },
  {
   "id": "cyclops",
-  "num": 52,
+  "num": 51,
   "name": "Cyclops",
   "role": "Duelist",
   "types": [
@@ -2026,7 +2055,7 @@
  },
  {
   "id": "jubilee",
-  "num": 53,
+  "num": 52,
   "name": "Jubilee",
   "role": "Strategist",
   "types": [
@@ -2065,7 +2094,7 @@
  },
  {
   "id": "the-hood",
-  "num": 54,
+  "num": 53,
   "name": "The Hood",
   "role": "Vanguard",
   "types": [
@@ -2104,7 +2133,7 @@
  },
  {
   "id": "gorr",
-  "num": 55,
+  "num": 54,
   "name": "Gorr",
   "role": "Duelist",
   "types": [
@@ -2143,7 +2172,7 @@
  },
  {
   "id": "nightcrawler",
-  "num": 56,
+  "num": 55,
   "name": "Nightcrawler",
   "role": "Strategist",
   "types": [
@@ -2182,7 +2211,7 @@
  },
  {
   "id": "hulk-bruce-banner-form",
-  "num": "11b",
+  "num": "10b",
   "name": "Hulk (Bruce Banner form)",
   "role": "Vanguard",
   "types": [

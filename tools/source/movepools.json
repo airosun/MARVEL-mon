@@ -448,7 +448,7 @@
   "basedOn": null
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Dark Pulse",
   "type": "Dark",
   "category": "Special",
@@ -456,7 +456,7 @@
   "basedOn": "Darkforce blast"
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Night Daze",
   "type": "Dark",
   "category": "Special",
@@ -464,7 +464,7 @@
   "basedOn": "Terror Cape blind"
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Phantom Force",
   "type": "Ghost",
   "category": "Physical",
@@ -472,15 +472,15 @@
   "basedOn": "Dark Teleportation ultimate"
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Ally Switch",
   "type": "Psychic",
   "category": "Status",
   "power": null,
-  "basedOn": "Eternal Bond (swap with Dagger)"
+  "basedOn": "Eternal Bond (Cloak and Dagger tag in)"
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Mean Look",
   "type": "Normal",
   "category": "Status",
@@ -488,7 +488,7 @@
   "basedOn": "Darkforce dimension trap"
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Shadow Ball",
   "type": "Ghost",
   "category": "Special",
@@ -496,7 +496,7 @@
   "basedOn": null
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Snarl",
   "type": "Dark",
   "category": "Special",
@@ -504,7 +504,7 @@
   "basedOn": null
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Foul Play",
   "type": "Dark",
   "category": "Physical",
@@ -512,7 +512,7 @@
   "basedOn": null
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Taunt",
   "type": "Dark",
   "category": "Status",
@@ -520,7 +520,7 @@
   "basedOn": null
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Nasty Plot",
   "type": "Dark",
   "category": "Status",
@@ -528,7 +528,7 @@
   "basedOn": null
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Parting Shot",
   "type": "Dark",
   "category": "Status",
@@ -536,7 +536,7 @@
   "basedOn": null
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Hex",
   "type": "Ghost",
   "category": "Special",
@@ -544,7 +544,7 @@
   "basedOn": null
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Sucker Punch",
   "type": "Dark",
   "category": "Physical",
@@ -552,7 +552,7 @@
   "basedOn": null
  },
  {
-  "hero": "Cloak",
+  "hero": "Cloak & Dagger",
   "move": "Obstruct",
   "type": "Dark",
   "category": "Status",
@@ -560,7 +560,7 @@
   "basedOn": null
  },
  {
-  "hero": "Dagger",
+  "hero": "Cloak & Dagger",
   "move": "Dazzling Gleam",
   "type": "Fairy",
   "category": "Special",
@@ -568,7 +568,7 @@
   "basedOn": "Lightforce daggers"
  },
  {
-  "hero": "Dagger",
+  "hero": "Cloak & Dagger",
   "move": "Life Dew",
   "type": "Water",
   "category": "Status",
@@ -576,7 +576,7 @@
   "basedOn": "Dagger Storm"
  },
  {
-  "hero": "Dagger",
+  "hero": "Cloak & Dagger",
   "move": "Heal Pulse",
   "type": "Psychic",
   "category": "Status",
@@ -584,7 +584,7 @@
   "basedOn": "Veil of Lightforce"
  },
  {
-  "hero": "Dagger",
+  "hero": "Cloak & Dagger",
   "move": "Lunar Dance",
   "type": "Psychic",
   "category": "Status",
@@ -592,15 +592,7 @@
   "basedOn": "Eternal Bond ultimate"
  },
  {
-  "hero": "Dagger",
-  "move": "Ally Switch",
-  "type": "Psychic",
-  "category": "Status",
-  "power": null,
-  "basedOn": "Eternal Bond (swap with Cloak)"
- },
- {
-  "hero": "Dagger",
+  "hero": "Cloak & Dagger",
   "move": "Purify",
   "type": "Poison",
   "category": "Status",
@@ -608,7 +600,7 @@
   "basedOn": "Light purifies"
  },
  {
-  "hero": "Dagger",
+  "hero": "Cloak & Dagger",
   "move": "Flash",
   "type": "Normal",
   "category": "Status",
@@ -616,7 +608,7 @@
   "basedOn": "Blinding light"
  },
  {
-  "hero": "Dagger",
+  "hero": "Cloak & Dagger",
   "move": "Draining Kiss",
   "type": "Fairy",
   "category": "Special",
@@ -624,7 +616,7 @@
   "basedOn": null
  },
  {
-  "hero": "Dagger",
+  "hero": "Cloak & Dagger",
   "move": "Moonblast",
   "type": "Fairy",
   "category": "Special",
@@ -632,7 +624,7 @@
   "basedOn": null
  },
  {
-  "hero": "Dagger",
+  "hero": "Cloak & Dagger",
   "move": "Wish",
   "type": "Normal",
   "category": "Status",
@@ -640,7 +632,7 @@
   "basedOn": null
  },
  {
-  "hero": "Dagger",
+  "hero": "Cloak & Dagger",
   "move": "Psychic",
   "type": "Psychic",
   "category": "Special",
@@ -648,7 +640,7 @@
   "basedOn": null
  },
  {
-  "hero": "Dagger",
+  "hero": "Cloak & Dagger",
   "move": "Calm Mind",
   "type": "Psychic",
   "category": "Status",
@@ -656,7 +648,7 @@
   "basedOn": null
  },
  {
-  "hero": "Dagger",
+  "hero": "Cloak & Dagger",
   "move": "Light Screen",
   "type": "Psychic",
   "category": "Status",
@@ -664,7 +656,7 @@
   "basedOn": null
  },
  {
-  "hero": "Dagger",
+  "hero": "Cloak & Dagger",
   "move": "Misty Terrain",
   "type": "Fairy",
   "category": "Status",

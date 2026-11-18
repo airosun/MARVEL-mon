@@ -162,6 +162,32 @@ async function test(name, fn) { try { await fn(); passed++; console.log('ok  ', 
     assert.match(text(b), /HULK SMASH/);
   });
 
+  await test('Eternal Bond: Dagger tags in for Fairy/Psychic moves, Cloak for Dark/Ghost; Ally Switch tags in singles', () => {
+    const b = battle([mk('cloak-and-dagger', 'Eternal Bond', ['Moonblast', 'Dark Pulse', 'Ally Switch', 'Protect'])], [mk('groot', 'Flora Colossus', ['Protect', 'Bulk Up'])]);
+    const c = b.sides[0].team[0];
+    assert.equal(c.species.id, 'cloak-and-dagger'); assert.deepEqual(c.types, ['Dark']);
+    b.choose(0, mv(0)); b.choose(1, mv(1));
+    assert.equal(c.species.id, 'dagger-form'); assert.deepEqual(c.types, ['Fairy']);
+    assert(b.log.some(l => l.a && l.a.k === 'mega' && l.a.id === 'dagger-form'), 'client sees the tag');
+    assert.match(text(b), /Dagger stepped in/);
+    b.choose(0, mv(1)); b.choose(1, mv(1));
+    assert.equal(c.species.id, 'cloak-and-dagger');
+    b.choose(0, mv(2)); b.choose(1, mv(1));
+    assert.equal(c.species.id, 'dagger-form', 'Ally Switch tags with no ally');
+    assert(!/But it failed/.test(text(b)));
+  });
+
+  await test('Light and Darkforce: they trade places every turn and the incoming partner heals 1/16', () => {
+    const b = battle([mk('cloak-and-dagger', 'Light and Darkforce', ['Protect', 'Calm Mind'])], [mk('groot', 'Flora Colossus', ['Protect', 'Bulk Up'])]);
+    const c = b.sides[0].team[0];
+    c.hp = Math.floor(c.maxhp / 2); const hp0 = c.hp;
+    b.choose(0, mv(1)); b.choose(1, mv(1));
+    assert.equal(c.species.id, 'dagger-form'); assert.equal(c.hp, hp0 + Math.floor(c.maxhp / 16));
+    b.choose(0, mv(1)); b.choose(1, mv(1));
+    assert.equal(c.species.id, 'cloak-and-dagger');
+    assert.equal(c.boosts.spa, 2, 'boosts carry over');
+  });
+
   await test("Power Absorption: Rogue copies an allowed ability, fails on one that isn't", () => {
     const RULES = require('../shared/abilityrules.js');
     assert(RULES.rogueCanCopy('Healing Factor')); assert(!RULES.rogueCanCopy('Puny Banner'));

@@ -4,6 +4,7 @@
 //
 // FORMS are battle-only forms a hero switches into through its ability (not an item):
 //   Hulk's Puny Banner turns him into Bruce Banner below 1/3 HP, and back into Hulk above 1/2 HP.
+//   Cloak & Dagger's abilities tag between Cloak (the base form) and Dagger.
 (function () {
   const FINAL_SMASHES = {};
   const FORMS = {
@@ -12,6 +13,11 @@
       stats: { hp: 55, atk: 50, def: 60, spa: 110, spd: 75, spe: 70 }, inGameHP: 200,
       ability: { name: 'Puny Banner', desc: 'When healed above 1/2 HP, transforms back into Hulk (Fighting/Poison) at the end of the turn.' },
       learnset: ['Sludge Bomb', 'Rage', 'Calm Mind', 'Acid Spray', 'Hyper Beam', 'Sludge Wave', 'Clear Smog', 'Venoshock', 'Toxic', 'Swift', 'Tri Attack', 'Endure'],
+    },
+    'dagger-form': {
+      base: 'cloak-and-dagger', id: 'dagger-form', name: 'Dagger', types: ['Fairy'],
+      stats: { hp: 80, atk: 55, def: 65, spa: 120, spd: 95, spe: 110 }, inGameHP: 275,
+      ability: { name: 'Eternal Bond', desc: 'Dagger tags in for Cloak before Fairy and Psychic moves; Cloak tags back in before Dark and Ghost moves.' },
     },
   };
   for (const [stone, f] of Object.entries(FINAL_SMASHES)) { f.stone = stone; f.image = f.id + '.png'; f.bases = [].concat(f.base); f.base = f.bases[0]; }

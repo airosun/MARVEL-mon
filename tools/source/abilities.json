@@ -74,18 +74,24 @@
  {
   "name": "Darkforce Hunger",
   "desc": "Dark moves restore 1/4 of the damage dealt.",
-  "heroes": [
-   "Cloak"
-  ],
+  "heroes": [],
   "rogueCanCopy": true,
   "deadpoolCanRoll": true
  },
  {
   "name": "Eternal Bond",
-  "desc": "If Dagger is on the team, switching to her fully cures this hero's status and heals 1/3 HP (like Regenerator).",
+  "desc": "Cloak and Dagger tag in for each other. Before a Dark or Ghost move, Cloak (Dark, bulky) takes over; before a Fairy or Psychic move, Dagger (Fairy, fast attacker) takes over. With no ally, Ally Switch tags them. HP, status, boosts and item carry over.",
   "heroes": [
-   "Cloak",
-   "Dagger"
+   "Cloak & Dagger"
+  ],
+  "rogueCanCopy": false,
+  "deadpoolCanRoll": false
+ },
+ {
+  "name": "Light and Darkforce",
+  "desc": "Cloak and Dagger trade places at the end of every turn, and the partner tagging in restores 1/16 of max HP. With no ally, Ally Switch also tags them.",
+  "heroes": [
+   "Cloak & Dagger"
   ],
   "rogueCanCopy": false,
   "deadpoolCanRoll": false
@@ -93,9 +99,7 @@
  {
   "name": "Purifying Light",
   "desc": "At the end of each turn, 30% chance to cure the status of this hero and her ally (like Healer).",
-  "heroes": [
-   "Dagger"
-  ],
+  "heroes": [],
   "rogueCanCopy": true,
   "deadpoolCanRoll": true
  },

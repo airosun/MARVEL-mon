@@ -748,10 +748,10 @@
       S.byId[fs.id] = { id: fs.id, name: fs.name, types: fs.types, stats: fs.stats, image: fs.image, abilities: [ab], hidden: ab, learnset: S.byId[fs.base].learnset, signature: S.byId[fs.base].signature, form: true };
       d.items[stone] = `Lets ${fs.bases.map(b => S.byId[b].name).join(' or ')} use its Ultimate and become ${fs.name} (once per battle; only one hero per team can Ultimate).`;
     }
-    // battle-only forms (Hulk's Bruce Banner) so the battlefield and Herodex can show them
+    // battle-only forms (Hulk's Bruce Banner, Cloak & Dagger's Dagger) so the battlefield and Herodex can show them
     for (const fm of Object.values(d.forms || {})) {
       const ab = { name: fm.ability.name, desc: fm.ability.desc };
-      S.byId[fm.id] = { id: fm.id, name: fm.name, types: fm.types, stats: fm.stats, image: fm.image, abilities: [ab], hidden: ab, learnset: fm.learnset || [], signature: [], form: true };
+      S.byId[fm.id] = { id: fm.id, name: fm.name, types: fm.types, stats: fm.stats, image: fm.image, abilities: [ab], hidden: ab, learnset: fm.learnset || (S.byId[fm.base] || {}).learnset || [], signature: [], form: true };
     }
     S.roster = S.roster.filter(r => S.byId[r.species]);
     render();

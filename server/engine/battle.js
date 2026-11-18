@@ -386,9 +386,6 @@ class Battle {
   onSwitchOut(mon) {
     const s = mon.spec;
     if (s.regenerator && !mon.fainted) mon.hp = Math.min(mon.maxhp, mon.hp + Math.floor(mon.maxhp / 3));
-    if (s.eternalBond && !mon.fainted && mon.side.team.some(m => m.species.id === s.eternalBond[mon.baseSpecies.id] && !m.fainted)) {
-      mon.hp = Math.min(mon.maxhp, mon.hp + Math.floor(mon.maxhp / 3)); mon.status = '';
-    }
     if (s.switchGift && this.activeCount === 1) mon.side.gift = { from: mon, boosts: s.switchGift };
     if (s.naturalCure && mon.status) mon.status = '';
     for (const o of this.allActive()) if (o.v.trapped === mon) delete o.v.trapped;
@@ -773,6 +770,11 @@ class Battle {
       const w = this.field.weather; const wt = { rain: 'Water', sun: 'Fire', snow: 'Ice' }[w];
       if (wt && !(mon.item === 'Utility Umbrella' && (w === 'rain' || w === 'sun'))) md = Object.assign({}, md, { type: wt, power: 100 });
     }
+    // Eternal Bond: Cloak takes Dark/Ghost moves, Dagger takes Fairy/Psychic moves
+    if (mon.spec.tagTeam && mon.spec.tagTeam.mode === 'move' && moveName !== 'Ally Switch') {
+      if (['Dark', 'Ghost'].includes(md.type)) this.tagSwap(mon, false);
+      else if (['Fairy', 'Psychic'].includes(md.type)) this.tagSwap(mon, true);
+    }
     const slotObj = mon.moves.find(x => x.name === moveName);
     if (slotObj) { mon.v.usedMoves = mon.v.usedMoves || []; if (!mon.v.usedMoves.includes(moveName)) mon.v.usedMoves.push(moveName); }
     let chosen = action && action.target;
@@ -1101,6 +1103,7 @@ class Battle {
       case 'allyboost': this.boost(target, md.allyBoosts, user); return true;
       case 'teamboost': for (const m of [user, ally].filter(Boolean)) this.boost(m, md.allyBoosts, user); return true;
       case 'allyswitch': {
+        if (!ally && user.spec.tagTeam && this.tagSwap(user, !this.isDaggerForm(user))) return true;
         if (!ally) return fail();
         const a = user.pos, b = ally.pos; user.side.active[a] = ally; user.side.active[b] = user; user.pos = b; ally.pos = a;
         this.add('switch', `${user.label} and ${ally.label} switched places!`, this.inMeta(user));
@@ -1636,6 +1639,8 @@ class Battle {
         else if (mon.item === 'Toxic Orb') this.trySetStatus(mon, 'tox', null, false, true);
       }
       if (s.punyBanner) this.punyBanner(mon);
+      if (s.tagTeam && s.tagTeam.mode === 'turn' && this.tagSwap(mon, !this.isDaggerForm(mon)) && s.tagTeam.heal && mon.hp < mon.maxhp)
+        this.heal(mon, Math.floor(mon.maxhp / s.tagTeam.heal), `${mon.label} tagged in fresh and restored a little HP!`);
       for (const k of ['encore', 'disable']) if (mon.v[k] && --mon.v[k].turns <= 0) { delete mon.v[k]; this.add('effect', `${mon.label}'s ${k} ended.`); }
       if (s.speedBoost && mon.turnsActive > 0) { this.add('ability', `${mon.label}'s ${mon.ability} activated!`); this.boost(mon, { spe: 1 }, mon); }
       if (s.moody) {
@@ -1703,6 +1708,23 @@ class Battle {
     this.add('ability', toHulk ? `${mon.side.name}'s ${from} got angry... HULK SMASH!` : `${mon.side.name}'s ${from} calmed down and turned back into puny Bruce Banner!`,
       { k: 'mega', m: this.P(mon), id: to.id, name: to.name, types: mon.types, banner: toHulk ? 'HULK SMASH!' : 'PUNY BANNER' });
     this.add('hp', '', { k: 'hp', m: this.P(mon), hp: this.pct(mon) });
+  }
+
+  // Cloak & Dagger tag in for each other (Eternal Bond / Light and Darkforce). Only works for that hero.
+  isDaggerForm(mon) { return mon.species.id === 'dagger-form'; }
+  tagSwap(mon, toDagger) {
+    const f = FORMS['dagger-form'];
+    if (mon.fainted || mon.transformed || mon.baseSpecies.id !== f.base || this.isDaggerForm(mon) === !!toDagger) return false;
+    const to = toDagger ? Object.assign({}, mon.baseSpecies, { id: f.id, name: f.name, types: f.types.slice(), stats: f.stats, image: f.image }) : mon.baseSpecies;
+    const frac = mon.hpFrac(); const from = this.isDaggerForm(mon) ? 'Dagger' : 'Cloak';
+    mon.species = to; mon.displaySpecies = to; mon.types = to.types.slice();
+    for (const st of ['hp', 'atk', 'def', 'spa', 'spd', 'spe']) mon.stats[st] = calcStat(st, to.stats[st], mon.ivs[st], mon.evs[st], LEVEL, mon.nature);
+    mon.maxhp = mon.stats.hp; mon.hp = Math.max(1, Math.round(mon.maxhp * frac));
+    const now = toDagger ? 'Dagger' : 'Cloak';
+    this.add('ability', `${mon.side.name}'s ${from} tagged out, and ${now} stepped in!`,
+      { k: 'mega', m: this.P(mon), id: to.id, name: to.name, types: mon.types, banner: now.toUpperCase() + '!' });
+    this.add('hp', '', { k: 'hp', m: this.P(mon), hp: this.pct(mon) });
+    return true;
   }
 
   // ---------------- views ----------------

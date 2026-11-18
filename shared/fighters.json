@@ -301,8 +301,8 @@
  },
  {
   "num": 5,
-  "id": "cloak",
-  "name": "Cloak",
+  "id": "cloak-and-dagger",
+  "name": "Cloak & Dagger",
   "series": "Strategist",
   "role": "Strategist",
   "types": [
@@ -311,21 +311,21 @@
   "stats": {
    "hp": 80,
    "atk": 70,
-   "def": 75,
-   "spa": 105,
-   "spd": 105,
-   "spe": 90
+   "def": 95,
+   "spa": 95,
+   "spd": 115,
+   "spe": 70
   },
   "inGameHP": 275,
   "abilities": [
    {
-    "name": "Darkforce Hunger",
-    "desc": "Dark moves restore 1/4 of the damage dealt."
+    "name": "Eternal Bond",
+    "desc": "Cloak and Dagger tag in for each other. Before a Dark or Ghost move, Cloak (Dark, bulky) takes over; before a Fairy or Psychic move, Dagger (Fairy, fast attacker) takes over. With no ally, Ally Switch tags them. HP, status, boosts and item carry over."
    }
   ],
   "hidden": {
-   "name": "Eternal Bond",
-   "desc": "If Dagger is on the team, switching to her fully cures this hero's status and heals 1/3 HP (like Regenerator)."
+   "name": "Light and Darkforce",
+   "desc": "Cloak and Dagger trade places at the end of every turn, and the partner tagging in restores 1/16 of max HP. With no ally, Ally Switch also tags them."
   },
   "signature": [
    {
@@ -342,11 +342,15 @@
    },
    {
     "move": "Ally Switch",
-    "smash": "Eternal Bond (swap with Dagger)"
+    "smash": "Eternal Bond (Cloak and Dagger tag in)"
    },
    {
     "move": "Mean Look",
     "smash": "Darkforce dimension trap"
+   },
+   {
+    "move": "Dazzling Gleam",
+    "smash": "Lightforce daggers"
    }
   ],
   "learnset": [
@@ -364,71 +368,10 @@
    "Hex",
    "Sucker Punch",
    "Obstruct",
-   "Protect"
-  ],
-  "notes": "",
-  "image": null
- },
- {
-  "num": 6,
-  "id": "dagger",
-  "name": "Dagger",
-  "series": "Strategist",
-  "role": "Strategist",
-  "types": [
-   "Fairy"
-  ],
-  "stats": {
-   "hp": 80,
-   "atk": 55,
-   "def": 70,
-   "spa": 110,
-   "spd": 115,
-   "spe": 95
-  },
-  "inGameHP": 275,
-  "abilities": [
-   {
-    "name": "Purifying Light",
-    "desc": "At the end of each turn, 30% chance to cure the status of this hero and her ally (like Healer)."
-   }
-  ],
-  "hidden": {
-   "name": "Eternal Bond",
-   "desc": "If Dagger is on the team, switching to her fully cures this hero's status and heals 1/3 HP (like Regenerator)."
-  },
-  "signature": [
-   {
-    "move": "Dazzling Gleam",
-    "smash": "Lightforce daggers"
-   },
-   {
-    "move": "Life Dew",
-    "smash": "Dagger Storm"
-   },
-   {
-    "move": "Heal Pulse",
-    "smash": "Veil of Lightforce"
-   },
-   {
-    "move": "Lunar Dance",
-    "smash": "Eternal Bond ultimate"
-   },
-   {
-    "move": "Ally Switch",
-    "smash": "Eternal Bond (swap with Cloak)"
-   },
-   {
-    "move": "Purify",
-    "smash": "Light purifies"
-   }
-  ],
-  "learnset": [
    "Dazzling Gleam",
    "Life Dew",
    "Heal Pulse",
    "Lunar Dance",
-   "Ally Switch",
    "Purify",
    "Flash",
    "Draining Kiss",
@@ -444,7 +387,7 @@
   "image": null
  },
  {
-  "num": 7,
+  "num": 6,
   "id": "doctor-strange",
   "name": "Doctor Strange",
   "series": "Vanguard",
@@ -519,7 +462,7 @@
   "image": null
  },
  {
-  "num": 8,
+  "num": 7,
   "id": "groot",
   "name": "Groot",
   "series": "Vanguard",
@@ -594,7 +537,7 @@
   "image": null
  },
  {
-  "num": 9,
+  "num": 8,
   "id": "hawkeye",
   "name": "Hawkeye",
   "series": "Duelist",
@@ -669,7 +612,7 @@
   "image": null
  },
  {
-  "num": 10,
+  "num": 9,
   "id": "hela",
   "name": "Hela",
   "series": "Duelist",
@@ -744,7 +687,7 @@
   "image": null
  },
  {
-  "num": 11,
+  "num": 10,
   "id": "hulk",
   "name": "Hulk",
   "series": "Vanguard",
@@ -819,7 +762,7 @@
   "image": null
  },
  {
-  "num": 12,
+  "num": 11,
   "id": "iron-fist",
   "name": "Iron Fist",
   "series": "Duelist",
@@ -894,7 +837,7 @@
   "image": null
  },
  {
-  "num": 13,
+  "num": 12,
   "id": "iron-man",
   "name": "Iron Man",
   "series": "Duelist",
@@ -969,7 +912,7 @@
   "image": null
  },
  {
-  "num": 14,
+  "num": 13,
   "id": "jeff-the-land-shark",
   "name": "Jeff the Land Shark",
   "series": "Strategist",
@@ -1044,7 +987,7 @@
   "image": null
  },
  {
-  "num": 15,
+  "num": 14,
   "id": "loki",
   "name": "Loki",
   "series": "Strategist",
@@ -1119,7 +1062,7 @@
   "image": null
  },
  {
-  "num": 16,
+  "num": 15,
   "id": "luna-snow",
   "name": "Luna Snow",
   "series": "Strategist",
@@ -1194,7 +1137,7 @@
   "image": null
  },
  {
-  "num": 17,
+  "num": 16,
   "id": "magik",
   "name": "Magik",
   "series": "Duelist",
@@ -1269,7 +1212,7 @@
   "image": null
  },
  {
-  "num": 18,
+  "num": 17,
   "id": "magneto",
   "name": "Magneto",
   "series": "Vanguard",
@@ -1343,7 +1286,7 @@
   "image": null
  },
  {
-  "num": 19,
+  "num": 18,
   "id": "mantis",
   "name": "Mantis",
   "series": "Strategist",
@@ -1418,7 +1361,7 @@
   "image": null
  },
  {
-  "num": 20,
+  "num": 19,
   "id": "moon-knight",
   "name": "Moon Knight",
   "series": "Duelist",
@@ -1493,7 +1436,7 @@
   "image": null
  },
  {
-  "num": 21,
+  "num": 20,
   "id": "namor",
   "name": "Namor",
   "series": "Duelist",
@@ -1568,7 +1511,7 @@
   "image": null
  },
  {
-  "num": 22,
+  "num": 21,
   "id": "peni-parker",
   "name": "Peni Parker",
   "series": "Vanguard",
@@ -1643,7 +1586,7 @@
   "image": null
  },
  {
-  "num": 23,
+  "num": 22,
   "id": "psylocke",
   "name": "Psylocke",
   "series": "Duelist",
@@ -1718,7 +1661,7 @@
   "image": null
  },
  {
-  "num": 24,
+  "num": 23,
   "id": "the-punisher",
   "name": "The Punisher",
   "series": "Duelist",
@@ -1793,7 +1736,7 @@
   "image": null
  },
  {
-  "num": 25,
+  "num": 24,
   "id": "rocket-raccoon",
   "name": "Rocket Raccoon",
   "series": "Strategist",
@@ -1868,7 +1811,7 @@
   "image": null
  },
  {
-  "num": 26,
+  "num": 25,
   "id": "scarlet-witch",
   "name": "Scarlet Witch",
   "series": "Duelist",
@@ -1943,7 +1886,7 @@
   "image": null
  },
  {
-  "num": 27,
+  "num": 26,
   "id": "spider-man",
   "name": "Spider-Man",
   "series": "Duelist",
@@ -2018,7 +1961,7 @@
   "image": null
  },
  {
-  "num": 28,
+  "num": 27,
   "id": "squirrel-girl",
   "name": "Squirrel Girl",
   "series": "Duelist",
@@ -2093,7 +2036,7 @@
   "image": null
  },
  {
-  "num": 29,
+  "num": 28,
   "id": "star-lord",
   "name": "Star-Lord",
   "series": "Duelist",
@@ -2168,7 +2111,7 @@
   "image": null
  },
  {
-  "num": 30,
+  "num": 29,
   "id": "storm",
   "name": "Storm",
   "series": "Duelist",
@@ -2243,7 +2186,7 @@
   "image": null
  },
  {
-  "num": 31,
+  "num": 30,
   "id": "thor",
   "name": "Thor",
   "series": "Vanguard",
@@ -2318,7 +2261,7 @@
   "image": null
  },
  {
-  "num": 32,
+  "num": 31,
   "id": "venom",
   "name": "Venom",
   "series": "Vanguard",
@@ -2393,7 +2336,7 @@
   "image": null
  },
  {
-  "num": 33,
+  "num": 32,
   "id": "winter-soldier",
   "name": "Winter Soldier",
   "series": "Duelist",
@@ -2468,7 +2411,7 @@
   "image": null
  },
  {
-  "num": 34,
+  "num": 33,
   "id": "wolverine",
   "name": "Wolverine",
   "series": "Duelist",
@@ -2543,7 +2486,7 @@
   "image": null
  },
  {
-  "num": 35,
+  "num": 34,
   "id": "mister-fantastic",
   "name": "Mister Fantastic",
   "series": "Duelist",
@@ -2617,7 +2560,7 @@
   "image": null
  },
  {
-  "num": 36,
+  "num": 35,
   "id": "invisible-woman",
   "name": "Invisible Woman",
   "series": "Strategist",
@@ -2691,7 +2634,7 @@
   "image": null
  },
  {
-  "num": 37,
+  "num": 36,
   "id": "human-torch",
   "name": "Human Torch",
   "series": "Duelist",
@@ -2766,7 +2709,7 @@
   "image": null
  },
  {
-  "num": 38,
+  "num": 37,
   "id": "the-thing",
   "name": "The Thing",
   "series": "Vanguard",
@@ -2841,7 +2784,7 @@
   "image": null
  },
  {
-  "num": 39,
+  "num": 38,
   "id": "emma-frost",
   "name": "Emma Frost",
   "series": "Vanguard",
@@ -2916,7 +2859,7 @@
   "image": null
  },
  {
-  "num": 40,
+  "num": 39,
   "id": "ultron",
   "name": "Ultron",
   "series": "Strategist",
@@ -2991,7 +2934,7 @@
   "image": null
  },
  {
-  "num": 41,
+  "num": 40,
   "id": "phoenix",
   "name": "Phoenix",
   "series": "Duelist",
@@ -3066,7 +3009,7 @@
   "image": null
  },
  {
-  "num": 42,
+  "num": 41,
   "id": "blade",
   "name": "Blade",
   "series": "Duelist",
@@ -3141,7 +3084,7 @@
   "image": null
  },
  {
-  "num": 43,
+  "num": 42,
   "id": "angela",
   "name": "Angela",
   "series": "Vanguard",
@@ -3216,7 +3159,7 @@
   "image": null
  },
  {
-  "num": 44,
+  "num": 43,
   "id": "daredevil",
   "name": "Daredevil",
   "series": "Duelist",
@@ -3287,7 +3230,7 @@
   "image": null
  },
  {
-  "num": 45,
+  "num": 44,
   "id": "gambit",
   "name": "Gambit",
   "series": "Strategist",
@@ -3362,7 +3305,7 @@
   "image": null
  },
  {
-  "num": 46,
+  "num": 45,
   "id": "rogue",
   "name": "Rogue",
   "series": "Vanguard",
@@ -3436,7 +3379,7 @@
   "image": null
  },
  {
-  "num": 47,
+  "num": 46,
   "id": "deadpool",
   "name": "Deadpool",
   "series": "Multi-Role",
@@ -3510,7 +3453,7 @@
   "image": null
  },
  {
-  "num": 48,
+  "num": 47,
   "id": "elsa-bloodstone",
   "name": "Elsa Bloodstone",
   "series": "Duelist",
@@ -3581,7 +3524,7 @@
   "image": null
  },
  {
-  "num": 49,
+  "num": 48,
   "id": "white-fox",
   "name": "White Fox",
   "series": "Strategist",
@@ -3656,7 +3599,7 @@
   "image": null
  },
  {
-  "num": 50,
+  "num": 49,
   "id": "black-cat",
   "name": "Black Cat",
   "series": "Duelist",
@@ -3731,7 +3674,7 @@
   "image": null
  },
  {
-  "num": 51,
+  "num": 50,
   "id": "devil-dinosaur",
   "name": "Devil Dinosaur",
   "series": "Vanguard",
@@ -3806,7 +3749,7 @@
   "image": null
  },
  {
-  "num": 52,
+  "num": 51,
   "id": "cyclops",
   "name": "Cyclops",
   "series": "Duelist",
@@ -3881,7 +3824,7 @@
   "image": null
  },
  {
-  "num": 53,
+  "num": 52,
   "id": "jubilee",
   "name": "Jubilee",
   "series": "Strategist",
@@ -3956,7 +3899,7 @@
   "image": null
  },
  {
-  "num": 54,
+  "num": 53,
   "id": "the-hood",
   "name": "The Hood",
   "series": "Vanguard",
@@ -4031,7 +3974,7 @@
   "image": null
  },
  {
-  "num": 55,
+  "num": 54,
   "id": "gorr",
   "name": "Gorr",
   "series": "Duelist",
@@ -4106,7 +4049,7 @@
   "image": null
  },
  {
-  "num": 56,
+  "num": 55,
   "id": "nightcrawler",
   "name": "Nightcrawler",
   "series": "Strategist",

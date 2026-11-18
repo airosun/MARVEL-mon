@@ -118,7 +118,8 @@ def('Master of Magnetism', { magnetPull: true });
 
 // ---- Switching out ----
 def(['Healing Bubble', 'Upload Consciousness'], { regenerator: true });
-def('Eternal Bond', { eternalBond: { cloak: 'dagger', dagger: 'cloak' } });
+def('Eternal Bond', { tagTeam: { mode: 'move' } });
+def('Light and Darkforce', { tagTeam: { mode: 'turn', heal: 16 } });
 
 // ---- End of turn ----
 def(['Flora Colossus', 'Chi Healing'], { residualHeal: 1 / 16 });

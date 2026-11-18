@@ -63,7 +63,7 @@
     wideguard: 'Protects your side from moves that hit more than one hero this turn.',
     allyboost: "Raises your ally's Attack and Defense by 1. Fails without an ally.",
     teamboost: 'Raises the stats of the user and its ally.',
-    allyswitch: 'The user and its ally swap places. Fails without an ally.',
+    allyswitch: 'The user and its ally swap places. Fails without an ally (Cloak & Dagger tag partners instead).',
     meanlook: "The target can't switch out while the user is in battle.",
     endure: 'The user survives any hit this turn with at least 1 HP. Likely to fail if used repeatedly.',
     lunardance: 'The user faints. The hero that replaces it is fully healed (HP, status and PP).',
