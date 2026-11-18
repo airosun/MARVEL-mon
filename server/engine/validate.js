@@ -52,7 +52,7 @@ function validateStandardBuild(poolPicks, builds) {
 // Elite: full sets from the player's roster, each carrying the server's signature
 function validateEliteTeam(team, verify) {
   const errors = [];
-  if (!Array.isArray(team) || team.length !== 6) return { ok: false, errors: ['An Elite team needs exactly 6 heroes.'] };
+  if (!Array.isArray(team) || team.length !== 6) return { ok: false, errors: ['A Strike Squad needs exactly 6 heroes.'] };
   const sets = team.map(t => {
     if (!t || !verify(t)) { errors.push(`${(BY_ID[t && t.species] || { name: 'A hero' }).name} isn't a verified roster hero.`); return null; }
     return buildSet(t, t, errors);

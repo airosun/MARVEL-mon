@@ -24,7 +24,7 @@
     draft: {}, builds: {}, lineups: {}, turn: {}, room: null,
     account: null, dataVersion: 0, accountReady: false,
   };
-  // Signed in: roster and Elite teams are saved to the account (any device). Guest: saved in this browser.
+  // Signed in: roster and Strike Squads are saved to the account (any device). Guest: saved in this browser.
   let saveTimer = null;
   const accountData = () => ({ roster: S.roster, elite: S.elite, selElite: S.selElite });
   function adoptAccountData(r) { S.roster = r.data.roster; S.elite = r.data.elite; S.selElite = r.data.selElite; S.dataVersion = r.version; }
@@ -91,7 +91,7 @@
   function closeModal() { $('#modal').classList.add('hidden'); $('#modalCard').innerHTML = ''; }
   $('#modal').addEventListener('click', e => { if (e.target.id === 'modal') closeModal(); });
   const F = id => S.byId[id];
-  const label = (mode, format) => `${mode === 'elite' ? 'Elite' : 'Standard'} ${format === 'doubles' ? 'Doubles' : 'Singles'}`;
+  const label = (mode, format) => `${mode === 'elite' ? 'Strike Squad' : 'Standard'} ${format === 'doubles' ? 'Doubles' : 'Singles'}`;
   function statsOf(b) { const f = F(b.species); const o = {}; for (const s of STATS) o[s] = DEX.calcStat(s, f.stats[s], b.ivs[s], 0, LEVEL, b.nature); return o; }
   function natureTag(n) { const x = S.dex.natures[n] || {}; return x.plus ? `${n} <span class="muted">(+${SL[x.plus]} −${SL[x.minus]})</span>` : `${n} <span class="muted">(neutral)</span>`; }
   function abilityInfo(f, name) { name = (S.dex.renamed || {})[name] || name; const a = [...f.abilities, f.hidden].find(x => x.name === name) || { name, desc: '' }; return { ...a, hidden: f.hidden.name === name }; }
@@ -180,7 +180,7 @@
   socket.on('searchStatus', d => { S.searching = d.searching; if (S.tab === 'home') renderHome(); });
   socket.on('challenged', ({ from, name, mode, format, label: lbl }) => {
     modal(`<h2>Challenge!</h2><p><b>${esc(name)}</b> wants a <b>${esc(lbl)}</b> battle.</p>
-      ${mode === 'elite' ? `<div class="field"><label>Your Elite team</label>${eliteSelect('chTeam')}</div>` : '<p class="muted">Standard battle: you will draft from 20 random heroes.</p>'}
+      ${mode === 'elite' ? `<div class="field"><label>Your Strike Squad</label>${eliteSelect('chTeam')}</div>` : '<p class="muted">Standard battle: you will draft from 20 random heroes.</p>'}
       <div class="row" style="margin-top:14px"><button class="primary" id="chAccept">Accept</button><button id="chDecline">Decline</button></div>`);
     $('#chAccept').onclick = () => {
       let team = null;
@@ -206,7 +206,7 @@
     if (S.account) {
       modal(`<div id="acCard"><div class="muted">Loading your Battler Card…</div></div>
         <div class="row" style="margin-top:8px"><button class="small" id="acEditCard" disabled>Edit Battler Card</button><span class="grow"></span></div>
-        <p class="muted small">Your roster, Elite teams and Battle Pass rolls are saved to this account, so they follow you to any device.</p>
+        <p class="muted small">Your roster, Strike Squads and Battle Pass rolls are saved to this account, so they follow you to any device.</p>
         <details class="pw"><summary>Change password</summary>
           <div class="field"><label>Current password</label><input id="pwCur" type="password" autocomplete="current-password"></div>
           <div class="field"><label>New password</label><input id="pwNew" type="password" autocomplete="new-password" placeholder="At least 8 characters"></div>
@@ -232,7 +232,7 @@
     }
     const isNew = tab === 'new';
     modal(`<div class="seg acct-tabs"><button data-actab="in" class="${isNew ? '' : 'on'}">Sign in</button><button data-actab="new" class="${isNew ? 'on' : ''}">Create account</button></div>
-      <p class="muted small">${isNew ? 'An account saves your roster, Elite teams and daily Battle Pass rolls so you can play from any device.' : 'Sign in to load your roster, Elite teams and Battle Pass rolls.'}
+      <p class="muted small">${isNew ? 'An account saves your roster, Strike Squads and daily Battle Pass rolls so you can play from any device.' : 'Sign in to load your roster, Strike Squads and Battle Pass rolls.'}
       ${S.roster.length || S.elite.length ? ' The roster and teams saved in this browser will be moved into your account.' : ''}</p>
       <form id="acForm" autocomplete="on">
         <div class="field"><label>Username</label><input id="acUser" maxlength="20" autocomplete="username" autocapitalize="off" spellcheck="false" ${isNew ? 'placeholder="3–20 letters, numbers, _ or -"' : ''}></div>
@@ -267,7 +267,7 @@
 
   // ---------- tabs ----------
   function renderTabs() {
-    const tabs = [['home', 'Home'], ['pass', 'Battle Pass'], ['elite', 'Elite Teams'], ['road', 'Road to 50'], ['dex', 'Herodex'], ['calc', 'Calc'], ['stats', 'Stats'], ['about', 'What is MARVEL-mon?']];
+    const tabs = [['home', 'Home'], ['pass', 'Battle Pass'], ['elite', 'Strike Squads'], ['road', 'Road to 50'], ['dex', 'Herodex'], ['calc', 'Calc'], ['stats', 'Stats'], ['about', 'What is MARVEL-mon?']];
     let h = tabs.map(([k, n]) => `<button class="tab ${S.tab === k ? 'active' : ''}" data-tab="${k}">${n}</button>`).join('');
     if (S.tab === 'anims') h += `<button class="tab active" data-tab="anims">🎬 Animations</button>`;
     if (S.room) h += `<button class="tab room-tab ${S.tab === 'room' ? 'active' : ''}" data-tab="room">🚪 Room ${esc(S.room.code)}</button>`;
@@ -317,14 +317,14 @@
   // ---------- home ----------
   function eliteSelect(id) {
     const ok = S.elite.map((t, i) => ({ t, i })).filter(x => eliteReady(x.t));
-    if (!ok.length) return `<select id="${id}" disabled><option>No complete Elite team yet</option></select>`;
+    if (!ok.length) return `<select id="${id}" disabled><option>No complete Strike Squad yet</option></select>`;
     return `<select id="${id}">${ok.map(({ t, i }) => `<option value="${i}" ${i === S.selElite ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</select>`;
   }
   const rosterById = uid => S.roster.find(r => r.uid === uid);
   function eliteReady(t) { return t.mons.length === 6 && t.mons.every(m => rosterById(m.uid) && m.moves.filter(Boolean).length); }
   function eliteTeamSets(i) {
     const t = S.elite[i];
-    if (!t || !eliteReady(t)) { toast('Build a complete Elite team (6 heroes with moves) in the Elite Teams tab first.', 4500); return null; }
+    if (!t || !eliteReady(t)) { toast('Build a complete Strike Squad (6 heroes with moves) in the Strike Squads tab first.', 4500); return null; }
     return t.mons.map(m => { const r = rosterById(m.uid); return Object.assign({}, r, { moves: m.moves.filter(Boolean), item: m.item || '', gender: m.gender || r.gender || GENDER.defaultGender(r.species) }); });
   }
   function teamForMode() {
@@ -342,7 +342,7 @@
         <h1>Battle with Marvel Rivals heroes</h1><p class="muted small" style="margin:-6px 0 10px">New here? <a href="#" data-goto-about>Read <b>What is MARVEL-mon?</b></a> for how everything works.</p>
         <div class="seg" id="segMode">
           <button data-mode="standard" class="${S.mode === 'standard' ? 'on' : ''}"><b>Standard Battle</b><span>Draft 6 of 20 random heroes, then set moves and items</span></button>
-          <button data-mode="elite" class="${S.mode === 'elite' ? 'on' : ''}"><b>Elite Battle</b><span>Bring a pre-built team from your Battle Pass roster</span></button>
+          <button data-mode="elite" class="${S.mode === 'elite' ? 'on' : ''}"><b>Strike Squad Battle</b><span>Bring a pre-built team from your Battle Pass roster</span></button>
         </div>
         <div class="seg small" id="segFormat">
           <button data-format="singles" class="${S.format === 'singles' ? 'on' : ''}"><b>Singles</b><span>Bring 6, pick 3</span></button>
@@ -354,7 +354,7 @@
           <button id="btnCpu">Battle the CPU</button>
           ${S.searching ? `<span class="pill">Searching ${esc(label(...S.searching.split(':')))}…</span>` : ''}
         </div>
-        ${S.mode === 'elite' && !S.elite.some(eliteReady) ? `<p class="muted small" style="margin:10px 0 0">You need a 6-hero Elite team. Roll the <a href="#" data-goto="pass">Battle Pass</a> to build your roster, then build a team in <a href="#" data-goto="elite">Elite Teams</a>.</p>` : ''}
+        ${S.mode === 'elite' && !S.elite.some(eliteReady) ? `<p class="muted small" style="margin:10px 0 0">You need a 6-hero Strike Squad. Roll the <a href="#" data-goto="pass">Battle Pass</a> to build your roster, then build a team in <a href="#" data-goto="elite">Strike Squads</a>.</p>` : ''}
       </section>
       ${SSBU.homeRoomHtml()}
       <section class="card">
@@ -407,7 +407,7 @@
         <div class="fgrid">${pending.map(b => fighterCard(b, { sel: S.passSel.has(b.uid), attr: `data-pass="${b.uid}"`, extra: rosterHas(b.species) ? '<div class="muted small">You already own one</div>' : '' })).join('')}</div></section>` : ''}
       <section class="card" style="margin-top:14px">
         <h2>Your roster (${S.roster.length})</h2>
-        <p class="muted small" style="margin-top:-6px">${S.account ? 'Saved to your account.' : 'Saved in this browser. <a href="#" data-signin>Sign in</a> to keep them on any device.'} Use these heroes to build Elite teams.</p>
+        <p class="muted small" style="margin-top:-6px">${S.account ? 'Saved to your account.' : 'Saved in this browser. <a href="#" data-signin>Sign in</a> to keep them on any device.'} Use these heroes to build Strike Squads.</p>
         ${S.roster.length ? `<div class="fgrid">${rosterSorted.map(b => fighterCard(b, { extra: `<button class="small ghost" data-release="${b.uid}">Release</button>` })).join('')}</div>` : '<div class="muted">No heroes yet — roll the Battle Pass!</div>'}
       </section>`;
     const r = $('#btnRoll'); if (r) r.onclick = () => socket.emit('pass:roll', {}, res => {
@@ -441,7 +441,7 @@
   const rosterHas = species => S.roster.some(r => r.species === species);
   socket.on('connect', () => socket.emit('pass:status', {}, st => { S.pass = st; if (S.tab === 'pass') renderPass(); }));
 
-  // ---------- moves / item editor (shared by Standard build and Elite teams) ----------
+  // ---------- moves / item editor (shared by Standard build and Strike Squads) ----------
   const MV_MENUS = {}; let MV_SEQ = 0; let MV_OPEN = null; const POOL_OPEN = new Set(); // {set, i, scroll}: keeps an open move list open across redraws
   function setEditor(b, build, idPrefix, usedItems) {
     const f = F(b.species);
@@ -495,19 +495,19 @@
   }
   function itemCounts(builds) { const m = new Map(); for (const b of builds) if (b.item) m.set(b.item, (m.get(b.item) || 0) + 1); return m; }
 
-  // ---------- Elite Teams ----------
+  // ---------- Strike Squads ----------
   function renderElite() {
     if (S.editElite !== null && !S.elite[S.editElite]) S.editElite = null;
     $('#view').innerHTML = `<div class="tb">
       <section class="card">
-        <h2>Elite teams</h2>
+        <h2>Strike Squads</h2>
         <button class="primary" id="eNew" ${S.roster.length ? '' : 'disabled'}>New team</button> <button id="eImport" ${S.roster.length ? '' : 'disabled'}>Import</button>
         ${S.roster.length ? '' : '<p class="muted small">Roll the Battle Pass first — teams are built from your roster.</p>'}
         <div class="list" style="max-height:none;margin-top:10px">${S.elite.map((t, i) => `<div class="team-row ${i === S.editElite ? 'sel' : ''}" data-et="${i}"><div class="row"><b class="grow">${esc(t.name)}</b><span class="pill">${eliteReady(t) ? 'Ready' : t.mons.length + '/6'}</span></div><div class="mini">${t.mons.map(m => { const r = rosterById(m.uid); return r ? badge(F(r.species), 'sm', m.gender || r.gender) : ''; }).join('')}</div></div>`).join('') || '<div class="muted">No teams yet.</div>'}</div>
       </section>
       <section class="card" id="eEditor">${S.editElite === null ? '<div class="muted">Pick a team or make a new one. Each team has 6 heroes from your roster; you choose their moves and items.</div>' : ''}</section></div>`;
     $('#eImport').onclick = () => SSBU.importTeam();
-    $('#eNew').onclick = () => { S.elite.push({ name: 'Elite team ' + (S.elite.length + 1), mons: [] }); S.editElite = S.elite.length - 1; S.eliteSlot = 0; saveRoster(); renderElite(); };
+    $('#eNew').onclick = () => { S.elite.push({ name: 'Strike Squad ' + (S.elite.length + 1), mons: [] }); S.editElite = S.elite.length - 1; S.eliteSlot = 0; saveRoster(); renderElite(); };
     $$('[data-et]').forEach(el => el.onclick = () => { S.editElite = +el.dataset.et; S.eliteSlot = 0; renderElite(); });
     if (S.editElite !== null) renderEliteEditor();
   }

@@ -2,7 +2,7 @@
 // One run per player (account "u:<id>" or guest browser "g:<id>"), saved in the store after every change,
 // so a run can be paused and picked up later on the same account/browser.
 //
-// Start with an Elite team, 6 heroes from your roster, or 6 random heroes. Win a floor and you may
+// Start with a Strike Squad, 6 heroes from your roster, or 6 random heroes. Win a floor and you may
 // recruit one hero from the boss's team (for this run only) to replace one of yours. Between floors
 // you can change moves and items. Your team is fully healed for every fight. A loss ends the run.
 const BOSSES = require('./data/road_bosses.json');
@@ -90,7 +90,7 @@ function start(key, { source, team, fighters } = {}) {
       const errors = [];
       sets = picks.map(f => { const b = genFighter(f.id); return setFor(b, { moves: randomMoves(f.id), item: '' }, errors); });
       if (errors.length) return { error: errors.join('\n') };
-    } else return { error: 'Choose how to start: an Elite team, heroes you own, or a random team.' };
+    } else return { error: 'Choose how to start: a Strike Squad, heroes you own, or a random team.' };
     sets.forEach(s => { s.uid = uid(); delete s.sig; });
     d.run = { id: uid(), source, started: Date.now(), floor: 1, status: 'active', team: sets, history: [], matchId: null, recruitFloor: null };
     d.runs++;

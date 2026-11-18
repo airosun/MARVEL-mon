@@ -1,4 +1,4 @@
-// Saved roster + Elite teams for signed-in players. Only heroes with a valid server signature are kept,
+// Saved roster + Strike Squads for signed-in players. Only heroes with a valid server signature are kept,
 // and everything is size-capped, so a player can't store junk or edit a hero's nature/IVs/ability.
 const { verify } = require('./engine/roster.js');
 const GENDER = require('../shared/genders.js');
@@ -17,7 +17,7 @@ function sanitize(d, verifyFn = verify) {
   }
   const speciesOf = Object.fromEntries(roster.map(f => [f.uid, f.species]));
   const elite = (Array.isArray(d.elite) ? d.elite : []).slice(0, MAX_TEAMS).map((t, i) => ({
-    name: str(t && t.name, 40) || `Elite team ${i + 1}`,
+    name: str(t && t.name, 40) || `Strike Squad ${i + 1}`,
     mons: (Array.isArray(t && t.mons) ? t.mons : []).slice(0, 6).filter(m => m && seen.has(m.uid))
       .map(m => ({ uid: m.uid, moves: (Array.isArray(m.moves) ? m.moves : []).slice(0, 4).map(x => str(x, 40)), item: str(m.item, 40), gender: GENDER.normalize(speciesOf[m.uid], m.gender) })),
   }));

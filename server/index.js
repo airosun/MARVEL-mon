@@ -111,7 +111,7 @@ const queues = new Map();    // `${mode}:${format}` -> [clientId]
 const lobbyChat = [];
 
 const MODES = ['standard', 'elite'], FORMATS = ['singles', 'doubles'];
-const LABEL = { standard: 'Standard', elite: 'Elite', singles: 'Singles', doubles: 'Doubles' };
+const LABEL = { standard: 'Standard', elite: 'Strike Squad', singles: 'Singles', doubles: 'Doubles' };
 const clean = s => String(s || '').replace(/[<>]/g, '').trim().slice(0, 24);
 const userList = () => [...users.values()].filter(u => u.sockets.size).map(u => ({ id: u.id, name: u.name, account: !!u.account, avatar: u.avatar || null, searching: u.searching ? u.searching.key : null }));
 // live matches for the lobby (private-room battles aren't listed)
@@ -243,7 +243,7 @@ io.on('connection', socket => {
     reply(ack, res);
   }));
 
-  // ----- saved roster and Elite teams (signed-in players) -----
+  // ----- saved roster and Strike Squads (signed-in players) -----
   async function saveWith(userId, change) {
     for (let tries = 0; tries < 5; tries++) {
       const cur = await store.getData(userId);
@@ -368,7 +368,7 @@ io.on('connection', socket => {
     else { e.spectators.add(socket.id); socket.emit('match', e.match.view(null)); }
     reply(ack, { ok: true });
   }));
-  // rematch: vs CPU starts right away; vs a player both have to ask. Same mode, format and Elite teams.
+  // rematch: vs CPU starts right away; vs a player both have to ask. Same mode, format and Strike Squads.
   socket.on('rematch', need(({ id } = {}, ack) => {
     const e = matches.get(id); if (!e || !e.match.ended) return reply(ack, { error: 'That match is not over.' });
     const n = e.players.indexOf(me.id); if (n < 0) return reply(ack, { error: 'You were not in that match.' });

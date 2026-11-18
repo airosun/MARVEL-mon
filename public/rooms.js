@@ -56,13 +56,13 @@
     const hostCtl = r.isHost ? (r.running ? `<button id="rmPause">${idle ? 'Pause battles' : 'Pause after this battle'}</button>` : `<button class="primary" id="rmStart">${r.history.length ? 'Resume battles' : 'Start battling'}</button>`) : '';
     const settings = r.isHost ? `
         <div class="row wrap room-settings">
-          <select id="rmMode" ${idle ? '' : 'disabled'}><option value="standard" ${r.mode === 'standard' ? 'selected' : ''}>Standard Battle</option><option value="elite" ${r.mode === 'elite' ? 'selected' : ''}>Elite Battle</option></select>
+          <select id="rmMode" ${idle ? '' : 'disabled'}><option value="standard" ${r.mode === 'standard' ? 'selected' : ''}>Standard Battle</option><option value="elite" ${r.mode === 'elite' ? 'selected' : ''}>Strike Squad Battle</option></select>
           <select id="rmFormat" ${idle ? '' : 'disabled'}><option value="singles" ${r.format === 'singles' ? 'selected' : ''}>Singles</option><option value="doubles" ${r.format === 'doubles' ? 'selected' : ''}>Doubles</option></select>
           <select id="rmRot" ${idle ? '' : 'disabled'}>${Object.entries(ROT).map(([k, v]) => `<option value="${k}" ${r.rotation === k ? 'selected' : ''}>${v}</option>`).join('')}</select>
           ${idle ? '' : '<span class="muted small">Settings can be changed between battles.</span>'}
         </div>` : `<div class="row wrap"><span class="pill">${esc(label(r.mode, r.format))}</span><span class="pill">${ROT[r.rotation]}</span></div>`;
     const teamBox = eliteTeams ? `<div class="room-team">
-        <label class="small muted">Your Elite team for this room</label>
+        <label class="small muted">Your Strike Squad for this room</label>
         <div class="row wrap">${U.eliteSelect('rmTeam')}<button id="rmUseTeam">${r.you.hasTeam ? 'Switch team' : 'Use this team'}</button></div>
         <div class="small ${r.you.hasTeam ? '' : 'warn-text'}">${r.you.hasTeam ? `Using <b>${esc(r.you.teamName)}</b>.` : 'Pick a team to get in line.'}</div>
       </div>` : '';
@@ -117,7 +117,7 @@
     const now = $('#rmNow'); if (now) now.onclick = () => roomAct('start');
     $('#rmQueue').onclick = () => roomAct('queue', { in: !r.you.inQueue });
     const ut = $('#rmUseTeam'); if (ut) ut.onclick = () => {
-      const sel = $('#rmTeam'); if (!sel || sel.disabled) return toast('Build a complete Elite team in the Elite Teams tab first.', 4500);
+      const sel = $('#rmTeam'); if (!sel || sel.disabled) return toast('Build a complete Strike Squad in the Strike Squads tab first.', 4500);
       const team = U.eliteTeamSets(+sel.value); if (!team) return;
       roomAct('team', { team, name: S.elite[+sel.value].name }, () => toast('Team set for this room.'));
     };

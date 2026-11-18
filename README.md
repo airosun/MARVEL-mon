@@ -30,14 +30,14 @@ Hulk must be Hulk (not Bruce Banner) to transform, and Monster Hulk never turns 
 4. Each player secretly picks their lineup in order (3 for singles, 4 for doubles). The first one (singles) or two (doubles) lead.
 5. Battle.
 
-**Elite Battle**
-1. Bring a pre-built team of 6 from your roster (built in the **Elite Teams** tab).
+**Strike Squad Battle**
+1. Bring a pre-built team of 6 from your roster (built in the **Strike Squads** tab).
 2. Both teams of 6 are revealed.
 3. Pick your lineup in secret, then battle.
 
 **Battle Pass:** 3 rolls per day (the day resets at midnight US Eastern). Each roll shows 20 random heroes, randomized the same way as Standard, and you keep up to 5 for your roster.
 
-**Accounts:** sign in with a username and password (the **Sign in** button, top right) to save your roster, Elite teams and daily Battle Pass rolls to your account, so they follow you to any device. You can still play as a guest: a guest's roster and teams are saved in that browser. When you sign in or create an account, that browser's roster, teams and today's Battle Pass rolls move into the account. Rolls already used that day still count, so switching accounts doesn't give extra rolls. Edits from another tab or device are picked up automatically. Each roster hero carries a server signature, so its nature, IVs and ability can't be edited before an Elite battle. Accounts have no email, so a forgotten password can't be reset from the site.
+**Accounts:** sign in with a username and password (the **Sign in** button, top right) to save your roster, Strike Squads and daily Battle Pass rolls to your account, so they follow you to any device. You can still play as a guest: a guest's roster and teams are saved in that browser. When you sign in or create an account, that browser's roster, teams and today's Battle Pass rolls move into the account. Rolls already used that day still count, so switching accounts doesn't give extra rolls. Edits from another tab or device are picked up automatically. Each roster hero carries a server signature, so its nature, IVs and ability can't be edited before an Elite battle. Accounts have no email, so a forgotten password can't be reset from the site.
 
 **Hand-drawn sprites:** drawings on a white background go in `public/sprites-raw/` (named like `spider-man_front.png` / `spider-man_back.png`; see the README there). `npm run sprites` (`tools/process_sprites.py`) removes the white background, keeps each hero's size relative to its canvas, and lines everyone up on the same ground line in `public/sprites/`. Drawings are used only on the battlefield: front for the opponent's side, back for yours. The Herodex, Battler Cards and menus keep the official art, and so does any hero that hasn't been drawn yet.
 
@@ -47,19 +47,19 @@ Hulk must be Hulk (not Bruce Banner) to transform, and Monster Hulk never turns 
 
 **Scouting:** in team preview and in battle, hover (or tap) an opposing hero to see its base stats, its level 50 Speed range, and its possible abilities. In battle you also see the moves it has used and any ability or item it has revealed.
 
-**After a battle:** **Rematch** (vs the CPU it starts right away; vs a player both have to accept, with the same Elite teams), a **replay link**, and quick-chat buttons (GG, Good luck!, …).
+**After a battle:** **Rematch** (vs the CPU it starts right away; vs a player both have to accept, with the same Strike Squads), a **replay link**, and quick-chat buttons (GG, Good luck!, …).
 
 **Replays:** every finished battle is saved, and `/replay/<id>` plays it back with the animations. The newest 5,000 battles keep their replays.
 
 **Stats tab:** your win/loss record by mode and opponent, your most-used heroes, your recent battles with replays, site-wide **hero usage** (how often each hero is brought and its win rate, by format, over the last 7/30/90 days), and recent player battles.
 
-**Battler Cards:** signed-in players get a card in one of 12 colors, with a hero avatar (any hero, or the Bruce Banner and Cloak forms), a title, a short bio, a showcase Elite team, their record and their favorite heroes. Edit yours from the account menu (click your name at the top) or the Stats tab. Titles, bios and showcase team names can't contain curse words or slurs. Disguised spellings are caught too (see `server/moderation.js`). Tap a signed-in player's name in the Online list to see theirs. Their avatar also shows next to their name.
+**Battler Cards:** signed-in players get a card in one of 12 colors, with a hero avatar (any hero, or the Bruce Banner and Cloak forms), a title, a short bio, a showcase Strike Squad, their record and their favorite heroes. Edit yours from the account menu (click your name at the top) or the Stats tab. Titles, bios and showcase team names can't contain curse words or slurs. Disguised spellings are caught too (see `server/moderation.js`). Tap a signed-in player's name in the Online list to see theirs. Their avatar also shows next to their name.
 
 **Sound:** battle sound effects for hits, super effective and critical hits, misses, switching, stat changes, healing, fainting, flinches, Protect, transformations, and a win or lose cue. They're synthesized in the browser, with no audio files. The 🔊 button at the top sets the volume or mutes, saved per browser. There's no background music yet (`public/audio.js`).
 
 **Calc tab:** a damage calculator that uses the battle engine. Set the attacker and defender (hero, ability, nature, IVs, item, boosts, status, HP) and the field (weather, screens, crit, doubles spread), and it shows the damage range and how many hits it takes to KO. You can load a hero straight from your roster.
 
-**Import / export:** in Elite Teams, **Export** gives a Showdown-style text version of a team. **Import** takes one and matches each hero to the closest one in your roster (nature, ability, IVs). It skips moves the hero can't learn and items it can't hold, and tells you what it changed.
+**Import / export:** in Strike Squads, **Export** gives a Showdown-style text version of a team. **Import** takes one and matches each hero to the closest one in your roster (nature, ability, IVs). It skips moves the hero can't learn and items it can't hold, and tells you what it changed.
 
 The **What is MARVEL-mon?** tab (`public/about.js`) is an in-site guide to everything below.
 

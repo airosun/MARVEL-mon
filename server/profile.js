@@ -1,4 +1,4 @@
-// Battler Cards: a signed-in player's avatar, title, short bio and a showcased Elite team.
+// Battler Cards: a signed-in player's avatar, title, short bio and a showcased Strike Squad.
 const FIGHTERS = require('../shared/fighters.json');
 const { FINAL_SMASHES, FORMS } = require('../shared/megas.js');
 const GENDER = require('../shared/genders.js');

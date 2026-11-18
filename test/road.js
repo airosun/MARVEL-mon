@@ -54,7 +54,7 @@ const bst = id => Object.values(FIGHTERS.find(f => f.id === id).stats).reduce((a
     assert((await Road.start('g:a', { source: 'random' })).error, 'already running');
   });
 
-  await test('start: Elite team (validated) and fighters you own (signed only)', async () => {
+  await test('start: Strike Squad (validated) and fighters you own (signed only)', async () => {
     const team = eliteTeam(['captain-america', 'spider-man', 'groot', 'iron-man', 'storm', 'loki']);
     const v = await Road.start('g:b', { source: 'elite', team });
     assert.deepEqual(v.run.team.map(s => s.item), team.map(s => s.item));

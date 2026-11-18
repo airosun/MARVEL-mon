@@ -128,7 +128,7 @@ function createRooms({ users, matches, startMatch, emitTo, spectate, checkMode, 
     if (cur && !cur.match.ended) return { error: 'A battle is already going.' };
     room.queue = room.queue.filter(id => room.members.has(id));
     const ready = room.queue.filter(id => eligible(room, id));
-    if (ready.length < 2) { room.running = false; sys(room, room.mode === 'elite' ? 'Waiting for 2 people in line with an Elite team.' : 'Waiting for 2 people in line.'); broadcast(room); return { error: 'Not enough people in line to battle.' }; }
+    if (ready.length < 2) { room.running = false; sys(room, room.mode === 'elite' ? 'Waiting for 2 people in line with a Strike Squad.' : 'Waiting for 2 people in line.'); broadcast(room); return { error: 'Not enough people in line to battle.' }; }
     const pair = ready.slice(0, 2);
     // the pair moves to the front (anyone skipped keeps their place behind them)
     room.queue = [...pair, ...room.queue.filter(id => !pair.includes(id))];
@@ -177,9 +177,9 @@ function createRooms({ users, matches, startMatch, emitTo, spectate, checkMode, 
         break;
       }
       case 'team': {
-        if (room.mode !== 'elite') return { error: 'Teams are only used in Elite rooms.' };
+        if (room.mode !== 'elite') return { error: 'Teams are only used in Strike Squad rooms.' };
         const v = prepTeam('elite', data.team); if (!v.ok) return { error: v.errors.join('\n') };
-        const m = room.members.get(userId); m.team = v.team; m.teamName = String(data.name || 'Elite team').replace(/[<>]/g, '').slice(0, 30);
+        const m = room.members.get(userId); m.team = v.team; m.teamName = String(data.name || 'Strike Squad').replace(/[<>]/g, '').slice(0, 30);
         maybeSchedule(room);
         break;
       }
@@ -192,7 +192,7 @@ function createRooms({ users, matches, startMatch, emitTo, spectate, checkMode, 
           room.mode = mode; room.format = format;
         }
         if (data.rotation) room.rotation = data.rotation === 'rotate' ? 'rotate' : 'winner';
-        sys(room, `Settings: ${room.mode === 'elite' ? 'Elite' : 'Standard'} ${room.format}, ${room.rotation === 'winner' ? 'winner stays on' : 'everyone rotates'}.`);
+        sys(room, `Settings: ${room.mode === 'elite' ? 'Strike Squad' : 'Standard'} ${room.format}, ${room.rotation === 'winner' ? 'winner stays on' : 'everyone rotates'}.`);
         break;
       }
       case 'start': {

@@ -47,9 +47,9 @@
         ${recordsHtml(d)}${lastRunHtml(d)}
       </section>
       <section class="card road-opt">
-        <h2>Use an Elite team</h2>
-        <p class="muted small">Bring one of your Elite teams, moves and items included.</p>
-        ${hasElite ? `<div class="row wrap">${U.eliteSelect('roadElite')}<button class="primary" id="roadStartElite">Start run</button></div>` : `<p class="small">You don't have a complete Elite team yet. Build one in <a href="#" data-goto="elite">Elite Teams</a>.</p>`}
+        <h2>Use a Strike Squad</h2>
+        <p class="muted small">Bring one of your Strike Squads, moves and items included.</p>
+        ${hasElite ? `<div class="row wrap">${U.eliteSelect('roadElite')}<button class="primary" id="roadStartElite">Start run</button></div>` : `<p class="small">You don't have a complete Strike Squad yet. Build one in <a href="#" data-goto="elite">Strike Squads</a>.</p>`}
       </section>
       <section class="card road-opt">
         <h2>Pick 6 heroes you own</h2>

@@ -42,7 +42,7 @@ async function test(name, fn) { try { await fn(); passed++; console.log('ok  ', 
     assert(!verify(Object.assign({}, f, { nature: f.nature === 'Adamant' ? 'Modest' : 'Adamant' })));
   });
 
-  await test('Elite team: 6 verified heroes, species and item clauses, signature items', () => {
+  await test('Strike Squad: 6 verified heroes, species and item clauses, signature items', () => {
     const F = require('../shared/fighters.json');
     const ids = ['captain-america', 'spider-man', 'thor', 'storm', 'groot', 'iron-man'];
     const team = ids.map(id => Object.assign(sign(genFighter(id)), { moves: [F.find(x => x.id === id).learnset[0]], item: '' }));
