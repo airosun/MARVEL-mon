@@ -44,7 +44,7 @@ A Pokémon VGC-style battle site where every Marvel Rivals hero is a "mon" with 
 
 **Stats tab:** your win/loss record by mode and opponent, your most-used heroes, your recent battles with replays, site-wide **hero usage** (how often each hero is brought and its win rate, by format, over the last 7/30/90 days), and recent player battles.
 
-**Battler Cards:** signed-in players get a card in one of 12 colors, with a hero avatar (any hero, or the Bruce Banner and Dagger forms), a title, a short bio, a showcase Elite team, their record and their favorite heroes. Edit yours from the account menu (click your name at the top) or the Stats tab. Titles, bios and showcase team names can't contain curse words or slurs. Disguised spellings are caught too (see `server/moderation.js`). Tap a signed-in player's name in the Online list to see theirs. Their avatar also shows next to their name.
+**Battler Cards:** signed-in players get a card in one of 12 colors, with a hero avatar (any hero, or the Bruce Banner and Cloak forms), a title, a short bio, a showcase Elite team, their record and their favorite heroes. Edit yours from the account menu (click your name at the top) or the Stats tab. Titles, bios and showcase team names can't contain curse words or slurs. Disguised spellings are caught too (see `server/moderation.js`). Tap a signed-in player's name in the Online list to see theirs. Their avatar also shows next to their name.
 
 **Sound:** battle sound effects for hits, super effective and critical hits, misses, switching, stat changes, healing, fainting, flinches, Protect, transformations, and a win or lose cue. They're synthesized in the browser, with no audio files. The 🔊 button at the top sets the volume or mutes, saved per browser. There's no background music yet (`public/audio.js`).
 
@@ -59,7 +59,7 @@ You can battle the CPU, find a random opponent (queues are separate for each mod
 ## Marvel mechanics
 
 - **Hulk / Puny Banner:** below 1/3 HP at the end of a turn, Hulk turns back into **Bruce Banner** (Normal/Poison, frail but fast). Healed back above 1/2 HP, Bruce turns into Hulk again. HP percentage is kept, and Bruce uses Hulk's chosen moves.
-- **Cloak & Dagger:** one hero. *Eternal Bond* tags Cloak (Dark, bulky) in before Dark/Ghost moves and Dagger (Fairy, fast attacker) in before Fairy/Psychic moves. *Light and Darkforce* swaps them at the end of every turn and heals the incoming partner 1/16. Ally Switch tags them in singles. HP, status, boosts and item carry over.
+- **Cloak & Dagger:** one hero that starts each battle as Dagger. *Eternal Bond* tags Cloak (Dark, bulky) in before Dark/Ghost moves and Dagger (Fairy, fast attacker) in before Fairy/Psychic moves. *Light and Darkforce* swaps them at the end of every turn and heals the incoming partner 1/16. Ally Switch tags them in singles. HP, status, boosts and item carry over.
 - **Rogue / Power Absorption:** copies the foe's ability on entry, but only abilities checked as copyable in the design sheet (`shared/abilityrules.js`). Anything else makes it fail.
 - **Deadpool / Fourth Wall:** rolls a random ability on entry from the abilities checked as rollable.
 - **Phoenix Force, Cocoon, Diamond Form, Demonic Energy, God Butcher, Bad Luck** and the other lore abilities are described in the in-site guide and implemented in `server/engine/abilities.js`.
@@ -104,7 +104,7 @@ Drop art into `public/images/<hero id>.png` (for example `spider-man.png`, `bruc
 | `shared/moves.js` | Move database (type, power, accuracy, PP, effects, doubles targeting) |
 | `shared/dex.js` | Type chart, natures, items, stat formula |
 | `shared/abilityrules.js` | Which abilities Rogue can copy and Deadpool can roll |
-| `shared/megas.js` | Alternate forms (Bruce Banner, Dagger) and, later, Ultimates |
+| `shared/megas.js` | Alternate forms (Bruce Banner, Cloak) and, later, Ultimates |
 | `server/engine/battle.js` | Battle engine (singles and doubles) |
 | `server/engine/abilities.js` | Maps each lore ability to the mechanic it uses |
 | `server/engine/ai.js` | CPU: drafting, sets, lineups, battling |

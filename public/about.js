@@ -108,7 +108,7 @@
 
       <section class="card" id="ab-marvel"><h2>Marvel mechanics</h2>
         <ul class="about-list">
-          <li><b>Cloak &amp; Dagger:</b> one hero, two partners. With <b>Eternal Bond</b>, Cloak (Dark, bulky) steps in before a Dark or Ghost move and Dagger (Fairy, fast special attacker) before a Fairy or Psychic move. With <b>Light and Darkforce</b> they trade places at the end of every turn, and the partner coming in heals 1/16 HP. In singles, Ally Switch tags them too. HP, status, stat changes and item carry over.</li>
+          <li><b>Cloak &amp; Dagger:</b> one hero, two partners, starting as Dagger. With <b>Eternal Bond</b>, Cloak (Dark, bulky) steps in before a Dark or Ghost move and Dagger (Fairy, fast special attacker) before a Fairy or Psychic move. With <b>Light and Darkforce</b> they trade places at the end of every turn, and the partner coming in heals 1/16 HP. In singles, Ally Switch tags them too. HP, status, stat changes and item carry over.</li>
           <li><b>Hulk's Puny Banner:</b> below 1/3 HP, Hulk turns into <b>Bruce Banner</b> (Normal/Poison, much weaker stats) at the end of the turn. Heal him above half HP and he turns back into the Hulk. He keeps his moves, item and HP percentage.</li>
           <li><b>Rogue's Power Absorption</b> copies the foe's ability when she comes in, but only abilities on the designer's approved list. Anything else makes it fail.</li>
           <li><b>Deadpool's Fourth Wall</b> gives him a random ability (from an approved list) every time he enters battle.</li>

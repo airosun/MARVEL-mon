@@ -61,14 +61,16 @@
     const img = gender && window.GENDER ? GENDER.image(id, gender, full.image) : full.image;
     return { url: `/images/${encodeURIComponent(img)}`, flip: back, drawn: false };
   }
+  function hasDrawn(f) { const d = S.drawn || new Set(); return d.has(`${f.id}_front`); }
   function officialSrc(full, flip, gender) {
     const img = gender && window.GENDER ? GENDER.image(full.id, gender, full.image) : full.image;
     return { url: `/images/${encodeURIComponent(img)}`, flip, drawn: false };
   }
   function sprite(f, cls = '', flip = false, gender = null) {
     const full = f && (f.image !== undefined ? f : (S.byId[f.id] || f));
-    if (!full || !full.image) return badge(full || f, cls.replace('battle', 'lg'));
-    const src = cls.split(' ').includes('battle') ? spriteSrc(full, flip, gender) : officialSrc(full, flip, gender);
+    const drawnOnly = full && !full.image && hasDrawn(full);   // a form with no official art shows its battle sprite
+    if (!full || (!full.image && !drawnOnly)) return badge(full || f, cls.replace('battle', 'lg'));
+    const src = cls.split(' ').includes('battle') || drawnOnly ? spriteSrc(full, flip, gender) : officialSrc(full, flip, gender);
     // back view of a drawn sprite: --h (how tall the hero stands in its sprite) lets the CSS crop the same share of everyone
     const hv = src.drawn && src.flip && src.h ? ` style="--h:${src.h}"` : '';
     return `<div class="sprite ${cls}${src.drawn ? ' drawn' : ''}${src.hover ? ' hover' : ''}"${hv} title="${esc(full.name)}"><img src="${src.url}" alt="${esc(full.name)}" draggable="false"${src.flip ? ' class="flip"' : ''}></div>`;
@@ -76,7 +78,7 @@
   const gsym = g => g === 'M' || g === 'F' ? `<span class="gsym g${g}" title="${g === 'M' ? 'Male' : 'Female'}">${GENDER.SYMBOL[g]}</span>` : '';
   function badge(f, cls = '', gender = null) {
     if (!f) return `<div class="badge ${cls}">?</div>`;
-    if (f.image && !cls.includes('nobadge')) return sprite(f, cls, false, gender);
+    if ((f.image || hasDrawn(f)) && !cls.includes('nobadge')) return sprite(f, cls, false, gender);
     const t = f.types || ['Normal'];
     const sub = f.name.match(/\((.*?)\)/);
     const words = f.name.replace(/\(.*?\)/g, '').replace(/[^A-Za-z0-9 &.]/g, '').split(/[\s&.]+/).filter(Boolean);
@@ -565,8 +567,12 @@
   const TYPE_ORDER = ['Normal', 'Fire', 'Water', 'Electric', 'Grass', 'Ice', 'Fighting', 'Poison', 'Ground', 'Flying', 'Psychic', 'Bug', 'Rock', 'Ghost', 'Dragon', 'Dark', 'Steel', 'Fairy'];
   const DEX_SORTS = [['num', 'Herodex #'], ['bst', 'BST'], ['hp', 'HP'], ['atk', 'Attack'], ['def', 'Defense'], ['spa', 'Sp. Atk'], ['spd', 'Sp. Def'], ['spe', 'Speed'], ['name', 'Name']];
   S.dexOpt = S.dexOpt || { t1: '', t2: '', fs: true, sort: 'num', dir: 'asc' };
+  const FORM_OF = { 'cloak-and-dagger': 'Starts as Dagger; tags with Cloak' };
   function dexEntries() {
     const out = S.dex.fighters.map(f => ({ f, num: f.num, sub: 0 }));
+    for (const fm of Object.values(S.dex.forms || {})) {   // battle forms (Cloak, Bruce Banner) always listed beside their hero
+      const base = S.byId[fm.base]; if (base && S.byId[fm.id]) out.push({ f: S.byId[fm.id], form: fm, base, num: base.num, sub: 0.5 });
+    }
     if (S.dexOpt.fs) for (const fs of Object.values(S.dex.finalSmashes || {})) {
       const bases = fs.bases.map(b => S.byId[b]).filter(Boolean); if (!bases.length) continue;
       const first = bases.reduce((a, b) => (b.num < a.num ? b : a));
@@ -596,11 +602,11 @@
       const c = typeof ka === 'string' ? ka.localeCompare(kb) : ka - kb;
       return (o.dir === 'desc' ? -c : c) || (a.num * 10 + a.sub) - (b.num * 10 + b.sub);
     });
-    const nForms = list.filter(e => e.fs).length;
+    const nForms = list.filter(e => e.fs).length, nBattle = list.filter(e => e.form).length;
     const typeOpts = sel => TYPE_ORDER.map(t => `<option value="${t}" ${sel === t ? 'selected' : ''}>${t}</option>`).join('');
     const filtered = o.t1 || o.t2 || q || !o.fs || o.sort !== 'num' || o.dir !== 'asc';
     const highlight = k => (o.sort === k ? ' hl' : '');
-    $('#view').innerHTML = `<section class="card"><div class="row" style="margin-bottom:10px"><h2 class="grow" style="margin:0">Herodex · ${list.length - nForms}${nForms ? ` <span class="muted small">+ ${nForms} Ultimate form${nForms === 1 ? '' : 's'}</span>` : ''}</h2><input id="dexQ" placeholder="Search name, series, type or move" value="${esc(S.dexFilter)}"></div>
+    $('#view').innerHTML = `<section class="card"><div class="row" style="margin-bottom:10px"><h2 class="grow" style="margin:0">Herodex · ${list.length - nForms - nBattle}${nBattle ? ` <span class="muted small">+ ${nBattle} battle form${nBattle === 1 ? '' : 's'}</span>` : ''}${nForms ? ` <span class="muted small">+ ${nForms} Ultimate form${nForms === 1 ? '' : 's'}</span>` : ''}</h2><input id="dexQ" placeholder="Search name, series, type or move" value="${esc(S.dexFilter)}"></div>
       <div class="dex-tools">
         <label>Type <select id="dexT1"><option value="">Any</option>${typeOpts(o.t1)}</select></label>
         <label>${o.t1 ? 'and' : 'Second type'} <select id="dexT2"><option value="">Any</option><option value="none" ${o.t2 === 'none' ? 'selected' : ''}>None (single type)</option>${typeOpts(o.t2)}</select></label>
@@ -611,7 +617,7 @@
         ${filtered ? '<button class="small ghost" id="dexReset">Reset</button>' : ''}
       </div>
       ${list.length ? '' : '<p class="muted">No heroes match. Try another type combination or turn on Ultimate forms.</p>'}
-      <div class="dex-grid">${list.map(e => { const f = e.f; return `<div class="dex-card ${e.fs ? 'fs-entry' : ''}" data-dex="${e.fs ? e.bases[0].id : f.id}" style="flex-direction:column"><div class="row">${badge(f)}<div class="grow"><div class="nm">#${e.num}${e.fs ? '<span class="fs-star">★</span>' : ''} ${esc(f.name)}</div>${e.fs ? `<div class="small muted">Ultimate of ${esc(e.bases.map(b => b.name).join(' / '))} · ${esc(e.fs.stone)}</div>` : ''}<div>${f.types.map(typeChip).join(' ')}</div></div><span class="pill${highlight('bst')}">BST ${bst(f)}</span></div>
+      <div class="dex-grid">${list.map(e => { const f = e.f; return `<div class="dex-card ${e.fs ? 'fs-entry' : ''}${e.form ? ' form-entry' : ''}" data-dex="${e.fs ? e.bases[0].id : e.form ? e.base.id : f.id}" style="flex-direction:column"><div class="row">${badge(f)}<div class="grow"><div class="nm">#${e.num}${e.form ? 'b' : ''}${e.fs ? '<span class="fs-star">★</span>' : ''} ${esc(f.name)}</div>${e.fs ? `<div class="small muted">Ultimate of ${esc(e.bases.map(b => b.name).join(' / '))} · ${esc(e.fs.stone)}</div>` : ''}${e.form ? `<div class="small muted">Battle form of ${esc(e.base.name)}</div>` : FORM_OF[f.id] ? `<div class="small muted">${esc(FORM_OF[f.id])}</div>` : ''}<div>${f.types.map(typeChip).join(' ')}</div></div><span class="pill${highlight('bst')}">BST ${bst(f)}</span></div>
         <div class="statbars">${STATS.map(s => `<span class="muted${highlight(s)}">${SL[s]}</span><span style="font-family:var(--mono)" class="${highlight(s).trim()}">${f.stats[s]}</span><div class="statbar"><i style="width:${Math.min(100, f.stats[s] / 1.6)}%;background:${f.stats[s] >= 110 ? 'var(--good)' : f.stats[s] >= 80 ? 'var(--warn)' : 'var(--bad)'}"></i></div>`).join('')}</div></div>`; }).join('')}</div></section>`;
     const inp = $('#dexQ'); inp.oninput = e => { S.dexFilter = e.target.value; const pos = inp.selectionStart; renderDex(); const n = $('#dexQ'); n.focus(); n.setSelectionRange(pos, pos); };
     $('#dexT1').onchange = e => { o.t1 = e.target.value; if (o.t2 && o.t2 === o.t1) o.t2 = ''; renderDex(); };
@@ -636,7 +642,7 @@
     }
     const tiles = [...byUrl.values()].map(t => {
       const sym = genders.length > 1 && t.gs.length < genders.length ? ' ' + t.gs.map(gsym).join('') : '';
-      const nm = t.form === f && f.id === 'cloak-and-dagger' ? 'Cloak' : t.form.name;
+      const nm = t.form === f && f.id === 'cloak-and-dagger' ? 'Dagger' : t.form.name;
       const cap = esc(nm) + sym;
       return `<figure class="bs-tile${t.form === f ? '' : ' fs'}" data-zoom="${esc(t.url)}" data-zoom-back="${esc(t.back.url)}" data-zoom-flip="${t.back.flip ? 1 : 0}" data-zoom-cap="${cap}" title="Click to view larger"><div class="bs-stage"><i></i><img src="${t.url}" alt="${esc(t.form.name)}" loading="lazy"></div><figcaption>${cap}${t.form === f ? '' : ' <span class="fs-star">★</span>'}</figcaption></figure>`;
     });
@@ -650,7 +656,9 @@
       <h2>Abilities</h2>${f.abilities.map(a => `<div><b>${esc(a.name)}</b> — <span class="muted">${esc(a.desc)}</span></div>`).join('')}
       <div><b>${esc(f.hidden.name)}</b> <span class="pill">Hidden</span> — <span class="muted">${esc(f.hidden.desc)}</span></div>
       ${Object.values(S.dex.finalSmashes || {}).filter(x => x.bases.includes(f.id)).map(x => `<div class="fs-box"><div class="row">${sprite(S.byId[x.id], 'lg')}<div class="grow"><div style="font-weight:800;font-size:17px">Ultimate: ${esc(x.name)}</div><div>${x.types.map(typeChip).join(' ')} <span class="muted">· hold <b>${esc(x.stone)}</b> · BST ${Object.values(x.stats).reduce((a, c) => a + c, 0)}</span></div><div class="small"><b>${esc(x.ability.name)}</b> — <span class="muted">${esc(x.ability.desc)}</span></div></div></div>
-        <div class="statbars" style="max-width:420px">${STATS.map(s => `<span class="muted">${SL[s]}</span><span style="font-family:var(--mono)">${x.stats[s]}${x.stats[s] !== f.stats[s] ? ` <span style="color:${x.stats[s] > f.stats[s] ? 'var(--good)' : 'var(--bad)'}">(${x.stats[s] > f.stats[s] ? '+' : ''}${x.stats[s] - f.stats[s]})</span>` : ''}</span><div class="statbar"><i style="width:${Math.min(100, x.stats[s] / 2)}%;background:var(--accent2)"></i></div>`).join('')}</div></div>`).join('')}
+        <div class="statbars" style="max-width:460px;grid-template-columns:34px 86px 1fr">${STATS.map(s => `<span class="muted">${SL[s]}</span><span style="font-family:var(--mono)">${x.stats[s]}${x.stats[s] !== f.stats[s] ? ` <span style="color:${x.stats[s] > f.stats[s] ? 'var(--good)' : 'var(--bad)'}">(${x.stats[s] > f.stats[s] ? '+' : ''}${x.stats[s] - f.stats[s]})</span>` : ''}</span><div class="statbar"><i style="width:${Math.min(100, x.stats[s] / 2)}%;background:var(--accent2)"></i></div>`).join('')}</div></div>`).join('')}
+      ${Object.values(S.dex.forms || {}).filter(x => x.base === f.id).map(x => { const xf = S.byId[x.id]; return `<div class="fs-box"><div class="row">${badge(xf, 'lg')}<div class="grow"><div style="font-weight:800;font-size:17px">Battle form: ${esc(x.name)}</div><div>${x.types.map(typeChip).join(' ')} <span class="muted">· BST ${Object.values(x.stats).reduce((a, c) => a + c, 0)}${FORM_OF[f.id] ? ' · ' + esc(FORM_OF[f.id]) : ''}</span></div><div class="small"><b>${esc(x.ability.name)}</b> — <span class="muted">${esc(x.ability.desc)}</span></div></div></div>
+        <div class="statbars" style="max-width:460px;grid-template-columns:34px 86px 1fr">${STATS.map(s => `<span class="muted">${SL[s]}</span><span style="font-family:var(--mono)">${x.stats[s]}${x.stats[s] !== f.stats[s] ? ` <span style="color:${x.stats[s] > f.stats[s] ? 'var(--good)' : 'var(--bad)'}">(${x.stats[s] > f.stats[s] ? '+' : ''}${x.stats[s] - f.stats[s]})</span>` : ''}</span><div class="statbar"><i style="width:${Math.min(100, x.stats[s] / 2)}%;background:var(--accent2)"></i></div>`).join('')}</div></div>`; }).join('')}
       ${battleSpritesHtml(f)}
       <h2 style="margin-top:14px">Move pool</h2>
       <div class="move-table"><table><tr><th>Move</th><th>Type</th><th>Cat</th><th>Pow</th><th>Acc</th></tr>${f.learnset.map(n => { const mv = S.dex.moves[n]; return `<tr><td>${esc(n)}${n in sig ? ` <span class="sig">★ ${esc(sig[n])}</span>` : ''}</td><td>${typeChip(mv.type)}</td><td><span class="cat">${mv.cat}</span></td><td>${mv.power || '—'}</td><td>${mv.acc === true ? '—' : mv.acc}</td></tr>`; }).join('')}</table></div>`);
@@ -764,7 +772,7 @@
       S.byId[fs.id] = { id: fs.id, name: fs.name, types: fs.types, stats: fs.stats, image: fs.image, abilities: [ab], hidden: ab, learnset: S.byId[fs.base].learnset, signature: S.byId[fs.base].signature, form: true };
       d.items[stone] = `Lets ${fs.bases.map(b => S.byId[b].name).join(' or ')} use its Ultimate and become ${fs.name} (once per battle; only one hero per team can Ultimate).`;
     }
-    // battle-only forms (Hulk's Bruce Banner, Cloak & Dagger's Dagger) so the battlefield and Herodex can show them
+    // battle-only forms (Hulk's Bruce Banner, Cloak & Dagger's Cloak) so the battlefield and Herodex can show them
     for (const fm of Object.values(d.forms || {})) {
       const ab = { name: fm.ability.name, desc: fm.ability.desc };
       S.byId[fm.id] = { id: fm.id, name: fm.name, types: fm.types, stats: fm.stats, image: fm.image, abilities: [ab], hidden: ab, learnset: fm.learnset || (S.byId[fm.base] || {}).learnset || [], signature: [], form: true };

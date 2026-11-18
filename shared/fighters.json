@@ -306,15 +306,15 @@
   "series": "Strategist",
   "role": "Strategist",
   "types": [
-   "Dark"
+   "Fairy"
   ],
   "stats": {
    "hp": 80,
-   "atk": 70,
-   "def": 95,
-   "spa": 95,
-   "spd": 115,
-   "spe": 70
+   "atk": 55,
+   "def": 65,
+   "spa": 120,
+   "spd": 95,
+   "spe": 110
   },
   "inGameHP": 275,
   "abilities": [

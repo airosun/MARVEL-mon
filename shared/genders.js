@@ -17,7 +17,7 @@
  "cloak-and-dagger": {
   "type": "B"
  },
- "dagger-form": {
+ "cloak-form": {
   "type": "B"
  },
  "doctor-strange": {

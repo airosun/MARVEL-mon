@@ -1711,11 +1711,11 @@ class Battle {
   }
 
   // Cloak & Dagger tag in for each other (Eternal Bond / Light and Darkforce). Only works for that hero.
-  isDaggerForm(mon) { return mon.species.id === 'dagger-form'; }
+  isDaggerForm(mon) { return mon.species.id !== 'cloak-form'; }   // Dagger is the base form
   tagSwap(mon, toDagger) {
-    const f = FORMS['dagger-form'];
+    const f = FORMS['cloak-form'];
     if (mon.fainted || mon.transformed || mon.baseSpecies.id !== f.base || this.isDaggerForm(mon) === !!toDagger) return false;
-    const to = toDagger ? Object.assign({}, mon.baseSpecies, { id: f.id, name: f.name, types: f.types.slice(), stats: f.stats, image: f.image }) : mon.baseSpecies;
+    const to = toDagger ? mon.baseSpecies : Object.assign({}, mon.baseSpecies, { id: f.id, name: f.name, types: f.types.slice(), stats: f.stats, image: f.image });
     const frac = mon.hpFrac(); const from = this.isDaggerForm(mon) ? 'Dagger' : 'Cloak';
     mon.species = to; mon.displaySpecies = to; mon.types = to.types.slice();
     for (const st of ['hp', 'atk', 'def', 'spa', 'spd', 'spe']) mon.stats[st] = calcStat(st, to.stats[st], mon.ivs[st], mon.evs[st], LEVEL, mon.nature);

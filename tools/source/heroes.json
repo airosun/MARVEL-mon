@@ -161,57 +161,6 @@
   "name": "Cloak & Dagger",
   "role": "Strategist",
   "types": [
-   "Dark"
-  ],
-  "inGameHP": 275,
-  "baseStats": {
-   "hp": 80,
-   "atk": 70,
-   "def": 95,
-   "spa": 95,
-   "spd": 115,
-   "spe": 70
-  },
-  "abilities": {
-   "0": "Eternal Bond",
-   "H": "Light and Darkforce"
-  },
-  "moves": [
-   "Dark Pulse",
-   "Night Daze",
-   "Phantom Force",
-   "Ally Switch",
-   "Mean Look",
-   "Shadow Ball",
-   "Snarl",
-   "Foul Play",
-   "Taunt",
-   "Nasty Plot",
-   "Parting Shot",
-   "Hex",
-   "Sucker Punch",
-   "Obstruct",
-   "Dazzling Gleam",
-   "Life Dew",
-   "Heal Pulse",
-   "Lunar Dance",
-   "Purify",
-   "Flash",
-   "Draining Kiss",
-   "Moonblast",
-   "Wish",
-   "Psychic",
-   "Calm Mind",
-   "Light Screen",
-   "Misty Terrain"
-  ]
- },
- {
-  "id": "cloak-and-dagger-dagger-form",
-  "num": "5b",
-  "name": "Cloak & Dagger (Dagger form)",
-  "role": "Strategist",
-  "types": [
    "Fairy"
   ],
   "inGameHP": 275,
@@ -255,10 +204,61 @@
    "Calm Mind",
    "Light Screen",
    "Misty Terrain"
+  ]
+ },
+ {
+  "id": "cloak-and-dagger-cloak-form",
+  "num": "5b",
+  "name": "Cloak & Dagger (Cloak form)",
+  "role": "Strategist",
+  "types": [
+   "Dark"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 80,
+   "atk": 70,
+   "def": 95,
+   "spa": 95,
+   "spd": 115,
+   "spe": 70
+  },
+  "abilities": {
+   "0": "Eternal Bond",
+   "H": "Light and Darkforce"
+  },
+  "moves": [
+   "Dark Pulse",
+   "Night Daze",
+   "Phantom Force",
+   "Ally Switch",
+   "Mean Look",
+   "Shadow Ball",
+   "Snarl",
+   "Foul Play",
+   "Taunt",
+   "Nasty Plot",
+   "Parting Shot",
+   "Hex",
+   "Sucker Punch",
+   "Obstruct",
+   "Dazzling Gleam",
+   "Life Dew",
+   "Heal Pulse",
+   "Lunar Dance",
+   "Purify",
+   "Flash",
+   "Draining Kiss",
+   "Moonblast",
+   "Wish",
+   "Psychic",
+   "Calm Mind",
+   "Light Screen",
+   "Misty Terrain"
   ],
   "baseSpecies": "Cloak & Dagger",
   "battleOnly": true,
-  "forme": "Dagger"
+  "forme": "Cloak"
  },
  {
   "id": "doctor-strange",
