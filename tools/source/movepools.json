@@ -1225,14 +1225,6 @@
  },
  {
   "hero": "Iron Fist",
-  "move": "Mach Punch",
-  "type": "Fighting",
-  "category": "Physical",
-  "power": 40,
-  "basedOn": "Jeet Kune Do"
- },
- {
-  "hero": "Iron Fist",
   "move": "High Jump Kick",
   "type": "Fighting",
   "category": "Physical",
@@ -1241,11 +1233,19 @@
  },
  {
   "hero": "Iron Fist",
-  "move": "Drain Punch",
+  "move": "Dragon Hammer",
+  "type": "Dragon",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "The Iron Fist: chi of Shou-Lao the Undying"
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Mach Punch",
   "type": "Fighting",
   "category": "Physical",
-  "power": 75,
-  "basedOn": "Harmony Recovery"
+  "power": 40,
+  "basedOn": "Jeet Kune Do"
  },
  {
   "hero": "Iron Fist",
@@ -1257,6 +1257,14 @@
  },
  {
   "hero": "Iron Fist",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Harmony Recovery"
+ },
+ {
+  "hero": "Iron Fist",
   "move": "Close Combat",
   "type": "Fighting",
   "category": "Physical",
@@ -1265,11 +1273,11 @@
  },
  {
   "hero": "Iron Fist",
-  "move": "Fire Punch",
-  "type": "Fire",
+  "move": "Dragon Rush",
+  "type": "Dragon",
   "category": "Physical",
-  "power": 75,
-  "basedOn": "Chi-charged Iron Fist"
+  "power": 100,
+  "basedOn": "Crane Soars"
  },
  {
   "hero": "Iron Fist",
@@ -1281,18 +1289,26 @@
  },
  {
   "hero": "Iron Fist",
-  "move": "Blaze Kick",
-  "type": "Fire",
+  "move": "Dragon Claw",
+  "type": "Dragon",
   "category": "Physical",
-  "power": 85,
+  "power": 80,
   "basedOn": null
  },
  {
   "hero": "Iron Fist",
-  "move": "Flare Blitz",
-  "type": "Fire",
+  "move": "Outrage",
+  "type": "Dragon",
   "category": "Physical",
   "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Fire Punch",
+  "type": "Fire",
+  "category": "Physical",
+  "power": 75,
   "basedOn": null
  },
  {

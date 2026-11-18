@@ -769,7 +769,7 @@
   "role": "Duelist",
   "types": [
    "Fighting",
-   "Fire"
+   "Dragon"
   ],
   "stats": {
    "hp": 85,
@@ -792,40 +792,42 @@
   },
   "signature": [
    {
-    "move": "Mach Punch",
-    "smash": "Jeet Kune Do"
-   },
-   {
     "move": "High Jump Kick",
     "smash": "Kun-Lun Kick"
    },
    {
-    "move": "Drain Punch",
-    "smash": "Harmony Recovery"
+    "move": "Dragon Hammer",
+    "smash": "The Iron Fist: chi of Shou-Lao the Undying"
+   },
+   {
+    "move": "Mach Punch",
+    "smash": "Jeet Kune Do"
    },
    {
     "move": "Detect",
     "smash": "Dragon's Defense"
    },
    {
-    "move": "Close Combat",
-    "smash": "Living Chi ultimate"
+    "move": "Drain Punch",
+    "smash": "Harmony Recovery"
    },
    {
-    "move": "Fire Punch",
-    "smash": "Chi-charged Iron Fist"
+    "move": "Close Combat",
+    "smash": "Living Chi ultimate"
    }
   ],
   "learnset": [
-   "Mach Punch",
    "High Jump Kick",
-   "Drain Punch",
+   "Dragon Hammer",
+   "Mach Punch",
    "Detect",
+   "Drain Punch",
    "Close Combat",
-   "Fire Punch",
+   "Dragon Rush",
    "Dragon Dance",
-   "Blaze Kick",
-   "Flare Blitz",
+   "Dragon Claw",
+   "Outrage",
+   "Fire Punch",
    "Triple Kick",
    "Bulk Up",
    "Focus Energy",
