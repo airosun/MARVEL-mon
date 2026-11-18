@@ -14,6 +14,43 @@
   S.animSpeed = U.load('ssbu-anim', 'normal');
   const typeColor = t => getComputedStyle(document.documentElement).getPropertyValue('--t-' + t).trim() || '#999';
 
+  // ---------- after the battle: both full teams ----------
+  const STATS6 = ['hp', 'atk', 'def', 'spa', 'spd', 'spe'];
+  const SL6 = { hp: 'HP', atk: 'Atk', def: 'Def', spa: 'SpA', spd: 'SpD', spe: 'Spe' };
+  const abName = n => (S.dex.renamed || {})[n] || n;
+  function setText(x) {
+    const f = F(x.species); const g = x.gender;
+    const ivs = STATS6.filter(st => x.ivs && x.ivs[st] !== 31).map(st => `${x.ivs[st]} ${SL6[st]}`);
+    return [`${f.name}${window.GENDER && GENDER.info(f.id).type === 'X' && (g === 'M' || g === 'F') ? ` (${g})` : ''}${x.item ? ' @ ' + x.item : ''}`, `Ability: ${abName(x.ability)}`, 'Level: 50', `${x.nature} Nature`,
+      ...(ivs.length ? ['IVs: ' + ivs.join(' / ')] : []), ...x.moves.map(mv => '- ' + mv)].join('\n');
+  }
+  function teamHtml(t, ti) {
+    if (!t) return '<div class="muted">No team (the match ended before teams were set).</div>';
+    const brought = t.lineup ? new Set(t.lineup) : null;
+    return `<div class="row" style="align-items:center;margin:4px 0 8px"><h3 style="margin:0" class="grow">${esc(t.name)}'s team</h3><button class="small" data-copyteam="${ti}">Copy as text</button></div>
+      <div class="ft-grid">${t.sets.map((x, i) => {
+        const f = F(x.species); const nat = (window.DEX.NATURES || {})[x.nature] || {};
+        const st = Object.fromEntries(STATS6.map(k => [k, window.DEX.calcStat(k, f.stats[k], x.ivs ? x.ivs[k] : 31, 0, 50, x.nature)]));
+        return `<div class="ft-card ${brought && !brought.has(i) ? 'benched' : ''}">
+          <div class="row" style="gap:8px">${sprite(f, 'lg', false, x.gender)}<div class="grow"><b>${esc(f.name)}</b> ${gsym(x.gender)}${brought ? (brought.has(i) ? ' <span class="chip">Brought</span>' : ' <span class="chip muted">Benched</span>') : ''}<div>${f.types.map(typeChip).join(' ')}</div>
+            <div class="small"><b>${esc(abName(x.ability))}</b>${x.item ? ` · @ ${esc(x.item)}` : ''}</div><div class="small muted">${esc(x.nature)} nature</div></div></div>
+          <ul class="ft-moves">${x.moves.map(mv => `<li>${S.dex.moves[mv] ? typeChip(S.dex.moves[mv].type) : ''} ${esc(mv)}</li>`).join('')}</ul>
+          <div class="ft-stats">${STATS6.map(k => `<span class="${nat.plus === k ? 'up' : nat.minus === k ? 'down' : ''}" title="IV ${x.ivs ? x.ivs[k] : 31}">${SL6[k]} <b>${st[k]}</b></span>`).join('')}</div></div>`;
+      }).join('')}</div>`;
+  }
+  function showTeams(m) {
+    const you = m.you;
+    const order = you === null || you === undefined ? [0, 1] : [1 - you, you];
+    modal(`<div class="row" style="align-items:center"><h2 class="grow" style="margin:0">Teams</h2><button id="ftClose">Close</button></div>
+      <p class="muted small">Full sets at level 50. Stats include nature and IVs (hover a stat for its IV).</p>
+      ${order.map(i => `<section style="margin-top:10px">${teamHtml(m.teams[i], i)}</section>`).join('')}`);
+    $('#ftClose').onclick = closeModal;
+    $$('[data-copyteam]').forEach(b => b.onclick = () => {
+      const text = m.teams[+b.dataset.copyteam].sets.map(setText).join('\n\n');
+      (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject()).then(() => toast('Team copied.'), () => toast(text));
+    });
+  }
+
   // ---------- tooltip ----------
   const tip = document.createElement('div'); tip.className = 'tip hidden'; document.body.appendChild(tip);
   function moveInfoHtml(name) {
@@ -522,7 +559,7 @@
       const rm = m.rematch || [false, false];
       const rematch = m.replay ? `<button id="rpAgain">Watch again</button>` : m.road && you !== null ? `<button class="primary" id="mRoad">${st.winner === you ? 'Continue the Road' : 'Back to Road to 50'}</button>` : m.room ? `<button class="primary" id="mRoom">Back to room</button><span class="muted small">The next battle starts automatically.</span>` : you === null ? '' : rm[you] ? '<span class="muted small">Waiting for your opponent to accept the rematch…</span>' : `<button class="primary" id="mRematch">${rm[1 - you] ? 'Accept rematch' : 'Rematch'}</button>`;
       const note = !m.replay && you !== null && rm[1 - you] && !rm[you] ? `<div class="small" style="margin-top:6px">${esc(st.sides[1 - you].name)} wants a rematch!</div>` : '';
-      return `<div class="banner ${you !== null && !won ? 'lose' : ''}"><span>${st.winner === null ? 'Tie game!' : esc(st.sides[st.winner].name) + ' won!'}</span><div class="row" style="justify-content:center;gap:8px;margin-top:8px">${rematch}<button id="mReplay">${m.replay ? 'Copy replay link' : 'Replay link'}</button><button id="mBack">${m.replay ? 'Close' : 'Back to lobby'}</button></div>${note}</div>`;
+      return `<div class="banner ${you !== null && !won ? 'lose' : ''}"><span>${st.winner === null ? 'Tie game!' : esc(st.sides[st.winner].name) + ' won!'}</span><div class="row" style="justify-content:center;gap:8px;margin-top:8px">${rematch}${m.teams && m.teams.some(Boolean) ? `<button id="mTeams">${you !== null ? "View opponent's team" : 'View teams'}</button>` : ''}<button id="mReplay">${m.replay ? 'Copy replay link' : 'Replay link'}</button><button id="mBack">${m.replay ? 'Close' : 'Back to lobby'}</button></div>${note}</div>`;
     }
     if (m.replay) return '<div class="muted">Replay</div>';
     if (you === null) return '<div class="muted">You are spectating.</div>';
@@ -638,6 +675,7 @@
     const br = $('#mRoom'); if (br) br.onclick = () => { S.tab = 'room'; U.render(); };
     const bro = $('#mRoad'); if (bro) bro.onclick = () => { S.open = S.open.filter(x => x !== id); delete S.matches[id]; S.tab = 'road'; U.render(); };
     const rm = $('#mRematch'); if (rm) rm.onclick = () => socket.emit('rematch', { id }, r => { if (r && r.error) toast(r.error); else if (r && r.waiting) toast('Rematch requested. Waiting for your opponent…'); });
+    const vt = $('#mTeams'); if (vt) vt.onclick = () => showTeams(m);
     const rl = $('#mReplay'); if (rl) rl.onclick = () => { const url = location.origin + '/replay/' + (m.replay ? m.replayId : id); (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(() => toast('Replay link copied: ' + url, 4000), () => prompt('Replay link:', url)); };
     const ra = $('#rpAgain'); if (ra) ra.onclick = () => U.openReplay(m.replayId, true);
     $$('[data-quick]').forEach(q => q.onclick = () => socket.emit('chat', { room: id, text: q.dataset.quick }));

@@ -189,6 +189,11 @@ class Match {
         out.lineup = me.lineup;
       }
     }
+    // once the match is over, everyone (players and spectators, CPU matches too) can see both full teams
+    if (this.ended) out.teams = this.players.map(p => p.team ? {
+      name: p.name, lineup: p.lineup || null,
+      sets: p.team.map(s => ({ species: s.species, gender: s.gender || null, nature: s.nature, ivs: s.ivs, ability: s.ability, item: s.item || null, moves: (s.moves || []).filter(Boolean) })),
+    } : null);
     if (this.battle) {
       const persp = n === null ? 0 : n;
       out.battle = { state: this.battle.publicState(persp), log: this.battle.log, request: n === null ? null : this.battle.getRequest(n) };
