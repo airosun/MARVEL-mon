@@ -321,7 +321,7 @@
     });
   }
   U.importTeam = () => {
-    modal(`<h2>Import a team</h2><p class="muted small">Paste a team in Showdown format. Each hero is matched to one in your roster (the closest nature, ability and IVs), so you need those heroes from the Hero Pass.</p>
+    modal(`<h2>Import a team</h2><p class="muted small">Paste a team in Showdown format. Each hero is matched to one in your roster (the closest nature, ability and IVs), so you need those heroes from the Battle Pass.</p>
       <textarea id="imTxt" class="paste" rows="16" placeholder="Kazuya @ Devil Gene&#10;Ability: King of Iron Fist&#10;Adamant Nature&#10;- Close Combat&#10;- Thunder Punch&#10;..."></textarea>
       <div id="imMsg" class="small"></div>
       <div class="row" style="margin-top:8px"><input id="imName" class="grow" maxlength="40" placeholder="Team name" value="Imported team"><button id="imGo" class="primary">Import</button><button id="imClose">Cancel</button></div>`);

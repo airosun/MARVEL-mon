@@ -1,4 +1,4 @@
-// MARVEL-mon server: lobby, challenges, matchmaking queues, CPU matches, spectating, chat, Hero Pass.
+// MARVEL-mon server: lobby, challenges, matchmaking queues, CPU matches, spectating, chat, Battle Pass.
 const path = require('path');
 const http = require('http');
 const express = require('express');
@@ -61,7 +61,7 @@ app.get('/api/stats/me', api(async (req, res) => {
   const sides = await store.userSides(user.id);
   res.json({ username: user.username, record: Stats.record(sides), fighters: Stats.fighterTable(sides).slice(0, 15), recent: await store.recentBattles({ userId: user.id, limit: 20 }) });
 }));
-// start of today in US Eastern time (the same day the Hero Pass uses)
+// start of today in US Eastern time (the same day the Battle Pass uses)
 function startOfTodayET() {
   const parts = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' }).formatToParts(new Date()).map(p => [p.type, p.value]));
   const secs = (+parts.hour % 24) * 3600 + (+parts.minute) * 60 + (+parts.second);
@@ -232,7 +232,7 @@ io.on('connection', socket => {
     }
   }));
 
-  // ----- Hero Pass -----
+  // ----- Battle Pass -----
   const safe = p => p.catch(e => { console.error(e.message); return { error: 'Something went wrong. Try again.' }; });
   socket.on('pass:status', need(async (_, ack) => reply(ack, await safe(Pass.status(me.id)))));
   socket.on('pass:roll', need(async (_, ack) => reply(ack, await safe(Pass.roll(me.id)))));
@@ -404,6 +404,6 @@ io.on('connection', socket => {
 });
 
 store.init().then(() => {
-  if (store.kind === 'memory' && process.env.NODE_ENV === 'production') console.warn('DATABASE_URL is not set: accounts and Hero Pass rolls are kept in memory and will be lost on restart.');
+  if (store.kind === 'memory' && process.env.NODE_ENV === 'production') console.warn('DATABASE_URL is not set: accounts and Battle Pass rolls are kept in memory and will be lost on restart.');
   server.listen(PORT, () => console.log(`MARVEL-mon running on http://localhost:${PORT} (storage: ${store.kind})`));
 }).catch(e => { console.error('Could not connect to the database:', e.message); process.exit(1); });

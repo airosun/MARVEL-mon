@@ -53,8 +53,8 @@
       </section>
       <section class="card road-opt">
         <h2>Pick 6 heroes you own</h2>
-        <p class="muted small">Choose 6 from your Hero Pass roster. They start with suggested moves and no items, and you can change both before floor 1.</p>
-        ${S.roster.length >= 6 ? `<button class="primary" id="roadStartRoster">Choose heroes</button>` : `<p class="small">You need at least 6 heroes in your roster (you have ${S.roster.length}). Roll the <a href="#" data-goto="pass">Hero Pass</a>.</p>`}
+        <p class="muted small">Choose 6 from your Battle Pass roster. They start with suggested moves and no items, and you can change both before floor 1.</p>
+        ${S.roster.length >= 6 ? `<button class="primary" id="roadStartRoster">Choose heroes</button>` : `<p class="small">You need at least 6 heroes in your roster (you have ${S.roster.length}). Roll the <a href="#" data-goto="pass">Battle Pass</a>.</p>`}
       </section>
       <section class="card road-opt">
         <h2>Random team</h2>

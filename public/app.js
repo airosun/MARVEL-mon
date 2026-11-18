@@ -136,7 +136,7 @@
     if (!acct) { if (was) { S.roster = load('ssbu-roster', []); S.elite = load('ssbu-elite', []); S.selElite = load('ssbu-sel-elite', 0); } S.accountReady = true; return; }
     if (was === acct.id && S.accountReady) return;
     S.accountReady = false;
-    // first time this browser signs in: bring its guest roster, teams and today's Hero Pass rolls along
+    // first time this browser signs in: bring its guest roster, teams and today's Battle Pass rolls along
     const guest = { roster: load('ssbu-roster', []), elite: load('ssbu-elite', []), selElite: load('ssbu-sel-elite', 0) };
     socket.emit('data:import', { data: guest, guestId: clientId }, r => {
       if (!r || r.error) { toast((r && r.error) || 'Could not load your account.'); return; }
@@ -206,7 +206,7 @@
     if (S.account) {
       modal(`<div id="acCard"><div class="muted">Loading your Battler Card…</div></div>
         <div class="row" style="margin-top:8px"><button class="small" id="acEditCard" disabled>Edit Battler Card</button><span class="grow"></span></div>
-        <p class="muted small">Your roster, Elite teams and Hero Pass rolls are saved to this account, so they follow you to any device.</p>
+        <p class="muted small">Your roster, Elite teams and Battle Pass rolls are saved to this account, so they follow you to any device.</p>
         <details class="pw"><summary>Change password</summary>
           <div class="field"><label>Current password</label><input id="pwCur" type="password" autocomplete="current-password"></div>
           <div class="field"><label>New password</label><input id="pwNew" type="password" autocomplete="new-password" placeholder="At least 8 characters"></div>
@@ -232,7 +232,7 @@
     }
     const isNew = tab === 'new';
     modal(`<div class="seg acct-tabs"><button data-actab="in" class="${isNew ? '' : 'on'}">Sign in</button><button data-actab="new" class="${isNew ? 'on' : ''}">Create account</button></div>
-      <p class="muted small">${isNew ? 'An account saves your roster, Elite teams and daily Hero Pass rolls so you can play from any device.' : 'Sign in to load your roster, Elite teams and Hero Pass rolls.'}
+      <p class="muted small">${isNew ? 'An account saves your roster, Elite teams and daily Battle Pass rolls so you can play from any device.' : 'Sign in to load your roster, Elite teams and Battle Pass rolls.'}
       ${S.roster.length || S.elite.length ? ' The roster and teams saved in this browser will be moved into your account.' : ''}</p>
       <form id="acForm" autocomplete="on">
         <div class="field"><label>Username</label><input id="acUser" maxlength="20" autocomplete="username" autocapitalize="off" spellcheck="false" ${isNew ? 'placeholder="3–20 letters, numbers, _ or -"' : ''}></div>
@@ -267,7 +267,7 @@
 
   // ---------- tabs ----------
   function renderTabs() {
-    const tabs = [['home', 'Home'], ['pass', 'Hero Pass'], ['elite', 'Elite Teams'], ['road', 'Road to 50'], ['dex', 'Herodex'], ['calc', 'Calc'], ['stats', 'Stats'], ['about', 'What is MARVEL-mon?']];
+    const tabs = [['home', 'Home'], ['pass', 'Battle Pass'], ['elite', 'Elite Teams'], ['road', 'Road to 50'], ['dex', 'Herodex'], ['calc', 'Calc'], ['stats', 'Stats'], ['about', 'What is MARVEL-mon?']];
     let h = tabs.map(([k, n]) => `<button class="tab ${S.tab === k ? 'active' : ''}" data-tab="${k}">${n}</button>`).join('');
     if (S.tab === 'anims') h += `<button class="tab active" data-tab="anims">🎬 Animations</button>`;
     if (S.room) h += `<button class="tab room-tab ${S.tab === 'room' ? 'active' : ''}" data-tab="room">🚪 Room ${esc(S.room.code)}</button>`;
@@ -342,7 +342,7 @@
         <h1>Battle with Marvel Rivals heroes</h1><p class="muted small" style="margin:-6px 0 10px">New here? <a href="#" data-goto-about>Read <b>What is MARVEL-mon?</b></a> for how everything works.</p>
         <div class="seg" id="segMode">
           <button data-mode="standard" class="${S.mode === 'standard' ? 'on' : ''}"><b>Standard Battle</b><span>Draft 6 of 20 random heroes, then set moves and items</span></button>
-          <button data-mode="elite" class="${S.mode === 'elite' ? 'on' : ''}"><b>Elite Battle</b><span>Bring a pre-built team from your Hero Pass roster</span></button>
+          <button data-mode="elite" class="${S.mode === 'elite' ? 'on' : ''}"><b>Elite Battle</b><span>Bring a pre-built team from your Battle Pass roster</span></button>
         </div>
         <div class="seg small" id="segFormat">
           <button data-format="singles" class="${S.format === 'singles' ? 'on' : ''}"><b>Singles</b><span>Bring 6, pick 3</span></button>
@@ -354,7 +354,7 @@
           <button id="btnCpu">Battle the CPU</button>
           ${S.searching ? `<span class="pill">Searching ${esc(label(...S.searching.split(':')))}…</span>` : ''}
         </div>
-        ${S.mode === 'elite' && !S.elite.some(eliteReady) ? `<p class="muted small" style="margin:10px 0 0">You need a 6-hero Elite team. Roll the <a href="#" data-goto="pass">Hero Pass</a> to build your roster, then build a team in <a href="#" data-goto="elite">Elite Teams</a>.</p>` : ''}
+        ${S.mode === 'elite' && !S.elite.some(eliteReady) ? `<p class="muted small" style="margin:10px 0 0">You need a 6-hero Elite team. Roll the <a href="#" data-goto="pass">Battle Pass</a> to build your roster, then build a team in <a href="#" data-goto="elite">Elite Teams</a>.</p>` : ''}
       </section>
       ${SSBU.homeRoomHtml()}
       <section class="card">
@@ -390,16 +390,16 @@
     $$('[data-watch]').forEach(b => b.onclick = () => socket.emit('spectate', { id: b.dataset.watch }, r => { if (r.error) toast(r.error); else S.tab = b.dataset.watch; }));
   }
 
-  // ---------- Hero Pass ----------
+  // ---------- Battle Pass ----------
   function renderPass() {
     const p = S.pass || { rollsLeft: 0, perDay: 3, keep: 5 };
     const pending = p.pending;
     const rosterSorted = S.roster.slice().sort((a, b) => F(a.species).num - F(b.species).num);
     $('#view').innerHTML = `
       <section class="card hero">
-        <div class="row"><div class="grow"><h1 style="margin:0">Hero Pass</h1><p style="margin:4px 0 0">Each roll shows 20 random heroes with random natures, IVs and abilities. Keep up to ${p.keep} of them for your Elite roster.</p></div>
+        <div class="row"><div class="grow"><h1 style="margin:0">Battle Pass</h1><p style="margin:4px 0 0">Each roll shows 20 random heroes with random natures, IVs and abilities. Keep up to ${p.keep} of them for your Elite roster.</p></div>
           <div class="rolls">${[...Array(p.perDay)].map((_, i) => `<span class="roll-pip ${i < p.rollsLeft ? 'on' : ''}"></span>`).join('')}<div class="muted small">${p.rollsLeft} of ${p.perDay} rolls left today</div></div></div>
-        ${pending ? '' : `<button class="primary" id="btnRoll" ${p.rollsLeft ? '' : 'disabled'} style="margin-top:12px">${p.rollsLeft ? 'Roll the Hero Pass' : 'Out of rolls — come back tomorrow'}</button>`}
+        ${pending ? '' : `<button class="primary" id="btnRoll" ${p.rollsLeft ? '' : 'disabled'} style="margin-top:12px">${p.rollsLeft ? 'Roll the Battle Pass' : 'Out of rolls — come back tomorrow'}</button>`}
       </section>
       ${pending ? `<section class="card" style="margin-top:14px">
         <div class="row" style="margin-bottom:10px"><h2 class="grow" style="margin:0">Pick up to ${p.keep} to keep (${S.passSel.size}/${p.keep})</h2><button class="primary" id="btnClaim">Add ${S.passSel.size} to roster</button></div>
@@ -408,7 +408,7 @@
       <section class="card" style="margin-top:14px">
         <h2>Your roster (${S.roster.length})</h2>
         <p class="muted small" style="margin-top:-6px">${S.account ? 'Saved to your account.' : 'Saved in this browser. <a href="#" data-signin>Sign in</a> to keep them on any device.'} Use these heroes to build Elite teams.</p>
-        ${S.roster.length ? `<div class="fgrid">${rosterSorted.map(b => fighterCard(b, { extra: `<button class="small ghost" data-release="${b.uid}">Release</button>` })).join('')}</div>` : '<div class="muted">No heroes yet — roll the Hero Pass!</div>'}
+        ${S.roster.length ? `<div class="fgrid">${rosterSorted.map(b => fighterCard(b, { extra: `<button class="small ghost" data-release="${b.uid}">Release</button>` })).join('')}</div>` : '<div class="muted">No heroes yet — roll the Battle Pass!</div>'}
       </section>`;
     const r = $('#btnRoll'); if (r) r.onclick = () => socket.emit('pass:roll', {}, res => {
       if (res.error) return toast(res.error);
@@ -502,7 +502,7 @@
       <section class="card">
         <h2>Elite teams</h2>
         <button class="primary" id="eNew" ${S.roster.length ? '' : 'disabled'}>New team</button> <button id="eImport" ${S.roster.length ? '' : 'disabled'}>Import</button>
-        ${S.roster.length ? '' : '<p class="muted small">Roll the Hero Pass first — teams are built from your roster.</p>'}
+        ${S.roster.length ? '' : '<p class="muted small">Roll the Battle Pass first — teams are built from your roster.</p>'}
         <div class="list" style="max-height:none;margin-top:10px">${S.elite.map((t, i) => `<div class="team-row ${i === S.editElite ? 'sel' : ''}" data-et="${i}"><div class="row"><b class="grow">${esc(t.name)}</b><span class="pill">${eliteReady(t) ? 'Ready' : t.mons.length + '/6'}</span></div><div class="mini">${t.mons.map(m => { const r = rosterById(m.uid); return r ? badge(F(r.species), 'sm', m.gender || r.gender) : ''; }).join('')}</div></div>`).join('') || '<div class="muted">No teams yet.</div>'}</div>
       </section>
       <section class="card" id="eEditor">${S.editElite === null ? '<div class="muted">Pick a team or make a new one. Each team has 6 heroes from your roster; you choose their moves and items.</div>' : ''}</section></div>`;

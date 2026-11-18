@@ -35,9 +35,9 @@ Hulk must be Hulk (not Bruce Banner) to transform, and Monster Hulk never turns 
 2. Both teams of 6 are revealed.
 3. Pick your lineup in secret, then battle.
 
-**Hero Pass:** 3 rolls per day (the day resets at midnight US Eastern). Each roll shows 20 random heroes, randomized the same way as Standard, and you keep up to 5 for your roster.
+**Battle Pass:** 3 rolls per day (the day resets at midnight US Eastern). Each roll shows 20 random heroes, randomized the same way as Standard, and you keep up to 5 for your roster.
 
-**Accounts:** sign in with a username and password (the **Sign in** button, top right) to save your roster, Elite teams and daily Hero Pass rolls to your account, so they follow you to any device. You can still play as a guest: a guest's roster and teams are saved in that browser. When you sign in or create an account, that browser's roster, teams and today's Hero Pass rolls move into the account. Rolls already used that day still count, so switching accounts doesn't give extra rolls. Edits from another tab or device are picked up automatically. Each roster hero carries a server signature, so its nature, IVs and ability can't be edited before an Elite battle. Accounts have no email, so a forgotten password can't be reset from the site.
+**Accounts:** sign in with a username and password (the **Sign in** button, top right) to save your roster, Elite teams and daily Battle Pass rolls to your account, so they follow you to any device. You can still play as a guest: a guest's roster and teams are saved in that browser. When you sign in or create an account, that browser's roster, teams and today's Battle Pass rolls move into the account. Rolls already used that day still count, so switching accounts doesn't give extra rolls. Edits from another tab or device are picked up automatically. Each roster hero carries a server signature, so its nature, IVs and ability can't be edited before an Elite battle. Accounts have no email, so a forgotten password can't be reset from the site.
 
 **Hand-drawn sprites:** drawings on a white background go in `public/sprites-raw/` (named like `spider-man_front.png` / `spider-man_back.png`; see the README there). `npm run sprites` (`tools/process_sprites.py`) removes the white background, keeps each hero's size relative to its canvas, and lines everyone up on the same ground line in `public/sprites/`. Drawings are used only on the battlefield: front for the opponent's side, back for yours. The Herodex, Battler Cards and menus keep the official art, and so does any hero that hasn't been drawn yet.
 
@@ -97,7 +97,7 @@ Use `render.yaml` (Blueprint), or create a Web Service by hand:
 - Start command: `npm start`
 - Environment variables:
   - **`MARVEL_SECRET`**: a long random value. It signs roster heroes. If it changes, every saved roster hero stops being valid. `render.yaml` generates one for you.
-  - **`DATABASE_URL`**: a Postgres connection string (Neon's free plan works). Accounts, saved teams and Hero Pass rolls are stored there. Without it the server keeps them in memory, and Render's free tier loses them on every restart. The server creates its tables on startup.
+  - **`DATABASE_URL`**: a Postgres connection string (Neon's free plan works). Accounts, saved teams and Battle Pass rolls are stored there. Without it the server keeps them in memory, and Render's free tier loses them on every restart. The server creates its tables on startup.
 
 ## Hero art
 

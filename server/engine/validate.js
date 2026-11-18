@@ -1,5 +1,5 @@
 // Team legality. Heroes come with a fixed nature, IVs and ability (from a draft pool or the
-// Hero Pass); the player chooses only moves and items. VGC clauses: one of each hero,
+// Battle Pass); the player chooses only moves and items. VGC clauses: one of each hero,
 // one of each item.
 const MOVES = require('../../shared/moves.js');
 const FIGHTERS = require('../../shared/fighters.json');

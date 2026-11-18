@@ -1,4 +1,4 @@
-// Random hero generation (Standard draft pools and the Hero Pass) and roster signing.
+// Random hero generation (Standard draft pools and the Battle Pass) and roster signing.
 // Heroes a player owns live in their browser; the server signs each one so its
 // nature, IVs and ability can't be edited before it is used in an Elite battle.
 const crypto = require('crypto');

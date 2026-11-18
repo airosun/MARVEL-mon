@@ -1,4 +1,4 @@
-// Storage for accounts, sessions, saved rosters/teams and Hero Pass rolls.
+// Storage for accounts, sessions, saved rosters/teams and Battle Pass rolls.
 // With DATABASE_URL set (e.g. a free Neon Postgres) everything is stored in Postgres and survives
 // restarts. Without it (local dev, tests) it falls back to memory plus a best-effort data/db.json file,
 // which a Render free instance loses on every restart.

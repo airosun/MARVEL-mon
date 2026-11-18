@@ -48,7 +48,7 @@
         <ol class="about-steps">
           <li><b>Battle the CPU right away.</b> On ${goto('home', 'Home')}, leave <i>Standard Battle</i> and <i>Singles</i> selected and press <b>Battle the CPU</b>. You'll draft a random team. No setup needed.</li>
           <li><b>Make an account</b> (the <b>Sign in</b> button at the top) so your heroes, teams and daily rolls follow you to any device. Playing as a guest works too. Your stuff is just saved in that browser.</li>
-          <li><b>Roll the ${goto('pass', 'Hero Pass')}</b> every day to collect heroes for your roster.</li>
+          <li><b>Roll the ${goto('pass', 'Battle Pass')}</b> every day to collect heroes for your roster.</li>
           <li><b>Build an ${goto('elite', 'Elite team')}</b> from your roster and take it into Elite battles.</li>
           <li><b>Find an opponent</b> on Home, or challenge someone in the Online list.</li>
         </ol>
@@ -65,7 +65,7 @@
           <div><h3>Elite Battle</h3><p>Bring a team you built ahead of time:</p>
             <ol><li>Choose one of your saved <b>Elite teams</b> (6 heroes from your roster with moves, items and genders set).</li>
               <li>Both teams are revealed, you pick your lineup in secret, and you battle.</li></ol>
-            <p>Your roster heroes come from the Hero Pass, so building a great Elite team takes some collecting.</p></div>
+            <p>Your roster heroes come from the Battle Pass, so building a great Elite team takes some collecting.</p></div>
         </div>
         <div class="about-two">
           <div><h3>Singles</h3><p>Bring 6, pick 3. One hero out per side.</p></div>
@@ -124,7 +124,7 @@
       <section class="card" id="ab-tabs"><h2>The tabs</h2>
         <div class="about-tabs">
           <div><h3>${goto('home', 'Home')}</h3><p>Pick a mode (Standard or Elite) and format (Singles or Doubles), then <b>Find opponent</b> or <b>Battle the CPU</b>. The <b>Online</b> list shows who's here: challenge them, or tap a signed-in player's name to see their Battler Card. You can also watch live matches, or create or join a <b>private room</b>. The <b>Most used heroes</b> panel shows what players are bringing today and of all time.</p></div>
-          <div><h3>${goto('pass', 'Hero Pass')}</h3><p><b>3 rolls per day</b> (resets at midnight US Eastern). Each roll shows 20 random heroes with random natures, IVs, abilities and genders, and you <b>keep up to 5</b> for your roster. Your roster is listed below, sorted by hero. You can release heroes you don't want.</p></div>
+          <div><h3>${goto('pass', 'Battle Pass')}</h3><p><b>3 rolls per day</b> (resets at midnight US Eastern). Each roll shows 20 random heroes with random natures, IVs, abilities and genders, and you <b>keep up to 5</b> for your roster. Your roster is listed below, sorted by hero. You can release heroes you don't want.</p></div>
           <div><h3>${goto('elite', 'Elite Teams')}</h3><p>Build teams of 6 from your roster. For each hero, pick up to 4 moves, an item and (if it can be either) its gender. Hover moves to see what they do. Teams must follow the species and item clauses. <b>Export</b> gives a team as Showdown-style text, and <b>Import</b> pastes one in, matching each hero to the closest one in your roster.</p></div>
           <div><h3>${goto('road', 'Road to 50')}</h3><p>A gauntlet of 50 boss fights against the CPU. Start with an Elite team, heroes you own or a random team, recruit heroes from the bosses you beat, and see how far you get. Your run saves after every floor.</p></div>
           <div><h3>${goto('dex', 'Herodex')}</h3><p>All ${nFighters} heroes with their types, base stats, abilities, move pools, gender and battle forms. Search by name, role, type or move. Filter by a type or a type combination (Ultimate forms included, or pick "None" for single-type heroes), and sort by Herodex number, BST or any single stat. Tap a hero for the full entry.</p></div>
@@ -136,7 +136,7 @@
 
       <section class="card" id="ab-accounts"><h2>Accounts & Battler Cards</h2>
         <ul class="about-list">
-          <li><b>Accounts</b> use a username and password. Your roster, Elite teams and daily Hero Pass rolls are saved to your account and sync across devices. If you played as a guest first, signing in moves that browser's heroes and teams into your account.</li>
+          <li><b>Accounts</b> use a username and password. Your roster, Elite teams and daily Battle Pass rolls are saved to your account and sync across devices. If you played as a guest first, signing in moves that browser's heroes and teams into your account.</li>
           <li>There's no email on accounts, so <b>keep your password somewhere safe</b>. You can change it from the account menu.</li>
           <li><b>Battler Card:</b> your public profile. Pick a card color, an avatar (any hero), a title, a short "about you" and a showcase team. It shows your record and favorite heroes. Edit it from the account menu (tap your name at the top) or the Stats tab. Curse words and slurs aren't allowed.</li>
           <li>Roster heroes are <b>signed by the server</b>, so nobody can edit their nature, IVs or ability.</li>
@@ -158,7 +158,7 @@
           <li>A single-player gauntlet of <b>50 boss fights</b> (Singles: bring 6, pick 3). The bosses are the <b>same for everyone, every run</b>, and get stronger as you climb: higher-BST teams, better natures, IVs, moves and items, and smarter battling. Floors 10, 20, 30, 40 and 50 hold the toughest boss of their ten. Every hero shows up on at least one boss team.</li>
           <li><b>Starting a run:</b> bring one of your Elite teams, pick 6 heroes from your roster, or get 6 random heroes with random natures, IVs, abilities and moves.</li>
           <li><b>Between floors</b> your team is fully healed, and you can change any hero's moves and items.</li>
-          <li><b>Recruiting:</b> after each win you can take one hero from the boss's team, exactly as the boss built it, to replace one of yours for the rest of the run (it doesn't join your Hero Pass roster).</li>
+          <li><b>Recruiting:</b> after each win you can take one hero from the boss's team, exactly as the boss built it, to replace one of yours for the rest of the run (it doesn't join your Battle Pass roster).</li>
           <li><b>One loss ends the run.</b> Your best floor and full clears are kept, and shown on your Battler Card.</li>
           <li>Runs save after every floor, so you can stop and come back later (signed in: on any device; guest: on this browser). You can even leave in the middle of a fight and pick it back up.</li>
         </ul>
@@ -182,9 +182,9 @@
           <li>In Doubles, <b>Protect</b>, <b>Fake Out</b> and spread moves are as strong as they are in real VGC.</li>
           <li>Strategists (Mantis, Luna Snow, Invisible Woman…) shine in Doubles with Life Dew, Heal Pulse, Helping Hand and Follow Me.</li>
           <li>Check <b>Stats → Hero usage</b> to see what's popular, then build a team that counters it.</li>
-          <li>Roll your Hero Pass every day. Rolls don't carry over.</li>
+          <li>Roll your Battle Pass every day. Rolls don't carry over.</li>
         </ul>
-        <div class="row" style="margin-top:10px"><button class="primary" data-goto-tab="home">Start battling</button><button data-goto-tab="pass">Roll the Hero Pass</button></div>
+        <div class="row" style="margin-top:10px"><button class="primary" data-goto-tab="home">Start battling</button><button data-goto-tab="pass">Roll the Battle Pass</button></div>
       </section>
       </div></div>`;
 
