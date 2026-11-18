@@ -136,10 +136,10 @@ def main(only):
     if not os.path.isdir(RAW): print('No public/sprites-raw folder yet.'); return 0
     ids = valid_ids(); done = 0; problems = []; ov = overrides()
     for name in sorted(os.listdir(RAW)):
-        if name.startswith('.') or name.lower() == 'readme.md': continue
+        if name.startswith('.') or name.lower() == 'readme.md' or os.path.isdir(os.path.join(RAW, name)): continue
         m = NAME.match(name.lower().replace(' ', '-'))
-        if not m: problems.append(f'{name}: name should look like mario_front.png, mario_back.png or robin_female_front.png'); continue
-        if m.group(1) not in ids: problems.append(f'{name}: "{m.group(1)}" is not a fighter or Final Smash ID'); continue
+        if not m: problems.append(f'{name}: name should look like thor_front.png, thor_back.png or loki_female_front.png'); continue
+        if m.group(1) not in ids: print(f'wait {name}  ("{m.group(1)}" is not a hero or form yet; kept for later, e.g. an Ultimate)'); continue
         if only and not any(m.group(1).startswith(o) for o in only): continue
         try:
             img, bgshare = process(os.path.join(RAW, name), ov.get(name.lower()[:-4]))

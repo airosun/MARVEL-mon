@@ -958,3 +958,17 @@ button.primary:hover { background: #ffe15c; }
 .wx-terrain-psychic .tfloor { background: linear-gradient(180deg, transparent, #ff5fd022 40%, #c03bff44), radial-gradient(ellipse at 50% 100%, #ff7ae055, transparent 70%); }
 .wx-terrain-misty .tfloor { background: linear-gradient(180deg, transparent, #ffc8f022 35%, #f6d8ff4d), radial-gradient(ellipse at 30% 90%, #ffffff33, transparent 60%); }
 @keyframes tPulse { 0%,100% { opacity: .75; } 50% { opacity: 1; } }
+
+/* Herodex: click a battle sprite to see it large */
+.bs-tile[data-zoom] { cursor: zoom-in; transition: transform .12s, border-color .12s; }
+.bs-tile[data-zoom]:hover { transform: translateY(-2px); border-color: var(--accent, #ffd21f); }
+.sprite-zoom { position: fixed; inset: 0; z-index: 1000; background: rgba(5, 7, 12, .96); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center; cursor: zoom-out; padding: 16px; animation: szIn .15s ease-out; }
+.sz-inner { display: flex; flex-direction: column; align-items: center; gap: 10px; max-width: 100%; }
+.sz-title { font-family: 'Barlow Condensed', sans-serif; font-style: italic; font-weight: 800; text-transform: uppercase; font-size: 26px; color: #ffd21f; }
+.sz-row { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; }
+.sz-row figure { margin: 0; text-align: center; }
+.sz-stage { width: min(560px, 44vw); aspect-ratio: 4 / 3; background: radial-gradient(ellipse 30% 6% at 50% 96%, #ffd21f40 0 70%, transparent 100%), linear-gradient(180deg, #1b2333, #0f141e); border: 1px solid #ffd21f55; border-radius: 10px; display: flex; align-items: flex-end; justify-content: center; overflow: hidden; }
+.sz-stage img { width: 100%; height: 100%; object-fit: contain; }
+.sz-row figcaption { margin-top: 6px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: 13px; color: #c9d2e3; }
+@media (max-width: 700px) { .sz-stage { width: 88vw; } }
+@keyframes szIn { from { opacity: 0; } to { opacity: 1; } }

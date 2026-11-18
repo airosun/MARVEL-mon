@@ -1,8 +1,11 @@
 # Battle sprites
 
-Put battle sprites here as `<hero id>_front.png` (optionally `<hero id>_back.png`), either already transparent
+Put battle sprites here as `<hero id>_front.png` and `<hero id>_back.png`, either already transparent
 or on a plain white background, then run `npm run sprites`. The processed sprites go to `public/sprites/`
-and are used on the battlefield only. Bruce Banner's form uses `bruce-banner_front.png`.
+and are used on the battlefield and in the Herodex (click a sprite there to see it large).
 
-Alternate-gender sprites: `<hero id>_female_front.png` (or `_male_`). Loki can be either gender (50/50),
-so `loki_female_front.png` is used for female Loki and `loki_front.png` for male Loki.
+- Forms: Bruce Banner is `bruce-banner_*`, Dagger is `dagger-form_*` (Cloak uses `cloak-and-dagger_*`).
+- Alternate genders: `<hero id>_female_front.png` (or `_male_`). `loki_female_*` is currently a copy of
+  Loki's sprites; replace it with Lady Loki's when they're ready.
+- Ultimates waiting to be added: `kumiho_*`, `darkchylde_*`, `monster-hulk_*`, `the-hood-demon-form_*`
+  (front still needed). The sprite script skips them until those Ultimates exist, then picks them up.

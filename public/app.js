@@ -48,7 +48,7 @@
   // (Herodex, Battler Cards, menus, team builder) keeps the official art in public/images/.
   //   back = true: the player's own hero in battle (back view; the original image is mirrored)
   //   gender: picks the alternate-gender art when that gender has its own
-  const USE_DRAWN_BACKS = false;
+  const USE_DRAWN_BACKS = true;
   function spriteSrc(full, back, gender) {
     const drawn = S.drawn || new Set(); const id = full.id;
     const sex = gender === 'F' ? 'female' : gender === 'M' ? 'male' : null;
@@ -554,7 +554,7 @@
     $('#rpX').onclick = closeModal;
     $$('[data-rp]').forEach(el => el.onclick = () => {
       const b = rosterById(el.dataset.rp); const f = F(b.species);
-      const entry = { uid: b.uid, moves: f.signature.map(s => s.move), item: '', gender: b.gender || GENDER.defaultGender(f.id) };
+      const entry = { uid: b.uid, moves: f.signature.slice(0, 4).map(s => s.move), item: '', gender: b.gender || GENDER.defaultGender(f.id) };
       if (slot === null) t.mons.push(entry); else t.mons[slot] = entry;
       saveRoster(); closeModal(); renderElite();
     });
@@ -626,16 +626,19 @@
   function battleSpritesHtml(f) {
     const genders = GENDER.choices(f.id).filter(g => g === 'M' || g === 'F');
     const gs = genders.length ? genders : [null];
-    const forms = [f, ...Object.values(S.dex.finalSmashes || {}).filter(x => x.bases.includes(f.id)).map(x => S.byId[x.id]).filter(Boolean)];
+    const forms = [f, ...Object.values(S.dex.forms || {}).filter(x => x.base === f.id).map(x => S.byId[x.id]).filter(Boolean),
+      ...Object.values(S.dex.finalSmashes || {}).filter(x => x.bases.includes(f.id)).map(x => S.byId[x.id]).filter(Boolean)];
     const byUrl = new Map(), missing = [];   // one tile per distinct sprite; note which genders use it
     for (const form of forms) for (const g of gs) {
       const src = spriteSrc(form, false, g);
       if (!src.drawn) { missing.push(esc(form.name) + (g && genders.length > 1 ? ' ' + gsym(g) : '')); continue; }
-      const t = byUrl.get(src.url) || { form, url: src.url, gs: [] }; t.gs.push(g); byUrl.set(src.url, t);
+      const t = byUrl.get(src.url) || { form, url: src.url, back: spriteSrc(form, true, g), gs: [] }; t.gs.push(g); byUrl.set(src.url, t);
     }
     const tiles = [...byUrl.values()].map(t => {
       const sym = genders.length > 1 && t.gs.length < genders.length ? ' ' + t.gs.map(gsym).join('') : '';
-      return `<figure class="bs-tile${t.form === f ? '' : ' fs'}"><div class="bs-stage"><i></i><img src="${t.url}" alt="${esc(t.form.name)}" loading="lazy"></div><figcaption>${esc(t.form.name)}${sym}${t.form === f ? '' : ' <span class="fs-star">★</span>'}</figcaption></figure>`;
+      const nm = t.form === f && f.id === 'cloak-and-dagger' ? 'Cloak' : t.form.name;
+      const cap = esc(nm) + sym;
+      return `<figure class="bs-tile${t.form === f ? '' : ' fs'}" data-zoom="${esc(t.url)}" data-zoom-back="${esc(t.back.url)}" data-zoom-flip="${t.back.flip ? 1 : 0}" data-zoom-cap="${cap}" title="Click to view larger"><div class="bs-stage"><i></i><img src="${t.url}" alt="${esc(t.form.name)}" loading="lazy"></div><figcaption>${cap}${t.form === f ? '' : ' <span class="fs-star">★</span>'}</figcaption></figure>`;
     });
     if (!tiles.length) return `<h2 style="margin-top:14px">Battle sprites</h2><div class="muted small">No battle sprites yet; battles use the official art.</div>`;
     return `<h2 style="margin-top:14px">Battle sprites</h2><div class="bs-grid">${tiles.join('')}</div>${missing.length ? `<div class="muted small" style="margin-top:4px">Official art in battle for: ${missing.join(', ')}</div>` : ''}`;
@@ -652,6 +655,19 @@
       <h2 style="margin-top:14px">Move pool</h2>
       <div class="move-table"><table><tr><th>Move</th><th>Type</th><th>Cat</th><th>Pow</th><th>Acc</th></tr>${f.learnset.map(n => { const mv = S.dex.moves[n]; return `<tr><td>${esc(n)}${n in sig ? ` <span class="sig">★ ${esc(sig[n])}</span>` : ''}</td><td>${typeChip(mv.type)}</td><td><span class="cat">${mv.cat}</span></td><td>${mv.power || '—'}</td><td>${mv.acc === true ? '—' : mv.acc}</td></tr>`; }).join('')}</table></div>`);
     $('#fx').onclick = closeModal;
+    $$('[data-zoom]').forEach(el => el.onclick = () => zoomSprite(el.dataset));
+  }
+  // Herodex: a battle sprite shown large (front and back) over the page; click or Esc closes it
+  function zoomSprite(d) {
+    const box = document.createElement('div'); box.className = 'sprite-zoom';
+    box.innerHTML = `<div class="sz-inner"><div class="sz-title">${d.zoomCap}</div><div class="sz-row">
+      <figure><div class="sz-stage"><img src="${d.zoom}" alt=""></div><figcaption>Front</figcaption></figure>
+      <figure><div class="sz-stage"><img src="${d.zoomBack}" alt=""${d.zoomFlip === '1' ? ' style="transform:scaleX(-1)"' : ''}></div><figcaption>Back</figcaption></figure>
+      </div><div class="muted small">Click anywhere to close</div></div>`;
+    const close = () => { box.remove(); document.removeEventListener('keydown', esc_, true); };
+    const esc_ = e => { if (e.key === 'Escape') { e.stopPropagation(); close(); } };
+    box.onclick = close; document.addEventListener('keydown', esc_, true);
+    document.body.appendChild(box);
   }
 
   // ---------- match screens ----------
@@ -718,7 +734,7 @@
       <div class="fgrid">${m.pool.map((b, i) => fighterCard(b, { sel: sel.includes(i), order: sel.includes(i) ? sel.indexOf(i) + 1 : null, attr: `data-draft="${i}"` })).join('')}</div>`;
   }
   function buildView(m) {
-    if (!S.builds[m.id]) S.builds[m.id] = m.picks.map(b => ({ moves: F(b.species).signature.map(s => s.move), item: '' }));
+    if (!S.builds[m.id]) S.builds[m.id] = m.picks.map(b => ({ moves: F(b.species).signature.slice(0, 4).map(s => s.move), item: '' }));
     const builds = S.builds[m.id]; const counts = itemCounts(builds);
     const bad = [...counts.values()].some(c => c > 1) || builds.some(b => !b.moves.filter(Boolean).length);
     return `<div class="row" style="margin-bottom:8px"><h2 class="grow" style="margin:0">Set moves and items</h2><button class="primary" id="buildOk" ${bad ? 'disabled' : ''}>Lock in sets</button></div>

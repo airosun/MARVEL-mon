@@ -343,7 +343,7 @@
         if (item) { const known = Object.keys(S.dex.items).find(i => i.toLowerCase() === item.toLowerCase()); const fsItem = known && (S.dex.finalSmashes || {})[known]; if (!known || (fsItem && !fsItem.bases.includes(f.id))) { notes.push(`${esc(item)} isn't an item ${esc(f.name)} can hold here, so it was left off.`); item = ''; } else item = known; }
         if (s.nature && pickR.nature !== s.nature) notes.push(`${esc(f.name)}: using your ${esc(pickR.nature)} one (no ${esc(s.nature)} ${esc(f.name)} in your roster).`);
         if (s.gender && GENDER.info(f.id).type !== 'X' && s.gender !== GENDER.defaultGender(f.id)) notes.push(`${esc(f.name)} is always ${GENDER.label(f.id).toLowerCase()}, so the gender was ignored.`);
-        mons.push({ uid: pickR.uid, moves: moves.length ? moves.slice(0, 4) : f.signature.map(x => x.move), item, gender: GENDER.normalize(f.id, s.gender || pickR.gender) });
+        mons.push({ uid: pickR.uid, moves: moves.length ? moves.slice(0, 4) : f.signature.slice(0, 4).map(x => x.move), item, gender: GENDER.normalize(f.id, s.gender || pickR.gender) });
       }
       const items = mons.map(m => m.item).filter(Boolean); const dup = items.find((x, i) => items.indexOf(x) !== i);
       if (dup) notes.push(`${esc(dup)} is on more than one hero. Item clause allows one of each, so change one before battling.`);
