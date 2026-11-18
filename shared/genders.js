@@ -47,7 +47,10 @@
  "loki": {
   "type": "X",
   "male": 50,
-  "default": "M"
+  "default": "M",
+  "images": {
+   "F": "loki-female.webp"
+  }
  },
  "luna-snow": {
   "type": "F"

@@ -30,8 +30,8 @@ for h in heroes:
         'abilities': [{'name': a0['name'], 'desc': a0['desc']}],
         'hidden': {'name': ah['name'], 'desc': ah['desc']},
         'signature': sig, 'learnset': learn, 'notes': '',
-        # official art: public/images/<id>.png (until it exists the site shows a type-colored badge)
-        'image': f"{h['id']}.png" if os.path.exists(os.path.join(ROOT, 'public', 'images', f"{h['id']}.png")) else None,
+        # official art: public/images/<id>.webp (or .png/.jpg) (until it exists the site shows a type-colored badge)
+        'image': next((f"{h['id']}.{ext}" for ext in ('webp', 'png', 'jpg') if os.path.exists(os.path.join(ROOT, 'public', 'images', f"{h['id']}.{ext}"))), None),
     })
 
 js = "const M=require('./shared/moves.js');const L=" + json.dumps(sorted({m for f in out for m in f['learnset']})) + ";console.log(JSON.stringify(L.filter(n=>!M[n])))"
