@@ -46,23 +46,23 @@
 
       <section class="card" id="ab-start"><h2>Getting started</h2>
         <ol class="about-steps">
-          <li><b>Battle the CPU right away.</b> On ${goto('home', 'Home')}, leave <i>Standard Battle</i> and <i>Singles</i> selected and press <b>Battle the CPU</b>. You'll draft a random team. No setup needed.</li>
+          <li><b>Battle the CPU right away.</b> On ${goto('home', 'Home')}, leave <i>Quick Match</i> and <i>Singles</i> selected and press <b>Battle the CPU</b>. You'll draft a random team. No setup needed.</li>
           <li><b>Make an account</b> (the <b>Sign in</b> button at the top) so your heroes, teams and daily rolls follow you to any device. Playing as a guest works too. Your stuff is just saved in that browser.</li>
           <li><b>Roll the ${goto('pass', 'Battle Pass')}</b> every day to collect heroes for your roster.</li>
-          <li><b>Build a ${goto('elite', 'Strike Squad')}</b> from your roster and take it into Strike Squad battles.</li>
+          <li><b>Build a ${goto('elite', 'Strike Squad')}</b> from your roster and take it into Competitive battles.</li>
           <li><b>Find an opponent</b> on Home, or challenge someone in the Online list.</li>
         </ol>
       </section>
 
       <section class="card" id="ab-modes"><h2>Battle modes</h2>
         <div class="about-two">
-          <div><h3>Standard Battle</h3><p>Everyone starts on equal footing with a random draft:</p>
+          <div><h3>Quick Match</h3><p>Everyone starts on equal footing with a random draft:</p>
             <ol><li>You get <b>20 random heroes</b>, each with a random nature, random IVs and either its standard or hidden ability. <b>Pick 6.</b></li>
               <li>Choose up to <b>4 moves</b> and an <b>item</b> for each of your 6.</li>
               <li>Both teams of 6 are <b>revealed</b> to each other (team preview).</li>
               <li>Secretly choose your <b>lineup and order</b>: 3 in Singles, 4 in Doubles. Your first one (or two) lead.</li>
               <li>Battle!</li></ol></div>
-          <div><h3>Strike Squad Battle</h3><p>Bring a team you built ahead of time:</p>
+          <div><h3>Competitive</h3><p>Bring a team you built ahead of time:</p>
             <ol><li>Choose one of your saved <b>Strike Squads</b> (6 heroes from your roster with moves, items and genders set).</li>
               <li>Both teams are revealed, you pick your lineup in secret, and you battle.</li></ol>
             <p>Your roster heroes come from the Battle Pass, so building a great Strike Squad takes some collecting.</p></div>
@@ -123,7 +123,7 @@
 
       <section class="card" id="ab-tabs"><h2>The tabs</h2>
         <div class="about-tabs">
-          <div><h3>${goto('home', 'Home')}</h3><p>Pick a mode (Standard or Strike Squad) and format (Singles or Doubles), then <b>Find opponent</b> or <b>Battle the CPU</b>. The <b>Online</b> list shows who's here: challenge them, or tap a signed-in player's name to see their Battler Card. You can also watch live matches, or create or join a <b>private room</b>. The <b>Most used heroes</b> panel shows what players are bringing today and of all time.</p></div>
+          <div><h3>${goto('home', 'Home')}</h3><p>Pick a mode (Quick Match or Competitive) and format (Singles or Doubles), then <b>Find opponent</b> or <b>Battle the CPU</b>. The <b>Online</b> list shows who's here: challenge them, or tap a signed-in player's name to see their Battler Card. You can also watch live matches, or create or join a <b>private room</b>. The <b>Most used heroes</b> panel shows what players are bringing today and of all time.</p></div>
           <div><h3>${goto('pass', 'Battle Pass')}</h3><p><b>3 rolls per day</b> (resets at midnight US Eastern). Each roll shows 20 random heroes with random natures, IVs, abilities and genders, and you <b>keep up to 5</b> for your roster. Your roster is listed below, sorted by hero. You can release heroes you don't want.</p></div>
           <div><h3>${goto('elite', 'Strike Squads')}</h3><p>Build teams of 6 from your roster. For each hero, pick up to 4 moves, an item and (if it can be either) its gender. Hover moves to see what they do. Teams must follow the species and item clauses. <b>Export</b> gives a team as Showdown-style text, and <b>Import</b> pastes one in, matching each hero to the closest one in your roster.</p></div>
           <div><h3>${goto('road', 'Road to 50')}</h3><p>A gauntlet of 50 boss fights against the CPU. Start with a Strike Squad, heroes you own or a random team, recruit heroes from the bosses you beat, and see how far you get. Your run saves after every floor.</p></div>
@@ -170,7 +170,7 @@
           <li><b>The line:</b> everyone who wants to battle is in line. The first two people in line battle, and <b>everyone else in the room watches</b> the battle live. Tap <b>Sit out</b> to only watch, and <b>Get in line</b> to play again.</li>
           <li><b>Taking turns:</b> the host picks a rotation. <b>Winner stays on</b>: the winner keeps battling and the loser goes to the back of the line. <b>Everyone rotates</b>: both players go to the back. The next battle starts automatically 10 seconds after each one ends.</li>
           <li><b>Host controls:</b> the host (👑) picks the mode, format and rotation (between battles), starts or pauses battles, reorders the line, makes someone else host, or removes people. If the host leaves, someone else becomes host.</li>
-          <li><b>Strike Squad rooms:</b> each person picks one of their Strike Squads for the room before getting matched. Standard rooms use the usual draft.</li>
+          <li><b>Competitive rooms:</b> each person picks one of their Strike Squads for the room before getting matched. Quick Match rooms use the usual draft.</li>
           <li>The room has its own <b>chat</b> and keeps everyone's wins and losses and the results of each battle. Room battles aren't listed on Home, and they still count toward your Stats.</li>
         </ul>
       </section>

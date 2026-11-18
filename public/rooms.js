@@ -56,7 +56,7 @@
     const hostCtl = r.isHost ? (r.running ? `<button id="rmPause">${idle ? 'Pause battles' : 'Pause after this battle'}</button>` : `<button class="primary" id="rmStart">${r.history.length ? 'Resume battles' : 'Start battling'}</button>`) : '';
     const settings = r.isHost ? `
         <div class="row wrap room-settings">
-          <select id="rmMode" ${idle ? '' : 'disabled'}><option value="standard" ${r.mode === 'standard' ? 'selected' : ''}>Standard Battle</option><option value="elite" ${r.mode === 'elite' ? 'selected' : ''}>Strike Squad Battle</option></select>
+          <select id="rmMode" ${idle ? '' : 'disabled'}><option value="standard" ${r.mode === 'standard' ? 'selected' : ''}>Quick Match</option><option value="elite" ${r.mode === 'elite' ? 'selected' : ''}>Competitive</option></select>
           <select id="rmFormat" ${idle ? '' : 'disabled'}><option value="singles" ${r.format === 'singles' ? 'selected' : ''}>Singles</option><option value="doubles" ${r.format === 'doubles' ? 'selected' : ''}>Doubles</option></select>
           <select id="rmRot" ${idle ? '' : 'disabled'}>${Object.entries(ROT).map(([k, v]) => `<option value="${k}" ${r.rotation === k ? 'selected' : ''}>${v}</option>`).join('')}</select>
           ${idle ? '' : '<span class="muted small">Settings can be changed between battles.</span>'}

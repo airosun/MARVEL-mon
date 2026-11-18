@@ -111,7 +111,7 @@ const queues = new Map();    // `${mode}:${format}` -> [clientId]
 const lobbyChat = [];
 
 const MODES = ['standard', 'elite'], FORMATS = ['singles', 'doubles'];
-const LABEL = { standard: 'Standard', elite: 'Strike Squad', singles: 'Singles', doubles: 'Doubles' };
+const LABEL = { standard: 'Quick Match', elite: 'Competitive', singles: 'Singles', doubles: 'Doubles' };
 const clean = s => String(s || '').replace(/[<>]/g, '').trim().slice(0, 24);
 const userList = () => [...users.values()].filter(u => u.sockets.size).map(u => ({ id: u.id, name: u.name, account: !!u.account, avatar: u.avatar || null, searching: u.searching ? u.searching.key : null }));
 // live matches for the lobby (private-room battles aren't listed)

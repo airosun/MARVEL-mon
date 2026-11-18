@@ -91,7 +91,7 @@
   function closeModal() { $('#modal').classList.add('hidden'); $('#modalCard').innerHTML = ''; }
   $('#modal').addEventListener('click', e => { if (e.target.id === 'modal') closeModal(); });
   const F = id => S.byId[id];
-  const label = (mode, format) => `${mode === 'elite' ? 'Strike Squad' : 'Standard'} ${format === 'doubles' ? 'Doubles' : 'Singles'}`;
+  const label = (mode, format) => `${mode === 'elite' ? 'Competitive' : 'Quick Match'} ${format === 'doubles' ? 'Doubles' : 'Singles'}`;
   function statsOf(b) { const f = F(b.species); const o = {}; for (const s of STATS) o[s] = DEX.calcStat(s, f.stats[s], b.ivs[s], 0, LEVEL, b.nature); return o; }
   function natureTag(n) { const x = S.dex.natures[n] || {}; return x.plus ? `${n} <span class="muted">(+${SL[x.plus]} −${SL[x.minus]})</span>` : `${n} <span class="muted">(neutral)</span>`; }
   function abilityInfo(f, name) { name = (S.dex.renamed || {})[name] || name; const a = [...f.abilities, f.hidden].find(x => x.name === name) || { name, desc: '' }; return { ...a, hidden: f.hidden.name === name }; }
@@ -180,7 +180,7 @@
   socket.on('searchStatus', d => { S.searching = d.searching; if (S.tab === 'home') renderHome(); });
   socket.on('challenged', ({ from, name, mode, format, label: lbl }) => {
     modal(`<h2>Challenge!</h2><p><b>${esc(name)}</b> wants a <b>${esc(lbl)}</b> battle.</p>
-      ${mode === 'elite' ? `<div class="field"><label>Your Strike Squad</label>${eliteSelect('chTeam')}</div>` : '<p class="muted">Standard battle: you will draft from 20 random heroes.</p>'}
+      ${mode === 'elite' ? `<div class="field"><label>Your Strike Squad</label>${eliteSelect('chTeam')}</div>` : '<p class="muted">Quick Match: you will draft from 20 random heroes.</p>'}
       <div class="row" style="margin-top:14px"><button class="primary" id="chAccept">Accept</button><button id="chDecline">Decline</button></div>`);
     $('#chAccept').onclick = () => {
       let team = null;
@@ -341,8 +341,8 @@
       <section class="card hero span2">
         <h1>Battle with Marvel Rivals heroes</h1><p class="muted small" style="margin:-6px 0 10px">New here? <a href="#" data-goto-about>Read <b>What is MARVEL-mon?</b></a> for how everything works.</p>
         <div class="seg" id="segMode">
-          <button data-mode="standard" class="${S.mode === 'standard' ? 'on' : ''}"><b>Standard Battle</b><span>Draft 6 of 20 random heroes, then set moves and items</span></button>
-          <button data-mode="elite" class="${S.mode === 'elite' ? 'on' : ''}"><b>Strike Squad Battle</b><span>Bring a pre-built team from your Battle Pass roster</span></button>
+          <button data-mode="standard" class="${S.mode === 'standard' ? 'on' : ''}"><b>Quick Match</b><span>Draft 6 of 20 random heroes, then set moves and items</span></button>
+          <button data-mode="elite" class="${S.mode === 'elite' ? 'on' : ''}"><b>Competitive</b><span>Bring one of your Strike Squads, built from your Battle Pass roster</span></button>
         </div>
         <div class="seg small" id="segFormat">
           <button data-format="singles" class="${S.format === 'singles' ? 'on' : ''}"><b>Singles</b><span>Bring 6, pick 3</span></button>

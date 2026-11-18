@@ -23,19 +23,19 @@ A Pokémon VGC-style battle site where every Marvel Rivals hero is a "mon" with 
 
 Hulk must be Hulk (not Bruce Banner) to transform, and Monster Hulk never turns back into Bruce. Forms live in `shared/megas.js`; ability specs in `server/engine/abilities.js`.
 
-**Standard Battle**
+**Quick Match**
 1. Each player gets 20 random heroes with random natures, random IVs (0–31) and either their standard or hidden ability. Pick 6.
 2. Choose moves (up to 4 from each hero's move pool) and an item for each of your 6.
 3. Both teams of 6 are revealed.
 4. Each player secretly picks their lineup in order (3 for singles, 4 for doubles). The first one (singles) or two (doubles) lead.
 5. Battle.
 
-**Strike Squad Battle**
+**Competitive**
 1. Bring a pre-built team of 6 from your roster (built in the **Strike Squads** tab).
 2. Both teams of 6 are revealed.
 3. Pick your lineup in secret, then battle.
 
-**Battle Pass:** 3 rolls per day (the day resets at midnight US Eastern). Each roll shows 20 random heroes, randomized the same way as Standard, and you keep up to 5 for your roster.
+**Battle Pass:** 3 rolls per day (the day resets at midnight US Eastern). Each roll shows 20 random heroes, randomized the same way as Quick Match, and you keep up to 5 for your roster.
 
 **Accounts:** sign in with a username and password (the **Sign in** button, top right) to save your roster, Strike Squads and daily Battle Pass rolls to your account, so they follow you to any device. You can still play as a guest: a guest's roster and teams are saved in that browser. When you sign in or create an account, that browser's roster, teams and today's Battle Pass rolls move into the account. Rolls already used that day still count, so switching accounts doesn't give extra rolls. Edits from another tab or device are picked up automatically. Each roster hero carries a server signature, so its nature, IVs and ability can't be edited before an Elite battle. Accounts have no email, so a forgotten password can't be reset from the site.
 

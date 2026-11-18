@@ -177,7 +177,7 @@ function createRooms({ users, matches, startMatch, emitTo, spectate, checkMode, 
         break;
       }
       case 'team': {
-        if (room.mode !== 'elite') return { error: 'Teams are only used in Strike Squad rooms.' };
+        if (room.mode !== 'elite') return { error: 'Teams are only used in Competitive rooms.' };
         const v = prepTeam('elite', data.team); if (!v.ok) return { error: v.errors.join('\n') };
         const m = room.members.get(userId); m.team = v.team; m.teamName = String(data.name || 'Strike Squad').replace(/[<>]/g, '').slice(0, 30);
         maybeSchedule(room);
@@ -192,7 +192,7 @@ function createRooms({ users, matches, startMatch, emitTo, spectate, checkMode, 
           room.mode = mode; room.format = format;
         }
         if (data.rotation) room.rotation = data.rotation === 'rotate' ? 'rotate' : 'winner';
-        sys(room, `Settings: ${room.mode === 'elite' ? 'Strike Squad' : 'Standard'} ${room.format}, ${room.rotation === 'winner' ? 'winner stays on' : 'everyone rotates'}.`);
+        sys(room, `Settings: ${room.mode === 'elite' ? 'Competitive' : 'Quick Match'} ${room.format}, ${room.rotation === 'winner' ? 'winner stays on' : 'everyone rotates'}.`);
         break;
       }
       case 'start': {

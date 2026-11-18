@@ -1,5 +1,5 @@
 // Gender for each hero. type: M (male), F (female), N (genderless), B (both), X (either: rolled in
-// Standard Battle using the male percentage, chosen in Elite).
+// Quick Match using the male percentage, chosen in Competitive).
 (function () {
   const GENDERS = {
  "adam-warlock": {
