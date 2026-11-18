@@ -12,7 +12,16 @@ A Pokémon VGC-style battle site where every Marvel Rivals hero is a "mon" with 
 
 **Genders:** each hero is male, female or genderless (Ultron). Gender matters for infatuation and Captivate: only opposite genders are affected, and genderless heroes never are. Genders are shown with ♂/♀ and exported as `(M)`/`(F)`. The data lives in `shared/genders.js`.
 
-**Ultimates (Megas):** not in this version yet. The engine still supports transformation items, and Ultimates will be added later in `shared/megas.js`.
+**Ultimate Forms (Megas):** a hero holding its Ultimate Form item can transform once per battle (one hero per team), before it moves. HP stays the same; stats (+100 BST), types and ability change. The item can't be lost.
+
+| Form | Hero | Item | Types | Ability |
+| --- | --- | --- | --- | --- |
+| Monster Hulk | Hulk | Gamma Bomb | Fighting / Poison | World Breaker: contact moves 1.3x, can't flinch, foes can't lower its stats |
+| Darkchylde | Magik | Limbo Bloodstone | Dark / Ghost | Queen of Limbo: Intimidate on transforming/entry, slicing moves 1.5x |
+| The Hood (Gun Demon Form) | The Hood | Dormammu's Cloak | Dark / Fire | Dormammu's Vessel: STAB is 2x (Adaptability) |
+| Kumiho | White Fox | Fox Bead | Fairy / Dark | Nine-Tailed Fox: heals 1/3 of damage dealt, contact may infatuate (30%) |
+
+Hulk must be Hulk (not Bruce Banner) to transform, and Monster Hulk never turns back into Bruce. Forms live in `shared/megas.js`; ability specs in `server/engine/abilities.js`.
 
 **Standard Battle**
 1. Each player gets 20 random heroes with random natures, random IVs (0–31) and either their standard or hidden ability. Pick 6.
@@ -104,7 +113,7 @@ Drop art into `public/images/<hero id>.png` (for example `spider-man.png`, `bruc
 | `shared/moves.js` | Move database (type, power, accuracy, PP, effects, doubles targeting) |
 | `shared/dex.js` | Type chart, natures, items, stat formula |
 | `shared/abilityrules.js` | Which abilities Rogue can copy and Deadpool can roll |
-| `shared/megas.js` | Alternate forms (Bruce Banner, Cloak) and, later, Ultimates |
+| `shared/megas.js` | Ultimate Forms and battle forms (Bruce Banner, Cloak) |
 | `server/engine/battle.js` | Battle engine (singles and doubles) |
 | `server/engine/abilities.js` | Maps each lore ability to the mechanic it uses |
 | `server/engine/ai.js` | CPU: drafting, sets, lineups, battling |
@@ -117,4 +126,3 @@ Drop art into `public/images/<hero id>.png` (for example `spider-man.png`, `bruc
 - Weight isn't modelled: Low Kick is a flat 60 BP, Heavy Slam a flat 100.
 - In singles, Heal Pulse, Floral Healing and Purify heal the user instead.
 - Revival Blessing revives the hero that fainted most recently.
-- Ultimates (Megas) are not in yet.

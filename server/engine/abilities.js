@@ -14,6 +14,11 @@ def('Great Responsibility', { thresholdEntry: { below: 0.5, boosts: { atk: 1 } }
 def('Kumiho Unleashed', { threshold: { below: 1 / 3, heal: 0.5, boosts: { atk: 1 } } });
 def('Diamond Form', { diamondForm: { below: 0.5 } });
 def('Puny Banner', { punyBanner: true });
+// ---- Ultimate Forms ----
+def('World Breaker', { flagBoost: { flag: 'contact', mult: 1.3 }, noFlinch: true, clearBody: true });
+def('Queen of Limbo', { intimidate: true, flagBoost: { flag: 'slicing', mult: 1.5 } });
+def("Dormammu's Vessel", { adaptability: true });
+def('Nine-Tailed Fox', { drainAll: 1 / 3, contactAttract: 30 });
 
 // ---- Damage dealt modifiers ----
 def(['Iron Fist', 'Fist of Khonshu'], { flagBoost: { flag: 'punch', mult: 1.2 } });

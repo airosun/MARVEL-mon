@@ -17,9 +17,10 @@ const { FINAL_SMASH_BY_BASE } = require('../shared/megas.js');
 const GENDER = require('../shared/genders.js');
 const AI = require('../server/engine/ai.js');
 
-// no Ultimates (Final Smash stones) yet: bosses just get competitive items
 const HAS_FS = Object.keys(FINAL_SMASH_BY_BASE).length > 0;
 const FLOORS = 50, FS_FROM = 15, MILESTONES = [10, 20, 30, 40, 50], MAX_USES = 5;
+// with only a few Ultimate heroes, each may appear more often so every boss from FS_FROM on can have one
+const FS_MAX_USES = HAS_FS ? Math.max(MAX_USES, Math.ceil((FLOORS - Math.floor((FS_FROM - 1) / 10) * 10) / Object.keys(FINAL_SMASH_BY_BASE).length) + 2) : MAX_USES;
 function mulberry32(a) { return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
 const rng = mulberry32(50);
 const pick = arr => arr[Math.floor(rng() * arr.length)];
@@ -98,27 +99,29 @@ function itemsFor(team, sets, floor) {
 
 const teamBst = t => t.reduce((n, f) => n + bst(f), 0);
 let teams = Array.from({ length: FLOORS }, (_, i) => chooseTeam(i + 1)).sort((a, b) => teamBst(a) - teamBst(b));
+teams.forEach((team, i) => {
+  const floor = i + 1;
+  if (!HAS_FS || floor <= Math.floor((FS_FROM - 1) / 10) * 10 ||   // whole blocks of ten, so reordering below keeps it
+     team.some(f => FINAL_SMASH_BY_BASE[f.id])) return;
+  // swap the fighter closest in BST to a Final Smash fighter that's used least
+  const opts = sorted.filter(f => FINAL_SMASH_BY_BASE[f.id] && !team.includes(f));
+  let best = null;
+  for (let k = 0; k < 6; k++) for (const f of opts) {
+    if (used.get(team[k].id) <= 1) continue;   // keep each fighter's only appearance
+    if (used.get(f.id) >= FS_MAX_USES) continue;
+    const cost = Math.abs(bst(f) - bst(team[k])) + used.get(f.id) * 60;
+    if (!best || cost < best.cost) best = { k, f, cost };
+  }
+  if (!best) throw new Error(`floor ${floor}: no hero with an Ultimate Form can be swapped in`);
+  used.set(team[best.k].id, used.get(team[best.k].id) - 1); used.set(best.f.id, used.get(best.f.id) + 1);
+  team[best.k] = best.f;
+});
 for (let d = 0; d < FLOORS / 10; d++) {
   const block = teams.slice(d * 10, d * 10 + 10);
   const top = block.reduce((bi, t, i) => teamBst(t) > teamBst(block[bi]) ? i : bi, 0);
   block.push(block.splice(top, 1)[0]);
   teams.splice(d * 10, 10, ...block);
 }
-teams.forEach((team, i) => {
-  const floor = i + 1;
-  if (!HAS_FS || floor < FS_FROM || team.some(f => FINAL_SMASH_BY_BASE[f.id])) return;
-  // swap the fighter closest in BST to a Final Smash fighter that's used least
-  const opts = sorted.filter(f => FINAL_SMASH_BY_BASE[f.id] && !team.includes(f));
-  let best = null;
-  for (let k = 0; k < 6; k++) for (const f of opts) {
-    if (used.get(team[k].id) <= 1) continue;   // keep each fighter's only appearance
-    if (used.get(f.id) >= MAX_USES) continue;
-    const cost = Math.abs(bst(f) - bst(team[k])) + used.get(f.id) * 60;
-    if (!best || cost < best.cost) best = { k, f, cost };
-  }
-  used.set(team[best.k].id, used.get(team[best.k].id) - 1); used.set(best.f.id, used.get(best.f.id) + 1);
-  team[best.k] = best.f;
-});
 const aces = new Set(); const names = new Set();
 const bosses = [];
 for (let floor = 1; floor <= FLOORS; floor++) {

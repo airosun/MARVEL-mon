@@ -19,7 +19,7 @@ const bst = id => Object.values(FIGHTERS.find(f => f.id === id).stats).reduce((a
   let n = 0; const started = [];
   const fakeStart = (team, boss) => { started.push({ team, boss }); return 'm' + ++n; };
 
-  await test('50 fixed bosses: legal teams, every hero appears, no stones (no Ultimates yet), rising difficulty', () => {
+  await test('50 fixed bosses: legal teams, every hero appears, stones only from the Ultimate floors on, rising difficulty', () => {
     const B = Road.BOSSES;
     assert.equal(B.length, 50);
     const seen = new Set();
@@ -30,7 +30,7 @@ const bst = id => Object.values(FIGHTERS.find(f => f.id === id).stats).reduce((a
       assert.equal(b.team.length, 6);
       b.team.forEach(s => seen.add(s.species));
       const stones = b.team.filter(s => s.item && !ITEMS[s.item]).length;
-      assert.equal(stones, 0, `floor ${b.floor} stones`);
+      assert(stones <= 1, `floor ${b.floor} has at most one Ultimate item`);
       assert.equal(b.bst, b.team.reduce((x, s) => x + bst(s.species), 0));
     });
     assert.equal(seen.size, FIGHTERS.length, 'every fighter is on some boss team');

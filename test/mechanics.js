@@ -6,6 +6,7 @@ const { sign, verify, genFighter } = require('../server/engine/roster.js');
 const { validateEliteTeam, validateStandardBuild } = require('../server/engine/validate.js');
 
 const ivs31 = { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31 };
+const ABILITIES = require('../server/engine/abilities.js').ABILITIES || require('../server/engine/abilities.js');
 const mk = (species, ability, moves, extra = {}) => Object.assign({ species, ability, moves, nature: 'Hardy', ivs: ivs31 }, extra);
 function seeded(s) { return () => { s = (s * 16807) % 2147483647; return (s - 1) / 2147483646; }; }
 const battle = (t1, t2, format = 'singles') => new Battle({ format, players: [{ name: 'A', team: t1 }, { name: 'B', team: t2 }], rng: seeded(7) });
@@ -113,11 +114,41 @@ async function test(name, fn) { try { await fn(); passed++; console.log('ok  ', 
     assert.equal(last, 'ended');
   });
 
-  await test('no Ultimates yet: no stones, no Final Smash requests', () => {
+  await test('Ultimate Forms: four forms, +100 BST, HP unchanged, once per team', () => {
     const { FINAL_SMASHES } = require('../shared/megas.js');
-    assert.equal(Object.keys(FINAL_SMASHES).length, 0);
-    const b = battle([mk('thor', 'God of Thunder', ['Thunder Punch'])], [mk('loki', 'Trickster', ['Protect'])]);
-    assert.equal(b.getRequest(0).actives[0].finalSmash, null);
+    const F = Object.fromEntries(require('../shared/fighters.json').map(f => [f.id, f]));
+    const sum = st => Object.values(st).reduce((a, c) => a + c, 0);
+    assert.deepEqual(Object.values(FINAL_SMASHES).map(x => x.id).sort(), ['darkchylde', 'kumiho', 'monster-hulk', 'the-hood-gun-demon-form']);
+    for (const fs of Object.values(FINAL_SMASHES)) {
+      const base = F[fs.base];
+      assert.equal(sum(fs.stats), sum(base.stats) + 100, fs.name + ' is +100 BST');
+      assert.equal(fs.stats.hp, base.stats.hp, fs.name + ' keeps HP');
+      assert(ABILITIES[fs.ability.name], fs.ability.name + ' has a spec');
+    }
+    const b = battle([mk('magik', 'Soulsword', ['Psycho Cut', 'Protect'], { item: 'Limbo Bloodstone' })], [mk('thor', 'God of Thunder', ['Protect', 'Bulk Up'])]);
+    const req = b.getRequest(0);
+    assert.equal(req.actives[0].finalSmash.name, 'Darkchylde');
+    const m = b.sides[0].team[0], hp = m.maxhp;
+    b.choose(0, { actions: [{ pos: 0, type: 'move', index: 0, mega: true }] }); b.choose(1, mv(1));
+    assert.equal(m.species.id, 'darkchylde'); assert.deepEqual(m.types, ['Dark', 'Ghost']); assert.equal(m.maxhp, hp);
+    assert.equal(m.ability, 'Queen of Limbo');
+    assert.equal(b.sides[1].team[0].boosts.atk, 1 - 1, 'Intimidate on transforming (Thor +1 from Bulk Up, -1)');
+    assert.equal(b.getRequest(0).actives[0].finalSmash, null, 'once per battle');
+  });
+
+  await test('Monster Hulk: Hulk can transform, Bruce Banner cannot; no more Puny Banner', () => {
+    const b = battle([mk('hulk', 'Puny Banner', ['Hammer Arm', 'Protect'], { item: 'Gamma Bomb' })], [mk('thor', 'God of Thunder', ['Protect', 'Bulk Up'])]);
+    const h = b.sides[0].team[0];
+    h.hp = Math.floor(h.maxhp / 4);
+    b.choose(0, mv(1)); b.choose(1, mv(1));
+    assert.equal(h.species.id, 'bruce-banner');
+    assert.equal(b.getRequest(0).actives[0].finalSmash, null, 'Bruce cannot go Monster');
+    h.hp = h.maxhp; b.choose(0, mv(1)); b.choose(1, mv(1));
+    assert.equal(h.species.id, 'hulk');
+    b.choose(0, { actions: [{ pos: 0, type: 'move', index: 1, mega: true }] }); b.choose(1, mv(1));
+    assert.equal(h.species.id, 'monster-hulk'); assert.equal(h.ability, 'World Breaker');
+    h.hp = 5; b.choose(0, mv(1)); b.choose(1, mv(1));
+    assert.equal(h.species.id, 'monster-hulk', 'Monster Hulk never turns back into Bruce');
   });
 
   await test('a flinch is logged with an animation event', () => {

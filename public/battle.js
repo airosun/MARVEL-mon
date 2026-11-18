@@ -541,7 +541,7 @@
       const tgtText = p.pick ? 'Tap a glowing hero (or a button below) to choose who to hit.' : (p.flash.length ? `${p.note ? p.note + ': ' : 'Target: '}${p.flash.map(k => esc(nameAt(m, k))).join(', ')}` : esc(p.note || ''));
       return `<div class="confirm"><div class="row"><h2 class="grow" style="margin:0">${esc(cur.name)} → ${esc(mv.name)}</h2>${slots.length > 1 ? `<span class="pill">${T.step + 1}/${slots.length}</span>` : ''}</div>
         ${info ? `<div class="move-info">${moveInfoHtml(mv.name)}</div>` : ''}
-        ${T.megaPos === cur.pos && cur.finalSmash ? `<div class="fs-note">★ ${esc(cur.name)} will use its Ultimate and become ${esc(cur.finalSmash.name)} first.</div>` : ''}
+        ${T.megaPos === cur.pos && cur.finalSmash ? `<div class="fs-note">★ ${esc(cur.name)} will transform into ${esc(cur.finalSmash.name)} first.</div>` : ''}
         <div class="tgt-note">${tgtText}</div>
         ${p.pick ? `<div class="targets">${p.pick.map(k => `<button data-pickbtn="${k}" class="${k.startsWith((1 - m.you) + ':') ? 'primary' : ''}">${esc(nameAt(m, k))}</button>`).join('')}</div>` : ''}
         <div class="row" style="margin-top:10px">${p.pick ? '' : '<button class="primary" id="tConfirm">Confirm</button>'}<button id="tCancel">Back</button></div></div>`;
@@ -551,7 +551,7 @@
       : cur.struggle ? `<button class="move-btn" data-move="-2" style="grid-column:span 2"><span class="mn">Struggle</span></button>`
         : cur.moves.map(mv => `<button class="move-btn" data-move="${mv.index}" data-tipmove="${esc(mv.name)}" style="--tc:var(--t-${mv.type})" ${mv.disabled ? 'disabled' : ''}><span class="mn">${esc(mv.name)}</span><span class="mi">${mv.type} · ${mv.cat === 'Status' ? 'Status' : (mv.power || '—') + ' BP'} · ${mv.pp}/${mv.maxpp}${mv.target === 'allFoes' ? ' · spread' : mv.target === 'all' ? ' · hits all' : ''}</span></button>`).join('');
     const fsTaken = T.actions.some(x => x.mega);
-    const fsBtn = cur.finalSmash && !fsTaken ? `<button class="fs-btn ${T.megaPos === cur.pos ? 'on' : ''}" id="tFS">${sprite(F(cur.finalSmash.id), 'sm', false, ((view(m.id).sides[m.you].active[cur.pos]) || {}).gender)}<span><b>${T.megaPos === cur.pos ? '✓ Ultimate ready' : 'Use Ultimate'}</b><br><span class="small">${esc(cur.name)} becomes ${esc(cur.finalSmash.name)} before moving${T.megaPos === cur.pos ? ' — now pick a move' : ''}</span></span></button>` : '';
+    const fsBtn = cur.finalSmash && !fsTaken ? `<button class="fs-btn ${T.megaPos === cur.pos ? 'on' : ''}" id="tFS">${sprite(F(cur.finalSmash.id), 'sm', false, ((view(m.id).sides[m.you].active[cur.pos]) || {}).gender)}<span><b>${T.megaPos === cur.pos ? '✓ Ultimate Form ready' : 'Ultimate Form'}</b><br><span class="small">${esc(cur.name)} becomes ${esc(cur.finalSmash.name)} before moving${T.megaPos === cur.pos ? ' — now pick a move' : ''}</span></span></button>` : '';
     return `<h2>What will ${esc(cur.name)} do?${slots.length > 1 ? ` <span class="pill">${T.step + 1}/${slots.length}</span>` : ''}</h2>
       ${fsBtn}
       <div class="moves">${moveBtns}</div>

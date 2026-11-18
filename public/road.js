@@ -43,7 +43,7 @@
       <section class="card road-hero span2">
         <h1>Road to 50 Wins</h1>
         <p>Battle through <b>50 boss fights</b> that get harder as you climb. Every boss brings a full team of 6 and picks 3, just like you (Singles). Your team is <b>healed after every floor</b>, and after each win you can <b>recruit one of the boss's heroes</b> for the rest of the run. Change moves and items between floors. <b>One loss ends the run.</b></p>
-        <p class="muted small">The bosses are the same for everyone, every run.${hasUlt() ? ` Ultimate items work for you from floor 1; bosses start using them on floor ${FS_FROM}.` : ''} Your run saves after every floor, so you can stop and come back any time${S.account ? '' : ' (on this browser; sign in to keep it on your account)'}.</p>
+        <p class="muted small">The bosses are the same for everyone, every run.${hasUlt() ? ` Ultimate Form items work for you from floor 1; bosses start using them on floor ${FS_FROM}.` : ''} Your run saves after every floor, so you can stop and come back any time${S.account ? '' : ' (on this browser; sign in to keep it on your account)'}.</p>
         ${recordsHtml(d)}${lastRunHtml(d)}
       </section>
       <section class="card road-opt">
@@ -65,7 +65,7 @@
         <h2>The climb</h2>
         <ul class="about-list small">
           <li>Early bosses don't battle very smart; later ones play to win.</li>
-          ${hasUlt() ? `<li>Floors ${FS_FROM}+: every boss has an Ultimate.</li>` : ''}
+          ${hasUlt() ? `<li>Floors ${FS_FROM}+: every boss has an Ultimate Form.</li>` : ''}
           <li>Floors 10, 20, 30, 40 and 50 are the toughest boss of their ten.</li>
           <li>Every hero in the Herodex shows up on at least one boss team.</li>
         </ul>
@@ -127,7 +127,7 @@
         <div class="row wrap"><div class="grow"><div class="muted small">Road to 50 Wins · Floor</div><div class="road-floorno">${r.floor}<span>/50</span></div></div>
           <div class="road-actions">${fighting ? '<button class="primary big" id="roadFight">Resume fight</button>' : '<button class="primary big" id="roadFight">Fight!</button>'}<button class="small" id="roadQuit">Abandon run</button></div></div>
         ${mapHtml(r)}
-        <div class="road-boss"><div class="muted small">${b.milestone ? '⭐ Milestone boss' : 'Boss'} · team BST ${b.bst}${hasUlt() && r.floor >= FS_FROM ? ' · has an Ultimate' : ''}</div><h2 style="margin:2px 0 8px">${esc(b.name)}</h2>${bossTeamHtml(b)}</div>
+        <div class="road-boss"><div class="muted small">${b.milestone ? '⭐ Milestone boss' : 'Boss'} · team BST ${b.bst}${hasUlt() && r.floor >= FS_FROM ? ' · has an Ultimate Form' : ''}</div><h2 style="margin:2px 0 8px">${esc(b.name)}</h2>${bossTeamHtml(b)}</div>
         <p class="muted small" style="margin:8px 0 0">Your team is fully healed for every floor. ${fighting ? 'Your fight is waiting for you.' : 'You can stop here and come back later; your run is saved.'}</p>
       </section>
       <section class="card span2">

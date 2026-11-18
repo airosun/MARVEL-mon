@@ -152,7 +152,8 @@ class Battle {
   }
   canFinalSmash(mon) {
     const fs = FINAL_SMASHES[mon.item];
-    return !!fs && !mon.mega && !mon.side.megaUsed && fs.bases.includes(mon.baseSpecies.id);
+    // Hulk has to be Hulk (not Bruce Banner) to go Monster
+    return !!fs && !mon.mega && !mon.side.megaUsed && fs.bases.includes(mon.baseSpecies.id) && mon.species.id === mon.baseSpecies.id;
   }
   // a Ultimate stone can't be knocked off, stolen, swapped or flung
   canLoseItem(mon) { return !FINAL_SMASHES[mon.item]; }

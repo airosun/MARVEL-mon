@@ -10,7 +10,7 @@
     ['start', 'Getting started'],
     ['modes', 'Battle modes'],
     ['battle', 'How battles work'],
-    ['finalsmash', 'Ultimates'],
+    ['finalsmash', 'Ultimate Forms'],
     ['heroes', 'Heroes: stats, abilities, natures, IVs'],
     ['marvel', 'Marvel mechanics'],
     ['tabs', 'The tabs'],
@@ -86,14 +86,16 @@
           <li><b>Abilities</b> are custom and lore-based. Hover your own hero to see its stats, ability and item.</li>
           <li><b>Items:</b> the competitive Pokémon items (Leftovers, Life Orb, Choice items, Focus Sash, Assault Vest, Weakness Policy, type boosters…), Marvel items like the <b>Vibranium Shield</b>, <b>Super-Soldier Serum</b> and <b>Darkhold</b>, and three signature items only one hero can hold: <b>Mjolnir</b> (Thor), <b>Captain America's Shield</b> and the <b>Eye of Agamotto</b> (Doctor Strange).</li>
           <li><b>Animations:</b> every move has its own animation, and you'll see popups for <i>Missed!</i>, <i>Crit!</i>, <i>Blocked!</i> and <i>Flinched!</i>. Use the <b>Anim</b> setting (normal, fast or off) or <b>Skip</b> to speed things up.</li>
-          <li><b>Scouting:</b> hover an opposing hero to see its base stats, its level 50 Speed range, its possible abilities and its Ultimate, plus any moves, ability or item it has already shown this battle.</li>
+          <li><b>Scouting:</b> hover an opposing hero to see its base stats, its level 50 Speed range, its possible abilities and its Ultimate Form, plus any moves, ability or item it has already shown this battle.</li>
           <li><b>Winning:</b> knock out all of the opponent's heroes. You can also <b>Forfeit</b> at any time.</li>
           <li>Every move has a battle animation. To see them all in one place, open the <a href="/animations">Move Animation Gallery</a>.</li>
         </ul>
       </section>
 
-      <section class="card" id="ab-finalsmash"><h2>Ultimates</h2>
-        <p>${fs.length ? `${nFsFighters} heroes have an Ultimate form, unlocked by holding the matching item.` : '<b>Coming soon.</b> Ultimates will be MARVEL-mon\'s version of <b>Mega Evolution</b>: hold a hero\'s Ultimate item and it can transform once per battle (one per team), keeping its HP but getting new stats, types and an ability.'}</p>
+      <section class="card" id="ab-finalsmash"><h2>Ultimate Forms</h2>
+        <p>Ultimate Forms are MARVEL-mon's version of <b>Mega Evolution</b>. A hero holding its Ultimate Form item can transform once per battle, before it moves; only one hero per team can transform each battle. It keeps its HP but gets new stats (+100 total), types and an ability, and the item can't be knocked off, stolen or swapped.</p>
+        ${fs.length ? `<p>${nFsFighters} heroes have an Ultimate Form right now:</p><table class="about-table"><tr><th>Form</th><th>Hero</th><th>Item</th><th>Types</th><th>Ability</th></tr>${fs.map(x => `<tr><td><b>${esc(x.name)}</b></td><td>${x.bases.map(b => esc((S.byId[b] || {}).name || b)).join(' / ')}</td><td>${esc(x.stone)}</td><td style="white-space:nowrap">${x.types.map(typeChip).join(' ')}</td><td><b>${esc(x.ability.name)}</b> <span class="muted">${esc(x.ability.desc)}</span></td></tr>`).join('')}</table>` : '<p><b>Coming soon.</b></p>'}
+        <p class="muted small">Hulk has to be Hulk, not Bruce Banner, to become Monster Hulk, and Monster Hulk never turns back into Bruce.</p>
       </section>
 
       <section class="card" id="ab-heroes"><h2>Heroes: stats, abilities, natures, IVs</h2>
@@ -126,7 +128,7 @@
           <div><h3>${goto('elite', 'Elite Teams')}</h3><p>Build teams of 6 from your roster. For each hero, pick up to 4 moves, an item and (if it can be either) its gender. Hover moves to see what they do. Teams must follow the species and item clauses. <b>Export</b> gives a team as Showdown-style text, and <b>Import</b> pastes one in, matching each hero to the closest one in your roster.</p></div>
           <div><h3>${goto('road', 'Road to 50')}</h3><p>A gauntlet of 50 boss fights against the CPU. Start with an Elite team, heroes you own or a random team, recruit heroes from the bosses you beat, and see how far you get. Your run saves after every floor.</p></div>
           <div><h3>${goto('dex', 'Herodex')}</h3><p>All ${nFighters} heroes with their types, base stats, abilities, move pools, gender and battle forms. Search by name, role, type or move. Filter by a type or a type combination (Ultimate forms included, or pick "None" for single-type heroes), and sort by Herodex number, BST or any single stat. Tap a hero for the full entry.</p></div>
-          <div><h3>${goto('calc', 'Calc')}</h3><p>A <b>damage calculator</b> that runs the real battle engine, so its numbers match battles. Set the attacker and defender (nature, IVs, ability, item, Ultimate, stat boosts, status, HP) and the field (weather, screens, critical hit, Doubles spread). It shows the damage range and how many hits it takes to KO. You can load heroes straight from your roster.</p></div>
+          <div><h3>${goto('calc', 'Calc')}</h3><p>A <b>damage calculator</b> that runs the real battle engine, so its numbers match battles. Set the attacker and defender (nature, IVs, ability, item, Ultimate Form, stat boosts, status, HP) and the field (weather, screens, critical hit, Doubles spread). It shows the damage range and how many hits it takes to KO. You can load heroes straight from your roster.</p></div>
           <div><h3>${goto('stats', 'Stats')}</h3><p>Your <b>Battler Card</b>, your <b>win/loss record</b> (by mode, against players and the CPU), your most-used heroes and recent battles. It also has site-wide <b>hero usage</b> (how often each hero is brought and its win rate, by format, for today, 7/30/90 days or all time) and recent player battles. Every battle has a <b>▶ Watch</b> replay.</p></div>
         </div>
         <p class="muted small">The <b>🔊</b> button at the top sets the sound effects volume or mutes them, and your <b>name</b> opens your account menu.</p>

@@ -972,3 +972,8 @@ button.primary:hover { background: #ffe15c; }
 .sz-row figcaption { margin-top: 6px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: 13px; color: #c9d2e3; }
 @media (max-width: 700px) { .sz-stage { width: 88vw; } }
 @keyframes szIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* guide: Ultimate Form table */
+.about-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 6px 0 10px; }
+.about-table th { text-align: left; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: .04em; color: #ffd21f; border-bottom: 1px solid #ffd21f55; padding: 6px 8px; }
+.about-table td { padding: 7px 8px; border-bottom: 1px solid #ffffff14; vertical-align: top; }

@@ -87,7 +87,7 @@
       <div class="au-sliders">
         <label>Sound effects <input type="range" min="0" max="100" id="auSfx" value="${Math.round(cfg.sfx * 100)}"><span id="auSfxV">${Math.round(cfg.sfx * 100)}%</span></label>
       </div>
-      <p class="muted small">Battle sounds: hits, super effective and critical hits, misses, switching, stat changes, fainting, Ultimates and win/lose cues. Saved in this browser.</p>
+      <p class="muted small">Battle sounds: hits, super effective and critical hits, misses, switching, stat changes, fainting, Ultimate Forms and win/lose cues. Saved in this browser.</p>
       <div class="row"><button class="small" id="auTest">▶ Test sound</button><span class="grow"></span><button class="primary" id="auDone">Done</button></div></div>`);
     const $ = id => document.getElementById(id);
     $('auMute').onchange = e => { cfg.muted = e.target.checked; save(); applyVolume(); updateButton(); };

@@ -100,7 +100,7 @@
 
   function finalSmashChip(f) {
     const list = Object.values(S.dex.finalSmashes || {}).filter(x => x.bases.includes(f.id));
-    return list.length ? `<div class="fs-chip" title="Hold ${list.map(x => x.stone).join(' or ')} to use it">★ Ultimate: ${list.map(x => esc(x.name)).join(' / ')}</div>` : '';
+    return list.length ? `<div class="fs-chip" title="Hold ${list.map(x => x.stone).join(' or ')} to use it">★ Ultimate Form: ${list.map(x => esc(x.name)).join(' / ')}</div>` : '';
   }
   // A compact card for a randomized hero (draft pool, pass roll, roster)
   function fighterCard(b, opts = {}) {
@@ -655,7 +655,7 @@
       <div class="small" style="margin:-4px 0 8px"><b>Gender:</b> ${esc(GENDER.label(f.id))}${(GENDER.info(f.id).images) ? ` · alternate sprite: ${Object.entries(GENDER.info(f.id).images).map(([g]) => `${sprite(f, 'sm', false, g)}`).join('')}` : ''}</div>
       <h2>Abilities</h2>${f.abilities.map(a => `<div><b>${esc(a.name)}</b> — <span class="muted">${esc(a.desc)}</span></div>`).join('')}
       <div><b>${esc(f.hidden.name)}</b> <span class="pill">Hidden</span> — <span class="muted">${esc(f.hidden.desc)}</span></div>
-      ${Object.values(S.dex.finalSmashes || {}).filter(x => x.bases.includes(f.id)).map(x => `<div class="fs-box"><div class="row">${sprite(S.byId[x.id], 'lg')}<div class="grow"><div style="font-weight:800;font-size:17px">Ultimate: ${esc(x.name)}</div><div>${x.types.map(typeChip).join(' ')} <span class="muted">· hold <b>${esc(x.stone)}</b> · BST ${Object.values(x.stats).reduce((a, c) => a + c, 0)}</span></div><div class="small"><b>${esc(x.ability.name)}</b> — <span class="muted">${esc(x.ability.desc)}</span></div></div></div>
+      ${Object.values(S.dex.finalSmashes || {}).filter(x => x.bases.includes(f.id)).map(x => `<div class="fs-box"><div class="row">${sprite(S.byId[x.id], 'lg')}<div class="grow"><div style="font-weight:800;font-size:17px">Ultimate Form: ${esc(x.name)}</div><div>${x.types.map(typeChip).join(' ')} <span class="muted">· hold <b>${esc(x.stone)}</b> · BST ${Object.values(x.stats).reduce((a, c) => a + c, 0)}</span></div><div class="small"><b>${esc(x.ability.name)}</b> — <span class="muted">${esc(x.ability.desc)}</span></div></div></div>
         <div class="statbars" style="max-width:460px;grid-template-columns:34px 86px 1fr">${STATS.map(s => `<span class="muted">${SL[s]}</span><span style="font-family:var(--mono)">${x.stats[s]}${x.stats[s] !== f.stats[s] ? ` <span style="color:${x.stats[s] > f.stats[s] ? 'var(--good)' : 'var(--bad)'}">(${x.stats[s] > f.stats[s] ? '+' : ''}${x.stats[s] - f.stats[s]})</span>` : ''}</span><div class="statbar"><i style="width:${Math.min(100, x.stats[s] / 2)}%;background:var(--accent2)"></i></div>`).join('')}</div></div>`).join('')}
       ${Object.values(S.dex.forms || {}).filter(x => x.base === f.id).map(x => { const xf = S.byId[x.id]; return `<div class="fs-box"><div class="row">${badge(xf, 'lg')}<div class="grow"><div style="font-weight:800;font-size:17px">Battle form: ${esc(x.name)}</div><div>${x.types.map(typeChip).join(' ')} <span class="muted">· BST ${Object.values(x.stats).reduce((a, c) => a + c, 0)}${FORM_OF[f.id] ? ' · ' + esc(FORM_OF[f.id]) : ''}</span></div><div class="small"><b>${esc(x.ability.name)}</b> — <span class="muted">${esc(x.ability.desc)}</span></div></div></div>
         <div class="statbars" style="max-width:460px;grid-template-columns:34px 86px 1fr">${STATS.map(s => `<span class="muted">${SL[s]}</span><span style="font-family:var(--mono)">${x.stats[s]}${x.stats[s] !== f.stats[s] ? ` <span style="color:${x.stats[s] > f.stats[s] ? 'var(--good)' : 'var(--bad)'}">(${x.stats[s] > f.stats[s] ? '+' : ''}${x.stats[s] - f.stats[s]})</span>` : ''}</span><div class="statbar"><i style="width:${Math.min(100, x.stats[s] / 2)}%;background:var(--accent2)"></i></div>`).join('')}</div></div>`; }).join('')}
@@ -758,7 +758,7 @@
         const k = order.indexOf(i);
         return fighterCard(s, { sel: k >= 0, order: k >= 0 ? (k < lead ? 'Lead ' + (k + 1) : k + 1) : null, attr: `data-line="${i}"`, extra: `<div class="small">${s.moves.map(x => `<span class="chip">${esc(x)}</span>`).join(' ')}${s.item ? ` <span class="chip up">${esc(s.item)}</span>` : ''}</div>` });
       }).join('')}</div></div>
-      <div><h2>${esc(m.players[1 - m.you].name)}'s team</h2><p class="muted small" style="margin-top:-6px">Hover (or tap) a hero for its stats, possible abilities and Ultimate.</p>${m.foeTeam.map(s => `<div class="list-item" style="margin-bottom:6px" data-tipdex="${esc(s.species)}">${badge(F(s.species), 'sm', s.gender)}<span class="grow">${esc(s.name)} ${gsym(s.gender)}</span>${s.types.map(typeChip).join(' ')}</div>`).join('')}</div></div>`;
+      <div><h2>${esc(m.players[1 - m.you].name)}'s team</h2><p class="muted small" style="margin-top:-6px">Hover (or tap) a hero for its stats, possible abilities and Ultimate Form.</p>${m.foeTeam.map(s => `<div class="list-item" style="margin-bottom:6px" data-tipdex="${esc(s.species)}">${badge(F(s.species), 'sm', s.gender)}<span class="grow">${esc(s.name)} ${gsym(s.gender)}</span>${s.types.map(typeChip).join(' ')}</div>`).join('')}</div></div>`;
   }
 
   // ---------- shared with battle.js ----------
@@ -770,7 +770,7 @@
     for (const [stone, fs] of Object.entries(d.finalSmashes || {})) {
       const ab = { name: fs.ability.name, desc: fs.ability.desc };
       S.byId[fs.id] = { id: fs.id, name: fs.name, types: fs.types, stats: fs.stats, image: fs.image, abilities: [ab], hidden: ab, learnset: S.byId[fs.base].learnset, signature: S.byId[fs.base].signature, form: true };
-      d.items[stone] = `Lets ${fs.bases.map(b => S.byId[b].name).join(' or ')} use its Ultimate and become ${fs.name} (once per battle; only one hero per team can Ultimate).`;
+      d.items[stone] = `Lets ${fs.bases.map(b => S.byId[b].name).join(' or ')} transform into its Ultimate Form, ${fs.name} (once per battle; only one hero per team can transform).`;
     }
     // battle-only forms (Hulk's Bruce Banner, Cloak & Dagger's Cloak) so the battlefield and Herodex can show them
     for (const fm of Object.values(d.forms || {})) {

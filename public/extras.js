@@ -38,7 +38,7 @@
       if (seen.item) lines.push(`<div><b>Item:</b> ${esc(seen.item)}${seen.itemNow === false ? ' <i class="muted">(no longer held)</i>' : ''}</div>`);
       lines.push(`<div><b>Moves seen:</b> ${seen.moves.length ? seen.moves.map(n => `<span class="chip">${esc(n)}</span>`).join(' ') : '<span class="muted">none yet</span>'}</div>`);
     }
-    if (fs.length && !(seen && seen.mega)) lines.push(`<div class="small" style="margin-top:4px">★ <b>Ultimate:</b> ${fs.map(x => `${esc(x.name)} <span class="muted">(${esc(x.stone)})</span>`).join(', ')}</div>`);
+    if (fs.length && !(seen && seen.mega)) lines.push(`<div class="small" style="margin-top:4px">★ <b>Ultimate Form:</b> ${fs.map(x => `${esc(x.name)} <span class="muted">(${esc(x.stone)})</span>`).join(', ')}</div>`);
     return lines.join('');
   };
 
@@ -215,7 +215,7 @@
         <label>Item<select data-k="item"><option value="">(none)</option>${opt(items, x.item)}</select></label>
         <label>Status<select data-k="status">${opt(['', 'brn', 'par', 'psn', 'tox', 'slp', 'frz'], x.status, s => ({ '': 'Healthy', brn: 'Burned', par: 'Paralyzed', psn: 'Poisoned', tox: 'Badly poisoned', slp: 'Asleep', frz: 'Frozen' })[s])}</select></label>
       </div>
-      ${stones.includes(x.item) ? `<label class="check"><input type="checkbox" data-k="finalSmash" ${x.finalSmash ? 'checked' : ''}> Use Ultimate (${esc(fsForm ? fsForm.name : (S.dex.finalSmashes[x.item] || {}).name || '')})</label>` : ''}
+      ${stones.includes(x.item) ? `<label class="check"><input type="checkbox" data-k="finalSmash" ${x.finalSmash ? 'checked' : ''}> Transform into Ultimate Form (${esc(fsForm ? fsForm.name : (S.dex.finalSmashes[x.item] || {}).name || '')})</label>` : ''}
       <div class="calc-ivs"><span class="muted small">IVs</span>${STATS.map(s => `<label>${SL[s]}<input type="number" min="0" max="31" data-iv="${s}" value="${x.ivs[s]}"></label>`).join('')}</div>
       <div class="calc-ivs"><span class="muted small">Boosts</span>${['atk', 'def', 'spa', 'spd', 'spe'].map(s => `<label>${SL[s]}<select data-boost="${s}">${[6, 5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5, -6].map(n => `<option value="${n}" ${x.boosts[s] === n ? 'selected' : ''}>${n > 0 ? '+' + n : n}</option>`).join('')}</select></label>`).join('')}</div>
     </div>`;
