@@ -1,0 +1,6370 @@
+[
+ {
+  "hero": "Adam Warlock",
+  "move": "Psybeam",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 65,
+  "basedOn": "Quantum Magic beam"
+ },
+ {
+  "hero": "Adam Warlock",
+  "move": "Life Dew",
+  "type": "Water",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Soul Bond healing"
+ },
+ {
+  "hero": "Adam Warlock",
+  "move": "Revival Blessing",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Karmic Revival ultimate"
+ },
+ {
+  "hero": "Adam Warlock",
+  "move": "Ingrain",
+  "type": "Grass",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Regenerative Cocoon"
+ },
+ {
+  "hero": "Adam Warlock",
+  "move": "Heal Pulse",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Avatar Life Stream"
+ },
+ {
+  "hero": "Adam Warlock",
+  "move": "Moonblast",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 95,
+  "basedOn": "Cosmic energy"
+ },
+ {
+  "hero": "Adam Warlock",
+  "move": "Cosmic Power",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Soul Gem / cosmic being"
+ },
+ {
+  "hero": "Adam Warlock",
+  "move": "Shadow Ball",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Soul World"
+ },
+ {
+  "hero": "Adam Warlock",
+  "move": "Psychic",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Adam Warlock",
+  "move": "Psyshock",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Adam Warlock",
+  "move": "Dazzling Gleam",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Adam Warlock",
+  "move": "Calm Mind",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Adam Warlock",
+  "move": "Recover",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Adam Warlock",
+  "move": "Trick Room",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Panther",
+  "move": "Metal Claw",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 50,
+  "basedOn": "Vibranium claws"
+ },
+ {
+  "hero": "Black Panther",
+  "move": "Smart Strike",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Spear Toss"
+ },
+ {
+  "hero": "Black Panther",
+  "move": "Triple Kick",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 10,
+  "basedOn": "Spinning Kick"
+ },
+ {
+  "hero": "Black Panther",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Spirit Rend (bonus health)"
+ },
+ {
+  "hero": "Black Panther",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Bast's Descent ultimate"
+ },
+ {
+  "hero": "Black Panther",
+  "move": "Iron Defense",
+  "type": "Steel",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Vibranium suit"
+ },
+ {
+  "hero": "Black Panther",
+  "move": "Hone Claws",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Panther instincts"
+ },
+ {
+  "hero": "Black Panther",
+  "move": "Night Slash",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Panther",
+  "move": "Swords Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Panther",
+  "move": "Iron Head",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Panther",
+  "move": "Knock Off",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Panther",
+  "move": "Bullet Punch",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Panther",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Panther",
+  "move": "U-turn",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Widow",
+  "move": "Thunder Punch",
+  "type": "Electric",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Widow's Bite batons"
+ },
+ {
+  "hero": "Black Widow",
+  "move": "Electroweb",
+  "type": "Electric",
+  "category": "Special",
+  "power": 55,
+  "basedOn": "Widow's Bite"
+ },
+ {
+  "hero": "Black Widow",
+  "move": "Zap Cannon",
+  "type": "Electric",
+  "category": "Special",
+  "power": 120,
+  "basedOn": "Red Room Rifle sniper shot"
+ },
+ {
+  "hero": "Black Widow",
+  "move": "High Jump Kick",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 130,
+  "basedOn": "Edge Dancer"
+ },
+ {
+  "hero": "Black Widow",
+  "move": "Discharge",
+  "type": "Electric",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Electro-Plasma Explosion ultimate"
+ },
+ {
+  "hero": "Black Widow",
+  "move": "Fake Out",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": "Red Room spy training"
+ },
+ {
+  "hero": "Black Widow",
+  "move": "Low Kick",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Widow",
+  "move": "Triple Kick",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 10,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Widow",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Widow",
+  "move": "Wild Charge",
+  "type": "Electric",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Widow",
+  "move": "Thunderbolt",
+  "type": "Electric",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Widow",
+  "move": "Focus Blast",
+  "type": "Fighting",
+  "category": "Special",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Widow",
+  "move": "Feint",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 30,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Widow",
+  "move": "U-turn",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Captain America",
+  "move": "Smart Strike",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Shield throw"
+ },
+ {
+  "hero": "Captain America",
+  "move": "Iron Head",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Shield bash"
+ },
+ {
+  "hero": "Captain America",
+  "move": "Body Press",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Shield charge"
+ },
+ {
+  "hero": "Captain America",
+  "move": "Wide Guard",
+  "type": "Rock",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Living Legend shield"
+ },
+ {
+  "hero": "Captain America",
+  "move": "Superpower",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Super-Soldier Slam"
+ },
+ {
+  "hero": "Captain America",
+  "move": "Coaching",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Leading the Charge ultimate"
+ },
+ {
+  "hero": "Captain America",
+  "move": "Agility",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Liberty Rush"
+ },
+ {
+  "hero": "Captain America",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Captain America",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Captain America",
+  "move": "Mach Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Captain America",
+  "move": "Bulk Up",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Captain America",
+  "move": "Iron Defense",
+  "type": "Steel",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Captain America",
+  "move": "Stone Edge",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": null
+ },
+ {
+  "hero": "Captain America",
+  "move": "Knock Off",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Cloak",
+  "move": "Dark Pulse",
+  "type": "Dark",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Darkforce blast"
+ },
+ {
+  "hero": "Cloak",
+  "move": "Night Daze",
+  "type": "Dark",
+  "category": "Special",
+  "power": 85,
+  "basedOn": "Terror Cape blind"
+ },
+ {
+  "hero": "Cloak",
+  "move": "Phantom Force",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Dark Teleportation ultimate"
+ },
+ {
+  "hero": "Cloak",
+  "move": "Ally Switch",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Eternal Bond (swap with Dagger)"
+ },
+ {
+  "hero": "Cloak",
+  "move": "Mean Look",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Darkforce dimension trap"
+ },
+ {
+  "hero": "Cloak",
+  "move": "Shadow Ball",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Cloak",
+  "move": "Snarl",
+  "type": "Dark",
+  "category": "Special",
+  "power": 55,
+  "basedOn": null
+ },
+ {
+  "hero": "Cloak",
+  "move": "Foul Play",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 95,
+  "basedOn": null
+ },
+ {
+  "hero": "Cloak",
+  "move": "Taunt",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Cloak",
+  "move": "Nasty Plot",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Cloak",
+  "move": "Parting Shot",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Cloak",
+  "move": "Hex",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Cloak",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Cloak",
+  "move": "Obstruct",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Dagger",
+  "move": "Dazzling Gleam",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Lightforce daggers"
+ },
+ {
+  "hero": "Dagger",
+  "move": "Life Dew",
+  "type": "Water",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Dagger Storm"
+ },
+ {
+  "hero": "Dagger",
+  "move": "Heal Pulse",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Veil of Lightforce"
+ },
+ {
+  "hero": "Dagger",
+  "move": "Lunar Dance",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Eternal Bond ultimate"
+ },
+ {
+  "hero": "Dagger",
+  "move": "Ally Switch",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Eternal Bond (swap with Cloak)"
+ },
+ {
+  "hero": "Dagger",
+  "move": "Purify",
+  "type": "Poison",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Light purifies"
+ },
+ {
+  "hero": "Dagger",
+  "move": "Flash",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Blinding light"
+ },
+ {
+  "hero": "Dagger",
+  "move": "Draining Kiss",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 50,
+  "basedOn": null
+ },
+ {
+  "hero": "Dagger",
+  "move": "Moonblast",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 95,
+  "basedOn": null
+ },
+ {
+  "hero": "Dagger",
+  "move": "Wish",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Dagger",
+  "move": "Psychic",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Dagger",
+  "move": "Calm Mind",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Dagger",
+  "move": "Light Screen",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Dagger",
+  "move": "Misty Terrain",
+  "type": "Fairy",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Psychic",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Daggers of Denak"
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Light Screen",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Shield of the Seraphim"
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Reflect",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Shield of the Seraphim"
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Teleport",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Pentagram of Farallah"
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Magic Coat",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Cloak of Levitation"
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Expanding Force",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Maelstrom of Madness"
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Infernal Parade",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 60,
+  "basedOn": "Astral form"
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Future Sight",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 120,
+  "basedOn": "Eye of Agamotto (Time Stone)"
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Trick Room",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Eye of Agamotto ultimate"
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Shadow Ball",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Calm Mind",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Hex",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Focus Blast",
+  "type": "Fighting",
+  "category": "Special",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Doctor Strange",
+  "move": "Psyshock",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Groot",
+  "move": "Bullet Seed",
+  "type": "Grass",
+  "category": "Physical",
+  "power": 25,
+  "basedOn": "Thorny Volley"
+ },
+ {
+  "hero": "Groot",
+  "move": "Seed Bomb",
+  "type": "Grass",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Spore Bomb"
+ },
+ {
+  "hero": "Groot",
+  "move": "Spiky Shield",
+  "type": "Grass",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Thornlash Wall"
+ },
+ {
+  "hero": "Groot",
+  "move": "Wide Guard",
+  "type": "Rock",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Ironwood Wall"
+ },
+ {
+  "hero": "Groot",
+  "move": "Snap Trap",
+  "type": "Grass",
+  "category": "Physical",
+  "power": 35,
+  "basedOn": "Strangling Prison ultimate"
+ },
+ {
+  "hero": "Groot",
+  "move": "Ingrain",
+  "type": "Grass",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Flora colossus"
+ },
+ {
+  "hero": "Groot",
+  "move": "Wood Hammer",
+  "type": "Grass",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Branch smash"
+ },
+ {
+  "hero": "Groot",
+  "move": "Power Whip",
+  "type": "Grass",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Groot",
+  "move": "Horn Leech",
+  "type": "Grass",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Groot",
+  "move": "Rock Slide",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Groot",
+  "move": "Stone Edge",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": null
+ },
+ {
+  "hero": "Groot",
+  "move": "Body Press",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Groot",
+  "move": "Curse",
+  "type": "Ghost",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Groot",
+  "move": "Synthesis",
+  "type": "Grass",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "Smart Strike",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Precision arrows"
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "Pin Missile",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 25,
+  "basedOn": "Blast Arrow"
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "Night Slash",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Ronin Slash"
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "Lock-On",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Hunter's Sight ultimate"
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "Focus Energy",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Hypersonic Arrow draw"
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "Explosion",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 250,
+  "basedOn": "Explosive trick arrow"
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "Thunder Wave",
+  "type": "Electric",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Trick arrow"
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "Iron Head",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "Quick Attack",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "Double-Edge",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "Swords Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "U-turn",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "Rapid Spin",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 50,
+  "basedOn": null
+ },
+ {
+  "hero": "Hawkeye",
+  "move": "Sacred Sword",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Hela",
+  "move": "Shadow Ball",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Nightsword Thorn"
+ },
+ {
+  "hero": "Hela",
+  "move": "Night Daze",
+  "type": "Dark",
+  "category": "Special",
+  "power": 85,
+  "basedOn": "Soul Drainer"
+ },
+ {
+  "hero": "Hela",
+  "move": "Air Slash",
+  "type": "Flying",
+  "category": "Special",
+  "power": 75,
+  "basedOn": "Astral Flock crows"
+ },
+ {
+  "hero": "Hela",
+  "move": "Infernal Parade",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 60,
+  "basedOn": "Goddess of Death ultimate"
+ },
+ {
+  "hero": "Hela",
+  "move": "Bitter Malice",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 75,
+  "basedOn": "Ruler of Hel"
+ },
+ {
+  "hero": "Hela",
+  "move": "Destiny Bond",
+  "type": "Ghost",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Goddess of Death"
+ },
+ {
+  "hero": "Hela",
+  "move": "Dark Pulse",
+  "type": "Dark",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Hela",
+  "move": "Hex",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Hela",
+  "move": "Nasty Plot",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Hela",
+  "move": "Will-O-Wisp",
+  "type": "Fire",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Hela",
+  "move": "Foul Play",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 95,
+  "basedOn": null
+ },
+ {
+  "hero": "Hela",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Hela",
+  "move": "Taunt",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Hela",
+  "move": "Ominous Wind",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 60,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk",
+  "move": "Hammer Arm",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": "Heavy Blow"
+ },
+ {
+  "hero": "Hulk",
+  "move": "Bounce",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 85,
+  "basedOn": "Incredible Leap"
+ },
+ {
+  "hero": "Hulk",
+  "move": "Gunk Shot",
+  "type": "Poison",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Gamma Burst"
+ },
+ {
+  "hero": "Hulk",
+  "move": "Endure",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Indestructible Guard"
+ },
+ {
+  "hero": "Hulk",
+  "move": "Toxic",
+  "type": "Poison",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Radioactive Lockdown"
+ },
+ {
+  "hero": "Hulk",
+  "move": "Rage Fist",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 50,
+  "basedOn": "The madder Hulk gets..."
+ },
+ {
+  "hero": "Hulk",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Hulk Smash"
+ },
+ {
+  "hero": "Hulk",
+  "move": "Superpower",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk",
+  "move": "Earthquake",
+  "type": "Ground",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk",
+  "move": "Rock Slide",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk",
+  "move": "Poison Jab",
+  "type": "Poison",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk",
+  "move": "Bulk Up",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk",
+  "move": "Stomping Tantrum",
+  "type": "Ground",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Mach Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": "Jeet Kune Do"
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "High Jump Kick",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 130,
+  "basedOn": "Kun-Lun Kick"
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Harmony Recovery"
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Detect",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Dragon's Defense"
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Living Chi ultimate"
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Fire Punch",
+  "type": "Fire",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Chi-charged Iron Fist"
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Dragon Dance",
+  "type": "Dragon",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Heart of Shou-Lao"
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Blaze Kick",
+  "type": "Fire",
+  "category": "Physical",
+  "power": 85,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Flare Blitz",
+  "type": "Fire",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Triple Kick",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 10,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Bulk Up",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Focus Energy",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Rapid Spin",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 50,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Fist",
+  "move": "Low Kick",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Charge Beam",
+  "type": "Electric",
+  "category": "Special",
+  "power": 50,
+  "basedOn": "Repulsor Blast"
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Steel Beam",
+  "type": "Steel",
+  "category": "Special",
+  "power": 140,
+  "basedOn": "Unibeam"
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Hyper Beam",
+  "type": "Normal",
+  "category": "Special",
+  "power": 150,
+  "basedOn": "Invincible Pulse Cannon ultimate"
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Electro Ball",
+  "type": "Electric",
+  "category": "Special",
+  "power": null,
+  "basedOn": "Micro-Missile Barrage"
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Autotomize",
+  "type": "Steel",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Armor Overdrive"
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Magnet Rise",
+  "type": "Electric",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Repulsor flight"
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Flash Cannon",
+  "type": "Steel",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Thunderbolt",
+  "type": "Electric",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Zap Cannon",
+  "type": "Electric",
+  "category": "Special",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Discharge",
+  "type": "Electric",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Iron Defense",
+  "type": "Steel",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Flamethrower",
+  "type": "Fire",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Volt Switch",
+  "type": "Electric",
+  "category": "Special",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Iron Man",
+  "move": "Charge",
+  "type": "Electric",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Aqua Ring",
+  "type": "Water",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Joyful Splash"
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Water Pulse",
+  "type": "Water",
+  "category": "Special",
+  "power": 60,
+  "basedOn": "Aqua Burst"
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Life Dew",
+  "type": "Water",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Healing Bubble"
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Dig",
+  "type": "Ground",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Hide and Seek"
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Fishious Rend",
+  "type": "Water",
+  "category": "Physical",
+  "power": 85,
+  "basedOn": "It's Jeff! ultimate"
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Baby-Doll Eyes",
+  "type": "Fairy",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Too cute to hit"
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Muddy Water",
+  "type": "Water",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Land shark"
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Scald",
+  "type": "Water",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Bubble Beam",
+  "type": "Water",
+  "category": "Special",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Crunch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Earthquake",
+  "type": "Ground",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": null
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Liquidation",
+  "type": "Water",
+  "category": "Physical",
+  "power": 85,
+  "basedOn": null
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Aqua Jet",
+  "type": "Water",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Jeff the Land Shark",
+  "move": "Charm",
+  "type": "Fairy",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Loki",
+  "move": "Transform",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "God of Mischief ultimate"
+ },
+ {
+  "hero": "Loki",
+  "move": "Substitute",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Doppelganger"
+ },
+ {
+  "hero": "Loki",
+  "move": "Double Team",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Deception illusion"
+ },
+ {
+  "hero": "Loki",
+  "move": "Ally Switch",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Devious Exchange"
+ },
+ {
+  "hero": "Loki",
+  "move": "Wish",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Regeneration Domain"
+ },
+ {
+  "hero": "Loki",
+  "move": "Dark Pulse",
+  "type": "Dark",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Mystical Missile"
+ },
+ {
+  "hero": "Loki",
+  "move": "Ice Beam",
+  "type": "Ice",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Frost Giant heritage"
+ },
+ {
+  "hero": "Loki",
+  "move": "Freeze-Dry",
+  "type": "Ice",
+  "category": "Special",
+  "power": 70,
+  "basedOn": "Frost Giant heritage"
+ },
+ {
+  "hero": "Loki",
+  "move": "Foul Play",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 95,
+  "basedOn": null
+ },
+ {
+  "hero": "Loki",
+  "move": "Nasty Plot",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Loki",
+  "move": "Taunt",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Loki",
+  "move": "Trick",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Loki",
+  "move": "Snarl",
+  "type": "Dark",
+  "category": "Special",
+  "power": 55,
+  "basedOn": null
+ },
+ {
+  "hero": "Loki",
+  "move": "Parting Shot",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Ice Shard",
+  "type": "Ice",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": "Light & Dark Ice"
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Ice Beam",
+  "type": "Ice",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Ice Arts"
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Freeze-Dry",
+  "type": "Ice",
+  "category": "Special",
+  "power": 70,
+  "basedOn": "Absolute Zero"
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Heal Pulse",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Share the Stage"
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Quiver Dance",
+  "type": "Bug",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Fate of Both Worlds ultimate"
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Alluring Voice",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "K-pop idol"
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Sing",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "K-pop idol"
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Icy Wind",
+  "type": "Ice",
+  "category": "Special",
+  "power": 55,
+  "basedOn": null
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Moonblast",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 95,
+  "basedOn": null
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Dazzling Gleam",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Life Dew",
+  "type": "Water",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Aurora Veil",
+  "type": "Ice",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Snowscape",
+  "type": "Ice",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Luna Snow",
+  "move": "Draining Kiss",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 50,
+  "basedOn": null
+ },
+ {
+  "hero": "Magik",
+  "move": "Psyblade",
+  "type": "Psychic",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Soulsword"
+ },
+ {
+  "hero": "Magik",
+  "move": "Psycho Cut",
+  "type": "Psychic",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Soulsword"
+ },
+ {
+  "hero": "Magik",
+  "move": "Teleport",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Stepping Discs"
+ },
+ {
+  "hero": "Magik",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Umbral Incursion"
+ },
+ {
+  "hero": "Magik",
+  "move": "Lash Out",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Darkchylde ultimate"
+ },
+ {
+  "hero": "Magik",
+  "move": "Night Slash",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Limbo sorcery"
+ },
+ {
+  "hero": "Magik",
+  "move": "Phantom Force",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Limbo portal"
+ },
+ {
+  "hero": "Magik",
+  "move": "Swords Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Magik",
+  "move": "Knock Off",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Magik",
+  "move": "Zen Headbutt",
+  "type": "Psychic",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Magik",
+  "move": "Throat Chop",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Magik",
+  "move": "Shadow Claw",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Magik",
+  "move": "Sacred Sword",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Magik",
+  "move": "Dark Pulse",
+  "type": "Dark",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Magneto",
+  "move": "Flash Cannon",
+  "type": "Steel",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Iron Volley"
+ },
+ {
+  "hero": "Magneto",
+  "move": "Magnet Bomb",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 60,
+  "basedOn": "Mag-Cannon"
+ },
+ {
+  "hero": "Magneto",
+  "move": "Iron Defense",
+  "type": "Steel",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Metal Bulwark"
+ },
+ {
+  "hero": "Magneto",
+  "move": "Wide Guard",
+  "type": "Rock",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Metallic Curtain"
+ },
+ {
+  "hero": "Magneto",
+  "move": "Doom Desire",
+  "type": "Steel",
+  "category": "Special",
+  "power": 140,
+  "basedOn": "Meteor M ultimate"
+ },
+ {
+  "hero": "Magneto",
+  "move": "Magnet Rise",
+  "type": "Electric",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Magnetic flight"
+ },
+ {
+  "hero": "Magneto",
+  "move": "Magnetic Flux",
+  "type": "Electric",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Master of Magnetism"
+ },
+ {
+  "hero": "Magneto",
+  "move": "Steel Beam",
+  "type": "Steel",
+  "category": "Special",
+  "power": 140,
+  "basedOn": null
+ },
+ {
+  "hero": "Magneto",
+  "move": "Mirror Shot",
+  "type": "Steel",
+  "category": "Special",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Magneto",
+  "move": "Gravity",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Magneto",
+  "move": "Light Screen",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Magneto",
+  "move": "Thunderbolt",
+  "type": "Electric",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Magneto",
+  "move": "Earth Power",
+  "type": "Ground",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Magneto",
+  "move": "Psychic",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Mantis",
+  "move": "Floral Healing",
+  "type": "Fairy",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Healing Flower"
+ },
+ {
+  "hero": "Mantis",
+  "move": "Sleep Powder",
+  "type": "Grass",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Spore Slumber"
+ },
+ {
+  "hero": "Mantis",
+  "move": "Helping Hand",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Allied Inspiration"
+ },
+ {
+  "hero": "Mantis",
+  "move": "Nasty Plot",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Natural Anger"
+ },
+ {
+  "hero": "Mantis",
+  "move": "Life Dew",
+  "type": "Water",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Soul Resurgence ultimate"
+ },
+ {
+  "hero": "Mantis",
+  "move": "Psybeam",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 65,
+  "basedOn": "Life Energy Blast"
+ },
+ {
+  "hero": "Mantis",
+  "move": "Pollen Puff",
+  "type": "Bug",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Plant communion"
+ },
+ {
+  "hero": "Mantis",
+  "move": "Hypnosis",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Empath"
+ },
+ {
+  "hero": "Mantis",
+  "move": "Bug Buzz",
+  "type": "Bug",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Mantis",
+  "move": "Psychic",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Mantis",
+  "move": "Energy Ball",
+  "type": "Grass",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Mantis",
+  "move": "Quiver Dance",
+  "type": "Bug",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Mantis",
+  "move": "Leech Seed",
+  "type": "Grass",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Mantis",
+  "move": "Psyshock",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "Spirit Shackle",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Crescent Darts"
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "Gravity",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Ankh"
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "Shadow Sneak",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": "Night Glider"
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "Poltergeist",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 110,
+  "basedOn": "Hand of Khonshu ultimate"
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "High Jump Kick",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 130,
+  "basedOn": "Moon Kick"
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "Rage Fist",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 50,
+  "basedOn": "Fist of Khonshu"
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "Moonblast",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 95,
+  "basedOn": "Moon power"
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "Moonlight",
+  "type": "Fairy",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Khonshu's moon"
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "Shadow Claw",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "Phantom Force",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "Bulk Up",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Moon Knight",
+  "move": "Night Slash",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Namor",
+  "move": "Liquidation",
+  "type": "Water",
+  "category": "Physical",
+  "power": 85,
+  "basedOn": "Trident of Neptune"
+ },
+ {
+  "hero": "Namor",
+  "move": "Whirlpool",
+  "type": "Water",
+  "category": "Special",
+  "power": 35,
+  "basedOn": "Monstro Spawn"
+ },
+ {
+  "hero": "Namor",
+  "move": "Dive",
+  "type": "Water",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Blessing of the Deep"
+ },
+ {
+  "hero": "Namor",
+  "move": "Water Spout",
+  "type": "Water",
+  "category": "Special",
+  "power": 150,
+  "basedOn": "Horn of Proteus ultimate"
+ },
+ {
+  "hero": "Namor",
+  "move": "Brave Bird",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Ankle wings"
+ },
+ {
+  "hero": "Namor",
+  "move": "Wave Crash",
+  "type": "Water",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "King of Atlantis"
+ },
+ {
+  "hero": "Namor",
+  "move": "Aqua Jet",
+  "type": "Water",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Namor",
+  "move": "Dual Wingbeat",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Namor",
+  "move": "Hurricane",
+  "type": "Flying",
+  "category": "Special",
+  "power": 110,
+  "basedOn": null
+ },
+ {
+  "hero": "Namor",
+  "move": "Hydro Pump",
+  "type": "Water",
+  "category": "Special",
+  "power": 110,
+  "basedOn": null
+ },
+ {
+  "hero": "Namor",
+  "move": "Surf",
+  "type": "Water",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Namor",
+  "move": "Ice Beam",
+  "type": "Ice",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Namor",
+  "move": "Rain Dance",
+  "type": "Water",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Namor",
+  "move": "Swords Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "Electroweb",
+  "type": "Electric",
+  "category": "Special",
+  "power": 55,
+  "basedOn": "Cyber-Web"
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "Sticky Web",
+  "type": "Bug",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Bionic Spider-Nest"
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "Spikes",
+  "type": "Ground",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Arachno-Mine"
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "Silk Trap",
+  "type": "Bug",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Cyber-Web shield"
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "Lunge",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Spider-Sweeper ultimate"
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "Shift Gear",
+  "type": "Steel",
+  "category": "Status",
+  "power": null,
+  "basedOn": "SP//dr mech"
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "Gyro Ball",
+  "type": "Steel",
+  "category": "Physical",
+  "power": null,
+  "basedOn": "SP//dr mech"
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "Bug Bite",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 60,
+  "basedOn": null
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "X-Scissor",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "Iron Head",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "Heavy Slam",
+  "type": "Steel",
+  "category": "Physical",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "Iron Defense",
+  "type": "Steel",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "Thunder Punch",
+  "type": "Electric",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Peni Parker",
+  "move": "Leech Life",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Psyblade",
+  "type": "Psychic",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Psionic katana"
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Psycho Cut",
+  "type": "Psychic",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Psi-Blade Dash"
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Smart Strike",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Wing Shurikens"
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Double Team",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Psychic Stealth"
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Quiver Dance",
+  "type": "Bug",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Dance of the Butterfly ultimate"
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Sacred Sword",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Ninja swordsmanship"
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Iron Head",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Night Slash",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Swords Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Psychic",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Steel Wing",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Psylocke",
+  "move": "Zen Headbutt",
+  "type": "Psychic",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Spike Cannon",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 20,
+  "basedOn": "Final Judgement gatling ultimate"
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Smokescreen",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Scourge Grenade"
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Retaliate",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Vengeance"
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Payback",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 50,
+  "basedOn": "Vengeance"
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Spikes",
+  "type": "Ground",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Culling Turret"
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Quick Attack",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": "Vantage Connection zipline"
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Knock Off",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Crunch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Throat Chop",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Facade",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Double-Edge",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Swords Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "The Punisher",
+  "move": "Bullet Punch",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "Electro Ball",
+  "type": "Electric",
+  "category": "Special",
+  "power": null,
+  "basedOn": "Bombard Mode"
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "Heal Pulse",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Repair Mode"
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "Wish",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Battle Rebirth Beacon"
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "Helping Hand",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "C.Y.A. ultimate"
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "Gear Up",
+  "type": "Steel",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Ammo Overload"
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "Quick Attack",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": "Jetpack Dash"
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "Thief",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 60,
+  "basedOn": "Raccoon"
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "Fake Out",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "Discharge",
+  "type": "Electric",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "Volt Switch",
+  "type": "Electric",
+  "category": "Special",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "Thunderbolt",
+  "type": "Electric",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "Tri Attack",
+  "type": "Normal",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "Spark",
+  "type": "Electric",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Rocket Raccoon",
+  "move": "U-turn",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Psychic",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Chaos Control"
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Psybeam",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 65,
+  "basedOn": "Chaotic Bolt"
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Imprison",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Dark Seal"
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Expanding Force",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Reality Erasure ultimate"
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Mystical Fire",
+  "type": "Fire",
+  "category": "Special",
+  "power": 75,
+  "basedOn": "Chaos magic"
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Fiery Wrath",
+  "type": "Dark",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Darkhold"
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Magic Room",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Mystic Projection"
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Eerie Spell",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "\"No more mutants\""
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Dark Pulse",
+  "type": "Dark",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Nasty Plot",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Calm Mind",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Hex",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Trick Room",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Scarlet Witch",
+  "move": "Psyshock",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "Detect",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Spider-Sense"
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "U-turn",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Web-Swing"
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "String Shot",
+  "type": "Bug",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Web-Cluster"
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "Lunge",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Get Over Here!"
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "Triple Kick",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 10,
+  "basedOn": "Amazing Combo"
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Spectacular Spin ultimate"
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "First Impression",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Friendly neighborhood ambush"
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "Electroweb",
+  "type": "Electric",
+  "category": "Special",
+  "power": 55,
+  "basedOn": "Web-shooter tech"
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "Mach Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "Acrobatics",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 55,
+  "basedOn": null
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "Leech Life",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "Sticky Web",
+  "type": "Bug",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Spider-Man",
+  "move": "Bulk Up",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Population Bomb",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 20,
+  "basedOn": "Unbeatable Squirrel Tsunami ultimate"
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Seed Bomb",
+  "type": "Grass",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Burst Acorn"
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Block",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Squirrel Blockade"
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Tail Slap",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 25,
+  "basedOn": "Squirrel tail"
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Super Fang",
+  "type": "Normal",
+  "category": "Physical",
+  "power": null,
+  "basedOn": "Squirrel bite"
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Follow Me",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Squirrel army"
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Tidy Up",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Squirrel army"
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Bullet Seed",
+  "type": "Grass",
+  "category": "Physical",
+  "power": 25,
+  "basedOn": null
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Play Rough",
+  "type": "Fairy",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Charm",
+  "type": "Fairy",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Baby-Doll Eyes",
+  "type": "Fairy",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Quick Attack",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Spirit Break",
+  "type": "Fairy",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Squirrel Girl",
+  "move": "Facade",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "Tri Attack",
+  "type": "Normal",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Element Guns"
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "Swift",
+  "type": "Normal",
+  "category": "Special",
+  "power": 60,
+  "basedOn": "Galactic Legend ultimate (auto-aim)"
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "Acrobatics",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 55,
+  "basedOn": "Rocket Propulsion"
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "U-turn",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Stellar Shift"
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "Teeter Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Dance-off"
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "Tailwind",
+  "type": "Flying",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Jet boots"
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "Flamethrower",
+  "type": "Fire",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Element Guns"
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "Ice Beam",
+  "type": "Ice",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Element Guns"
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "Thunderbolt",
+  "type": "Electric",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Element Guns"
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "Air Slash",
+  "type": "Flying",
+  "category": "Special",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "Quick Attack",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "Fake Out",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "Brave Bird",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Star-Lord",
+  "move": "Hyper Voice",
+  "type": "Normal",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Storm",
+  "move": "Air Slash",
+  "type": "Flying",
+  "category": "Special",
+  "power": 75,
+  "basedOn": "Wind Blade"
+ },
+ {
+  "hero": "Storm",
+  "move": "Hurricane",
+  "type": "Flying",
+  "category": "Special",
+  "power": 110,
+  "basedOn": "Omega Hurricane ultimate"
+ },
+ {
+  "hero": "Storm",
+  "move": "Bleakwind Storm",
+  "type": "Flying",
+  "category": "Special",
+  "power": 100,
+  "basedOn": "Weather Control (tornado)"
+ },
+ {
+  "hero": "Storm",
+  "move": "Rising Voltage",
+  "type": "Electric",
+  "category": "Special",
+  "power": 70,
+  "basedOn": "Bolt Rush"
+ },
+ {
+  "hero": "Storm",
+  "move": "Rain Dance",
+  "type": "Water",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Weather Control"
+ },
+ {
+  "hero": "Storm",
+  "move": "Sunny Day",
+  "type": "Fire",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Weather Control"
+ },
+ {
+  "hero": "Storm",
+  "move": "Weather Ball",
+  "type": "Normal",
+  "category": "Special",
+  "power": 50,
+  "basedOn": "Goddess of weather"
+ },
+ {
+  "hero": "Storm",
+  "move": "Thunderbolt",
+  "type": "Electric",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Storm",
+  "move": "Thunder",
+  "type": "Electric",
+  "category": "Special",
+  "power": 110,
+  "basedOn": null
+ },
+ {
+  "hero": "Storm",
+  "move": "Blizzard",
+  "type": "Ice",
+  "category": "Special",
+  "power": 110,
+  "basedOn": null
+ },
+ {
+  "hero": "Storm",
+  "move": "Tailwind",
+  "type": "Flying",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Storm",
+  "move": "Electro Shot",
+  "type": "Electric",
+  "category": "Special",
+  "power": 130,
+  "basedOn": null
+ },
+ {
+  "hero": "Storm",
+  "move": "Roost",
+  "type": "Flying",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Storm",
+  "move": "Calm Mind",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Thor",
+  "move": "Gigaton Hammer",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 160,
+  "basedOn": "Mjolnir Bash"
+ },
+ {
+  "hero": "Thor",
+  "move": "Supercell Slam",
+  "type": "Electric",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": "Hammer Throw / leap"
+ },
+ {
+  "hero": "Thor",
+  "move": "Electric Terrain",
+  "type": "Electric",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Lightning Realm"
+ },
+ {
+  "hero": "Thor",
+  "move": "Bolt Strike",
+  "type": "Electric",
+  "category": "Physical",
+  "power": 130,
+  "basedOn": "God of Thunder ultimate"
+ },
+ {
+  "hero": "Thor",
+  "move": "Thunder Punch",
+  "type": "Electric",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Storm Surge"
+ },
+ {
+  "hero": "Thor",
+  "move": "Bulk Up",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Awakening Rune (Thorforce)"
+ },
+ {
+  "hero": "Thor",
+  "move": "Thunder",
+  "type": "Electric",
+  "category": "Special",
+  "power": 110,
+  "basedOn": "Asgardian storms"
+ },
+ {
+  "hero": "Thor",
+  "move": "Wild Charge",
+  "type": "Electric",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Thor",
+  "move": "Hammer Arm",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": null
+ },
+ {
+  "hero": "Thor",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Thor",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Thor",
+  "move": "Thunderbolt",
+  "type": "Electric",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Thor",
+  "move": "Thunderclap",
+  "type": "Electric",
+  "category": "Special",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Thor",
+  "move": "Fly",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Venom",
+  "move": "Power Whip",
+  "type": "Grass",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Dark Tendrils"
+ },
+ {
+  "hero": "Venom",
+  "move": "Bind",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 15,
+  "basedOn": "Cellular Corrosion"
+ },
+ {
+  "hero": "Venom",
+  "move": "Jaw Lock",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Feast of the Abyss ultimate"
+ },
+ {
+  "hero": "Venom",
+  "move": "Substitute",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Symbiotic Resilience"
+ },
+ {
+  "hero": "Venom",
+  "move": "Body Slam",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 85,
+  "basedOn": "Frenzied Arrival"
+ },
+ {
+  "hero": "Venom",
+  "move": "Crunch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "\"We are Venom\""
+ },
+ {
+  "hero": "Venom",
+  "move": "Poison Fang",
+  "type": "Poison",
+  "category": "Physical",
+  "power": 50,
+  "basedOn": "Symbiote bite"
+ },
+ {
+  "hero": "Venom",
+  "move": "Poison Jab",
+  "type": "Poison",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Venom",
+  "move": "Gunk Shot",
+  "type": "Poison",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Venom",
+  "move": "Knock Off",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Venom",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Venom",
+  "move": "Lash Out",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Venom",
+  "move": "Bulk Up",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Venom",
+  "move": "Swords Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Meteor Mash",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Trooper's Fist"
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Thunder Punch",
+  "type": "Electric",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Tainted Voltage"
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Heavy Slam",
+  "type": "Steel",
+  "category": "Physical",
+  "power": null,
+  "basedOn": "Kraken Impact ultimate"
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Ice Punch",
+  "type": "Ice",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Cryo sleep"
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Payback",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 50,
+  "basedOn": "Bionic Hook"
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Bullet Punch",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": "Roterstern"
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Iron Head",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Knock Off",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Throat Chop",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Shadow Claw",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Swords Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Night Slash",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Winter Soldier",
+  "move": "Flash Cannon",
+  "type": "Steel",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Metal Claw",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 50,
+  "basedOn": "Savage Claw"
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Crush Claw",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Berserk Claw Strike"
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Feral Leap"
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Recover",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Undying Animal (healing factor)"
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Endeavor",
+  "type": "Normal",
+  "category": "Physical",
+  "power": null,
+  "basedOn": "Last Stand ultimate"
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Reversal",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": null,
+  "basedOn": "Berserker rage"
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Dire Claw",
+  "type": "Poison",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Adamantium claws"
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Night Slash",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Hone Claws",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Swords Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Iron Head",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Thrash",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Wolverine",
+  "move": "Quick Attack",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Mega Punch",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Stretch Punch"
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Wrap",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 15,
+  "basedOn": "Flexible Elongation"
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Bounce",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 85,
+  "basedOn": "Reflexive Rubber"
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Body Slam",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 85,
+  "basedOn": "Brainiac Bounce ultimate"
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Coil",
+  "type": "Poison",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Elastic body"
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Bulk Up",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Elastic Strength"
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Calm Mind",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Smartest man alive"
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Comet Punch",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 18,
+  "basedOn": null
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Double-Edge",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Power-Up Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Ice Punch",
+  "type": "Ice",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Thunder Punch",
+  "type": "Electric",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Facade",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Mister Fantastic",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Psybeam",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 65,
+  "basedOn": "Orb Projection"
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Expanding Force",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Psionic Vortex"
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Light Screen",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Guardian Shield"
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Reflect",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Guardian Shield"
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Double Team",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Veiled Step"
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Wide Guard",
+  "type": "Rock",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Invisible Boundary ultimate"
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Heal Pulse",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Force-field healing"
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Psychic",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Psyshock",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Life Dew",
+  "type": "Water",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Substitute",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Calm Mind",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Force Palm",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 60,
+  "basedOn": null
+ },
+ {
+  "hero": "Invisible Woman",
+  "move": "Barrier",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Flamethrower",
+  "type": "Fire",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Plasma Disk"
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Fire Blast",
+  "type": "Fire",
+  "category": "Special",
+  "power": 110,
+  "basedOn": "Blazing Blast"
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Fire Spin",
+  "type": "Fire",
+  "category": "Special",
+  "power": 35,
+  "basedOn": "Pyro-Prison"
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Burn Up",
+  "type": "Fire",
+  "category": "Special",
+  "power": 130,
+  "basedOn": "Supernova ultimate"
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Flare Blitz",
+  "type": "Fire",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Flaming Meteor"
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Fly",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Flame On"
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Heat Wave",
+  "type": "Fire",
+  "category": "Special",
+  "power": 95,
+  "basedOn": null
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Overheat",
+  "type": "Fire",
+  "category": "Special",
+  "power": 130,
+  "basedOn": null
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Air Slash",
+  "type": "Flying",
+  "category": "Special",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Hurricane",
+  "type": "Flying",
+  "category": "Special",
+  "power": 110,
+  "basedOn": null
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Flame Charge",
+  "type": "Fire",
+  "category": "Physical",
+  "power": 50,
+  "basedOn": null
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Will-O-Wisp",
+  "type": "Fire",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Sunny Day",
+  "type": "Fire",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Human Torch",
+  "move": "Inferno",
+  "type": "Fire",
+  "category": "Special",
+  "power": 100,
+  "basedOn": null
+ },
+ {
+  "hero": "The Thing",
+  "move": "Rock Smash",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": "Rock Smasher"
+ },
+ {
+  "hero": "The Thing",
+  "move": "Hammer Arm",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": "Stone Haymaker"
+ },
+ {
+  "hero": "The Thing",
+  "move": "Body Press",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Yancy Street Charge"
+ },
+ {
+  "hero": "The Thing",
+  "move": "Stomping Tantrum",
+  "type": "Ground",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Embattled Leap"
+ },
+ {
+  "hero": "The Thing",
+  "move": "Head Smash",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 150,
+  "basedOn": "Clobberin' Time ultimate"
+ },
+ {
+  "hero": "The Thing",
+  "move": "Wide Guard",
+  "type": "Rock",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Protects his team"
+ },
+ {
+  "hero": "The Thing",
+  "move": "Stone Edge",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": null
+ },
+ {
+  "hero": "The Thing",
+  "move": "Rock Slide",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "The Thing",
+  "move": "Iron Defense",
+  "type": "Steel",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "The Thing",
+  "move": "Stealth Rock",
+  "type": "Rock",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "The Thing",
+  "move": "Earthquake",
+  "type": "Ground",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": null
+ },
+ {
+  "hero": "The Thing",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "The Thing",
+  "move": "Mach Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "The Thing",
+  "move": "Rock Polish",
+  "type": "Rock",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Psychic",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Psychic Grasp"
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Psyshock",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Psychic Spear"
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Diamond Storm",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": "Diamond Form"
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Power Gem",
+  "type": "Rock",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Faceted Fury ultimate"
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Hypnosis",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Mind's Aegis / telepathy"
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Attract",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Psionic Seduction"
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Iron Defense",
+  "type": "Steel",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Diamond Form"
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Zen Headbutt",
+  "type": "Psychic",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Stone Edge",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": null
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Rock Slide",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Calm Mind",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Psychic Terrain",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Stealth Rock",
+  "type": "Rock",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Emma Frost",
+  "move": "Body Press",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Ultron",
+  "move": "Charge Beam",
+  "type": "Electric",
+  "category": "Special",
+  "power": 50,
+  "basedOn": "Encephalo-Ray"
+ },
+ {
+  "hero": "Ultron",
+  "move": "Heal Pulse",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Imperative: Patch drones"
+ },
+ {
+  "hero": "Ultron",
+  "move": "Magnet Rise",
+  "type": "Electric",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Dynamic Flight"
+ },
+ {
+  "hero": "Ultron",
+  "move": "Light Screen",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Imperative: Firewall"
+ },
+ {
+  "hero": "Ultron",
+  "move": "Hyper Beam",
+  "type": "Normal",
+  "category": "Special",
+  "power": 150,
+  "basedOn": "Concentrated beam ultimate"
+ },
+ {
+  "hero": "Ultron",
+  "move": "Recover",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Rebuilds himself"
+ },
+ {
+  "hero": "Ultron",
+  "move": "Metal Sound",
+  "type": "Steel",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Machine"
+ },
+ {
+  "hero": "Ultron",
+  "move": "Zap Cannon",
+  "type": "Electric",
+  "category": "Special",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Ultron",
+  "move": "Thunderbolt",
+  "type": "Electric",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Ultron",
+  "move": "Flash Cannon",
+  "type": "Steel",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Ultron",
+  "move": "Steel Beam",
+  "type": "Steel",
+  "category": "Special",
+  "power": 140,
+  "basedOn": null
+ },
+ {
+  "hero": "Ultron",
+  "move": "Discharge",
+  "type": "Electric",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Ultron",
+  "move": "Volt Switch",
+  "type": "Electric",
+  "category": "Special",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Ultron",
+  "move": "Nasty Plot",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Psychic",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Telekinesis"
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Mystical Fire",
+  "type": "Fire",
+  "category": "Special",
+  "power": 75,
+  "basedOn": "Phoenix Force flames"
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Fiery Dance",
+  "type": "Fire",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Firebird"
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Gravity",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Psionic Gravity"
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Burn Up",
+  "type": "Fire",
+  "category": "Special",
+  "power": 130,
+  "basedOn": "Endsong ultimate"
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Morning Sun",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Rebirth"
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Future Sight",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 120,
+  "basedOn": "Psychic precognition"
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Psyshock",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Flamethrower",
+  "type": "Fire",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Fire Blast",
+  "type": "Fire",
+  "category": "Special",
+  "power": 110,
+  "basedOn": null
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Heat Wave",
+  "type": "Fire",
+  "category": "Special",
+  "power": 95,
+  "basedOn": null
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Expanding Force",
+  "type": "Psychic",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Calm Mind",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Phoenix",
+  "move": "Shadow Ball",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Blade",
+  "move": "Kowtow Cleave",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 85,
+  "basedOn": "Ancestral Sword"
+ },
+ {
+  "hero": "Blade",
+  "move": "Sacred Sword",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Silver blade"
+ },
+ {
+  "hero": "Blade",
+  "move": "Bullet Punch",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": "Hunter's Shotgun"
+ },
+ {
+  "hero": "Blade",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Dhampir lifesteal"
+ },
+ {
+  "hero": "Blade",
+  "move": "Leech Life",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Dhampir"
+ },
+ {
+  "hero": "Blade",
+  "move": "Night Slash",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Vampire hunter"
+ },
+ {
+  "hero": "Blade",
+  "move": "Swords Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Bloody Edge ultimate"
+ },
+ {
+  "hero": "Blade",
+  "move": "Iron Head",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Blade",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Blade",
+  "move": "Knock Off",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Blade",
+  "move": "Throat Chop",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Blade",
+  "move": "Smart Strike",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Blade",
+  "move": "Quick Attack",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Blade",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Angela",
+  "move": "Flying Press",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": "Assassin's Charge"
+ },
+ {
+  "hero": "Angela",
+  "move": "Sacred Sword",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Divine Judgement"
+ },
+ {
+  "hero": "Angela",
+  "move": "Sky Attack",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 140,
+  "basedOn": "Heven's Retribution ultimate"
+ },
+ {
+  "hero": "Angela",
+  "move": "Wrap",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 15,
+  "basedOn": "Ichor ribbons"
+ },
+ {
+  "hero": "Angela",
+  "move": "Wide Guard",
+  "type": "Rock",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Ichor shield"
+ },
+ {
+  "hero": "Angela",
+  "move": "Brave Bird",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Angel of Heven"
+ },
+ {
+  "hero": "Angela",
+  "move": "Spirit Break",
+  "type": "Fairy",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Angel"
+ },
+ {
+  "hero": "Angela",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Angela",
+  "move": "Dual Wingbeat",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Angela",
+  "move": "Swords Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Angela",
+  "move": "Bulk Up",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Angela",
+  "move": "Roost",
+  "type": "Flying",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Angela",
+  "move": "Smart Strike",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Angela",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Foresight",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Radar sense"
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Detect",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Radar sense"
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Throat Chop",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Billy club"
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Lash Out",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "The Beast ultimate"
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Acrobatics",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 55,
+  "basedOn": "Rooftop acrobat"
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Mach Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Knock Off",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Low Kick",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Bulk Up",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Feint",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 30,
+  "basedOn": null
+ },
+ {
+  "hero": "Daredevil",
+  "move": "Hone Claws",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Gambit",
+  "move": "Mystical Fire",
+  "type": "Fire",
+  "category": "Special",
+  "power": 75,
+  "basedOn": "Kinetically charged cards"
+ },
+ {
+  "hero": "Gambit",
+  "move": "Dazzling Gleam",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Card fan"
+ },
+ {
+  "hero": "Gambit",
+  "move": "Mind Blown",
+  "type": "Fire",
+  "category": "Special",
+  "power": 150,
+  "basedOn": "Royal Flush ultimate"
+ },
+ {
+  "hero": "Gambit",
+  "move": "Play Rough",
+  "type": "Fairy",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Bo staff"
+ },
+ {
+  "hero": "Gambit",
+  "move": "Charm",
+  "type": "Fairy",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Cajun charm"
+ },
+ {
+  "hero": "Gambit",
+  "move": "Lucky Chant",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Lady luck"
+ },
+ {
+  "hero": "Gambit",
+  "move": "Life Dew",
+  "type": "Water",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Healing cards"
+ },
+ {
+  "hero": "Gambit",
+  "move": "Thief",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 60,
+  "basedOn": "Thieves Guild"
+ },
+ {
+  "hero": "Gambit",
+  "move": "Moonblast",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 95,
+  "basedOn": null
+ },
+ {
+  "hero": "Gambit",
+  "move": "Flamethrower",
+  "type": "Fire",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Gambit",
+  "move": "Fire Blast",
+  "type": "Fire",
+  "category": "Special",
+  "power": 110,
+  "basedOn": null
+ },
+ {
+  "hero": "Gambit",
+  "move": "Sweet Kiss",
+  "type": "Fairy",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Gambit",
+  "move": "Nasty Plot",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Gambit",
+  "move": "Fake Out",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Rogue",
+  "move": "Copycat",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Power absorption"
+ },
+ {
+  "hero": "Rogue",
+  "move": "Mimic",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Power absorption"
+ },
+ {
+  "hero": "Rogue",
+  "move": "Draining Kiss",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 50,
+  "basedOn": "Her touch drains"
+ },
+ {
+  "hero": "Rogue",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Power absorption"
+ },
+ {
+  "hero": "Rogue",
+  "move": "Fly",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Ms. Marvel flight"
+ },
+ {
+  "hero": "Rogue",
+  "move": "Superpower",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Ms. Marvel strength"
+ },
+ {
+  "hero": "Rogue",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Rogue",
+  "move": "Brick Break",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Rogue",
+  "move": "Mach Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Rogue",
+  "move": "Reversal",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Rogue",
+  "move": "Bulk Up",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Rogue",
+  "move": "Counter",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Rogue",
+  "move": "Body Press",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Rogue",
+  "move": "Bounce",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 85,
+  "basedOn": null
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Metronome",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Breaks the fourth wall"
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Sacred Sword",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Katanas"
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Night Slash",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Katanas"
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Protect",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Blocks ultimates with his butt"
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Endure",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Healing factor"
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Recover",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Healing factor"
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Taunt",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Merc with a Mouth"
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Splash",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Gag move"
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Poltergeist",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 110,
+  "basedOn": null
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Shadow Claw",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Fake Out",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Facade",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Spite",
+  "type": "Ghost",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Deadpool",
+  "move": "Last Resort",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 140,
+  "basedOn": null
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Power Gem",
+  "type": "Rock",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "The Bloodstone"
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Rock Blast",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 25,
+  "basedOn": "Shotgun shells"
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Accelerock",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": "Quick draw"
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Smart Strike",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Monster hunter"
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Bullet Punch",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": "Sidearms"
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Stone Edge",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": null
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Iron Head",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Stealth Rock",
+  "type": "Rock",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Swords Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Rock Polish",
+  "type": "Rock",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Knock Off",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Bulldoze",
+  "type": "Ground",
+  "category": "Physical",
+  "power": 60,
+  "basedOn": null
+ },
+ {
+  "hero": "Elsa Bloodstone",
+  "move": "Heavy Slam",
+  "type": "Steel",
+  "category": "Physical",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "White Fox",
+  "move": "Spirit Break",
+  "type": "Fairy",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Kumiho strikes"
+ },
+ {
+  "hero": "White Fox",
+  "move": "Draining Kiss",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 50,
+  "basedOn": "Kumiho essence drain"
+ },
+ {
+  "hero": "White Fox",
+  "move": "Drain Punch",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Kumiho essence drain"
+ },
+ {
+  "hero": "White Fox",
+  "move": "Captivate",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Fox charm"
+ },
+ {
+  "hero": "White Fox",
+  "move": "Close Combat",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Kumiho Unleashed ultimate"
+ },
+ {
+  "hero": "White Fox",
+  "move": "Aura Sphere",
+  "type": "Fighting",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Kumiho spirit energy"
+ },
+ {
+  "hero": "White Fox",
+  "move": "Life Dew",
+  "type": "Water",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Healing support"
+ },
+ {
+  "hero": "White Fox",
+  "move": "Play Rough",
+  "type": "Fairy",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "White Fox",
+  "move": "Moonblast",
+  "type": "Fairy",
+  "category": "Special",
+  "power": 95,
+  "basedOn": null
+ },
+ {
+  "hero": "White Fox",
+  "move": "Wish",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "White Fox",
+  "move": "Quick Attack",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "White Fox",
+  "move": "Bulk Up",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "White Fox",
+  "move": "Fake Out",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "White Fox",
+  "move": "Acrobatics",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 55,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Cat",
+  "move": "Thief",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 60,
+  "basedOn": "Cat burglar"
+ },
+ {
+  "hero": "Black Cat",
+  "move": "Covet",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 60,
+  "basedOn": "Cat burglar"
+ },
+ {
+  "hero": "Black Cat",
+  "move": "Fury Swipes",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 18,
+  "basedOn": "Claws"
+ },
+ {
+  "hero": "Black Cat",
+  "move": "Play Rough",
+  "type": "Fairy",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Bad luck"
+ },
+ {
+  "hero": "Black Cat",
+  "move": "Acrobatics",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 55,
+  "basedOn": "Rooftop acrobat"
+ },
+ {
+  "hero": "Black Cat",
+  "move": "Fake Out",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": "Feline distraction"
+ },
+ {
+  "hero": "Black Cat",
+  "move": "Knock Off",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Cat",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Cat",
+  "move": "Night Slash",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Cat",
+  "move": "Assurance",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 60,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Cat",
+  "move": "U-turn",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Cat",
+  "move": "Taunt",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Cat",
+  "move": "Hone Claws",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Black Cat",
+  "move": "Quick Attack",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Outrage",
+  "type": "Dragon",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": "Rampaging T-rex"
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Crunch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "T-rex bite"
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Stomping Tantrum",
+  "type": "Ground",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": "Stomp"
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Fire Fang",
+  "type": "Fire",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": "Red-hot jaws"
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Helping Hand",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Moon Girl"
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Roar",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Prehistoric roar"
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Dragon Claw",
+  "type": "Dragon",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Dragon Rush",
+  "type": "Dragon",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": null
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Flare Blitz",
+  "type": "Fire",
+  "category": "Physical",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Earthquake",
+  "type": "Ground",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": null
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Rock Slide",
+  "type": "Rock",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Dragon Tail",
+  "type": "Dragon",
+  "category": "Physical",
+  "power": 60,
+  "basedOn": null
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Dragon Dance",
+  "type": "Dragon",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Devil Dinosaur",
+  "move": "Fire Lash",
+  "type": "Fire",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Hyper Beam",
+  "type": "Normal",
+  "category": "Special",
+  "power": 150,
+  "basedOn": "Optic blast"
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Swift",
+  "type": "Normal",
+  "category": "Special",
+  "power": 60,
+  "basedOn": "Bank-shot optic blast"
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Laser Focus",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Visor focus"
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Coaching",
+  "type": "Fighting",
+  "category": "Status",
+  "power": null,
+  "basedOn": "X-Men field leader"
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Lock-On",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Tactician"
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Flash",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Visor flare"
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Tri Attack",
+  "type": "Normal",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Focus Blast",
+  "type": "Fighting",
+  "category": "Special",
+  "power": 120,
+  "basedOn": null
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Aura Sphere",
+  "type": "Fighting",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Vacuum Wave",
+  "type": "Fighting",
+  "category": "Special",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Focus Energy",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Calm Mind",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Helping Hand",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Cyclops",
+  "move": "Hyper Voice",
+  "type": "Normal",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Electro Ball",
+  "type": "Electric",
+  "category": "Special",
+  "power": null,
+  "basedOn": "Plasmoids"
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Flash",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Blinding sparkles"
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Life Dew",
+  "type": "Water",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Blooming Ball"
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Overdrive",
+  "type": "Electric",
+  "category": "Special",
+  "power": 80,
+  "basedOn": "Firework Finale ultimate"
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Mystical Fire",
+  "type": "Fire",
+  "category": "Special",
+  "power": 75,
+  "basedOn": "Fireworks"
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Leech Life",
+  "type": "Bug",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": "Vampire era"
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Heal Pulse",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Sparkle Mark heal"
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Discharge",
+  "type": "Electric",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Flamethrower",
+  "type": "Fire",
+  "category": "Special",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Fire Blast",
+  "type": "Fire",
+  "category": "Special",
+  "power": 110,
+  "basedOn": null
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Charge",
+  "type": "Electric",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Volt Switch",
+  "type": "Electric",
+  "category": "Special",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Spark",
+  "type": "Electric",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Jubilee",
+  "move": "Explosion",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 250,
+  "basedOn": null
+ },
+ {
+  "hero": "The Hood",
+  "move": "Nasty Plot",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Demonic Energy"
+ },
+ {
+  "hero": "The Hood",
+  "move": "Fiery Wrath",
+  "type": "Dark",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Half-Demon State"
+ },
+ {
+  "hero": "The Hood",
+  "move": "Inferno",
+  "type": "Fire",
+  "category": "Special",
+  "power": 100,
+  "basedOn": "Demon of the End ultimate"
+ },
+ {
+  "hero": "The Hood",
+  "move": "Bitter Blade",
+  "type": "Fire",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Lifesteal"
+ },
+ {
+  "hero": "The Hood",
+  "move": "Double Team",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Invisibility cloak"
+ },
+ {
+  "hero": "The Hood",
+  "move": "Substitute",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Clones"
+ },
+ {
+  "hero": "The Hood",
+  "move": "Flamethrower",
+  "type": "Fire",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Dormammu's flames"
+ },
+ {
+  "hero": "The Hood",
+  "move": "Dark Pulse",
+  "type": "Dark",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "The Hood",
+  "move": "Fire Blast",
+  "type": "Fire",
+  "category": "Special",
+  "power": 110,
+  "basedOn": null
+ },
+ {
+  "hero": "The Hood",
+  "move": "Will-O-Wisp",
+  "type": "Fire",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "The Hood",
+  "move": "Snarl",
+  "type": "Dark",
+  "category": "Special",
+  "power": 55,
+  "basedOn": null
+ },
+ {
+  "hero": "The Hood",
+  "move": "Taunt",
+  "type": "Dark",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "The Hood",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "The Hood",
+  "move": "Infernal Parade",
+  "type": "Ghost",
+  "category": "Special",
+  "power": 60,
+  "basedOn": null
+ },
+ {
+  "hero": "Gorr",
+  "move": "Shadow Claw",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "All-Black the Necrosword"
+ },
+ {
+  "hero": "Gorr",
+  "move": "Poltergeist",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 110,
+  "basedOn": "Black Berserkers"
+ },
+ {
+  "hero": "Gorr",
+  "move": "Phantom Force",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Living Abyss"
+ },
+ {
+  "hero": "Gorr",
+  "move": "Spectral Thief",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": "Steals the power of gods"
+ },
+ {
+  "hero": "Gorr",
+  "move": "Last Respects",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 50,
+  "basedOn": "God Butcher"
+ },
+ {
+  "hero": "Gorr",
+  "move": "Curse",
+  "type": "Ghost",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Necrosword curse"
+ },
+ {
+  "hero": "Gorr",
+  "move": "Smart Strike",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Necrosword"
+ },
+ {
+  "hero": "Gorr",
+  "move": "Shadow Sneak",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 40,
+  "basedOn": null
+ },
+ {
+  "hero": "Gorr",
+  "move": "Iron Head",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Gorr",
+  "move": "Night Slash",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Gorr",
+  "move": "Swords Dance",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Gorr",
+  "move": "Sacred Sword",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Gorr",
+  "move": "Knock Off",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Gorr",
+  "move": "Spirit Shackle",
+  "type": "Ghost",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Teleport",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "BAMF!"
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Ally Switch",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Teleports allies"
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Night Slash",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": "Swords"
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Iron Tail",
+  "type": "Steel",
+  "category": "Physical",
+  "power": 100,
+  "basedOn": "Prehensile tail"
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Life Dew",
+  "type": "Water",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Healing grenades"
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Smokescreen",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Brimstone smoke"
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Acrobatics",
+  "type": "Flying",
+  "category": "Physical",
+  "power": 55,
+  "basedOn": "Circus acrobat"
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Sacred Sword",
+  "type": "Fighting",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Sucker Punch",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 70,
+  "basedOn": null
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Spirit Break",
+  "type": "Fairy",
+  "category": "Physical",
+  "power": 75,
+  "basedOn": null
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Play Rough",
+  "type": "Fairy",
+  "category": "Physical",
+  "power": 90,
+  "basedOn": null
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Heal Pulse",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Feint",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 30,
+  "basedOn": null
+ },
+ {
+  "hero": "Nightcrawler",
+  "move": "Throat Chop",
+  "type": "Dark",
+  "category": "Physical",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk (Bruce Banner form)",
+  "move": "Sludge Bomb",
+  "type": "Poison",
+  "category": "Special",
+  "power": 90,
+  "basedOn": "Gamma ray gun"
+ },
+ {
+  "hero": "Hulk (Bruce Banner form)",
+  "move": "Rage",
+  "type": "Normal",
+  "category": "Physical",
+  "power": 20,
+  "basedOn": "Anger builds"
+ },
+ {
+  "hero": "Hulk (Bruce Banner form)",
+  "move": "Calm Mind",
+  "type": "Psychic",
+  "category": "Status",
+  "power": null,
+  "basedOn": "Brilliant scientist"
+ },
+ {
+  "hero": "Hulk (Bruce Banner form)",
+  "move": "Acid Spray",
+  "type": "Poison",
+  "category": "Special",
+  "power": 40,
+  "basedOn": "Gamma ray gun"
+ },
+ {
+  "hero": "Hulk (Bruce Banner form)",
+  "move": "Hyper Beam",
+  "type": "Normal",
+  "category": "Special",
+  "power": 150,
+  "basedOn": "Gamma surge"
+ },
+ {
+  "hero": "Hulk (Bruce Banner form)",
+  "move": "Sludge Wave",
+  "type": "Poison",
+  "category": "Special",
+  "power": 95,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk (Bruce Banner form)",
+  "move": "Clear Smog",
+  "type": "Poison",
+  "category": "Special",
+  "power": 50,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk (Bruce Banner form)",
+  "move": "Venoshock",
+  "type": "Poison",
+  "category": "Special",
+  "power": 65,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk (Bruce Banner form)",
+  "move": "Toxic",
+  "type": "Poison",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk (Bruce Banner form)",
+  "move": "Swift",
+  "type": "Normal",
+  "category": "Special",
+  "power": 60,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk (Bruce Banner form)",
+  "move": "Tri Attack",
+  "type": "Normal",
+  "category": "Special",
+  "power": 80,
+  "basedOn": null
+ },
+ {
+  "hero": "Hulk (Bruce Banner form)",
+  "move": "Endure",
+  "type": "Normal",
+  "category": "Status",
+  "power": null,
+  "basedOn": null
+ }
+]

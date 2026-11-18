@@ -1,0 +1,2223 @@
+[
+ {
+  "id": "adam-warlock",
+  "num": 1,
+  "name": "Adam Warlock",
+  "role": "Strategist",
+  "types": [
+   "Psychic",
+   "Fairy"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 80,
+   "atk": 55,
+   "def": 75,
+   "spa": 115,
+   "spd": 110,
+   "spe": 90
+  },
+  "abilities": {
+   "0": "Regenerative Cocoon",
+   "H": "Soul Gem"
+  },
+  "moves": [
+   "Psybeam",
+   "Life Dew",
+   "Revival Blessing",
+   "Ingrain",
+   "Heal Pulse",
+   "Moonblast",
+   "Cosmic Power",
+   "Shadow Ball",
+   "Psychic",
+   "Psyshock",
+   "Dazzling Gleam",
+   "Calm Mind",
+   "Recover",
+   "Trick Room"
+  ]
+ },
+ {
+  "id": "black-panther",
+  "num": 2,
+  "name": "Black Panther",
+  "role": "Duelist",
+  "types": [
+   "Steel",
+   "Fighting"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 80,
+   "atk": 130,
+   "def": 70,
+   "spa": 55,
+   "spd": 75,
+   "spe": 135
+  },
+  "abilities": {
+   "0": "Vibranium Weave",
+   "H": "Heart-Shaped Herb"
+  },
+  "moves": [
+   "Metal Claw",
+   "Smart Strike",
+   "Triple Kick",
+   "Drain Punch",
+   "Close Combat",
+   "Iron Defense",
+   "Hone Claws",
+   "Night Slash",
+   "Swords Dance",
+   "Iron Head",
+   "Knock Off",
+   "Bullet Punch",
+   "Sucker Punch",
+   "U-turn"
+  ]
+ },
+ {
+  "id": "black-widow",
+  "num": 3,
+  "name": "Black Widow",
+  "role": "Duelist",
+  "types": [
+   "Fighting",
+   "Electric"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 75,
+   "atk": 105,
+   "def": 65,
+   "spa": 110,
+   "spd": 70,
+   "spe": 120
+  },
+  "abilities": {
+   "0": "Red Room Training",
+   "H": "Widow's Bite"
+  },
+  "moves": [
+   "Thunder Punch",
+   "Electroweb",
+   "Zap Cannon",
+   "High Jump Kick",
+   "Discharge",
+   "Fake Out",
+   "Low Kick",
+   "Triple Kick",
+   "Close Combat",
+   "Wild Charge",
+   "Thunderbolt",
+   "Focus Blast",
+   "Feint",
+   "U-turn"
+  ]
+ },
+ {
+  "id": "captain-america",
+  "num": 4,
+  "name": "Captain America",
+  "role": "Vanguard",
+  "types": [
+   "Fighting",
+   "Steel"
+  ],
+  "inGameHP": 650,
+  "baseStats": {
+   "hp": 105,
+   "atk": 110,
+   "def": 115,
+   "spa": 55,
+   "spd": 95,
+   "spe": 95
+  },
+  "abilities": {
+   "0": "Never Surrender",
+   "H": "Avengers Assemble"
+  },
+  "moves": [
+   "Smart Strike",
+   "Iron Head",
+   "Body Press",
+   "Wide Guard",
+   "Superpower",
+   "Coaching",
+   "Agility",
+   "Close Combat",
+   "Drain Punch",
+   "Mach Punch",
+   "Bulk Up",
+   "Iron Defense",
+   "Stone Edge",
+   "Knock Off"
+  ]
+ },
+ {
+  "id": "cloak",
+  "num": 5,
+  "name": "Cloak",
+  "role": "Strategist",
+  "types": [
+   "Dark"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 80,
+   "atk": 70,
+   "def": 75,
+   "spa": 105,
+   "spd": 105,
+   "spe": 90
+  },
+  "abilities": {
+   "0": "Darkforce Hunger",
+   "H": "Eternal Bond"
+  },
+  "moves": [
+   "Dark Pulse",
+   "Night Daze",
+   "Phantom Force",
+   "Ally Switch",
+   "Mean Look",
+   "Shadow Ball",
+   "Snarl",
+   "Foul Play",
+   "Taunt",
+   "Nasty Plot",
+   "Parting Shot",
+   "Hex",
+   "Sucker Punch",
+   "Obstruct"
+  ]
+ },
+ {
+  "id": "dagger",
+  "num": 6,
+  "name": "Dagger",
+  "role": "Strategist",
+  "types": [
+   "Fairy"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 80,
+   "atk": 55,
+   "def": 70,
+   "spa": 110,
+   "spd": 115,
+   "spe": 95
+  },
+  "abilities": {
+   "0": "Purifying Light",
+   "H": "Eternal Bond"
+  },
+  "moves": [
+   "Dazzling Gleam",
+   "Life Dew",
+   "Heal Pulse",
+   "Lunar Dance",
+   "Ally Switch",
+   "Purify",
+   "Flash",
+   "Draining Kiss",
+   "Moonblast",
+   "Wish",
+   "Psychic",
+   "Calm Mind",
+   "Light Screen",
+   "Misty Terrain"
+  ]
+ },
+ {
+  "id": "doctor-strange",
+  "num": 7,
+  "name": "Doctor Strange",
+  "role": "Vanguard",
+  "types": [
+   "Psychic",
+   "Ghost"
+  ],
+  "inGameHP": 650,
+  "baseStats": {
+   "hp": 110,
+   "atk": 65,
+   "def": 95,
+   "spa": 125,
+   "spd": 115,
+   "spe": 65
+  },
+  "abilities": {
+   "0": "Sorcerer Supreme",
+   "H": "14,000,605 Futures"
+  },
+  "moves": [
+   "Psychic",
+   "Light Screen",
+   "Reflect",
+   "Teleport",
+   "Magic Coat",
+   "Expanding Force",
+   "Infernal Parade",
+   "Future Sight",
+   "Trick Room",
+   "Shadow Ball",
+   "Calm Mind",
+   "Hex",
+   "Focus Blast",
+   "Psyshock"
+  ]
+ },
+ {
+  "id": "groot",
+  "num": 8,
+  "name": "Groot",
+  "role": "Vanguard",
+  "types": [
+   "Grass",
+   "Rock"
+  ],
+  "inGameHP": 850,
+  "baseStats": {
+   "hp": 135,
+   "atk": 110,
+   "def": 120,
+   "spa": 65,
+   "spd": 100,
+   "spe": 40
+  },
+  "abilities": {
+   "0": "Flora Colossus",
+   "H": "I Am Groot"
+  },
+  "moves": [
+   "Bullet Seed",
+   "Seed Bomb",
+   "Spiky Shield",
+   "Wide Guard",
+   "Snap Trap",
+   "Ingrain",
+   "Wood Hammer",
+   "Power Whip",
+   "Horn Leech",
+   "Rock Slide",
+   "Stone Edge",
+   "Body Press",
+   "Curse",
+   "Synthesis"
+  ]
+ },
+ {
+  "id": "hawkeye",
+  "num": 9,
+  "name": "Hawkeye",
+  "role": "Duelist",
+  "types": [
+   "Normal",
+   "Steel"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 70,
+   "atk": 130,
+   "def": 65,
+   "spa": 85,
+   "spd": 70,
+   "spe": 120
+  },
+  "abilities": {
+   "0": "World's Greatest Marksman",
+   "H": "Trick Arrows"
+  },
+  "moves": [
+   "Smart Strike",
+   "Pin Missile",
+   "Night Slash",
+   "Lock-On",
+   "Focus Energy",
+   "Explosion",
+   "Thunder Wave",
+   "Iron Head",
+   "Quick Attack",
+   "Double-Edge",
+   "Swords Dance",
+   "U-turn",
+   "Rapid Spin",
+   "Sacred Sword"
+  ]
+ },
+ {
+  "id": "hela",
+  "num": 10,
+  "name": "Hela",
+  "role": "Duelist",
+  "types": [
+   "Ghost",
+   "Dark"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 70,
+   "atk": 80,
+   "def": 65,
+   "spa": 135,
+   "spd": 85,
+   "spe": 105
+  },
+  "abilities": {
+   "0": "Queen of Hel",
+   "H": "Death's Embrace"
+  },
+  "moves": [
+   "Shadow Ball",
+   "Night Daze",
+   "Air Slash",
+   "Infernal Parade",
+   "Bitter Malice",
+   "Destiny Bond",
+   "Dark Pulse",
+   "Hex",
+   "Nasty Plot",
+   "Will-O-Wisp",
+   "Foul Play",
+   "Sucker Punch",
+   "Taunt",
+   "Ominous Wind"
+  ]
+ },
+ {
+  "id": "hulk",
+  "num": 11,
+  "name": "Hulk",
+  "role": "Vanguard",
+  "types": [
+   "Fighting",
+   "Poison"
+  ],
+  "inGameHP": 700,
+  "baseStats": {
+   "hp": 115,
+   "atk": 130,
+   "def": 105,
+   "spa": 55,
+   "spd": 85,
+   "spe": 80
+  },
+  "abilities": {
+   "0": "Puny Banner",
+   "H": "Strongest There Is"
+  },
+  "moves": [
+   "Hammer Arm",
+   "Bounce",
+   "Gunk Shot",
+   "Endure",
+   "Toxic",
+   "Rage Fist",
+   "Close Combat",
+   "Superpower",
+   "Earthquake",
+   "Rock Slide",
+   "Poison Jab",
+   "Drain Punch",
+   "Bulk Up",
+   "Stomping Tantrum"
+  ],
+  "otherFormes": [
+   "Hulk (Bruce Banner form)"
+  ]
+ },
+ {
+  "id": "iron-fist",
+  "num": 12,
+  "name": "Iron Fist",
+  "role": "Duelist",
+  "types": [
+   "Fighting",
+   "Fire"
+  ],
+  "inGameHP": 300,
+  "baseStats": {
+   "hp": 85,
+   "atk": 125,
+   "def": 85,
+   "spa": 60,
+   "spd": 80,
+   "spe": 115
+  },
+  "abilities": {
+   "0": "Iron Fist",
+   "H": "Chi Healing"
+  },
+  "moves": [
+   "Mach Punch",
+   "High Jump Kick",
+   "Drain Punch",
+   "Detect",
+   "Close Combat",
+   "Fire Punch",
+   "Dragon Dance",
+   "Blaze Kick",
+   "Flare Blitz",
+   "Triple Kick",
+   "Bulk Up",
+   "Focus Energy",
+   "Rapid Spin",
+   "Low Kick"
+  ]
+ },
+ {
+  "id": "iron-man",
+  "num": 13,
+  "name": "Iron Man",
+  "role": "Duelist",
+  "types": [
+   "Steel",
+   "Electric"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 70,
+   "atk": 70,
+   "def": 85,
+   "spa": 135,
+   "spd": 80,
+   "spe": 100
+  },
+  "abilities": {
+   "0": "Arc Reactor",
+   "H": "Nanotech Armor"
+  },
+  "moves": [
+   "Charge Beam",
+   "Steel Beam",
+   "Hyper Beam",
+   "Electro Ball",
+   "Autotomize",
+   "Magnet Rise",
+   "Flash Cannon",
+   "Thunderbolt",
+   "Zap Cannon",
+   "Discharge",
+   "Iron Defense",
+   "Flamethrower",
+   "Volt Switch",
+   "Charge"
+  ]
+ },
+ {
+  "id": "jeff-the-land-shark",
+  "num": 14,
+  "name": "Jeff the Land Shark",
+  "role": "Strategist",
+  "types": [
+   "Water",
+   "Ground"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 75,
+   "atk": 90,
+   "def": 80,
+   "spa": 75,
+   "spd": 110,
+   "spe": 95
+  },
+  "abilities": {
+   "0": "Too Cute",
+   "H": "Healing Bubble"
+  },
+  "moves": [
+   "Aqua Ring",
+   "Water Pulse",
+   "Life Dew",
+   "Dig",
+   "Fishious Rend",
+   "Baby-Doll Eyes",
+   "Muddy Water",
+   "Scald",
+   "Bubble Beam",
+   "Crunch",
+   "Earthquake",
+   "Liquidation",
+   "Aqua Jet",
+   "Charm"
+  ]
+ },
+ {
+  "id": "loki",
+  "num": 15,
+  "name": "Loki",
+  "role": "Strategist",
+  "types": [
+   "Dark",
+   "Ice"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 80,
+   "atk": 55,
+   "def": 75,
+   "spa": 115,
+   "spd": 105,
+   "spe": 95
+  },
+  "abilities": {
+   "0": "God of Mischief",
+   "H": "Trickster"
+  },
+  "moves": [
+   "Transform",
+   "Substitute",
+   "Double Team",
+   "Ally Switch",
+   "Wish",
+   "Dark Pulse",
+   "Ice Beam",
+   "Freeze-Dry",
+   "Foul Play",
+   "Nasty Plot",
+   "Taunt",
+   "Trick",
+   "Snarl",
+   "Parting Shot"
+  ]
+ },
+ {
+  "id": "luna-snow",
+  "num": 16,
+  "name": "Luna Snow",
+  "role": "Strategist",
+  "types": [
+   "Ice",
+   "Fairy"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 80,
+   "atk": 60,
+   "def": 70,
+   "spa": 110,
+   "spd": 110,
+   "spe": 95
+  },
+  "abilities": {
+   "0": "K-pop Idol",
+   "H": "Ice Queen"
+  },
+  "moves": [
+   "Ice Shard",
+   "Ice Beam",
+   "Freeze-Dry",
+   "Heal Pulse",
+   "Quiver Dance",
+   "Alluring Voice",
+   "Sing",
+   "Icy Wind",
+   "Moonblast",
+   "Dazzling Gleam",
+   "Life Dew",
+   "Aurora Veil",
+   "Snowscape",
+   "Draining Kiss"
+  ]
+ },
+ {
+  "id": "magik",
+  "num": 17,
+  "name": "Magik",
+  "role": "Duelist",
+  "types": [
+   "Dark",
+   "Psychic"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 75,
+   "atk": 125,
+   "def": 70,
+   "spa": 90,
+   "spd": 70,
+   "spe": 115
+  },
+  "abilities": {
+   "0": "Soulsword",
+   "H": "Darkchylde"
+  },
+  "moves": [
+   "Psyblade",
+   "Psycho Cut",
+   "Teleport",
+   "Sucker Punch",
+   "Lash Out",
+   "Night Slash",
+   "Phantom Force",
+   "Swords Dance",
+   "Knock Off",
+   "Zen Headbutt",
+   "Throat Chop",
+   "Shadow Claw",
+   "Sacred Sword",
+   "Dark Pulse"
+  ]
+ },
+ {
+  "id": "magneto",
+  "num": 18,
+  "name": "Magneto",
+  "role": "Vanguard",
+  "types": [
+   "Steel"
+  ],
+  "inGameHP": 600,
+  "baseStats": {
+   "hp": 110,
+   "atk": 70,
+   "def": 115,
+   "spa": 110,
+   "spd": 110,
+   "spe": 55
+  },
+  "abilities": {
+   "0": "Master of Magnetism",
+   "H": "Electromagnetic Field"
+  },
+  "moves": [
+   "Flash Cannon",
+   "Magnet Bomb",
+   "Iron Defense",
+   "Wide Guard",
+   "Doom Desire",
+   "Magnet Rise",
+   "Magnetic Flux",
+   "Steel Beam",
+   "Mirror Shot",
+   "Gravity",
+   "Light Screen",
+   "Thunderbolt",
+   "Earth Power",
+   "Psychic"
+  ]
+ },
+ {
+  "id": "mantis",
+  "num": 19,
+  "name": "Mantis",
+  "role": "Strategist",
+  "types": [
+   "Psychic",
+   "Bug"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 75,
+   "atk": 50,
+   "def": 70,
+   "spa": 105,
+   "spd": 115,
+   "spe": 110
+  },
+  "abilities": {
+   "0": "Empath",
+   "H": "Spore Slumber"
+  },
+  "moves": [
+   "Floral Healing",
+   "Sleep Powder",
+   "Helping Hand",
+   "Nasty Plot",
+   "Life Dew",
+   "Psybeam",
+   "Pollen Puff",
+   "Hypnosis",
+   "Bug Buzz",
+   "Psychic",
+   "Energy Ball",
+   "Quiver Dance",
+   "Leech Seed",
+   "Psyshock"
+  ]
+ },
+ {
+  "id": "moon-knight",
+  "num": 20,
+  "name": "Moon Knight",
+  "role": "Duelist",
+  "types": [
+   "Fighting",
+   "Ghost"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 75,
+   "atk": 115,
+   "def": 70,
+   "spa": 105,
+   "spd": 70,
+   "spe": 105
+  },
+  "abilities": {
+   "0": "Moon's Vengeance",
+   "H": "Fist of Khonshu"
+  },
+  "moves": [
+   "Spirit Shackle",
+   "Gravity",
+   "Shadow Sneak",
+   "Poltergeist",
+   "High Jump Kick",
+   "Rage Fist",
+   "Moonblast",
+   "Moonlight",
+   "Shadow Claw",
+   "Drain Punch",
+   "Close Combat",
+   "Phantom Force",
+   "Bulk Up",
+   "Night Slash"
+  ]
+ },
+ {
+  "id": "namor",
+  "num": 21,
+  "name": "Namor",
+  "role": "Duelist",
+  "types": [
+   "Water",
+   "Flying"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 75,
+   "atk": 115,
+   "def": 80,
+   "spa": 105,
+   "spd": 80,
+   "spe": 90
+  },
+  "abilities": {
+   "0": "Imperius Rex",
+   "H": "Horn of Proteus"
+  },
+  "moves": [
+   "Liquidation",
+   "Whirlpool",
+   "Dive",
+   "Water Spout",
+   "Brave Bird",
+   "Wave Crash",
+   "Aqua Jet",
+   "Dual Wingbeat",
+   "Hurricane",
+   "Hydro Pump",
+   "Surf",
+   "Ice Beam",
+   "Rain Dance",
+   "Swords Dance"
+  ]
+ },
+ {
+  "id": "peni-parker",
+  "num": 22,
+  "name": "Peni Parker",
+  "role": "Vanguard",
+  "types": [
+   "Bug",
+   "Steel"
+  ],
+  "inGameHP": 650,
+  "baseStats": {
+   "hp": 110,
+   "atk": 100,
+   "def": 115,
+   "spa": 90,
+   "spd": 100,
+   "spe": 55
+  },
+  "abilities": {
+   "0": "SP//dr Armor",
+   "H": "Spider-Nest"
+  },
+  "moves": [
+   "Electroweb",
+   "Sticky Web",
+   "Spikes",
+   "Silk Trap",
+   "Lunge",
+   "Shift Gear",
+   "Gyro Ball",
+   "Bug Bite",
+   "X-Scissor",
+   "Iron Head",
+   "Heavy Slam",
+   "Iron Defense",
+   "Thunder Punch",
+   "Leech Life"
+  ]
+ },
+ {
+  "id": "psylocke",
+  "num": 23,
+  "name": "Psylocke",
+  "role": "Duelist",
+  "types": [
+   "Psychic",
+   "Steel"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 70,
+   "atk": 120,
+   "def": 65,
+   "spa": 100,
+   "spd": 70,
+   "spe": 125
+  },
+  "abilities": {
+   "0": "Psychic Stealth",
+   "H": "Psionic Butterfly"
+  },
+  "moves": [
+   "Psyblade",
+   "Psycho Cut",
+   "Smart Strike",
+   "Double Team",
+   "Quiver Dance",
+   "Sacred Sword",
+   "Iron Head",
+   "Night Slash",
+   "Swords Dance",
+   "Psychic",
+   "Sucker Punch",
+   "Close Combat",
+   "Steel Wing",
+   "Zen Headbutt"
+  ]
+ },
+ {
+  "id": "the-punisher",
+  "num": 24,
+  "name": "The Punisher",
+  "role": "Duelist",
+  "types": [
+   "Dark",
+   "Normal"
+  ],
+  "inGameHP": 300,
+  "baseStats": {
+   "hp": 85,
+   "atk": 130,
+   "def": 85,
+   "spa": 75,
+   "spd": 75,
+   "spe": 90
+  },
+  "abilities": {
+   "0": "Arsenal",
+   "H": "Vengeance"
+  },
+  "moves": [
+   "Spike Cannon",
+   "Smokescreen",
+   "Retaliate",
+   "Payback",
+   "Spikes",
+   "Quick Attack",
+   "Knock Off",
+   "Crunch",
+   "Sucker Punch",
+   "Throat Chop",
+   "Facade",
+   "Double-Edge",
+   "Swords Dance",
+   "Bullet Punch"
+  ]
+ },
+ {
+  "id": "rocket-raccoon",
+  "num": 25,
+  "name": "Rocket Raccoon",
+  "role": "Strategist",
+  "types": [
+   "Normal",
+   "Electric"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 75,
+   "atk": 95,
+   "def": 70,
+   "spa": 90,
+   "spd": 100,
+   "spe": 100
+  },
+  "abilities": {
+   "0": "Pickpocket",
+   "H": "Genius Engineer"
+  },
+  "moves": [
+   "Electro Ball",
+   "Heal Pulse",
+   "Wish",
+   "Helping Hand",
+   "Gear Up",
+   "Quick Attack",
+   "Thief",
+   "Fake Out",
+   "Discharge",
+   "Volt Switch",
+   "Thunderbolt",
+   "Tri Attack",
+   "Spark",
+   "U-turn"
+  ]
+ },
+ {
+  "id": "scarlet-witch",
+  "num": 26,
+  "name": "Scarlet Witch",
+  "role": "Duelist",
+  "types": [
+   "Psychic",
+   "Dark"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 70,
+   "atk": 65,
+   "def": 65,
+   "spa": 140,
+   "spd": 90,
+   "spe": 105
+  },
+  "abilities": {
+   "0": "Chaos Magic",
+   "H": "Reality Warping"
+  },
+  "moves": [
+   "Psychic",
+   "Psybeam",
+   "Imprison",
+   "Expanding Force",
+   "Mystical Fire",
+   "Fiery Wrath",
+   "Magic Room",
+   "Eerie Spell",
+   "Dark Pulse",
+   "Nasty Plot",
+   "Calm Mind",
+   "Hex",
+   "Trick Room",
+   "Psyshock"
+  ]
+ },
+ {
+  "id": "spider-man",
+  "num": 27,
+  "name": "Spider-Man",
+  "role": "Duelist",
+  "types": [
+   "Bug",
+   "Fighting"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 70,
+   "atk": 115,
+   "def": 65,
+   "spa": 80,
+   "spd": 70,
+   "spe": 140
+  },
+  "abilities": {
+   "0": "Spider-Sense",
+   "H": "Great Responsibility"
+  },
+  "moves": [
+   "Detect",
+   "U-turn",
+   "String Shot",
+   "Lunge",
+   "Triple Kick",
+   "Close Combat",
+   "First Impression",
+   "Electroweb",
+   "Mach Punch",
+   "Drain Punch",
+   "Acrobatics",
+   "Leech Life",
+   "Sticky Web",
+   "Bulk Up"
+  ]
+ },
+ {
+  "id": "squirrel-girl",
+  "num": 28,
+  "name": "Squirrel Girl",
+  "role": "Duelist",
+  "types": [
+   "Normal",
+   "Fairy"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 75,
+   "atk": 110,
+   "def": 70,
+   "spa": 95,
+   "spd": 80,
+   "spe": 110
+  },
+  "abilities": {
+   "0": "Unbeatable",
+   "H": "Squirrel Army"
+  },
+  "moves": [
+   "Population Bomb",
+   "Seed Bomb",
+   "Block",
+   "Tail Slap",
+   "Super Fang",
+   "Follow Me",
+   "Tidy Up",
+   "Bullet Seed",
+   "Play Rough",
+   "Charm",
+   "Baby-Doll Eyes",
+   "Quick Attack",
+   "Spirit Break",
+   "Facade"
+  ]
+ },
+ {
+  "id": "star-lord",
+  "num": 29,
+  "name": "Star-Lord",
+  "role": "Duelist",
+  "types": [
+   "Normal",
+   "Flying"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 75,
+   "atk": 110,
+   "def": 70,
+   "spa": 95,
+   "spd": 75,
+   "spe": 120
+  },
+  "abilities": {
+   "0": "Element Guns",
+   "H": "Dance-Off"
+  },
+  "moves": [
+   "Tri Attack",
+   "Swift",
+   "Acrobatics",
+   "U-turn",
+   "Teeter Dance",
+   "Tailwind",
+   "Flamethrower",
+   "Ice Beam",
+   "Thunderbolt",
+   "Air Slash",
+   "Quick Attack",
+   "Fake Out",
+   "Brave Bird",
+   "Hyper Voice"
+  ]
+ },
+ {
+  "id": "storm",
+  "num": 30,
+  "name": "Storm",
+  "role": "Duelist",
+  "types": [
+   "Flying",
+   "Electric"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 70,
+   "atk": 60,
+   "def": 70,
+   "spa": 130,
+   "spd": 90,
+   "spe": 120
+  },
+  "abilities": {
+   "0": "Goddess of the Storm",
+   "H": "Weather Witch"
+  },
+  "moves": [
+   "Air Slash",
+   "Hurricane",
+   "Bleakwind Storm",
+   "Rising Voltage",
+   "Rain Dance",
+   "Sunny Day",
+   "Weather Ball",
+   "Thunderbolt",
+   "Thunder",
+   "Blizzard",
+   "Tailwind",
+   "Electro Shot",
+   "Roost",
+   "Calm Mind"
+  ]
+ },
+ {
+  "id": "thor",
+  "num": 31,
+  "name": "Thor",
+  "role": "Vanguard",
+  "types": [
+   "Electric",
+   "Fighting"
+  ],
+  "inGameHP": 600,
+  "baseStats": {
+   "hp": 100,
+   "atk": 120,
+   "def": 95,
+   "spa": 105,
+   "spd": 80,
+   "spe": 80
+  },
+  "abilities": {
+   "0": "God of Thunder",
+   "H": "Thorforce"
+  },
+  "moves": [
+   "Gigaton Hammer",
+   "Supercell Slam",
+   "Electric Terrain",
+   "Bolt Strike",
+   "Thunder Punch",
+   "Bulk Up",
+   "Thunder",
+   "Wild Charge",
+   "Hammer Arm",
+   "Close Combat",
+   "Drain Punch",
+   "Thunderbolt",
+   "Thunderclap",
+   "Fly"
+  ]
+ },
+ {
+  "id": "venom",
+  "num": 32,
+  "name": "Venom",
+  "role": "Vanguard",
+  "types": [
+   "Dark",
+   "Poison"
+  ],
+  "inGameHP": 750,
+  "baseStats": {
+   "hp": 120,
+   "atk": 120,
+   "def": 100,
+   "spa": 60,
+   "spd": 85,
+   "spe": 85
+  },
+  "abilities": {
+   "0": "Symbiote",
+   "H": "Feast"
+  },
+  "moves": [
+   "Power Whip",
+   "Bind",
+   "Jaw Lock",
+   "Substitute",
+   "Body Slam",
+   "Crunch",
+   "Poison Fang",
+   "Poison Jab",
+   "Gunk Shot",
+   "Knock Off",
+   "Sucker Punch",
+   "Lash Out",
+   "Bulk Up",
+   "Swords Dance"
+  ]
+ },
+ {
+  "id": "winter-soldier",
+  "num": 33,
+  "name": "Winter Soldier",
+  "role": "Duelist",
+  "types": [
+   "Steel",
+   "Dark"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 80,
+   "atk": 130,
+   "def": 85,
+   "spa": 80,
+   "spd": 75,
+   "spe": 90
+  },
+  "abilities": {
+   "0": "Trained Assassin",
+   "H": "Cryo Stasis"
+  },
+  "moves": [
+   "Meteor Mash",
+   "Thunder Punch",
+   "Heavy Slam",
+   "Ice Punch",
+   "Payback",
+   "Bullet Punch",
+   "Iron Head",
+   "Knock Off",
+   "Sucker Punch",
+   "Throat Chop",
+   "Shadow Claw",
+   "Swords Dance",
+   "Night Slash",
+   "Flash Cannon"
+  ]
+ },
+ {
+  "id": "wolverine",
+  "num": 34,
+  "name": "Wolverine",
+  "role": "Duelist",
+  "types": [
+   "Fighting",
+   "Steel"
+  ],
+  "inGameHP": 350,
+  "baseStats": {
+   "hp": 90,
+   "atk": 130,
+   "def": 80,
+   "spa": 45,
+   "spd": 75,
+   "spe": 120
+  },
+  "abilities": {
+   "0": "Healing Factor",
+   "H": "Berserker Rage"
+  },
+  "moves": [
+   "Metal Claw",
+   "Crush Claw",
+   "Close Combat",
+   "Recover",
+   "Endeavor",
+   "Reversal",
+   "Dire Claw",
+   "Night Slash",
+   "Drain Punch",
+   "Hone Claws",
+   "Swords Dance",
+   "Iron Head",
+   "Thrash",
+   "Quick Attack"
+  ]
+ },
+ {
+  "id": "mister-fantastic",
+  "num": 35,
+  "name": "Mister Fantastic",
+  "role": "Duelist",
+  "types": [
+   "Normal"
+  ],
+  "inGameHP": 375,
+  "baseStats": {
+   "hp": 95,
+   "atk": 115,
+   "def": 95,
+   "spa": 70,
+   "spd": 85,
+   "spe": 80
+  },
+  "abilities": {
+   "0": "Rubber Body",
+   "H": "Smartest Man Alive"
+  },
+  "moves": [
+   "Mega Punch",
+   "Wrap",
+   "Bounce",
+   "Body Slam",
+   "Coil",
+   "Bulk Up",
+   "Calm Mind",
+   "Comet Punch",
+   "Double-Edge",
+   "Power-Up Punch",
+   "Ice Punch",
+   "Thunder Punch",
+   "Facade",
+   "Sucker Punch"
+  ]
+ },
+ {
+  "id": "invisible-woman",
+  "num": 36,
+  "name": "Invisible Woman",
+  "role": "Strategist",
+  "types": [
+   "Psychic"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 80,
+   "atk": 50,
+   "def": 95,
+   "spa": 100,
+   "spd": 120,
+   "spe": 80
+  },
+  "abilities": {
+   "0": "Force Field",
+   "H": "Invisibility"
+  },
+  "moves": [
+   "Psybeam",
+   "Expanding Force",
+   "Light Screen",
+   "Reflect",
+   "Double Team",
+   "Wide Guard",
+   "Heal Pulse",
+   "Psychic",
+   "Psyshock",
+   "Life Dew",
+   "Substitute",
+   "Calm Mind",
+   "Force Palm",
+   "Barrier"
+  ]
+ },
+ {
+  "id": "human-torch",
+  "num": 37,
+  "name": "Human Torch",
+  "role": "Duelist",
+  "types": [
+   "Fire",
+   "Flying"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 70,
+   "atk": 70,
+   "def": 70,
+   "spa": 135,
+   "spd": 80,
+   "spe": 115
+  },
+  "abilities": {
+   "0": "Flame On",
+   "H": "Supernova"
+  },
+  "moves": [
+   "Flamethrower",
+   "Fire Blast",
+   "Fire Spin",
+   "Burn Up",
+   "Flare Blitz",
+   "Fly",
+   "Heat Wave",
+   "Overheat",
+   "Air Slash",
+   "Hurricane",
+   "Flame Charge",
+   "Will-O-Wisp",
+   "Sunny Day",
+   "Inferno"
+  ]
+ },
+ {
+  "id": "the-thing",
+  "num": 38,
+  "name": "The Thing",
+  "role": "Vanguard",
+  "types": [
+   "Rock",
+   "Fighting"
+  ],
+  "inGameHP": 725,
+  "baseStats": {
+   "hp": 120,
+   "atk": 135,
+   "def": 130,
+   "spa": 40,
+   "spd": 90,
+   "spe": 55
+  },
+  "abilities": {
+   "0": "Rock Hide",
+   "H": "Clobberin' Time"
+  },
+  "moves": [
+   "Rock Smash",
+   "Hammer Arm",
+   "Body Press",
+   "Stomping Tantrum",
+   "Head Smash",
+   "Wide Guard",
+   "Stone Edge",
+   "Rock Slide",
+   "Iron Defense",
+   "Stealth Rock",
+   "Earthquake",
+   "Drain Punch",
+   "Mach Punch",
+   "Rock Polish"
+  ]
+ },
+ {
+  "id": "emma-frost",
+  "num": 39,
+  "name": "Emma Frost",
+  "role": "Vanguard",
+  "types": [
+   "Psychic",
+   "Rock"
+  ],
+  "inGameHP": 675,
+  "baseStats": {
+   "hp": 110,
+   "atk": 105,
+   "def": 120,
+   "spa": 100,
+   "spd": 90,
+   "spe": 45
+  },
+  "abilities": {
+   "0": "Diamond Form",
+   "H": "Mind Control"
+  },
+  "moves": [
+   "Psychic",
+   "Psyshock",
+   "Diamond Storm",
+   "Power Gem",
+   "Hypnosis",
+   "Attract",
+   "Iron Defense",
+   "Zen Headbutt",
+   "Stone Edge",
+   "Rock Slide",
+   "Calm Mind",
+   "Psychic Terrain",
+   "Stealth Rock",
+   "Body Press"
+  ]
+ },
+ {
+  "id": "ultron",
+  "num": 40,
+  "name": "Ultron",
+  "role": "Strategist",
+  "types": [
+   "Electric",
+   "Steel"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 70,
+   "atk": 60,
+   "def": 85,
+   "spa": 110,
+   "spd": 100,
+   "spe": 100
+  },
+  "abilities": {
+   "0": "Adamantium Shell",
+   "H": "Upload Consciousness"
+  },
+  "moves": [
+   "Charge Beam",
+   "Heal Pulse",
+   "Magnet Rise",
+   "Light Screen",
+   "Hyper Beam",
+   "Recover",
+   "Metal Sound",
+   "Zap Cannon",
+   "Thunderbolt",
+   "Flash Cannon",
+   "Steel Beam",
+   "Discharge",
+   "Volt Switch",
+   "Nasty Plot"
+  ]
+ },
+ {
+  "id": "phoenix",
+  "num": 41,
+  "name": "Phoenix",
+  "role": "Duelist",
+  "types": [
+   "Fire",
+   "Psychic"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 75,
+   "atk": 70,
+   "def": 65,
+   "spa": 135,
+   "spd": 85,
+   "spe": 110
+  },
+  "abilities": {
+   "0": "Phoenix Force",
+   "H": "Dark Phoenix"
+  },
+  "moves": [
+   "Psychic",
+   "Mystical Fire",
+   "Fiery Dance",
+   "Gravity",
+   "Burn Up",
+   "Morning Sun",
+   "Future Sight",
+   "Psyshock",
+   "Flamethrower",
+   "Fire Blast",
+   "Heat Wave",
+   "Expanding Force",
+   "Calm Mind",
+   "Shadow Ball"
+  ]
+ },
+ {
+  "id": "blade",
+  "num": 42,
+  "name": "Blade",
+  "role": "Duelist",
+  "types": [
+   "Dark",
+   "Steel"
+  ],
+  "inGameHP": 350,
+  "baseStats": {
+   "hp": 90,
+   "atk": 130,
+   "def": 80,
+   "spa": 60,
+   "spd": 75,
+   "spe": 105
+  },
+  "abilities": {
+   "0": "Daywalker",
+   "H": "Vampire Hunter"
+  },
+  "moves": [
+   "Kowtow Cleave",
+   "Sacred Sword",
+   "Bullet Punch",
+   "Drain Punch",
+   "Leech Life",
+   "Night Slash",
+   "Swords Dance",
+   "Iron Head",
+   "Sucker Punch",
+   "Knock Off",
+   "Throat Chop",
+   "Smart Strike",
+   "Quick Attack",
+   "Close Combat"
+  ]
+ },
+ {
+  "id": "angela",
+  "num": 43,
+  "name": "Angela",
+  "role": "Vanguard",
+  "types": [
+   "Fighting",
+   "Flying"
+  ],
+  "inGameHP": 550,
+  "baseStats": {
+   "hp": 95,
+   "atk": 125,
+   "def": 95,
+   "spa": 60,
+   "spd": 80,
+   "spe": 115
+  },
+  "abilities": {
+   "0": "Angel of Heven",
+   "H": "Ichor Ribbons"
+  },
+  "moves": [
+   "Flying Press",
+   "Sacred Sword",
+   "Sky Attack",
+   "Wrap",
+   "Wide Guard",
+   "Brave Bird",
+   "Spirit Break",
+   "Close Combat",
+   "Dual Wingbeat",
+   "Swords Dance",
+   "Bulk Up",
+   "Roost",
+   "Smart Strike",
+   "Drain Punch"
+  ]
+ },
+ {
+  "id": "daredevil",
+  "num": 44,
+  "name": "Daredevil",
+  "role": "Duelist",
+  "types": [
+   "Fighting",
+   "Dark"
+  ],
+  "inGameHP": 300,
+  "baseStats": {
+   "hp": 80,
+   "atk": 125,
+   "def": 75,
+   "spa": 60,
+   "spd": 90,
+   "spe": 115
+  },
+  "abilities": {
+   "0": "Radar Sense",
+   "H": "The Man Without Fear"
+  },
+  "moves": [
+   "Foresight",
+   "Detect",
+   "Throat Chop",
+   "Lash Out",
+   "Acrobatics",
+   "Close Combat",
+   "Drain Punch",
+   "Mach Punch",
+   "Sucker Punch",
+   "Knock Off",
+   "Low Kick",
+   "Bulk Up",
+   "Feint",
+   "Hone Claws"
+  ]
+ },
+ {
+  "id": "gambit",
+  "num": 45,
+  "name": "Gambit",
+  "role": "Strategist",
+  "types": [
+   "Fairy",
+   "Fire"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 70,
+   "atk": 95,
+   "def": 65,
+   "spa": 105,
+   "spd": 90,
+   "spe": 100
+  },
+  "abilities": {
+   "0": "Lady Luck",
+   "H": "Ragin' Cajun"
+  },
+  "moves": [
+   "Mystical Fire",
+   "Dazzling Gleam",
+   "Mind Blown",
+   "Play Rough",
+   "Charm",
+   "Lucky Chant",
+   "Life Dew",
+   "Thief",
+   "Moonblast",
+   "Flamethrower",
+   "Fire Blast",
+   "Sweet Kiss",
+   "Nasty Plot",
+   "Fake Out"
+  ]
+ },
+ {
+  "id": "rogue",
+  "num": 46,
+  "name": "Rogue",
+  "role": "Vanguard",
+  "types": [
+   "Fighting"
+  ],
+  "inGameHP": 625,
+  "baseStats": {
+   "hp": 105,
+   "atk": 115,
+   "def": 95,
+   "spa": 70,
+   "spd": 90,
+   "spe": 95
+  },
+  "abilities": {
+   "0": "Power Absorption",
+   "H": "Draining Touch"
+  },
+  "moves": [
+   "Copycat",
+   "Mimic",
+   "Draining Kiss",
+   "Drain Punch",
+   "Fly",
+   "Superpower",
+   "Close Combat",
+   "Brick Break",
+   "Mach Punch",
+   "Reversal",
+   "Bulk Up",
+   "Counter",
+   "Body Press",
+   "Bounce"
+  ]
+ },
+ {
+  "id": "deadpool",
+  "num": 47,
+  "name": "Deadpool",
+  "role": "Multi-Role",
+  "types": [
+   "Normal",
+   "Ghost"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 90,
+   "atk": 105,
+   "def": 80,
+   "spa": 75,
+   "spd": 85,
+   "spe": 100
+  },
+  "abilities": {
+   "0": "Fourth Wall",
+   "H": "Unkillable"
+  },
+  "moves": [
+   "Metronome",
+   "Sacred Sword",
+   "Night Slash",
+   "Protect",
+   "Endure",
+   "Recover",
+   "Taunt",
+   "Splash",
+   "Poltergeist",
+   "Shadow Claw",
+   "Fake Out",
+   "Facade",
+   "Spite",
+   "Last Resort"
+  ]
+ },
+ {
+  "id": "elsa-bloodstone",
+  "num": 48,
+  "name": "Elsa Bloodstone",
+  "role": "Duelist",
+  "types": [
+   "Rock",
+   "Steel"
+  ],
+  "inGameHP": 250,
+  "baseStats": {
+   "hp": 70,
+   "atk": 125,
+   "def": 75,
+   "spa": 85,
+   "spd": 70,
+   "spe": 110
+  },
+  "abilities": {
+   "0": "Bloodstone",
+   "H": "Monster Hunter"
+  },
+  "moves": [
+   "Power Gem",
+   "Rock Blast",
+   "Accelerock",
+   "Smart Strike",
+   "Bullet Punch",
+   "Stone Edge",
+   "Iron Head",
+   "Stealth Rock",
+   "Swords Dance",
+   "Rock Polish",
+   "Knock Off",
+   "Close Combat",
+   "Bulldoze",
+   "Heavy Slam"
+  ]
+ },
+ {
+  "id": "white-fox",
+  "num": 49,
+  "name": "White Fox",
+  "role": "Strategist",
+  "types": [
+   "Fairy",
+   "Fighting"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 80,
+   "atk": 105,
+   "def": 70,
+   "spa": 90,
+   "spd": 90,
+   "spe": 95
+  },
+  "abilities": {
+   "0": "Kumiho Essence",
+   "H": "Kumiho Unleashed"
+  },
+  "moves": [
+   "Spirit Break",
+   "Draining Kiss",
+   "Drain Punch",
+   "Captivate",
+   "Close Combat",
+   "Aura Sphere",
+   "Life Dew",
+   "Play Rough",
+   "Moonblast",
+   "Wish",
+   "Quick Attack",
+   "Bulk Up",
+   "Fake Out",
+   "Acrobatics"
+  ]
+ },
+ {
+  "id": "black-cat",
+  "num": 50,
+  "name": "Black Cat",
+  "role": "Duelist",
+  "types": [
+   "Dark",
+   "Normal"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 75,
+   "atk": 115,
+   "def": 65,
+   "spa": 80,
+   "spd": 75,
+   "spe": 125
+  },
+  "abilities": {
+   "0": "Bad Luck",
+   "H": "Cat Burglar"
+  },
+  "moves": [
+   "Thief",
+   "Covet",
+   "Fury Swipes",
+   "Play Rough",
+   "Acrobatics",
+   "Fake Out",
+   "Knock Off",
+   "Sucker Punch",
+   "Night Slash",
+   "Assurance",
+   "U-turn",
+   "Taunt",
+   "Hone Claws",
+   "Quick Attack"
+  ]
+ },
+ {
+  "id": "devil-dinosaur",
+  "num": 51,
+  "name": "Devil Dinosaur",
+  "role": "Vanguard",
+  "types": [
+   "Dragon",
+   "Fire"
+  ],
+  "inGameHP": 825,
+  "baseStats": {
+   "hp": 130,
+   "atk": 130,
+   "def": 110,
+   "spa": 50,
+   "spd": 85,
+   "spe": 65
+  },
+  "abilities": {
+   "0": "Primal Rampage",
+   "H": "Moon Girl"
+  },
+  "moves": [
+   "Outrage",
+   "Crunch",
+   "Stomping Tantrum",
+   "Fire Fang",
+   "Helping Hand",
+   "Roar",
+   "Dragon Claw",
+   "Dragon Rush",
+   "Flare Blitz",
+   "Earthquake",
+   "Rock Slide",
+   "Dragon Tail",
+   "Dragon Dance",
+   "Fire Lash"
+  ]
+ },
+ {
+  "id": "cyclops",
+  "num": 52,
+  "name": "Cyclops",
+  "role": "Duelist",
+  "types": [
+   "Normal",
+   "Fighting"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 75,
+   "atk": 90,
+   "def": 70,
+   "spa": 130,
+   "spd": 75,
+   "spe": 100
+  },
+  "abilities": {
+   "0": "Optic Blast",
+   "H": "Field Leader"
+  },
+  "moves": [
+   "Hyper Beam",
+   "Swift",
+   "Laser Focus",
+   "Coaching",
+   "Lock-On",
+   "Flash",
+   "Tri Attack",
+   "Focus Blast",
+   "Aura Sphere",
+   "Vacuum Wave",
+   "Focus Energy",
+   "Calm Mind",
+   "Helping Hand",
+   "Hyper Voice"
+  ]
+ },
+ {
+  "id": "jubilee",
+  "num": 53,
+  "name": "Jubilee",
+  "role": "Strategist",
+  "types": [
+   "Electric",
+   "Fire"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 80,
+   "atk": 55,
+   "def": 70,
+   "spa": 115,
+   "spd": 100,
+   "spe": 105
+  },
+  "abilities": {
+   "0": "Fireworks",
+   "H": "Vampiric"
+  },
+  "moves": [
+   "Electro Ball",
+   "Flash",
+   "Life Dew",
+   "Overdrive",
+   "Mystical Fire",
+   "Leech Life",
+   "Heal Pulse",
+   "Discharge",
+   "Flamethrower",
+   "Fire Blast",
+   "Charge",
+   "Volt Switch",
+   "Spark",
+   "Explosion"
+  ]
+ },
+ {
+  "id": "the-hood",
+  "num": 54,
+  "name": "The Hood",
+  "role": "Vanguard",
+  "types": [
+   "Dark",
+   "Fire"
+  ],
+  "inGameHP": 550,
+  "baseStats": {
+   "hp": 100,
+   "atk": 95,
+   "def": 90,
+   "spa": 110,
+   "spd": 90,
+   "spe": 85
+  },
+  "abilities": {
+   "0": "Demonic Energy",
+   "H": "Levitation Boots"
+  },
+  "moves": [
+   "Nasty Plot",
+   "Fiery Wrath",
+   "Inferno",
+   "Bitter Blade",
+   "Double Team",
+   "Substitute",
+   "Flamethrower",
+   "Dark Pulse",
+   "Fire Blast",
+   "Will-O-Wisp",
+   "Snarl",
+   "Taunt",
+   "Sucker Punch",
+   "Infernal Parade"
+  ]
+ },
+ {
+  "id": "gorr",
+  "num": 55,
+  "name": "Gorr",
+  "role": "Duelist",
+  "types": [
+   "Ghost",
+   "Steel"
+  ],
+  "inGameHP": 350,
+  "baseStats": {
+   "hp": 90,
+   "atk": 135,
+   "def": 80,
+   "spa": 80,
+   "spd": 70,
+   "spe": 90
+  },
+  "abilities": {
+   "0": "God Butcher",
+   "H": "Black Berserkers"
+  },
+  "moves": [
+   "Shadow Claw",
+   "Poltergeist",
+   "Phantom Force",
+   "Spectral Thief",
+   "Last Respects",
+   "Curse",
+   "Smart Strike",
+   "Shadow Sneak",
+   "Iron Head",
+   "Night Slash",
+   "Swords Dance",
+   "Sacred Sword",
+   "Knock Off",
+   "Spirit Shackle"
+  ]
+ },
+ {
+  "id": "nightcrawler",
+  "num": 56,
+  "name": "Nightcrawler",
+  "role": "Strategist",
+  "types": [
+   "Dark",
+   "Fairy"
+  ],
+  "inGameHP": 275,
+  "baseStats": {
+   "hp": 80,
+   "atk": 95,
+   "def": 70,
+   "spa": 80,
+   "spd": 95,
+   "spe": 110
+  },
+  "abilities": {
+   "0": "BAMF!",
+   "H": "Blind Faith"
+  },
+  "moves": [
+   "Teleport",
+   "Ally Switch",
+   "Night Slash",
+   "Iron Tail",
+   "Life Dew",
+   "Smokescreen",
+   "Acrobatics",
+   "Sacred Sword",
+   "Sucker Punch",
+   "Spirit Break",
+   "Play Rough",
+   "Heal Pulse",
+   "Feint",
+   "Throat Chop"
+  ]
+ },
+ {
+  "id": "hulk-bruce-banner-form",
+  "num": "11b",
+  "name": "Hulk (Bruce Banner form)",
+  "role": "Vanguard",
+  "types": [
+   "Normal",
+   "Poison"
+  ],
+  "inGameHP": 200,
+  "baseStats": {
+   "hp": 55,
+   "atk": 50,
+   "def": 60,
+   "spa": 110,
+   "spd": 75,
+   "spe": 70
+  },
+  "abilities": {
+   "0": "Puny Banner",
+   "H": "Puny Banner"
+  },
+  "moves": [
+   "Sludge Bomb",
+   "Rage",
+   "Calm Mind",
+   "Acid Spray",
+   "Hyper Beam",
+   "Sludge Wave",
+   "Clear Smog",
+   "Venoshock",
+   "Toxic",
+   "Swift",
+   "Tri Attack",
+   "Endure"
+  ],
+  "baseSpecies": "Hulk",
+  "battleOnly": true,
+  "forme": "Bruce Banner"
+ }
+]

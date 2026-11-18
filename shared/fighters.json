@@ -1,0 +1,4183 @@
+[
+ {
+  "num": 1,
+  "id": "adam-warlock",
+  "name": "Adam Warlock",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Psychic",
+   "Fairy"
+  ],
+  "stats": {
+   "hp": 80,
+   "atk": 55,
+   "def": 75,
+   "spa": 115,
+   "spd": 110,
+   "spe": 90
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Regenerative Cocoon",
+    "desc": "Once per battle, when KO'd, revives at the end of the next turn with 25% HP."
+   }
+  ],
+  "hidden": {
+   "name": "Soul Gem",
+   "desc": "Restores 1/4 max HP whenever this hero KOs a foe."
+  },
+  "signature": [
+   {
+    "move": "Psybeam",
+    "smash": "Quantum Magic beam"
+   },
+   {
+    "move": "Life Dew",
+    "smash": "Soul Bond healing"
+   },
+   {
+    "move": "Revival Blessing",
+    "smash": "Karmic Revival ultimate"
+   },
+   {
+    "move": "Ingrain",
+    "smash": "Regenerative Cocoon"
+   },
+   {
+    "move": "Heal Pulse",
+    "smash": "Avatar Life Stream"
+   },
+   {
+    "move": "Moonblast",
+    "smash": "Cosmic energy"
+   }
+  ],
+  "learnset": [
+   "Psybeam",
+   "Life Dew",
+   "Revival Blessing",
+   "Ingrain",
+   "Heal Pulse",
+   "Moonblast",
+   "Cosmic Power",
+   "Shadow Ball",
+   "Psychic",
+   "Psyshock",
+   "Dazzling Gleam",
+   "Calm Mind",
+   "Recover",
+   "Trick Room",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 2,
+  "id": "black-panther",
+  "name": "Black Panther",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Steel",
+   "Fighting"
+  ],
+  "stats": {
+   "hp": 80,
+   "atk": 130,
+   "def": 70,
+   "spa": 55,
+   "spd": 75,
+   "spe": 135
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Vibranium Weave",
+    "desc": "Takes 25% less damage from physical moves."
+   }
+  ],
+  "hidden": {
+   "name": "Heart-Shaped Herb",
+   "desc": "Once per battle, raises Speed by 1 stage on his first entry."
+  },
+  "signature": [
+   {
+    "move": "Metal Claw",
+    "smash": "Vibranium claws"
+   },
+   {
+    "move": "Smart Strike",
+    "smash": "Spear Toss"
+   },
+   {
+    "move": "Triple Kick",
+    "smash": "Spinning Kick"
+   },
+   {
+    "move": "Drain Punch",
+    "smash": "Spirit Rend (bonus health)"
+   },
+   {
+    "move": "Close Combat",
+    "smash": "Bast's Descent ultimate"
+   },
+   {
+    "move": "Iron Defense",
+    "smash": "Vibranium suit"
+   }
+  ],
+  "learnset": [
+   "Metal Claw",
+   "Smart Strike",
+   "Triple Kick",
+   "Drain Punch",
+   "Close Combat",
+   "Iron Defense",
+   "Hone Claws",
+   "Night Slash",
+   "Swords Dance",
+   "Iron Head",
+   "Knock Off",
+   "Bullet Punch",
+   "Sucker Punch",
+   "U-turn",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 3,
+  "id": "black-widow",
+  "name": "Black Widow",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Fighting",
+   "Electric"
+  ],
+  "stats": {
+   "hp": 75,
+   "atk": 105,
+   "def": 65,
+   "spa": 110,
+   "spd": 70,
+   "spe": 120
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Red Room Training",
+    "desc": "Ignores the target's stat changes when attacking or being attacked (like Unaware)."
+   }
+  ],
+  "hidden": {
+   "name": "Widow's Bite",
+   "desc": "Electric moves have a 30% chance to paralyze."
+  },
+  "signature": [
+   {
+    "move": "Thunder Punch",
+    "smash": "Widow's Bite batons"
+   },
+   {
+    "move": "Electroweb",
+    "smash": "Widow's Bite"
+   },
+   {
+    "move": "Zap Cannon",
+    "smash": "Red Room Rifle sniper shot"
+   },
+   {
+    "move": "High Jump Kick",
+    "smash": "Edge Dancer"
+   },
+   {
+    "move": "Discharge",
+    "smash": "Electro-Plasma Explosion ultimate"
+   },
+   {
+    "move": "Fake Out",
+    "smash": "Red Room spy training"
+   }
+  ],
+  "learnset": [
+   "Thunder Punch",
+   "Electroweb",
+   "Zap Cannon",
+   "High Jump Kick",
+   "Discharge",
+   "Fake Out",
+   "Low Kick",
+   "Triple Kick",
+   "Close Combat",
+   "Wild Charge",
+   "Thunderbolt",
+   "Focus Blast",
+   "Feint",
+   "U-turn",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 4,
+  "id": "captain-america",
+  "name": "Captain America",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Fighting",
+   "Steel"
+  ],
+  "stats": {
+   "hp": 105,
+   "atk": 110,
+   "def": 115,
+   "spa": 55,
+   "spd": 95,
+   "spe": 95
+  },
+  "inGameHP": 650,
+  "abilities": [
+   {
+    "name": "Never Surrender",
+    "desc": "When any stat is lowered by a foe, Attack rises by 2 stages (like Defiant)."
+   }
+  ],
+  "hidden": {
+   "name": "Avengers Assemble",
+   "desc": "Allies' moves deal 1.3x damage (doubles); in singles, the next ally to switch in gets +1 Attack."
+  },
+  "signature": [
+   {
+    "move": "Smart Strike",
+    "smash": "Shield throw"
+   },
+   {
+    "move": "Iron Head",
+    "smash": "Shield bash"
+   },
+   {
+    "move": "Body Press",
+    "smash": "Shield charge"
+   },
+   {
+    "move": "Wide Guard",
+    "smash": "Living Legend shield"
+   },
+   {
+    "move": "Superpower",
+    "smash": "Super-Soldier Slam"
+   },
+   {
+    "move": "Coaching",
+    "smash": "Leading the Charge ultimate"
+   }
+  ],
+  "learnset": [
+   "Smart Strike",
+   "Iron Head",
+   "Body Press",
+   "Wide Guard",
+   "Superpower",
+   "Coaching",
+   "Agility",
+   "Close Combat",
+   "Drain Punch",
+   "Mach Punch",
+   "Bulk Up",
+   "Iron Defense",
+   "Stone Edge",
+   "Knock Off",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 5,
+  "id": "cloak",
+  "name": "Cloak",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Dark"
+  ],
+  "stats": {
+   "hp": 80,
+   "atk": 70,
+   "def": 75,
+   "spa": 105,
+   "spd": 105,
+   "spe": 90
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Darkforce Hunger",
+    "desc": "Dark moves restore 1/4 of the damage dealt."
+   }
+  ],
+  "hidden": {
+   "name": "Eternal Bond",
+   "desc": "If Dagger is on the team, switching to her fully cures this hero's status and heals 1/3 HP (like Regenerator)."
+  },
+  "signature": [
+   {
+    "move": "Dark Pulse",
+    "smash": "Darkforce blast"
+   },
+   {
+    "move": "Night Daze",
+    "smash": "Terror Cape blind"
+   },
+   {
+    "move": "Phantom Force",
+    "smash": "Dark Teleportation ultimate"
+   },
+   {
+    "move": "Ally Switch",
+    "smash": "Eternal Bond (swap with Dagger)"
+   },
+   {
+    "move": "Mean Look",
+    "smash": "Darkforce dimension trap"
+   }
+  ],
+  "learnset": [
+   "Dark Pulse",
+   "Night Daze",
+   "Phantom Force",
+   "Ally Switch",
+   "Mean Look",
+   "Shadow Ball",
+   "Snarl",
+   "Foul Play",
+   "Taunt",
+   "Nasty Plot",
+   "Parting Shot",
+   "Hex",
+   "Sucker Punch",
+   "Obstruct",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 6,
+  "id": "dagger",
+  "name": "Dagger",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Fairy"
+  ],
+  "stats": {
+   "hp": 80,
+   "atk": 55,
+   "def": 70,
+   "spa": 110,
+   "spd": 115,
+   "spe": 95
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Purifying Light",
+    "desc": "At the end of each turn, 30% chance to cure the status of this hero and her ally (like Healer)."
+   }
+  ],
+  "hidden": {
+   "name": "Eternal Bond",
+   "desc": "If Dagger is on the team, switching to her fully cures this hero's status and heals 1/3 HP (like Regenerator)."
+  },
+  "signature": [
+   {
+    "move": "Dazzling Gleam",
+    "smash": "Lightforce daggers"
+   },
+   {
+    "move": "Life Dew",
+    "smash": "Dagger Storm"
+   },
+   {
+    "move": "Heal Pulse",
+    "smash": "Veil of Lightforce"
+   },
+   {
+    "move": "Lunar Dance",
+    "smash": "Eternal Bond ultimate"
+   },
+   {
+    "move": "Ally Switch",
+    "smash": "Eternal Bond (swap with Cloak)"
+   },
+   {
+    "move": "Purify",
+    "smash": "Light purifies"
+   }
+  ],
+  "learnset": [
+   "Dazzling Gleam",
+   "Life Dew",
+   "Heal Pulse",
+   "Lunar Dance",
+   "Ally Switch",
+   "Purify",
+   "Flash",
+   "Draining Kiss",
+   "Moonblast",
+   "Wish",
+   "Psychic",
+   "Calm Mind",
+   "Light Screen",
+   "Misty Terrain",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 7,
+  "id": "doctor-strange",
+  "name": "Doctor Strange",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Psychic",
+   "Ghost"
+  ],
+  "stats": {
+   "hp": 110,
+   "atk": 65,
+   "def": 95,
+   "spa": 125,
+   "spd": 115,
+   "spe": 65
+  },
+  "inGameHP": 650,
+  "abilities": [
+   {
+    "name": "Sorcerer Supreme",
+    "desc": "Psychic and Ghost moves deal 1.2x damage."
+   }
+  ],
+  "hidden": {
+   "name": "14,000,605 Futures",
+   "desc": "Once per battle, survives a hit that would KO with 1 HP."
+  },
+  "signature": [
+   {
+    "move": "Psychic",
+    "smash": "Daggers of Denak"
+   },
+   {
+    "move": "Light Screen",
+    "smash": "Shield of the Seraphim"
+   },
+   {
+    "move": "Reflect",
+    "smash": "Shield of the Seraphim"
+   },
+   {
+    "move": "Teleport",
+    "smash": "Pentagram of Farallah"
+   },
+   {
+    "move": "Magic Coat",
+    "smash": "Cloak of Levitation"
+   },
+   {
+    "move": "Expanding Force",
+    "smash": "Maelstrom of Madness"
+   }
+  ],
+  "learnset": [
+   "Psychic",
+   "Light Screen",
+   "Reflect",
+   "Teleport",
+   "Magic Coat",
+   "Expanding Force",
+   "Infernal Parade",
+   "Future Sight",
+   "Trick Room",
+   "Shadow Ball",
+   "Calm Mind",
+   "Hex",
+   "Focus Blast",
+   "Psyshock",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 8,
+  "id": "groot",
+  "name": "Groot",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Grass",
+   "Rock"
+  ],
+  "stats": {
+   "hp": 135,
+   "atk": 110,
+   "def": 120,
+   "spa": 65,
+   "spd": 100,
+   "spe": 40
+  },
+  "inGameHP": 850,
+  "abilities": [
+   {
+    "name": "Flora Colossus",
+    "desc": "Restores 1/16 max HP at the end of each turn."
+   }
+  ],
+  "hidden": {
+   "name": "I Am Groot",
+   "desc": "Immune to sound-based moves, Taunt and Attract (like Soundproof + Oblivious)."
+  },
+  "signature": [
+   {
+    "move": "Bullet Seed",
+    "smash": "Thorny Volley"
+   },
+   {
+    "move": "Seed Bomb",
+    "smash": "Spore Bomb"
+   },
+   {
+    "move": "Spiky Shield",
+    "smash": "Thornlash Wall"
+   },
+   {
+    "move": "Wide Guard",
+    "smash": "Ironwood Wall"
+   },
+   {
+    "move": "Snap Trap",
+    "smash": "Strangling Prison ultimate"
+   },
+   {
+    "move": "Ingrain",
+    "smash": "Flora colossus"
+   }
+  ],
+  "learnset": [
+   "Bullet Seed",
+   "Seed Bomb",
+   "Spiky Shield",
+   "Wide Guard",
+   "Snap Trap",
+   "Ingrain",
+   "Wood Hammer",
+   "Power Whip",
+   "Horn Leech",
+   "Rock Slide",
+   "Stone Edge",
+   "Body Press",
+   "Curse",
+   "Synthesis",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 9,
+  "id": "hawkeye",
+  "name": "Hawkeye",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Normal",
+   "Steel"
+  ],
+  "stats": {
+   "hp": 70,
+   "atk": 130,
+   "def": 65,
+   "spa": 85,
+   "spd": 70,
+   "spe": 120
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "World's Greatest Marksman",
+    "desc": "This hero's moves cannot miss."
+   }
+  ],
+  "hidden": {
+   "name": "Trick Arrows",
+   "desc": "Damaging moves have a 20% chance to inflict a random status (burn, paralysis or poison)."
+  },
+  "signature": [
+   {
+    "move": "Smart Strike",
+    "smash": "Precision arrows"
+   },
+   {
+    "move": "Pin Missile",
+    "smash": "Blast Arrow"
+   },
+   {
+    "move": "Night Slash",
+    "smash": "Ronin Slash"
+   },
+   {
+    "move": "Lock-On",
+    "smash": "Hunter's Sight ultimate"
+   },
+   {
+    "move": "Focus Energy",
+    "smash": "Hypersonic Arrow draw"
+   },
+   {
+    "move": "Explosion",
+    "smash": "Explosive trick arrow"
+   }
+  ],
+  "learnset": [
+   "Smart Strike",
+   "Pin Missile",
+   "Night Slash",
+   "Lock-On",
+   "Focus Energy",
+   "Explosion",
+   "Thunder Wave",
+   "Iron Head",
+   "Quick Attack",
+   "Double-Edge",
+   "Swords Dance",
+   "U-turn",
+   "Rapid Spin",
+   "Sacred Sword",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 10,
+  "id": "hela",
+  "name": "Hela",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Ghost",
+   "Dark"
+  ],
+  "stats": {
+   "hp": 70,
+   "atk": 80,
+   "def": 65,
+   "spa": 135,
+   "spd": 85,
+   "spe": 105
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Queen of Hel",
+    "desc": "Raises Sp. Atk by 1 stage whenever any hero faints (like Soul-Heart)."
+   }
+  ],
+  "hidden": {
+   "name": "Death's Embrace",
+   "desc": "Moves deal 1.3x damage to foes below 50% HP."
+  },
+  "signature": [
+   {
+    "move": "Shadow Ball",
+    "smash": "Nightsword Thorn"
+   },
+   {
+    "move": "Night Daze",
+    "smash": "Soul Drainer"
+   },
+   {
+    "move": "Air Slash",
+    "smash": "Astral Flock crows"
+   },
+   {
+    "move": "Infernal Parade",
+    "smash": "Goddess of Death ultimate"
+   },
+   {
+    "move": "Bitter Malice",
+    "smash": "Ruler of Hel"
+   },
+   {
+    "move": "Destiny Bond",
+    "smash": "Goddess of Death"
+   }
+  ],
+  "learnset": [
+   "Shadow Ball",
+   "Night Daze",
+   "Air Slash",
+   "Infernal Parade",
+   "Bitter Malice",
+   "Destiny Bond",
+   "Dark Pulse",
+   "Hex",
+   "Nasty Plot",
+   "Will-O-Wisp",
+   "Foul Play",
+   "Sucker Punch",
+   "Taunt",
+   "Ominous Wind",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 11,
+  "id": "hulk",
+  "name": "Hulk",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Fighting",
+   "Poison"
+  ],
+  "stats": {
+   "hp": 115,
+   "atk": 130,
+   "def": 105,
+   "spa": 55,
+   "spd": 85,
+   "spe": 80
+  },
+  "inGameHP": 700,
+  "abilities": [
+   {
+    "name": "Puny Banner",
+    "desc": "At the end of a turn with HP below 1/3, reverts to Bruce Banner (Normal/Poison). Bruce turns back into Hulk once healed above 1/2 HP."
+   }
+  ],
+  "hidden": {
+   "name": "Strongest There Is",
+   "desc": "Attack rises by 1 stage when hit by a damaging move."
+  },
+  "signature": [
+   {
+    "move": "Hammer Arm",
+    "smash": "Heavy Blow"
+   },
+   {
+    "move": "Bounce",
+    "smash": "Incredible Leap"
+   },
+   {
+    "move": "Gunk Shot",
+    "smash": "Gamma Burst"
+   },
+   {
+    "move": "Endure",
+    "smash": "Indestructible Guard"
+   },
+   {
+    "move": "Toxic",
+    "smash": "Radioactive Lockdown"
+   },
+   {
+    "move": "Rage Fist",
+    "smash": "The madder Hulk gets..."
+   }
+  ],
+  "learnset": [
+   "Hammer Arm",
+   "Bounce",
+   "Gunk Shot",
+   "Endure",
+   "Toxic",
+   "Rage Fist",
+   "Close Combat",
+   "Superpower",
+   "Earthquake",
+   "Rock Slide",
+   "Poison Jab",
+   "Drain Punch",
+   "Bulk Up",
+   "Stomping Tantrum",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 12,
+  "id": "iron-fist",
+  "name": "Iron Fist",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Fighting",
+   "Fire"
+  ],
+  "stats": {
+   "hp": 85,
+   "atk": 125,
+   "def": 85,
+   "spa": 60,
+   "spd": 80,
+   "spe": 115
+  },
+  "inGameHP": 300,
+  "abilities": [
+   {
+    "name": "Iron Fist",
+    "desc": "Punching moves deal 1.2x damage (the real Pokemon ability)."
+   }
+  ],
+  "hidden": {
+   "name": "Chi Healing",
+   "desc": "Restores 1/16 max HP at the end of each turn."
+  },
+  "signature": [
+   {
+    "move": "Mach Punch",
+    "smash": "Jeet Kune Do"
+   },
+   {
+    "move": "High Jump Kick",
+    "smash": "Kun-Lun Kick"
+   },
+   {
+    "move": "Drain Punch",
+    "smash": "Harmony Recovery"
+   },
+   {
+    "move": "Detect",
+    "smash": "Dragon's Defense"
+   },
+   {
+    "move": "Close Combat",
+    "smash": "Living Chi ultimate"
+   },
+   {
+    "move": "Fire Punch",
+    "smash": "Chi-charged Iron Fist"
+   }
+  ],
+  "learnset": [
+   "Mach Punch",
+   "High Jump Kick",
+   "Drain Punch",
+   "Detect",
+   "Close Combat",
+   "Fire Punch",
+   "Dragon Dance",
+   "Blaze Kick",
+   "Flare Blitz",
+   "Triple Kick",
+   "Bulk Up",
+   "Focus Energy",
+   "Rapid Spin",
+   "Low Kick",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 13,
+  "id": "iron-man",
+  "name": "Iron Man",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Steel",
+   "Electric"
+  ],
+  "stats": {
+   "hp": 70,
+   "atk": 70,
+   "def": 85,
+   "spa": 135,
+   "spd": 80,
+   "spe": 100
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Arc Reactor",
+    "desc": "Immune to Electric moves; restores 1/4 max HP when hit by one (like Volt Absorb)."
+   }
+  ],
+  "hidden": {
+   "name": "Nanotech Armor",
+   "desc": "Super-effective hits deal 25% less damage (like Filter)."
+  },
+  "signature": [
+   {
+    "move": "Charge Beam",
+    "smash": "Repulsor Blast"
+   },
+   {
+    "move": "Steel Beam",
+    "smash": "Unibeam"
+   },
+   {
+    "move": "Hyper Beam",
+    "smash": "Invincible Pulse Cannon ultimate"
+   },
+   {
+    "move": "Electro Ball",
+    "smash": "Micro-Missile Barrage"
+   },
+   {
+    "move": "Autotomize",
+    "smash": "Armor Overdrive"
+   },
+   {
+    "move": "Magnet Rise",
+    "smash": "Repulsor flight"
+   }
+  ],
+  "learnset": [
+   "Charge Beam",
+   "Steel Beam",
+   "Hyper Beam",
+   "Electro Ball",
+   "Autotomize",
+   "Magnet Rise",
+   "Flash Cannon",
+   "Thunderbolt",
+   "Zap Cannon",
+   "Discharge",
+   "Iron Defense",
+   "Flamethrower",
+   "Volt Switch",
+   "Charge",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 14,
+  "id": "jeff-the-land-shark",
+  "name": "Jeff the Land Shark",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Water",
+   "Ground"
+  ],
+  "stats": {
+   "hp": 75,
+   "atk": 90,
+   "def": 80,
+   "spa": 75,
+   "spd": 110,
+   "spe": 95
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Too Cute",
+    "desc": "Lowers the Attack of foes by 1 stage on entry (like Intimidate)."
+   }
+  ],
+  "hidden": {
+   "name": "Healing Bubble",
+   "desc": "Restores 1/3 max HP when switching out (like Regenerator)."
+  },
+  "signature": [
+   {
+    "move": "Aqua Ring",
+    "smash": "Joyful Splash"
+   },
+   {
+    "move": "Water Pulse",
+    "smash": "Aqua Burst"
+   },
+   {
+    "move": "Life Dew",
+    "smash": "Healing Bubble"
+   },
+   {
+    "move": "Dig",
+    "smash": "Hide and Seek"
+   },
+   {
+    "move": "Fishious Rend",
+    "smash": "It's Jeff! ultimate"
+   },
+   {
+    "move": "Baby-Doll Eyes",
+    "smash": "Too cute to hit"
+   }
+  ],
+  "learnset": [
+   "Aqua Ring",
+   "Water Pulse",
+   "Life Dew",
+   "Dig",
+   "Fishious Rend",
+   "Baby-Doll Eyes",
+   "Muddy Water",
+   "Scald",
+   "Bubble Beam",
+   "Crunch",
+   "Earthquake",
+   "Liquidation",
+   "Aqua Jet",
+   "Charm",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 15,
+  "id": "loki",
+  "name": "Loki",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Dark",
+   "Ice"
+  ],
+  "stats": {
+   "hp": 80,
+   "atk": 55,
+   "def": 75,
+   "spa": 115,
+   "spd": 105,
+   "spe": 95
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "God of Mischief",
+    "desc": "Appears as the last hero in the party until hit by a damaging move (like Illusion)."
+   }
+  ],
+  "hidden": {
+   "name": "Trickster",
+   "desc": "Status moves get +1 priority (like Prankster)."
+  },
+  "signature": [
+   {
+    "move": "Transform",
+    "smash": "God of Mischief ultimate"
+   },
+   {
+    "move": "Substitute",
+    "smash": "Doppelganger"
+   },
+   {
+    "move": "Double Team",
+    "smash": "Deception illusion"
+   },
+   {
+    "move": "Ally Switch",
+    "smash": "Devious Exchange"
+   },
+   {
+    "move": "Wish",
+    "smash": "Regeneration Domain"
+   },
+   {
+    "move": "Dark Pulse",
+    "smash": "Mystical Missile"
+   }
+  ],
+  "learnset": [
+   "Transform",
+   "Substitute",
+   "Double Team",
+   "Ally Switch",
+   "Wish",
+   "Dark Pulse",
+   "Ice Beam",
+   "Freeze-Dry",
+   "Foul Play",
+   "Nasty Plot",
+   "Taunt",
+   "Trick",
+   "Snarl",
+   "Parting Shot",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 16,
+  "id": "luna-snow",
+  "name": "Luna Snow",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Ice",
+   "Fairy"
+  ],
+  "stats": {
+   "hp": 80,
+   "atk": 60,
+   "def": 70,
+   "spa": 110,
+   "spd": 110,
+   "spe": 95
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "K-pop Idol",
+    "desc": "Sound-based moves deal 1.3x damage and she takes half damage from them (like Punk Rock)."
+   }
+  ],
+  "hidden": {
+   "name": "Ice Queen",
+   "desc": "Summons snow on entry (like Snow Warning)."
+  },
+  "signature": [
+   {
+    "move": "Ice Shard",
+    "smash": "Light & Dark Ice"
+   },
+   {
+    "move": "Ice Beam",
+    "smash": "Ice Arts"
+   },
+   {
+    "move": "Freeze-Dry",
+    "smash": "Absolute Zero"
+   },
+   {
+    "move": "Heal Pulse",
+    "smash": "Share the Stage"
+   },
+   {
+    "move": "Quiver Dance",
+    "smash": "Fate of Both Worlds ultimate"
+   },
+   {
+    "move": "Alluring Voice",
+    "smash": "K-pop idol"
+   }
+  ],
+  "learnset": [
+   "Ice Shard",
+   "Ice Beam",
+   "Freeze-Dry",
+   "Heal Pulse",
+   "Quiver Dance",
+   "Alluring Voice",
+   "Sing",
+   "Icy Wind",
+   "Moonblast",
+   "Dazzling Gleam",
+   "Life Dew",
+   "Aurora Veil",
+   "Snowscape",
+   "Draining Kiss",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 17,
+  "id": "magik",
+  "name": "Magik",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Dark",
+   "Psychic"
+  ],
+  "stats": {
+   "hp": 75,
+   "atk": 125,
+   "def": 70,
+   "spa": 90,
+   "spd": 70,
+   "spe": 115
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Soulsword",
+    "desc": "Slicing moves deal 1.5x damage (like Sharpness)."
+   }
+  ],
+  "hidden": {
+   "name": "Darkchylde",
+   "desc": "When HP drops below 1/2, Attack rises by 1 stage (once per entry)."
+  },
+  "signature": [
+   {
+    "move": "Psyblade",
+    "smash": "Soulsword"
+   },
+   {
+    "move": "Psycho Cut",
+    "smash": "Soulsword"
+   },
+   {
+    "move": "Teleport",
+    "smash": "Stepping Discs"
+   },
+   {
+    "move": "Sucker Punch",
+    "smash": "Umbral Incursion"
+   },
+   {
+    "move": "Lash Out",
+    "smash": "Darkchylde ultimate"
+   },
+   {
+    "move": "Night Slash",
+    "smash": "Limbo sorcery"
+   }
+  ],
+  "learnset": [
+   "Psyblade",
+   "Psycho Cut",
+   "Teleport",
+   "Sucker Punch",
+   "Lash Out",
+   "Night Slash",
+   "Phantom Force",
+   "Swords Dance",
+   "Knock Off",
+   "Zen Headbutt",
+   "Throat Chop",
+   "Shadow Claw",
+   "Sacred Sword",
+   "Dark Pulse",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 18,
+  "id": "magneto",
+  "name": "Magneto",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Steel"
+  ],
+  "stats": {
+   "hp": 110,
+   "atk": 70,
+   "def": 115,
+   "spa": 110,
+   "spd": 110,
+   "spe": 55
+  },
+  "inGameHP": 600,
+  "abilities": [
+   {
+    "name": "Master of Magnetism",
+    "desc": "Prevents Steel-type foes from switching out (like Magnet Pull)."
+   }
+  ],
+  "hidden": {
+   "name": "Electromagnetic Field",
+   "desc": "Steel moves deal 1.5x damage (like Steelworker)."
+  },
+  "signature": [
+   {
+    "move": "Flash Cannon",
+    "smash": "Iron Volley"
+   },
+   {
+    "move": "Magnet Bomb",
+    "smash": "Mag-Cannon"
+   },
+   {
+    "move": "Iron Defense",
+    "smash": "Metal Bulwark"
+   },
+   {
+    "move": "Wide Guard",
+    "smash": "Metallic Curtain"
+   },
+   {
+    "move": "Doom Desire",
+    "smash": "Meteor M ultimate"
+   },
+   {
+    "move": "Magnet Rise",
+    "smash": "Magnetic flight"
+   }
+  ],
+  "learnset": [
+   "Flash Cannon",
+   "Magnet Bomb",
+   "Iron Defense",
+   "Wide Guard",
+   "Doom Desire",
+   "Magnet Rise",
+   "Magnetic Flux",
+   "Steel Beam",
+   "Mirror Shot",
+   "Gravity",
+   "Light Screen",
+   "Thunderbolt",
+   "Earth Power",
+   "Psychic",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 19,
+  "id": "mantis",
+  "name": "Mantis",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Psychic",
+   "Bug"
+  ],
+  "stats": {
+   "hp": 75,
+   "atk": 50,
+   "def": 70,
+   "spa": 105,
+   "spd": 115,
+   "spe": 110
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Empath",
+    "desc": "Healing moves restore 50% more HP."
+   }
+  ],
+  "hidden": {
+   "name": "Spore Slumber",
+   "desc": "Contact moves against her have a 30% chance to put the attacker to sleep."
+  },
+  "signature": [
+   {
+    "move": "Floral Healing",
+    "smash": "Healing Flower"
+   },
+   {
+    "move": "Sleep Powder",
+    "smash": "Spore Slumber"
+   },
+   {
+    "move": "Helping Hand",
+    "smash": "Allied Inspiration"
+   },
+   {
+    "move": "Nasty Plot",
+    "smash": "Natural Anger"
+   },
+   {
+    "move": "Life Dew",
+    "smash": "Soul Resurgence ultimate"
+   },
+   {
+    "move": "Psybeam",
+    "smash": "Life Energy Blast"
+   }
+  ],
+  "learnset": [
+   "Floral Healing",
+   "Sleep Powder",
+   "Helping Hand",
+   "Nasty Plot",
+   "Life Dew",
+   "Psybeam",
+   "Pollen Puff",
+   "Hypnosis",
+   "Bug Buzz",
+   "Psychic",
+   "Energy Ball",
+   "Quiver Dance",
+   "Leech Seed",
+   "Psyshock",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 20,
+  "id": "moon-knight",
+  "name": "Moon Knight",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Fighting",
+   "Ghost"
+  ],
+  "stats": {
+   "hp": 75,
+   "atk": 115,
+   "def": 70,
+   "spa": 105,
+   "spd": 70,
+   "spe": 105
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Moon's Vengeance",
+    "desc": "Ghost moves deal 1.5x damage when HP is below 1/3."
+   }
+  ],
+  "hidden": {
+   "name": "Fist of Khonshu",
+   "desc": "Punching moves deal 1.2x damage."
+  },
+  "signature": [
+   {
+    "move": "Spirit Shackle",
+    "smash": "Crescent Darts"
+   },
+   {
+    "move": "Gravity",
+    "smash": "Ankh"
+   },
+   {
+    "move": "Shadow Sneak",
+    "smash": "Night Glider"
+   },
+   {
+    "move": "Poltergeist",
+    "smash": "Hand of Khonshu ultimate"
+   },
+   {
+    "move": "High Jump Kick",
+    "smash": "Moon Kick"
+   },
+   {
+    "move": "Rage Fist",
+    "smash": "Fist of Khonshu"
+   }
+  ],
+  "learnset": [
+   "Spirit Shackle",
+   "Gravity",
+   "Shadow Sneak",
+   "Poltergeist",
+   "High Jump Kick",
+   "Rage Fist",
+   "Moonblast",
+   "Moonlight",
+   "Shadow Claw",
+   "Drain Punch",
+   "Close Combat",
+   "Phantom Force",
+   "Bulk Up",
+   "Night Slash",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 21,
+  "id": "namor",
+  "name": "Namor",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Water",
+   "Flying"
+  ],
+  "stats": {
+   "hp": 75,
+   "atk": 115,
+   "def": 80,
+   "spa": 105,
+   "spd": 80,
+   "spe": 90
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Imperius Rex",
+    "desc": "Speed doubles in rain (like Swift Swim)."
+   }
+  ],
+  "hidden": {
+   "name": "Horn of Proteus",
+   "desc": "Summons rain on entry (like Drizzle)."
+  },
+  "signature": [
+   {
+    "move": "Liquidation",
+    "smash": "Trident of Neptune"
+   },
+   {
+    "move": "Whirlpool",
+    "smash": "Monstro Spawn"
+   },
+   {
+    "move": "Dive",
+    "smash": "Blessing of the Deep"
+   },
+   {
+    "move": "Water Spout",
+    "smash": "Horn of Proteus ultimate"
+   },
+   {
+    "move": "Brave Bird",
+    "smash": "Ankle wings"
+   },
+   {
+    "move": "Wave Crash",
+    "smash": "King of Atlantis"
+   }
+  ],
+  "learnset": [
+   "Liquidation",
+   "Whirlpool",
+   "Dive",
+   "Water Spout",
+   "Brave Bird",
+   "Wave Crash",
+   "Aqua Jet",
+   "Dual Wingbeat",
+   "Hurricane",
+   "Hydro Pump",
+   "Surf",
+   "Ice Beam",
+   "Rain Dance",
+   "Swords Dance",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 22,
+  "id": "peni-parker",
+  "name": "Peni Parker",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Bug",
+   "Steel"
+  ],
+  "stats": {
+   "hp": 110,
+   "atk": 100,
+   "def": 115,
+   "spa": 90,
+   "spd": 100,
+   "spe": 55
+  },
+  "inGameHP": 650,
+  "abilities": [
+   {
+    "name": "SP//dr Armor",
+    "desc": "Cannot be hit by critical hits (like Shell Armor)."
+   }
+  ],
+  "hidden": {
+   "name": "Spider-Nest",
+   "desc": "Once per battle, sets Sticky Web on the foe's side on entry."
+  },
+  "signature": [
+   {
+    "move": "Electroweb",
+    "smash": "Cyber-Web"
+   },
+   {
+    "move": "Sticky Web",
+    "smash": "Bionic Spider-Nest"
+   },
+   {
+    "move": "Spikes",
+    "smash": "Arachno-Mine"
+   },
+   {
+    "move": "Silk Trap",
+    "smash": "Cyber-Web shield"
+   },
+   {
+    "move": "Lunge",
+    "smash": "Spider-Sweeper ultimate"
+   },
+   {
+    "move": "Shift Gear",
+    "smash": "SP//dr mech"
+   }
+  ],
+  "learnset": [
+   "Electroweb",
+   "Sticky Web",
+   "Spikes",
+   "Silk Trap",
+   "Lunge",
+   "Shift Gear",
+   "Gyro Ball",
+   "Bug Bite",
+   "X-Scissor",
+   "Iron Head",
+   "Heavy Slam",
+   "Iron Defense",
+   "Thunder Punch",
+   "Leech Life",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 23,
+  "id": "psylocke",
+  "name": "Psylocke",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Psychic",
+   "Steel"
+  ],
+  "stats": {
+   "hp": 70,
+   "atk": 120,
+   "def": 65,
+   "spa": 100,
+   "spd": 70,
+   "spe": 125
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Psychic Stealth",
+    "desc": "Moves ignore Substitute, Reflect, Light Screen and Aurora Veil (like Infiltrator)."
+   }
+  ],
+  "hidden": {
+   "name": "Psionic Butterfly",
+   "desc": "Sets Psychic Terrain on entry (like Psychic Surge)."
+  },
+  "signature": [
+   {
+    "move": "Psyblade",
+    "smash": "Psionic katana"
+   },
+   {
+    "move": "Psycho Cut",
+    "smash": "Psi-Blade Dash"
+   },
+   {
+    "move": "Smart Strike",
+    "smash": "Wing Shurikens"
+   },
+   {
+    "move": "Double Team",
+    "smash": "Psychic Stealth"
+   },
+   {
+    "move": "Quiver Dance",
+    "smash": "Dance of the Butterfly ultimate"
+   },
+   {
+    "move": "Sacred Sword",
+    "smash": "Ninja swordsmanship"
+   }
+  ],
+  "learnset": [
+   "Psyblade",
+   "Psycho Cut",
+   "Smart Strike",
+   "Double Team",
+   "Quiver Dance",
+   "Sacred Sword",
+   "Iron Head",
+   "Night Slash",
+   "Swords Dance",
+   "Psychic",
+   "Sucker Punch",
+   "Close Combat",
+   "Steel Wing",
+   "Zen Headbutt",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 24,
+  "id": "the-punisher",
+  "name": "The Punisher",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Dark",
+   "Normal"
+  ],
+  "stats": {
+   "hp": 85,
+   "atk": 130,
+   "def": 85,
+   "spa": 75,
+   "spd": 75,
+   "spe": 90
+  },
+  "inGameHP": 300,
+  "abilities": [
+   {
+    "name": "Arsenal",
+    "desc": "Multi-hit moves always hit the max number of times (like Skill Link)."
+   }
+  ],
+  "hidden": {
+   "name": "Vengeance",
+   "desc": "Attack rises by 1 stage whenever an ally faints."
+  },
+  "signature": [
+   {
+    "move": "Spike Cannon",
+    "smash": "Final Judgement gatling ultimate"
+   },
+   {
+    "move": "Smokescreen",
+    "smash": "Scourge Grenade"
+   },
+   {
+    "move": "Retaliate",
+    "smash": "Vengeance"
+   },
+   {
+    "move": "Payback",
+    "smash": "Vengeance"
+   },
+   {
+    "move": "Spikes",
+    "smash": "Culling Turret"
+   },
+   {
+    "move": "Quick Attack",
+    "smash": "Vantage Connection zipline"
+   }
+  ],
+  "learnset": [
+   "Spike Cannon",
+   "Smokescreen",
+   "Retaliate",
+   "Payback",
+   "Spikes",
+   "Quick Attack",
+   "Knock Off",
+   "Crunch",
+   "Sucker Punch",
+   "Throat Chop",
+   "Facade",
+   "Double-Edge",
+   "Swords Dance",
+   "Bullet Punch",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 25,
+  "id": "rocket-raccoon",
+  "name": "Rocket Raccoon",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Normal",
+   "Electric"
+  ],
+  "stats": {
+   "hp": 75,
+   "atk": 95,
+   "def": 70,
+   "spa": 90,
+   "spd": 100,
+   "spe": 100
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Pickpocket",
+    "desc": "Steals the held item of a foe that makes contact with him."
+   }
+  ],
+  "hidden": {
+   "name": "Genius Engineer",
+   "desc": "Pulse and aura moves (incl. Heal Pulse) are 1.5x stronger (like Mega Launcher)."
+  },
+  "signature": [
+   {
+    "move": "Electro Ball",
+    "smash": "Bombard Mode"
+   },
+   {
+    "move": "Heal Pulse",
+    "smash": "Repair Mode"
+   },
+   {
+    "move": "Wish",
+    "smash": "Battle Rebirth Beacon"
+   },
+   {
+    "move": "Helping Hand",
+    "smash": "C.Y.A. ultimate"
+   },
+   {
+    "move": "Gear Up",
+    "smash": "Ammo Overload"
+   },
+   {
+    "move": "Quick Attack",
+    "smash": "Jetpack Dash"
+   }
+  ],
+  "learnset": [
+   "Electro Ball",
+   "Heal Pulse",
+   "Wish",
+   "Helping Hand",
+   "Gear Up",
+   "Quick Attack",
+   "Thief",
+   "Fake Out",
+   "Discharge",
+   "Volt Switch",
+   "Thunderbolt",
+   "Tri Attack",
+   "Spark",
+   "U-turn",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 26,
+  "id": "scarlet-witch",
+  "name": "Scarlet Witch",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Psychic",
+   "Dark"
+  ],
+  "stats": {
+   "hp": 70,
+   "atk": 65,
+   "def": 65,
+   "spa": 140,
+   "spd": 90,
+   "spe": 105
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Chaos Magic",
+    "desc": "Doubles the chance of moves' added effects (like Serene Grace)."
+   }
+  ],
+  "hidden": {
+   "name": "Reality Warping",
+   "desc": "Takes damage only from attacks: no weather, status, recoil or hazard damage (like Magic Guard)."
+  },
+  "signature": [
+   {
+    "move": "Psychic",
+    "smash": "Chaos Control"
+   },
+   {
+    "move": "Psybeam",
+    "smash": "Chaotic Bolt"
+   },
+   {
+    "move": "Imprison",
+    "smash": "Dark Seal"
+   },
+   {
+    "move": "Expanding Force",
+    "smash": "Reality Erasure ultimate"
+   },
+   {
+    "move": "Mystical Fire",
+    "smash": "Chaos magic"
+   },
+   {
+    "move": "Fiery Wrath",
+    "smash": "Darkhold"
+   }
+  ],
+  "learnset": [
+   "Psychic",
+   "Psybeam",
+   "Imprison",
+   "Expanding Force",
+   "Mystical Fire",
+   "Fiery Wrath",
+   "Magic Room",
+   "Eerie Spell",
+   "Dark Pulse",
+   "Nasty Plot",
+   "Calm Mind",
+   "Hex",
+   "Trick Room",
+   "Psyshock",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 27,
+  "id": "spider-man",
+  "name": "Spider-Man",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Bug",
+   "Fighting"
+  ],
+  "stats": {
+   "hp": 70,
+   "atk": 115,
+   "def": 65,
+   "spa": 80,
+   "spd": 70,
+   "spe": 140
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Spider-Sense",
+    "desc": "If a foe has a super-effective move, Speed rises by 1 stage on entry."
+   }
+  ],
+  "hidden": {
+   "name": "Great Responsibility",
+   "desc": "When HP drops below 1/2, Attack rises by 1 stage (once per entry)."
+  },
+  "signature": [
+   {
+    "move": "Detect",
+    "smash": "Spider-Sense"
+   },
+   {
+    "move": "U-turn",
+    "smash": "Web-Swing"
+   },
+   {
+    "move": "String Shot",
+    "smash": "Web-Cluster"
+   },
+   {
+    "move": "Lunge",
+    "smash": "Get Over Here!"
+   },
+   {
+    "move": "Triple Kick",
+    "smash": "Amazing Combo"
+   },
+   {
+    "move": "Close Combat",
+    "smash": "Spectacular Spin ultimate"
+   }
+  ],
+  "learnset": [
+   "Detect",
+   "U-turn",
+   "String Shot",
+   "Lunge",
+   "Triple Kick",
+   "Close Combat",
+   "First Impression",
+   "Electroweb",
+   "Mach Punch",
+   "Drain Punch",
+   "Acrobatics",
+   "Leech Life",
+   "Sticky Web",
+   "Bulk Up",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 28,
+  "id": "squirrel-girl",
+  "name": "Squirrel Girl",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Normal",
+   "Fairy"
+  ],
+  "stats": {
+   "hp": 75,
+   "atk": 110,
+   "def": 70,
+   "spa": 95,
+   "spd": 80,
+   "spe": 110
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Unbeatable",
+    "desc": "At full HP, survives any hit with 1 HP (like Sturdy)."
+   }
+  ],
+  "hidden": {
+   "name": "Squirrel Army",
+   "desc": "Multi-hit moves always hit the max number of times (like Skill Link)."
+  },
+  "signature": [
+   {
+    "move": "Population Bomb",
+    "smash": "Unbeatable Squirrel Tsunami ultimate"
+   },
+   {
+    "move": "Seed Bomb",
+    "smash": "Burst Acorn"
+   },
+   {
+    "move": "Block",
+    "smash": "Squirrel Blockade"
+   },
+   {
+    "move": "Tail Slap",
+    "smash": "Squirrel tail"
+   },
+   {
+    "move": "Super Fang",
+    "smash": "Squirrel bite"
+   },
+   {
+    "move": "Follow Me",
+    "smash": "Squirrel army"
+   }
+  ],
+  "learnset": [
+   "Population Bomb",
+   "Seed Bomb",
+   "Block",
+   "Tail Slap",
+   "Super Fang",
+   "Follow Me",
+   "Tidy Up",
+   "Bullet Seed",
+   "Play Rough",
+   "Charm",
+   "Baby-Doll Eyes",
+   "Quick Attack",
+   "Spirit Break",
+   "Facade",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 29,
+  "id": "star-lord",
+  "name": "Star-Lord",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Normal",
+   "Flying"
+  ],
+  "stats": {
+   "hp": 75,
+   "atk": 110,
+   "def": 70,
+   "spa": 95,
+   "spd": 75,
+   "spe": 120
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Element Guns",
+    "desc": "Changes type to match the move he is about to use (like Protean)."
+   }
+  ],
+  "hidden": {
+   "name": "Dance-Off",
+   "desc": "Copies any dance move a foe or ally uses (like Dancer)."
+  },
+  "signature": [
+   {
+    "move": "Tri Attack",
+    "smash": "Element Guns"
+   },
+   {
+    "move": "Swift",
+    "smash": "Galactic Legend ultimate (auto-aim)"
+   },
+   {
+    "move": "Acrobatics",
+    "smash": "Rocket Propulsion"
+   },
+   {
+    "move": "U-turn",
+    "smash": "Stellar Shift"
+   },
+   {
+    "move": "Teeter Dance",
+    "smash": "Dance-off"
+   },
+   {
+    "move": "Tailwind",
+    "smash": "Jet boots"
+   }
+  ],
+  "learnset": [
+   "Tri Attack",
+   "Swift",
+   "Acrobatics",
+   "U-turn",
+   "Teeter Dance",
+   "Tailwind",
+   "Flamethrower",
+   "Ice Beam",
+   "Thunderbolt",
+   "Air Slash",
+   "Quick Attack",
+   "Fake Out",
+   "Brave Bird",
+   "Hyper Voice",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 30,
+  "id": "storm",
+  "name": "Storm",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Flying",
+   "Electric"
+  ],
+  "stats": {
+   "hp": 70,
+   "atk": 60,
+   "def": 70,
+   "spa": 130,
+   "spd": 90,
+   "spe": 120
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Goddess of the Storm",
+    "desc": "Summons rain on entry (like Drizzle)."
+   }
+  ],
+  "hidden": {
+   "name": "Weather Witch",
+   "desc": "Electric and Flying moves deal 1.2x damage in any weather."
+  },
+  "signature": [
+   {
+    "move": "Air Slash",
+    "smash": "Wind Blade"
+   },
+   {
+    "move": "Hurricane",
+    "smash": "Omega Hurricane ultimate"
+   },
+   {
+    "move": "Bleakwind Storm",
+    "smash": "Weather Control (tornado)"
+   },
+   {
+    "move": "Rising Voltage",
+    "smash": "Bolt Rush"
+   },
+   {
+    "move": "Rain Dance",
+    "smash": "Weather Control"
+   },
+   {
+    "move": "Sunny Day",
+    "smash": "Weather Control"
+   }
+  ],
+  "learnset": [
+   "Air Slash",
+   "Hurricane",
+   "Bleakwind Storm",
+   "Rising Voltage",
+   "Rain Dance",
+   "Sunny Day",
+   "Weather Ball",
+   "Thunderbolt",
+   "Thunder",
+   "Blizzard",
+   "Tailwind",
+   "Electro Shot",
+   "Roost",
+   "Calm Mind",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 31,
+  "id": "thor",
+  "name": "Thor",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Electric",
+   "Fighting"
+  ],
+  "stats": {
+   "hp": 100,
+   "atk": 120,
+   "def": 95,
+   "spa": 105,
+   "spd": 80,
+   "spe": 80
+  },
+  "inGameHP": 600,
+  "abilities": [
+   {
+    "name": "God of Thunder",
+    "desc": "Sets Electric Terrain on entry (like Electric Surge)."
+   }
+  ],
+  "hidden": {
+   "name": "Thorforce",
+   "desc": "Draws in Electric moves, is immune to them, and Attack rises by 1 stage when hit by one."
+  },
+  "signature": [
+   {
+    "move": "Gigaton Hammer",
+    "smash": "Mjolnir Bash"
+   },
+   {
+    "move": "Supercell Slam",
+    "smash": "Hammer Throw / leap"
+   },
+   {
+    "move": "Electric Terrain",
+    "smash": "Lightning Realm"
+   },
+   {
+    "move": "Bolt Strike",
+    "smash": "God of Thunder ultimate"
+   },
+   {
+    "move": "Thunder Punch",
+    "smash": "Storm Surge"
+   },
+   {
+    "move": "Bulk Up",
+    "smash": "Awakening Rune (Thorforce)"
+   }
+  ],
+  "learnset": [
+   "Gigaton Hammer",
+   "Supercell Slam",
+   "Electric Terrain",
+   "Bolt Strike",
+   "Thunder Punch",
+   "Bulk Up",
+   "Thunder",
+   "Wild Charge",
+   "Hammer Arm",
+   "Close Combat",
+   "Drain Punch",
+   "Thunderbolt",
+   "Thunderclap",
+   "Fly",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 32,
+  "id": "venom",
+  "name": "Venom",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Dark",
+   "Poison"
+  ],
+  "stats": {
+   "hp": 120,
+   "atk": 120,
+   "def": 100,
+   "spa": 60,
+   "spd": 85,
+   "spe": 85
+  },
+  "inGameHP": 750,
+  "abilities": [
+   {
+    "name": "Symbiote",
+    "desc": "Takes 20% less damage from all moves, except Fire and sound-based moves, which deal 2x damage."
+   }
+  ],
+  "hidden": {
+   "name": "Feast",
+   "desc": "Restores 1/4 max HP whenever this hero KOs a foe."
+  },
+  "signature": [
+   {
+    "move": "Power Whip",
+    "smash": "Dark Tendrils"
+   },
+   {
+    "move": "Bind",
+    "smash": "Cellular Corrosion"
+   },
+   {
+    "move": "Jaw Lock",
+    "smash": "Feast of the Abyss ultimate"
+   },
+   {
+    "move": "Substitute",
+    "smash": "Symbiotic Resilience"
+   },
+   {
+    "move": "Body Slam",
+    "smash": "Frenzied Arrival"
+   },
+   {
+    "move": "Crunch",
+    "smash": "\"We are Venom\""
+   }
+  ],
+  "learnset": [
+   "Power Whip",
+   "Bind",
+   "Jaw Lock",
+   "Substitute",
+   "Body Slam",
+   "Crunch",
+   "Poison Fang",
+   "Poison Jab",
+   "Gunk Shot",
+   "Knock Off",
+   "Sucker Punch",
+   "Lash Out",
+   "Bulk Up",
+   "Swords Dance",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 33,
+  "id": "winter-soldier",
+  "name": "Winter Soldier",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Steel",
+   "Dark"
+  ],
+  "stats": {
+   "hp": 80,
+   "atk": 130,
+   "def": 85,
+   "spa": 80,
+   "spd": 75,
+   "spe": 90
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Trained Assassin",
+    "desc": "Attack rises by 1 stage whenever this hero KOs a foe (like Moxie)."
+   }
+  ],
+  "hidden": {
+   "name": "Cryo Stasis",
+   "desc": "Immune to Ice moves and freeze; restores 1/4 max HP when hit by an Ice move."
+  },
+  "signature": [
+   {
+    "move": "Meteor Mash",
+    "smash": "Trooper's Fist"
+   },
+   {
+    "move": "Thunder Punch",
+    "smash": "Tainted Voltage"
+   },
+   {
+    "move": "Heavy Slam",
+    "smash": "Kraken Impact ultimate"
+   },
+   {
+    "move": "Ice Punch",
+    "smash": "Cryo sleep"
+   },
+   {
+    "move": "Payback",
+    "smash": "Bionic Hook"
+   },
+   {
+    "move": "Bullet Punch",
+    "smash": "Roterstern"
+   }
+  ],
+  "learnset": [
+   "Meteor Mash",
+   "Thunder Punch",
+   "Heavy Slam",
+   "Ice Punch",
+   "Payback",
+   "Bullet Punch",
+   "Iron Head",
+   "Knock Off",
+   "Sucker Punch",
+   "Throat Chop",
+   "Shadow Claw",
+   "Swords Dance",
+   "Night Slash",
+   "Flash Cannon",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 34,
+  "id": "wolverine",
+  "name": "Wolverine",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Fighting",
+   "Steel"
+  ],
+  "stats": {
+   "hp": 90,
+   "atk": 130,
+   "def": 80,
+   "spa": 45,
+   "spd": 75,
+   "spe": 120
+  },
+  "inGameHP": 350,
+  "abilities": [
+   {
+    "name": "Healing Factor",
+    "desc": "Restores 1/8 max HP at the end of each turn."
+   }
+  ],
+  "hidden": {
+   "name": "Berserker Rage",
+   "desc": "When hit by a critical hit, Attack rises to the maximum (like Anger Point)."
+  },
+  "signature": [
+   {
+    "move": "Metal Claw",
+    "smash": "Savage Claw"
+   },
+   {
+    "move": "Crush Claw",
+    "smash": "Berserk Claw Strike"
+   },
+   {
+    "move": "Close Combat",
+    "smash": "Feral Leap"
+   },
+   {
+    "move": "Recover",
+    "smash": "Undying Animal (healing factor)"
+   },
+   {
+    "move": "Endeavor",
+    "smash": "Last Stand ultimate"
+   },
+   {
+    "move": "Reversal",
+    "smash": "Berserker rage"
+   }
+  ],
+  "learnset": [
+   "Metal Claw",
+   "Crush Claw",
+   "Close Combat",
+   "Recover",
+   "Endeavor",
+   "Reversal",
+   "Dire Claw",
+   "Night Slash",
+   "Drain Punch",
+   "Hone Claws",
+   "Swords Dance",
+   "Iron Head",
+   "Thrash",
+   "Quick Attack",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 35,
+  "id": "mister-fantastic",
+  "name": "Mister Fantastic",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Normal"
+  ],
+  "stats": {
+   "hp": 95,
+   "atk": 115,
+   "def": 95,
+   "spa": 70,
+   "spd": 85,
+   "spe": 80
+  },
+  "inGameHP": 375,
+  "abilities": [
+   {
+    "name": "Rubber Body",
+    "desc": "Takes 25% less damage from physical moves and can't be hit by critical hits."
+   }
+  ],
+  "hidden": {
+   "name": "Smartest Man Alive",
+   "desc": "Moves deal 1.3x damage if this hero moves last (like Analytic)."
+  },
+  "signature": [
+   {
+    "move": "Mega Punch",
+    "smash": "Stretch Punch"
+   },
+   {
+    "move": "Wrap",
+    "smash": "Flexible Elongation"
+   },
+   {
+    "move": "Bounce",
+    "smash": "Reflexive Rubber"
+   },
+   {
+    "move": "Body Slam",
+    "smash": "Brainiac Bounce ultimate"
+   },
+   {
+    "move": "Coil",
+    "smash": "Elastic body"
+   },
+   {
+    "move": "Bulk Up",
+    "smash": "Elastic Strength"
+   }
+  ],
+  "learnset": [
+   "Mega Punch",
+   "Wrap",
+   "Bounce",
+   "Body Slam",
+   "Coil",
+   "Bulk Up",
+   "Calm Mind",
+   "Comet Punch",
+   "Double-Edge",
+   "Power-Up Punch",
+   "Ice Punch",
+   "Thunder Punch",
+   "Facade",
+   "Sucker Punch",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 36,
+  "id": "invisible-woman",
+  "name": "Invisible Woman",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Psychic"
+  ],
+  "stats": {
+   "hp": 80,
+   "atk": 50,
+   "def": 95,
+   "spa": 100,
+   "spd": 120,
+   "spe": 80
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Force Field",
+    "desc": "Allies take 25% less damage (like Friend Guard); in singles, she takes 10% less damage herself."
+   }
+  ],
+  "hidden": {
+   "name": "Invisibility",
+   "desc": "Once per battle, the first damaging move aimed at her misses (like Disguise)."
+  },
+  "signature": [
+   {
+    "move": "Psybeam",
+    "smash": "Orb Projection"
+   },
+   {
+    "move": "Expanding Force",
+    "smash": "Psionic Vortex"
+   },
+   {
+    "move": "Light Screen",
+    "smash": "Guardian Shield"
+   },
+   {
+    "move": "Reflect",
+    "smash": "Guardian Shield"
+   },
+   {
+    "move": "Double Team",
+    "smash": "Veiled Step"
+   },
+   {
+    "move": "Wide Guard",
+    "smash": "Invisible Boundary ultimate"
+   }
+  ],
+  "learnset": [
+   "Psybeam",
+   "Expanding Force",
+   "Light Screen",
+   "Reflect",
+   "Double Team",
+   "Wide Guard",
+   "Heal Pulse",
+   "Psychic",
+   "Psyshock",
+   "Life Dew",
+   "Substitute",
+   "Calm Mind",
+   "Force Palm",
+   "Barrier",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 37,
+  "id": "human-torch",
+  "name": "Human Torch",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Fire",
+   "Flying"
+  ],
+  "stats": {
+   "hp": 70,
+   "atk": 70,
+   "def": 70,
+   "spa": 135,
+   "spd": 80,
+   "spe": 115
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Flame On",
+    "desc": "Immune to Fire moves; when hit by one, his Fire moves get 1.5x power (like Flash Fire)."
+   }
+  ],
+  "hidden": {
+   "name": "Supernova",
+   "desc": "When KO'd by a contact move, the attacker loses 1/4 of its max HP (like Aftermath)."
+  },
+  "signature": [
+   {
+    "move": "Flamethrower",
+    "smash": "Plasma Disk"
+   },
+   {
+    "move": "Fire Blast",
+    "smash": "Blazing Blast"
+   },
+   {
+    "move": "Fire Spin",
+    "smash": "Pyro-Prison"
+   },
+   {
+    "move": "Burn Up",
+    "smash": "Supernova ultimate"
+   },
+   {
+    "move": "Flare Blitz",
+    "smash": "Flaming Meteor"
+   },
+   {
+    "move": "Fly",
+    "smash": "Flame On"
+   }
+  ],
+  "learnset": [
+   "Flamethrower",
+   "Fire Blast",
+   "Fire Spin",
+   "Burn Up",
+   "Flare Blitz",
+   "Fly",
+   "Heat Wave",
+   "Overheat",
+   "Air Slash",
+   "Hurricane",
+   "Flame Charge",
+   "Will-O-Wisp",
+   "Sunny Day",
+   "Inferno",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 38,
+  "id": "the-thing",
+  "name": "The Thing",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Rock",
+   "Fighting"
+  ],
+  "stats": {
+   "hp": 120,
+   "atk": 135,
+   "def": 130,
+   "spa": 40,
+   "spd": 90,
+   "spe": 55
+  },
+  "inGameHP": 725,
+  "abilities": [
+   {
+    "name": "Rock Hide",
+    "desc": "Super-effective hits deal 25% less damage (like Solid Rock)."
+   }
+  ],
+  "hidden": {
+   "name": "Clobberin' Time",
+   "desc": "Contact moves deal 1.3x damage (like Tough Claws)."
+  },
+  "signature": [
+   {
+    "move": "Rock Smash",
+    "smash": "Rock Smasher"
+   },
+   {
+    "move": "Hammer Arm",
+    "smash": "Stone Haymaker"
+   },
+   {
+    "move": "Body Press",
+    "smash": "Yancy Street Charge"
+   },
+   {
+    "move": "Stomping Tantrum",
+    "smash": "Embattled Leap"
+   },
+   {
+    "move": "Head Smash",
+    "smash": "Clobberin' Time ultimate"
+   },
+   {
+    "move": "Wide Guard",
+    "smash": "Protects his team"
+   }
+  ],
+  "learnset": [
+   "Rock Smash",
+   "Hammer Arm",
+   "Body Press",
+   "Stomping Tantrum",
+   "Head Smash",
+   "Wide Guard",
+   "Stone Edge",
+   "Rock Slide",
+   "Iron Defense",
+   "Stealth Rock",
+   "Earthquake",
+   "Drain Punch",
+   "Mach Punch",
+   "Rock Polish",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 39,
+  "id": "emma-frost",
+  "name": "Emma Frost",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Psychic",
+   "Rock"
+  ],
+  "stats": {
+   "hp": 110,
+   "atk": 105,
+   "def": 120,
+   "spa": 100,
+   "spd": 90,
+   "spe": 45
+  },
+  "inGameHP": 675,
+  "abilities": [
+   {
+    "name": "Diamond Form",
+    "desc": "When HP drops below 1/2, enters Diamond Form until she switches out: Defense x2, Sp. Atk x0.5."
+   }
+  ],
+  "hidden": {
+   "name": "Mind Control",
+   "desc": "When hit by a damaging move, 30% chance to disable it (like Cursed Body)."
+  },
+  "signature": [
+   {
+    "move": "Psychic",
+    "smash": "Psychic Grasp"
+   },
+   {
+    "move": "Psyshock",
+    "smash": "Psychic Spear"
+   },
+   {
+    "move": "Diamond Storm",
+    "smash": "Diamond Form"
+   },
+   {
+    "move": "Power Gem",
+    "smash": "Faceted Fury ultimate"
+   },
+   {
+    "move": "Hypnosis",
+    "smash": "Mind's Aegis / telepathy"
+   },
+   {
+    "move": "Attract",
+    "smash": "Psionic Seduction"
+   }
+  ],
+  "learnset": [
+   "Psychic",
+   "Psyshock",
+   "Diamond Storm",
+   "Power Gem",
+   "Hypnosis",
+   "Attract",
+   "Iron Defense",
+   "Zen Headbutt",
+   "Stone Edge",
+   "Rock Slide",
+   "Calm Mind",
+   "Psychic Terrain",
+   "Stealth Rock",
+   "Body Press",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 40,
+  "id": "ultron",
+  "name": "Ultron",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Electric",
+   "Steel"
+  ],
+  "stats": {
+   "hp": 70,
+   "atk": 60,
+   "def": 85,
+   "spa": 110,
+   "spd": 100,
+   "spe": 100
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Adamantium Shell",
+    "desc": "Stats cannot be lowered by foes (like Clear Body)."
+   }
+  ],
+  "hidden": {
+   "name": "Upload Consciousness",
+   "desc": "Restores 1/3 max HP when switching out (like Regenerator)."
+  },
+  "signature": [
+   {
+    "move": "Charge Beam",
+    "smash": "Encephalo-Ray"
+   },
+   {
+    "move": "Heal Pulse",
+    "smash": "Imperative: Patch drones"
+   },
+   {
+    "move": "Magnet Rise",
+    "smash": "Dynamic Flight"
+   },
+   {
+    "move": "Light Screen",
+    "smash": "Imperative: Firewall"
+   },
+   {
+    "move": "Hyper Beam",
+    "smash": "Concentrated beam ultimate"
+   },
+   {
+    "move": "Recover",
+    "smash": "Rebuilds himself"
+   }
+  ],
+  "learnset": [
+   "Charge Beam",
+   "Heal Pulse",
+   "Magnet Rise",
+   "Light Screen",
+   "Hyper Beam",
+   "Recover",
+   "Metal Sound",
+   "Zap Cannon",
+   "Thunderbolt",
+   "Flash Cannon",
+   "Steel Beam",
+   "Discharge",
+   "Volt Switch",
+   "Nasty Plot",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 41,
+  "id": "phoenix",
+  "name": "Phoenix",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Fire",
+   "Psychic"
+  ],
+  "stats": {
+   "hp": 75,
+   "atk": 70,
+   "def": 65,
+   "spa": 135,
+   "spd": 85,
+   "spe": 110
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Phoenix Force",
+    "desc": "Once per battle, when KO'd, immediately revives with 50% HP."
+   }
+  ],
+  "hidden": {
+   "name": "Dark Phoenix",
+   "desc": "Sp. Atk x1.3, but loses 1/10 max HP after each attack."
+  },
+  "signature": [
+   {
+    "move": "Psychic",
+    "smash": "Telekinesis"
+   },
+   {
+    "move": "Mystical Fire",
+    "smash": "Phoenix Force flames"
+   },
+   {
+    "move": "Fiery Dance",
+    "smash": "Firebird"
+   },
+   {
+    "move": "Gravity",
+    "smash": "Psionic Gravity"
+   },
+   {
+    "move": "Burn Up",
+    "smash": "Endsong ultimate"
+   },
+   {
+    "move": "Morning Sun",
+    "smash": "Rebirth"
+   }
+  ],
+  "learnset": [
+   "Psychic",
+   "Mystical Fire",
+   "Fiery Dance",
+   "Gravity",
+   "Burn Up",
+   "Morning Sun",
+   "Future Sight",
+   "Psyshock",
+   "Flamethrower",
+   "Fire Blast",
+   "Heat Wave",
+   "Expanding Force",
+   "Calm Mind",
+   "Shadow Ball",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 42,
+  "id": "blade",
+  "name": "Blade",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Dark",
+   "Steel"
+  ],
+  "stats": {
+   "hp": 90,
+   "atk": 130,
+   "def": 80,
+   "spa": 60,
+   "spd": 75,
+   "spe": 105
+  },
+  "inGameHP": 350,
+  "abilities": [
+   {
+    "name": "Daywalker",
+    "desc": "Immune to burns; damaging moves restore 1/8 of damage dealt."
+   }
+  ],
+  "hidden": {
+   "name": "Vampire Hunter",
+   "desc": "Moves deal 1.5x damage to Dark and Ghost types."
+  },
+  "signature": [
+   {
+    "move": "Kowtow Cleave",
+    "smash": "Ancestral Sword"
+   },
+   {
+    "move": "Sacred Sword",
+    "smash": "Silver blade"
+   },
+   {
+    "move": "Bullet Punch",
+    "smash": "Hunter's Shotgun"
+   },
+   {
+    "move": "Drain Punch",
+    "smash": "Dhampir lifesteal"
+   },
+   {
+    "move": "Leech Life",
+    "smash": "Dhampir"
+   },
+   {
+    "move": "Night Slash",
+    "smash": "Vampire hunter"
+   }
+  ],
+  "learnset": [
+   "Kowtow Cleave",
+   "Sacred Sword",
+   "Bullet Punch",
+   "Drain Punch",
+   "Leech Life",
+   "Night Slash",
+   "Swords Dance",
+   "Iron Head",
+   "Sucker Punch",
+   "Knock Off",
+   "Throat Chop",
+   "Smart Strike",
+   "Quick Attack",
+   "Close Combat",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 43,
+  "id": "angela",
+  "name": "Angela",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Fighting",
+   "Flying"
+  ],
+  "stats": {
+   "hp": 95,
+   "atk": 125,
+   "def": 95,
+   "spa": 60,
+   "spd": 80,
+   "spe": 115
+  },
+  "inGameHP": 550,
+  "abilities": [
+   {
+    "name": "Angel of Heven",
+    "desc": "At full HP, Flying moves get +1 priority (like Gale Wings)."
+   }
+  ],
+  "hidden": {
+   "name": "Ichor Ribbons",
+   "desc": "Binding moves (Wrap, Bind, etc.) deal double damage each turn and always last 7 turns."
+  },
+  "signature": [
+   {
+    "move": "Flying Press",
+    "smash": "Assassin's Charge"
+   },
+   {
+    "move": "Sacred Sword",
+    "smash": "Divine Judgement"
+   },
+   {
+    "move": "Sky Attack",
+    "smash": "Heven's Retribution ultimate"
+   },
+   {
+    "move": "Wrap",
+    "smash": "Ichor ribbons"
+   },
+   {
+    "move": "Wide Guard",
+    "smash": "Ichor shield"
+   },
+   {
+    "move": "Brave Bird",
+    "smash": "Angel of Heven"
+   }
+  ],
+  "learnset": [
+   "Flying Press",
+   "Sacred Sword",
+   "Sky Attack",
+   "Wrap",
+   "Wide Guard",
+   "Brave Bird",
+   "Spirit Break",
+   "Close Combat",
+   "Dual Wingbeat",
+   "Swords Dance",
+   "Bulk Up",
+   "Roost",
+   "Smart Strike",
+   "Drain Punch",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 44,
+  "id": "daredevil",
+  "name": "Daredevil",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Fighting",
+   "Dark"
+  ],
+  "stats": {
+   "hp": 80,
+   "atk": 125,
+   "def": 75,
+   "spa": 60,
+   "spd": 90,
+   "spe": 115
+  },
+  "inGameHP": 300,
+  "abilities": [
+   {
+    "name": "Radar Sense",
+    "desc": "Ignores the target's evasion and accuracy drops; Normal and Fighting moves can hit Ghost types (like Mind's Eye)."
+   }
+  ],
+  "hidden": {
+   "name": "The Man Without Fear",
+   "desc": "Can't flinch and is immune to Intimidate and Taunt."
+  },
+  "signature": [
+   {
+    "move": "Foresight",
+    "smash": "Radar sense"
+   },
+   {
+    "move": "Detect",
+    "smash": "Radar sense"
+   },
+   {
+    "move": "Throat Chop",
+    "smash": "Billy club"
+   },
+   {
+    "move": "Lash Out",
+    "smash": "The Beast ultimate"
+   },
+   {
+    "move": "Acrobatics",
+    "smash": "Rooftop acrobat"
+   }
+  ],
+  "learnset": [
+   "Foresight",
+   "Detect",
+   "Throat Chop",
+   "Lash Out",
+   "Acrobatics",
+   "Close Combat",
+   "Drain Punch",
+   "Mach Punch",
+   "Sucker Punch",
+   "Knock Off",
+   "Low Kick",
+   "Bulk Up",
+   "Feint",
+   "Hone Claws",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 45,
+  "id": "gambit",
+  "name": "Gambit",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Fairy",
+   "Fire"
+  ],
+  "stats": {
+   "hp": 70,
+   "atk": 95,
+   "def": 65,
+   "spa": 105,
+   "spd": 90,
+   "spe": 100
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Lady Luck",
+    "desc": "Raises his critical-hit ratio by 1 stage (like Super Luck)."
+   }
+  ],
+  "hidden": {
+   "name": "Ragin' Cajun",
+   "desc": "Contact moves against him have a 30% chance to infatuate the attacker (like Cute Charm)."
+  },
+  "signature": [
+   {
+    "move": "Mystical Fire",
+    "smash": "Kinetically charged cards"
+   },
+   {
+    "move": "Dazzling Gleam",
+    "smash": "Card fan"
+   },
+   {
+    "move": "Mind Blown",
+    "smash": "Royal Flush ultimate"
+   },
+   {
+    "move": "Play Rough",
+    "smash": "Bo staff"
+   },
+   {
+    "move": "Charm",
+    "smash": "Cajun charm"
+   },
+   {
+    "move": "Lucky Chant",
+    "smash": "Lady luck"
+   }
+  ],
+  "learnset": [
+   "Mystical Fire",
+   "Dazzling Gleam",
+   "Mind Blown",
+   "Play Rough",
+   "Charm",
+   "Lucky Chant",
+   "Life Dew",
+   "Thief",
+   "Moonblast",
+   "Flamethrower",
+   "Fire Blast",
+   "Sweet Kiss",
+   "Nasty Plot",
+   "Fake Out",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 46,
+  "id": "rogue",
+  "name": "Rogue",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Fighting"
+  ],
+  "stats": {
+   "hp": 105,
+   "atk": 115,
+   "def": 95,
+   "spa": 70,
+   "spd": 90,
+   "spe": 95
+  },
+  "inGameHP": 625,
+  "abilities": [
+   {
+    "name": "Power Absorption",
+    "desc": "Copies the foe's ability on entry (like Trace)."
+   }
+  ],
+  "hidden": {
+   "name": "Draining Touch",
+   "desc": "Contact moves restore 1/4 of the damage dealt."
+  },
+  "signature": [
+   {
+    "move": "Copycat",
+    "smash": "Power absorption"
+   },
+   {
+    "move": "Mimic",
+    "smash": "Power absorption"
+   },
+   {
+    "move": "Draining Kiss",
+    "smash": "Her touch drains"
+   },
+   {
+    "move": "Drain Punch",
+    "smash": "Power absorption"
+   },
+   {
+    "move": "Fly",
+    "smash": "Ms. Marvel flight"
+   },
+   {
+    "move": "Superpower",
+    "smash": "Ms. Marvel strength"
+   }
+  ],
+  "learnset": [
+   "Copycat",
+   "Mimic",
+   "Draining Kiss",
+   "Drain Punch",
+   "Fly",
+   "Superpower",
+   "Close Combat",
+   "Brick Break",
+   "Mach Punch",
+   "Reversal",
+   "Bulk Up",
+   "Counter",
+   "Body Press",
+   "Bounce",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 47,
+  "id": "deadpool",
+  "name": "Deadpool",
+  "series": "Multi-Role",
+  "role": "Multi-Role",
+  "types": [
+   "Normal",
+   "Ghost"
+  ],
+  "stats": {
+   "hp": 90,
+   "atk": 105,
+   "def": 80,
+   "spa": 75,
+   "spd": 85,
+   "spe": 100
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Fourth Wall",
+    "desc": "Gains a random ability each time he enters battle."
+   }
+  ],
+  "hidden": {
+   "name": "Unkillable",
+   "desc": "Once per battle, survives a hit that would KO with 1 HP."
+  },
+  "signature": [
+   {
+    "move": "Metronome",
+    "smash": "Breaks the fourth wall"
+   },
+   {
+    "move": "Sacred Sword",
+    "smash": "Katanas"
+   },
+   {
+    "move": "Night Slash",
+    "smash": "Katanas"
+   },
+   {
+    "move": "Protect",
+    "smash": "Blocks ultimates with his butt"
+   },
+   {
+    "move": "Endure",
+    "smash": "Healing factor"
+   },
+   {
+    "move": "Recover",
+    "smash": "Healing factor"
+   }
+  ],
+  "learnset": [
+   "Metronome",
+   "Sacred Sword",
+   "Night Slash",
+   "Protect",
+   "Endure",
+   "Recover",
+   "Taunt",
+   "Splash",
+   "Poltergeist",
+   "Shadow Claw",
+   "Fake Out",
+   "Facade",
+   "Spite",
+   "Last Resort"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 48,
+  "id": "elsa-bloodstone",
+  "name": "Elsa Bloodstone",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Rock",
+   "Steel"
+  ],
+  "stats": {
+   "hp": 70,
+   "atk": 125,
+   "def": 75,
+   "spa": 85,
+   "spd": 70,
+   "spe": 110
+  },
+  "inGameHP": 250,
+  "abilities": [
+   {
+    "name": "Bloodstone",
+    "desc": "Takes 20% less damage and is immune to poison."
+   }
+  ],
+  "hidden": {
+   "name": "Monster Hunter",
+   "desc": "Moves deal 1.5x damage to Dragon, Ghost and Dark types."
+  },
+  "signature": [
+   {
+    "move": "Power Gem",
+    "smash": "The Bloodstone"
+   },
+   {
+    "move": "Rock Blast",
+    "smash": "Shotgun shells"
+   },
+   {
+    "move": "Accelerock",
+    "smash": "Quick draw"
+   },
+   {
+    "move": "Smart Strike",
+    "smash": "Monster hunter"
+   },
+   {
+    "move": "Bullet Punch",
+    "smash": "Sidearms"
+   }
+  ],
+  "learnset": [
+   "Power Gem",
+   "Rock Blast",
+   "Accelerock",
+   "Smart Strike",
+   "Bullet Punch",
+   "Stone Edge",
+   "Iron Head",
+   "Stealth Rock",
+   "Swords Dance",
+   "Rock Polish",
+   "Knock Off",
+   "Close Combat",
+   "Bulldoze",
+   "Heavy Slam",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 49,
+  "id": "white-fox",
+  "name": "White Fox",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Fairy",
+   "Fighting"
+  ],
+  "stats": {
+   "hp": 80,
+   "atk": 105,
+   "def": 70,
+   "spa": 90,
+   "spd": 90,
+   "spe": 95
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Kumiho Essence",
+    "desc": "Draining moves restore 50% more HP (like Big Root)."
+   }
+  ],
+  "hidden": {
+   "name": "Kumiho Unleashed",
+   "desc": "Once per battle, when HP drops below 1/3, restores 1/2 max HP and raises Attack by 1 stage."
+  },
+  "signature": [
+   {
+    "move": "Spirit Break",
+    "smash": "Kumiho strikes"
+   },
+   {
+    "move": "Draining Kiss",
+    "smash": "Kumiho essence drain"
+   },
+   {
+    "move": "Drain Punch",
+    "smash": "Kumiho essence drain"
+   },
+   {
+    "move": "Captivate",
+    "smash": "Fox charm"
+   },
+   {
+    "move": "Close Combat",
+    "smash": "Kumiho Unleashed ultimate"
+   },
+   {
+    "move": "Aura Sphere",
+    "smash": "Kumiho spirit energy"
+   }
+  ],
+  "learnset": [
+   "Spirit Break",
+   "Draining Kiss",
+   "Drain Punch",
+   "Captivate",
+   "Close Combat",
+   "Aura Sphere",
+   "Life Dew",
+   "Play Rough",
+   "Moonblast",
+   "Wish",
+   "Quick Attack",
+   "Bulk Up",
+   "Fake Out",
+   "Acrobatics",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 50,
+  "id": "black-cat",
+  "name": "Black Cat",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Dark",
+   "Normal"
+  ],
+  "stats": {
+   "hp": 75,
+   "atk": 115,
+   "def": 65,
+   "spa": 80,
+   "spd": 75,
+   "spe": 125
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Bad Luck",
+    "desc": "Foes' moves have 10% lower accuracy and can't land critical hits."
+   }
+  ],
+  "hidden": {
+   "name": "Cat Burglar",
+   "desc": "Steals the target's held item when hitting it with a damaging move (like Magician)."
+  },
+  "signature": [
+   {
+    "move": "Thief",
+    "smash": "Cat burglar"
+   },
+   {
+    "move": "Covet",
+    "smash": "Cat burglar"
+   },
+   {
+    "move": "Fury Swipes",
+    "smash": "Claws"
+   },
+   {
+    "move": "Play Rough",
+    "smash": "Bad luck"
+   },
+   {
+    "move": "Acrobatics",
+    "smash": "Rooftop acrobat"
+   },
+   {
+    "move": "Fake Out",
+    "smash": "Feline distraction"
+   }
+  ],
+  "learnset": [
+   "Thief",
+   "Covet",
+   "Fury Swipes",
+   "Play Rough",
+   "Acrobatics",
+   "Fake Out",
+   "Knock Off",
+   "Sucker Punch",
+   "Night Slash",
+   "Assurance",
+   "U-turn",
+   "Taunt",
+   "Hone Claws",
+   "Quick Attack",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 51,
+  "id": "devil-dinosaur",
+  "name": "Devil Dinosaur",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Dragon",
+   "Fire"
+  ],
+  "stats": {
+   "hp": 130,
+   "atk": 130,
+   "def": 110,
+   "spa": 50,
+   "spd": 85,
+   "spe": 65
+  },
+  "inGameHP": 825,
+  "abilities": [
+   {
+    "name": "Primal Rampage",
+    "desc": "Biting moves deal 1.5x damage (like Strong Jaw)."
+   }
+  ],
+  "hidden": {
+   "name": "Moon Girl",
+   "desc": "On entry, raises Attack or Sp. Atk based on the foe's weaker defense (like Download)."
+  },
+  "signature": [
+   {
+    "move": "Outrage",
+    "smash": "Rampaging T-rex"
+   },
+   {
+    "move": "Crunch",
+    "smash": "T-rex bite"
+   },
+   {
+    "move": "Stomping Tantrum",
+    "smash": "Stomp"
+   },
+   {
+    "move": "Fire Fang",
+    "smash": "Red-hot jaws"
+   },
+   {
+    "move": "Helping Hand",
+    "smash": "Moon Girl"
+   },
+   {
+    "move": "Roar",
+    "smash": "Prehistoric roar"
+   }
+  ],
+  "learnset": [
+   "Outrage",
+   "Crunch",
+   "Stomping Tantrum",
+   "Fire Fang",
+   "Helping Hand",
+   "Roar",
+   "Dragon Claw",
+   "Dragon Rush",
+   "Flare Blitz",
+   "Earthquake",
+   "Rock Slide",
+   "Dragon Tail",
+   "Dragon Dance",
+   "Fire Lash",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 52,
+  "id": "cyclops",
+  "name": "Cyclops",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Normal",
+   "Fighting"
+  ],
+  "stats": {
+   "hp": 75,
+   "atk": 90,
+   "def": 70,
+   "spa": 130,
+   "spd": 75,
+   "spe": 100
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Optic Blast",
+    "desc": "Beam moves (Hyper Beam, Tri Attack, Swift, Focus Blast, etc.) deal 1.3x damage."
+   }
+  ],
+  "hidden": {
+   "name": "Field Leader",
+   "desc": "Allies get +1 critical-hit ratio (doubles); in singles, the next ally to switch in gets +1 Speed."
+  },
+  "signature": [
+   {
+    "move": "Hyper Beam",
+    "smash": "Optic blast"
+   },
+   {
+    "move": "Swift",
+    "smash": "Bank-shot optic blast"
+   },
+   {
+    "move": "Laser Focus",
+    "smash": "Visor focus"
+   },
+   {
+    "move": "Coaching",
+    "smash": "X-Men field leader"
+   },
+   {
+    "move": "Lock-On",
+    "smash": "Tactician"
+   },
+   {
+    "move": "Flash",
+    "smash": "Visor flare"
+   }
+  ],
+  "learnset": [
+   "Hyper Beam",
+   "Swift",
+   "Laser Focus",
+   "Coaching",
+   "Lock-On",
+   "Flash",
+   "Tri Attack",
+   "Focus Blast",
+   "Aura Sphere",
+   "Vacuum Wave",
+   "Focus Energy",
+   "Calm Mind",
+   "Helping Hand",
+   "Hyper Voice",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 53,
+  "id": "jubilee",
+  "name": "Jubilee",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Electric",
+   "Fire"
+  ],
+  "stats": {
+   "hp": 80,
+   "atk": 55,
+   "def": 70,
+   "spa": 115,
+   "spd": 100,
+   "spe": 105
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "Fireworks",
+    "desc": "Damaging moves have a 20% chance to lower the target's accuracy."
+   }
+  ],
+  "hidden": {
+   "name": "Vampiric",
+   "desc": "Damaging moves restore 1/8 of damage dealt."
+  },
+  "signature": [
+   {
+    "move": "Electro Ball",
+    "smash": "Plasmoids"
+   },
+   {
+    "move": "Flash",
+    "smash": "Blinding sparkles"
+   },
+   {
+    "move": "Life Dew",
+    "smash": "Blooming Ball"
+   },
+   {
+    "move": "Overdrive",
+    "smash": "Firework Finale ultimate"
+   },
+   {
+    "move": "Mystical Fire",
+    "smash": "Fireworks"
+   },
+   {
+    "move": "Leech Life",
+    "smash": "Vampire era"
+   }
+  ],
+  "learnset": [
+   "Electro Ball",
+   "Flash",
+   "Life Dew",
+   "Overdrive",
+   "Mystical Fire",
+   "Leech Life",
+   "Heal Pulse",
+   "Discharge",
+   "Flamethrower",
+   "Fire Blast",
+   "Charge",
+   "Volt Switch",
+   "Spark",
+   "Explosion",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 54,
+  "id": "the-hood",
+  "name": "The Hood",
+  "series": "Vanguard",
+  "role": "Vanguard",
+  "types": [
+   "Dark",
+   "Fire"
+  ],
+  "stats": {
+   "hp": 100,
+   "atk": 95,
+   "def": 90,
+   "spa": 110,
+   "spd": 90,
+   "spe": 85
+  },
+  "inGameHP": 550,
+  "abilities": [
+   {
+    "name": "Demonic Energy",
+    "desc": "After 3 attacks, enters Half-Demon State for 2 turns: moves deal 1.3x damage and restore 1/4 of damage dealt."
+   }
+  ],
+  "hidden": {
+   "name": "Levitation Boots",
+   "desc": "Immune to Ground moves (like Levitate)."
+  },
+  "signature": [
+   {
+    "move": "Nasty Plot",
+    "smash": "Demonic Energy"
+   },
+   {
+    "move": "Fiery Wrath",
+    "smash": "Half-Demon State"
+   },
+   {
+    "move": "Inferno",
+    "smash": "Demon of the End ultimate"
+   },
+   {
+    "move": "Bitter Blade",
+    "smash": "Lifesteal"
+   },
+   {
+    "move": "Double Team",
+    "smash": "Invisibility cloak"
+   },
+   {
+    "move": "Substitute",
+    "smash": "Clones"
+   }
+  ],
+  "learnset": [
+   "Nasty Plot",
+   "Fiery Wrath",
+   "Inferno",
+   "Bitter Blade",
+   "Double Team",
+   "Substitute",
+   "Flamethrower",
+   "Dark Pulse",
+   "Fire Blast",
+   "Will-O-Wisp",
+   "Snarl",
+   "Taunt",
+   "Sucker Punch",
+   "Infernal Parade",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 55,
+  "id": "gorr",
+  "name": "Gorr",
+  "series": "Duelist",
+  "role": "Duelist",
+  "types": [
+   "Ghost",
+   "Steel"
+  ],
+  "stats": {
+   "hp": 90,
+   "atk": 135,
+   "def": 80,
+   "spa": 80,
+   "spd": 70,
+   "spe": 90
+  },
+  "inGameHP": 350,
+  "abilities": [
+   {
+    "name": "God Butcher",
+    "desc": "Moves deal 1.3x damage to foes with a higher base stat total than Gorr."
+   }
+  ],
+  "hidden": {
+   "name": "Black Berserkers",
+   "desc": "On first entry, creates a free Substitute (at no HP cost)."
+  },
+  "signature": [
+   {
+    "move": "Shadow Claw",
+    "smash": "All-Black the Necrosword"
+   },
+   {
+    "move": "Poltergeist",
+    "smash": "Black Berserkers"
+   },
+   {
+    "move": "Phantom Force",
+    "smash": "Living Abyss"
+   },
+   {
+    "move": "Spectral Thief",
+    "smash": "Steals the power of gods"
+   },
+   {
+    "move": "Last Respects",
+    "smash": "God Butcher"
+   },
+   {
+    "move": "Curse",
+    "smash": "Necrosword curse"
+   }
+  ],
+  "learnset": [
+   "Shadow Claw",
+   "Poltergeist",
+   "Phantom Force",
+   "Spectral Thief",
+   "Last Respects",
+   "Curse",
+   "Smart Strike",
+   "Shadow Sneak",
+   "Iron Head",
+   "Night Slash",
+   "Swords Dance",
+   "Sacred Sword",
+   "Knock Off",
+   "Spirit Shackle",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ },
+ {
+  "num": 56,
+  "id": "nightcrawler",
+  "name": "Nightcrawler",
+  "series": "Strategist",
+  "role": "Strategist",
+  "types": [
+   "Dark",
+   "Fairy"
+  ],
+  "stats": {
+   "hp": 80,
+   "atk": 95,
+   "def": 70,
+   "spa": 80,
+   "spd": 95,
+   "spe": 110
+  },
+  "inGameHP": 275,
+  "abilities": [
+   {
+    "name": "BAMF!",
+    "desc": "Switching moves (Teleport, U-turn, Ally Switch) get +1 priority."
+   }
+  ],
+  "hidden": {
+   "name": "Blind Faith",
+   "desc": "At the end of each turn, 1/3 chance to cure his own status (like Shed Skin)."
+  },
+  "signature": [
+   {
+    "move": "Teleport",
+    "smash": "BAMF!"
+   },
+   {
+    "move": "Ally Switch",
+    "smash": "Teleports allies"
+   },
+   {
+    "move": "Night Slash",
+    "smash": "Swords"
+   },
+   {
+    "move": "Iron Tail",
+    "smash": "Prehensile tail"
+   },
+   {
+    "move": "Life Dew",
+    "smash": "Healing grenades"
+   },
+   {
+    "move": "Smokescreen",
+    "smash": "Brimstone smoke"
+   }
+  ],
+  "learnset": [
+   "Teleport",
+   "Ally Switch",
+   "Night Slash",
+   "Iron Tail",
+   "Life Dew",
+   "Smokescreen",
+   "Acrobatics",
+   "Sacred Sword",
+   "Sucker Punch",
+   "Spirit Break",
+   "Play Rough",
+   "Heal Pulse",
+   "Feint",
+   "Throat Chop",
+   "Protect"
+  ],
+  "notes": "",
+  "image": null
+ }
+]
