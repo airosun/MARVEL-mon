@@ -633,7 +633,8 @@
     const genders = GENDER.choices(f.id).filter(g => g === 'M' || g === 'F');
     const gs = genders.length ? genders : [null];
     const forms = [f, ...Object.values(S.dex.forms || {}).filter(x => x.base === f.id).map(x => S.byId[x.id]).filter(Boolean),
-      ...Object.values(S.dex.finalSmashes || {}).filter(x => x.bases.includes(f.id)).map(x => S.byId[x.id]).filter(Boolean)];
+      ...Object.values(S.dex.finalSmashes || {}).filter(x => x.bases.includes(f.id)).map(x => S.byId[x.id]).filter(Boolean),
+      ...(f.id === 'the-hood' && (S.drawn || new Set()).has('the-hood-half-demon-form_front') ? [Object.assign({}, f, { id: 'the-hood-half-demon-form', name: 'Half-Demon State', image: null })] : [])];
     const byUrl = new Map(), missing = [];   // one tile per distinct sprite; note which genders use it
     for (const form of forms) for (const g of gs) {
       const src = spriteSrc(form, false, g);

@@ -14,6 +14,14 @@
   S.animSpeed = U.load('ssbu-anim', 'normal');
   const typeColor = t => getComputedStyle(document.documentElement).getPropertyValue('--t-' + t).trim() || '#999';
 
+  // a look that only changes the battle sprite: The Hood in his Half-Demon State (Demonic Energy)
+  const LOOKS = [{ id: 'the-hood', vol: 'demon', look: 'the-hood-half-demon-form' }];
+  function battleLook(a) {
+    const f = F(a.id) || a;
+    const L = LOOKS.find(x => x.id === a.id && (a.volatiles || []).includes(x.vol) && (S.drawn || new Set()).has(x.look + '_front'));
+    return L ? Object.assign({}, f, { id: L.look }) : f;
+  }
+
   // ---------- after the battle: both full teams ----------
   const STATS6 = ['hp', 'atk', 'def', 'spa', 'spd', 'spe'];
   const SL6 = { hp: 'HP', atk: 'Atk', def: 'Def', spa: 'SpA', spd: 'SpD', spe: 'Spe' };
@@ -425,7 +433,7 @@
       const vols = (a.volatiles || []).map(v => `<span class="chip">${VOL[v] || v}</span>`).join('');
       // with a substitute up the hero stands back, dimmed, and a sand bag takes its spot
       const subbed = (a.volatiles || []).includes('substitute') && !a.fainted;
-      mons += `<div class="mon ${cls} p${pos} ${flags} ${subbed ? 'subbed' : ''}" id="mon-${n}-${pos}" ${pick}><div class="sprwrap" ${tip}><div class="spr">${sprite(F(a.id) || a, 'battle', !isFoe, a.gender)}</div>${subbed ? '<img class="subbag" src="/sprites/sand_bag.png" alt="Substitute">' : ''}${pickable ? '<span class="pick-hint">Tap to target</span>' : ''}</div></div>`;
+      mons += `<div class="mon ${cls} p${pos} ${flags} ${subbed ? 'subbed' : ''}" id="mon-${n}-${pos}" ${pick}><div class="sprwrap" ${tip}><div class="spr">${sprite(battleLook(a), 'battle', !isFoe, a.gender)}</div>${subbed ? '<img class="subbag" src="/sprites/sand_bag.png" alt="Substitute">' : ''}${pickable ? '<span class="pick-hint">Tap to target</span>' : ''}</div></div>`;
       cards += `<div class="hpcard ${flags}" id="slot-${n}-${pos}" ${pick} ${tip}><div class="nm">${esc(a.name)} ${gsym(a.gender)} ${a.status ? `<span class="st st-${a.status}">${STATUSL[a.status]}</span>` : ''}<span class="grow"></span><span class="chips types">${(a.types || []).map(typeChip).join('')}</span></div>
           <div class="hpbar"><i style="width:${a.hpPct}%;background:${hpColor(a.hpPct)}"></i></div>
           <div class="hprow"><span class="hptext">${a.hp !== undefined && !(rec(m.id) || {}).playing ? `${a.hp}/${a.maxhp}` : a.hpPct + '%'}</span><span class="chips">${boosts}${vols}</span></div></div>`;

@@ -19,6 +19,9 @@ def('World Breaker', { flagBoost: { flag: 'contact', mult: 1.3 }, noFlinch: true
 def('Queen of Limbo', { intimidate: true, flagBoost: { flag: 'slicing', mult: 1.5 } });
 def("Dormammu's Vessel", { adaptability: true });
 def('Nine-Tailed Fox', { drainAll: 1 / 3, contactAttract: 30 });
+def('Endsong', { typeBoost: { Fire: 1.3, Psychic: 1.3 }, surviveOnce: true });
+def('Feast of the Abyss', { contactDrain: 1 / 3, onKOHeal: 0.25 });
+def('All-Black the Necrosword', { typeBoost: { Ghost: 1.3 }, onKO: { atk: 1 } });
 
 // ---- Damage dealt modifiers ----
 def(['Iron Fist', 'Fist of Khonshu'], { flagBoost: { flag: 'punch', mult: 1.2 } });

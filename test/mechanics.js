@@ -114,11 +114,11 @@ async function test(name, fn) { try { await fn(); passed++; console.log('ok  ', 
     assert.equal(last, 'ended');
   });
 
-  await test('Ultimate Forms: four forms, +100 BST, HP unchanged, once per team', () => {
+  await test('Ultimate Forms: seven forms, +100 BST, HP unchanged, once per team', () => {
     const { FINAL_SMASHES } = require('../shared/megas.js');
     const F = Object.fromEntries(require('../shared/fighters.json').map(f => [f.id, f]));
     const sum = st => Object.values(st).reduce((a, c) => a + c, 0);
-    assert.deepEqual(Object.values(FINAL_SMASHES).map(x => x.id).sort(), ['darkchylde', 'kumiho', 'monster-hulk', 'the-hood-gun-demon-form']);
+    assert.deepEqual(Object.values(FINAL_SMASHES).map(x => x.id).sort(), ['all-black-gorr', 'darkchylde', 'endsong-inferno', 'feast-of-the-abyss', 'kumiho', 'monster-hulk', 'the-hood-gun-demon-form']);
     for (const fs of Object.values(FINAL_SMASHES)) {
       const base = F[fs.base];
       assert.equal(sum(fs.stats), sum(base.stats) + 100, fs.name + ' is +100 BST');

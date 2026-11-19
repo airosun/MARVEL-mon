@@ -20,8 +20,11 @@ A Pokémon VGC-style battle site where every Marvel Rivals hero is a "mon" with 
 | Darkchylde | Magik | Limbo Bloodstone | Dark / Ghost | Queen of Limbo: Intimidate on transforming/entry, slicing moves 1.5x |
 | The Hood (Gun Demon Form) | The Hood | Dormammu's Cloak | Dark / Fire | Dormammu's Vessel: STAB is 2x (Adaptability) |
 | Kumiho | White Fox | Fox Bead | Fairy / Dark | Nine-Tailed Fox: heals 1/3 of damage dealt, contact may infatuate (30%) |
+| Endsong Inferno Phoenix | Phoenix | M'Kraan Shard | Fire / Psychic | Endsong: Fire and Psychic moves 1.3x, survives one KO hit with 1 HP |
+| Feast of the Abyss Venom | Venom | Codex of the Abyss | Dark / Poison | Feast of the Abyss: contact moves heal 1/3 of damage, KOs heal 1/4 |
+| All-Black Gorr | Gorr | All-Black Necrosword | Ghost / Dark | All-Black the Necrosword: Ghost moves 1.3x, each KO raises Attack |
 
-Hulk must be Hulk (not Bruce Banner) to transform, and Monster Hulk never turns back into Bruce. Forms live in `shared/megas.js`; ability specs in `server/engine/abilities.js`.
+The Hood's sprite switches to his Half-Demon look while Demonic Energy is active. Hulk must be Hulk (not Bruce Banner) to transform, and Monster Hulk never turns back into Bruce. Forms live in `shared/megas.js`; ability specs in `server/engine/abilities.js`.
 
 **Quick Match**
 1. Each player gets 20 random heroes with random natures, random IVs (0–31) and either their standard or hidden ability. Pick 6.

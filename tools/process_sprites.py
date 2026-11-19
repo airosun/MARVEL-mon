@@ -45,6 +45,8 @@ def valid_ids():
     ids = {f['id'] for f in fighters}
     megas = open(os.path.join(ROOT, 'shared', 'megas.js')).read()
     ids |= set(re.findall(r"id: '([a-z0-9-]+)'", megas))
+    # looks that only change the sprite in battle, not the hero (The Hood's Half-Demon State)
+    ids |= {'the-hood-half-demon-form'}
     return ids
 
 NAME = re.compile(r'^([a-z0-9-]+?)(?:_(female|male))?_(front|back)\.png$')

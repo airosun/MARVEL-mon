@@ -6,5 +6,7 @@ and are used on the battlefield and in the Herodex (click a sprite there to see 
 
 - Forms: Bruce Banner is `bruce-banner_*`, Cloak is `cloak-form_*` (Dagger, the base form, uses `cloak-and-dagger_*`).
 - Alternate genders: `<hero id>_female_front.png` (or `_male_`). `loki_female_*` is Lady Loki.
-- Ultimate Forms: `monster-hulk_*`, `darkchylde_*`, `the-hood-gun-demon-form_*`, `kumiho_*`. Sprites for a
+- Ultimate Forms: `monster-hulk_*`, `darkchylde_*`, `the-hood-gun-demon-form_*`, `kumiho_*`, `endsong-inferno_*`,
+  `feast-of-the-abyss_*`, `all-black-gorr_*`.
+- The Hood's Half-Demon State (Demonic Energy) uses `the-hood-half-demon-form_*` while it lasts. Sprites for a
   form that doesn't exist yet are skipped until it's added, then picked up.
